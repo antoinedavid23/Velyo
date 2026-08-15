@@ -1,0 +1,3 @@
+import { LegalLayout } from "@/components/LegalPage";
+export const metadata = { title: "Cookies" };
+export default function Page() { return <LegalLayout title="Politique cookies" intro="Le site Velyo ne prévoit aucun profilage publicitaire."><h2>Cookies nécessaires</h2><p>Le site peut enregistrer le choix relatif au bandeau cookies et utiliser les mécanismes indispensables à son fonctionnement.</p><h2>Mesure d’audience</h2><p>Aucun outil de profilage n’est configuré par défaut. Toute solution ajoutée devra être documentée et paramétrée selon les obligations applicables.</p><h2>Gérer votre choix</h2><p>Vous pouvez supprimer le stockage local et les cookies depuis les réglages de votre navigateur.</p></LegalLayout>; }
