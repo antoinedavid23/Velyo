@@ -1,0 +1,42 @@
+import { integer, sqliteTable, text } from "drizzle-orm/sqlite-core";
+
+export const managedProperties = sqliteTable("managed_properties", {
+  id: integer("id").primaryKey({ autoIncrement: true }),
+  name: text("name").notNull(),
+  slug: text("slug").notNull().unique(),
+  location: text("location").notNull(),
+  bedrooms: integer("bedrooms").notNull().default(1),
+  guests: integer("guests").notNull().default(2),
+  baths: integer("baths").notNull().default(1),
+  propertyType: text("property_type").notNull().default("Appartement"),
+  surface: integer("surface"),
+  address: text("address"),
+  shortDescription: text("short_description").notNull().default(""),
+  description: text("description").notNull().default(""),
+  amenities: text("amenities", { mode: "json" }).$type<string[]>().notNull().default([]),
+  image: text("image").notNull().default("/images/home/hero-concierge.webp"),
+  gallery: text("gallery", { mode: "json" }).$type<string[]>().notNull().default([]),
+  status: text("status", { enum: ["draft", "published", "archived"] }).notNull().default("draft"),
+  featured: integer("featured", { mode: "boolean" }).notNull().default(false),
+  seoTitle: text("seo_title"),
+  seoDescription: text("seo_description"),
+  createdAt: integer("created_at", { mode: "timestamp" }).notNull().$defaultFn(() => new Date()),
+  updatedAt: integer("updated_at", { mode: "timestamp" }).notNull().$defaultFn(() => new Date()),
+});
+
+export const leads = sqliteTable("leads", {
+  id: integer("id").primaryKey({ autoIncrement: true }),
+  kind: text("kind", { enum: ["contact", "valuation"] }).notNull(),
+  name: text("name").notNull(),
+  surname: text("surname").notNull(),
+  email: text("email").notNull(),
+  phone: text("phone"),
+  city: text("city"),
+  propertyType: text("property_type"),
+  subject: text("subject"),
+  message: text("message").notNull(),
+  details: text("details", { mode: "json" }).$type<Record<string, unknown>>().notNull(),
+  status: text("status", { enum: ["new", "read", "archived"] }).notNull().default("new"),
+  createdAt: integer("created_at", { mode: "timestamp" }).notNull().$defaultFn(() => new Date()),
+  updatedAt: integer("updated_at", { mode: "timestamp" }).notNull().$defaultFn(() => new Date()),
+});
