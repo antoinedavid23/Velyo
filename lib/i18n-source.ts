@@ -23,7 +23,7 @@ const t = (it: string, en: string, es: string, ru: string, zh: string): Localize
 /*
  * These are transcreations, not literal translations. Short calls to action,
  * trust language and luxury vocabulary are adapted to the conventions of each
- * audience while preserving the same AUREVIA promise.
+ * audience while preserving the same VELYO promise.
  */
 export const messages: Record<string, Localized> = {
   "Services": t("Servizi", "Services", "Servicios", "Услуги", "服务"),
@@ -49,7 +49,7 @@ export const messages: Record<string, Localized> = {
   "Gestion et valorisation de propriétés d’exception.": t("Gestione e valorizzazione di proprietà d’eccezione.", "Management and stewardship of exceptional homes.", "Gestión y puesta en valor de propiedades excepcionales.", "Управление и сохранение ценности исключительных объектов.", "为卓越宅邸提供管理与价值守护。"),
   "Explorer": t("Esplori", "Explore", "Descubrir", "Разделы", "探索"),
   "Propriétaires": t("Proprietari", "Owners", "Propietarios", "Владельцам", "业主"),
-  "Gestion AUREVIA": t("Gestione AUREVIA", "AUREVIA management", "Gestión AUREVIA", "Управление AUREVIA", "AUREVIA 管理"),
+  "Gestion VELYO": t("Gestione VELYO", "VELYO management", "Gestión VELYO", "Управление VELYO", "VELYO 管理"),
   "Évaluation privée": t("Valutazione riservata", "Private assessment", "Valoración privada", "Конфиденциальная оценка", "专属评估"),
   "Questions fréquentes": t("Domande frequenti", "Frequently asked questions", "Preguntas frecuentes", "Частые вопросы", "常见问题"),
   "Contact privé": t("Contatto riservato", "Private enquiries", "Contacto privado", "Конфиденциальная связь", "专属咨询"),
@@ -76,20 +76,20 @@ export const messages: Record<string, Localized> = {
   "Votre bien préservé": t("Il Suo immobile, sempre tutelato", "Your home, carefully preserved", "Su propiedad, siempre cuidada", "Бережная забота о вашей собственности", "悉心守护您的房产"),
   "Pour les propriétaires": t("Per i proprietari", "For property owners", "Para propietarios", "Владельцам", "致业主"),
   "Un partenaire de confiance pour votre propriété": t("Un referente di fiducia per il Suo immobile", "A trusted steward for your home", "Un aliado de confianza para su propiedad", "Надёжный партнёр для вашего дома", "值得托付的宅邸管家"),
-  "AUREVIA accompagne les propriétaires exigeants qui souhaitent valoriser leur bien sans en gérer les contraintes quotidiennes.": t("AUREVIA affianca proprietari esigenti che desiderano valorizzare il proprio immobile senza portarne il peso quotidiano.", "AUREVIA gives discerning owners the confidence to enhance their property without carrying its daily demands.", "AUREVIA acompaña a propietarios exigentes que desean valorizar su bien sin asumir la carga diaria.", "AUREVIA помогает взыскательным владельцам раскрыть потенциал объекта, не погружаясь в повседневные заботы.", "AUREVIA 帮助重视品质的业主提升房产价值，同时卸下日常管理的繁琐。"),
+  "VELYO accompagne les propriétaires exigeants qui souhaitent valoriser leur bien sans en gérer les contraintes quotidiennes.": t("VELYO affianca proprietari esigenti che desiderano valorizzare il proprio immobile senza portarne il peso quotidiano.", "VELYO gives discerning owners the confidence to enhance their property without carrying its daily demands.", "VELYO acompaña a propietarios exigentes que desean valorizar su bien sin asumir la carga diaria.", "VELYO помогает взыскательным владельцам раскрыть потенциал объекта, не погружаясь в повседневные заботы.", "VELYO 帮助重视品质的业主提升房产价值，同时卸下日常管理的繁琐。"),
   "Une relation privilégiée": t("Un rapporto privilegiato", "One privileged relationship", "Una relación privilegiada", "Особые доверительные отношения", "专属信任关系"),
   "Une prise en charge intégrale": t("Una gestione completa", "Complete stewardship", "Una gestión integral", "Полная ответственность", "全方位托管"),
   "Des standards d’exception": t("Standard d’eccezione", "Exceptional standards", "Estándares excepcionales", "Исключительные стандарты", "卓越标准"),
   "Une gestion sur mesure": t("Una gestione su misura", "Tailored management", "Una gestión a medida", "Индивидуальное управление", "量身定制"),
-  "Découvrir l’approche AUREVIA": t("Scopra l’approccio AUREVIA", "Discover the AUREVIA approach", "Descubrir el enfoque AUREVIA", "Подход AUREVIA", "了解 AUREVIA 方式"),
+  "Découvrir l’approche VELYO": t("Scopra l’approccio VELYO", "Discover the VELYO approach", "Descubrir el enfoque VELYO", "Подход VELYO", "了解 VELYO 方式"),
   "L’excellence dans chaque détail": t("L’eccellenza in ogni dettaglio", "Excellence, down to the last detail", "Excelencia en cada detalle", "Совершенство в каждой детали", "卓越，尽在细节"),
   "Simulateur privé": t("Simulatore riservato", "Private estimator", "Simulador privado", "Персональный расчёт", "专属收益测算"),
   "Découvrez le potentiel de votre propriété": t("Scopra il potenziale del Suo immobile", "Discover your property’s potential", "Descubra el potencial de su propiedad", "Раскройте потенциал вашего объекта", "发现房产潜力"),
   "Obtenez une première projection selon la localisation, le standing, les équipements et la période de disponibilité.": t("Ottenga una prima proiezione basata su posizione, livello, dotazioni e disponibilità.", "Receive an initial projection shaped by location, finish, amenities and availability.", "Obtenga una primera proyección según ubicación, categoría, equipamiento y disponibilidad.", "Получите первичный прогноз с учётом локации, уровня объекта, оснащения и доступности.", "根据地段、品质、设施及可出租时间，获得初步收益测算。"),
   "Essayer le simulateur": t("Provi il simulatore", "Try the estimator", "Probar el simulador", "Рассчитать потенциал", "开始测算"),
-  "Projection AUREVIA": t("Proiezione AUREVIA", "AUREVIA projection", "Proyección AUREVIA", "Прогноз AUREVIA", "AUREVIA 收益预测"),
+  "Projection VELYO": t("Proiezione VELYO", "VELYO projection", "Proyección VELYO", "Прогноз VELYO", "VELYO 收益预测"),
   "Situation estimée avant gestion": t("Stima prima della gestione", "Estimated before management", "Estimación antes de la gestión", "Оценка до управления", "托管前预估"),
-  "Potentiel optimisé": t("Potenziale ottimizzato", "Optimised potential", "Potencial optimizado", "Потенциал с AUREVIA", "优化后潜力"),
+  "Potentiel optimisé": t("Potenziale ottimizzato", "Optimised potential", "Potencial optimizado", "Потенциал с VELYO", "优化后潜力"),
   "Progression indicative": t("Crescita indicativa", "Indicative uplift", "Mejora indicativa", "Ориентировочный рост", "预期提升"),
   "Occupation projetée": t("Occupazione prevista", "Projected occupancy", "Ocupación prevista", "Прогноз загрузки", "预计入住率"),
   "L’expérience propriétaire": t("L’esperienza del proprietario", "The owner experience", "La experiencia del propietario", "Опыт владельца", "业主体验"),
@@ -172,7 +172,7 @@ export const messages: Record<string, Localized> = {
 
   "Notre raison d’être": t("La nostra ragione d’essere", "Our purpose", "Nuestra razón de ser", "Наша миссия", "我们的初心"),
   "Prendre soin de ce qui compte.": t("Prendersi cura di ciò che conta.", "Caring for what matters.", "Cuidar lo que importa.", "Заботиться о самом важном.", "守护真正重要的一切。"),
-  "L’histoire AUREVIA": t("La storia AUREVIA", "The AUREVIA story", "La historia de AUREVIA", "История AUREVIA", "AUREVIA 的故事"),
+  "L’histoire VELYO": t("La storia VELYO", "The VELYO story", "La historia de VELYO", "История VELYO", "VELYO 的故事"),
   "Tout commence lorsque vous fermez la porte.": t("Tutto comincia quando chiude la porta.", "It begins when you close the door.", "Todo comienza cuando cierra la puerta.", "Всё начинается, когда вы закрываете дверь.", "一切，从您关上门的那一刻开始。"),
   "Un territoire vivant": t("Un territorio vivo", "A living territory", "Un territorio vivo", "Живая территория", "一方鲜活的土地"),
   "Gênes ne se visite pas. Elle se révèle.": t("Genova non si visita. Si rivela.", "Genoa is not simply visited. It reveals itself.", "Génova no se visita. Se descubre.", "Геную не просто посещают — её открывают.", "热那亚，不止于到访，更待细细发现。"),
@@ -183,7 +183,7 @@ export const messages: Record<string, Localized> = {
   "Moins de contraintes. Plus de maîtrise.": t("Meno vincoli. Più controllo.", "Less burden. Greater control.", "Menos carga. Más control.", "Меньше забот. Больше контроля.", "少些负担，多些掌控。"),
   "Ce qui change pour vous": t("Cosa cambia per Lei", "What changes for you", "Lo que cambia para usted", "Что изменится для вас", "为您带来的改变"),
   "Votre propriété ne dicte plus votre quotidien.": t("Il Suo immobile non detta più le Sue giornate.", "Your property no longer dictates your day.", "Su propiedad deja de dictar su día a día.", "Объект больше не управляет вашим временем.", "您的生活，不再被房产事务牵着走。"),
-  "Avec AUREVIA": t("Con AUREVIA", "With AUREVIA", "Con AUREVIA", "С AUREVIA", "选择 AUREVIA"),
+  "Avec VELYO": t("Con VELYO", "With VELYO", "Con VELYO", "С VELYO", "选择 VELYO"),
   "Lorsque vous gérez seul": t("Quando gestisce da solo", "When you manage alone", "Cuando gestiona solo", "При самостоятельном управлении", "自行管理时"),
 };
 

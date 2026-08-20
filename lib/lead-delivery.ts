@@ -1,3 +1,5 @@
+import { storeLead } from "@/lib/lead-storage";
+
 type LeadKind = "contact" | "valuation";
 type LeadPayload = Record<string, unknown> & {
   name: string;
@@ -29,8 +31,8 @@ function escapeHtml(value: unknown) {
 
 async function sendLeadEmail(kind: LeadKind, payload: LeadPayload) {
   const apiKey = process.env.RESEND_API_KEY;
-  const recipient = process.env.CONTACT_RECIPIENT || "contatto@aurevia-genova.com";
-  const from = process.env.CONTACT_FROM || "AUREVIA <contact@aurevia-genova.com>";
+  const recipient = process.env.CONTACT_RECIPIENT || "contact@velyo.pm";
+  const from = process.env.CONTACT_FROM || "Velyo Property Manager <contact@velyo.pm>";
   if (!apiKey || !recipient || !from) return null;
 
   const ignored = new Set(["website", "consent"]);
@@ -49,7 +51,7 @@ async function sendLeadEmail(kind: LeadKind, payload: LeadPayload) {
       to: [recipient],
       reply_to: payload.email,
       subject: `${kind === "valuation" ? "Nouvelle évaluation" : "Nouveau contact"} — ${payload.name} ${payload.surname}`,
-      html: `<div style="font-family:Arial,sans-serif;color:#0d1b2a"><h1 style="font-family:Georgia,serif">Nouvelle demande AUREVIA</h1><p>Une demande a été envoyée depuis aurevia-genova.com.</p><table style="width:100%;border-collapse:collapse">${rows}</table></div>`,
+      html: `<div style="font-family:Arial,sans-serif;color:#111318"><h1>Nouvelle demande Velyo</h1><p>Une demande a été envoyée depuis le site Velyo Property Manager.</p><table style="width:100%;border-collapse:collapse">${rows}</table></div>`,
     }),
   });
   if (!response.ok) {
@@ -63,7 +65,11 @@ async function sendLeadEmail(kind: LeadKind, payload: LeadPayload) {
 
 export async function deliverLead(kind: LeadKind, payload: LeadPayload) {
   if (payload.website) return { reference: "filtered", channels: ["spam-filter"] };
+  const stored = await storeLead(kind, payload);
   const emailId = await sendLeadEmail(kind, payload);
-  if (!emailId) throw new Error("RESEND_API_KEY n’est pas configurée sur Vercel.");
-  return { reference: emailId, channels: ["email"] };
+  return {
+    reference: String(stored.id),
+    channels: emailId ? ["database", "email"] : ["database"],
+    emailId,
+  };
 }

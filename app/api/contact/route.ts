@@ -14,7 +14,7 @@ export async function POST(req: Request) {
     const delivery = await deliverLead("contact", parsed.data);
     return NextResponse.json({ ok: true, ...delivery }, { status: 201 });
   } catch (error) {
-    console.error("AUREVIA contact delivery failed", error);
+    console.error("VELYO contact delivery failed", error);
     return NextResponse.json(
       { ok: false, code: "delivery_failed" },
       { status: 500 },

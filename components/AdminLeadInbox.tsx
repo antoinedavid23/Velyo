@@ -160,7 +160,7 @@ export function AdminLeadInbox() {
     );
     const anchor = document.createElement("a");
     anchor.href = url;
-    anchor.download = `demandes-aurevia-${new Date().toISOString().slice(0, 10)}.csv`;
+    anchor.download = `demandes-velyo-${new Date().toISOString().slice(0, 10)}.csv`;
     anchor.click();
     URL.revokeObjectURL(url);
   }

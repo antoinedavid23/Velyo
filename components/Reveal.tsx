@@ -15,10 +15,7 @@ export function Reveal({
   const [visible, setVisible] = useState(eager);
 
   useEffect(() => {
-    if (eager || window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
-      setVisible(true);
-      return;
-    }
+    if (eager) return;
 
     const element = elementRef.current;
     if (!element) return;

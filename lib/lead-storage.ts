@@ -29,7 +29,7 @@ type D1Database = {
 let leadSchemaReady: Promise<void> | null = null;
 
 async function getLeadDatabase() {
-  const { env } = await import(/* webpackIgnore: true */ "cloudflare:workers") as {
+  const { env } = await import(/* @vite-ignore */ "cloudflare:workers") as {
     env: { DB?: D1Database };
   };
   if (!env.DB) throw new Error("La base de réception n’est pas disponible.");

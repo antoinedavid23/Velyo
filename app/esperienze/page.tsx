@@ -1,19 +1,34 @@
-import Link from "next/link";
-import { ArrowUpRight } from "lucide-react";
-import { PageHero, CTA } from "@/components/PageHero";
+import { PageHero } from "@/components/PageHero";
 import type { Metadata } from "next";
-import { experiences } from "@/data/content";
+import Image from "next/image";
+import Link from "next/link";
+import { ArrowRight } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Expériences et recommandations à Genova",
-  description: "Parcours locaux, adresses et escapades faciles à proposer aux voyageurs à Genova.",
+  title: "Services voyageurs à Genova",
+  description: "Transferts, bien-être, guides, courses et réservations organisés pour les voyageurs avant et pendant leur séjour à Genova.",
   alternates: { canonical: "/esperienze" },
 };
 
+const experienceFamilies = [
+  { number: "01", title: "Arrivées et déplacements", text: "Tout ce qui facilite l’arrivée, le départ et les mouvements pendant le séjour.", image: "/images/concierge/genova-blue-hour-premium.png" },
+  { number: "02", title: "Confort du séjour", text: "Des attentions pratiques ou de bien-être, préparées selon les besoins réels des voyageurs.", image: "/images/concierge/home-preparation-premium.png" },
+  { number: "03", title: "Moments particuliers", text: "Une préparation personnalisée pour célébrer une occasion ou créer une arrivée différente.", image: "/images/concierge/boccadasse-aperitivo-premium.jpg" },
+  { number: "04", title: "Découvrir Genova", text: "Des idées, des visites et des expériences locales adaptées au rythme du séjour.", image: "/images/concierge/rolli-walk-premium.jpg" },
+];
+
 export default function Page() {
   return <>
-    <PageHero label="Expériences" title="Genova, avec les bons repères" text="Des idées locales, réalistes et faciles à intégrer au séjour : quartiers, promenades, tables et escapades adaptées au temps disponible." image="/images/about/genova-architecture.webp" />
-    <section className="section"><div className="container experience-page-intro"><p className="eyebrow">Le guide Velyo</p><h2>Des recommandations utiles, pas un catalogue de prestige.</h2><p>Chaque suggestion peut être adaptée au quartier du logement, à la saison, à la mobilité et au rythme des voyageurs.</p></div><div className="container card-grid three mobile-two-grid">{experiences.map((experience) => <Link href={`/esperienze/${experience.slug}`} className={`service-card service-card-image experience-service-card experience-service-card-${experience.slug}`} style={{ backgroundImage: `linear-gradient(180deg,rgba(17,19,24,.04),rgba(17,19,24,.88)),url(${experience.image})` }} key={experience.slug}><div className="service-card-top"><span>GENOVA</span><ArrowUpRight /></div><div className="service-card-copy"><h3>{experience.title}</h3><p>{experience.short}</p><ul className="experience-card-details">{experience.details.map((detail) => <li key={detail}>{detail}</li>)}</ul><small>Découvrir le parcours</small></div></Link>)}</div><div className="container"><p className="demo-note">Les horaires, disponibilités, conditions et tarifs de partenaires doivent être vérifiés avant confirmation.</p></div></section>
-    <CTA />
+    <PageHero label="À réserver avec Velyo" title="Services voyageurs" text="Transport, bien-être, visites et courses : des services utiles, organisés à la demande." image="/images/concierge/old-town-family-premium.png" />
+
+    <section className="section experience-catalog-section"><div className="container">
+      <div className="catalog-intro experience-owner-intro watermark-heading"><p className="eyebrow section-watermark">Expériences</p><div><h2>Une demande.<br/>Une réponse adaptée.</h2></div><p>Velyo organise des services autour du séjour sans enfermer les voyageurs dans un catalogue. Le besoin est précisé, puis une proposition claire est présentée avant toute réservation.</p></div>
+      <div className="experience-family-grid">{experienceFamilies.map((family) => <article className="experience-family-card" key={family.number}>
+        <div className="experience-family-image"><Image src={family.image} alt="" fill sizes="(max-width: 800px) 100vw, 50vw" /></div>
+        <div className="experience-family-copy"><span>{family.number}</span><h3>{family.title}</h3><p>{family.text}</p><Link href="/valutazione">Parler d’un besoin <ArrowRight size={16}/></Link></div>
+      </article>)}</div>
+      <p className="demo-note">Les horaires, prix et disponibilités des partenaires doivent toujours être confirmés avant la réservation.</p>
+    </div></section>
+
   </>;
 }

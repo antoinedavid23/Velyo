@@ -1,9 +1,9 @@
 import { cookies } from "next/headers";
 
-const COOKIE_NAME = "aurevia_admin";
+const COOKIE_NAME = "velyo_admin";
 const SESSION_DURATION_SECONDS = 60 * 60 * 10;
 const INTERNAL_PASSWORD_HASH =
-  "100000:XzuFeHAidB7HQDMTYgXvOA==:VGs3PNyh3gC/Dl/OMWUhtMlgyYzHRDiwmEBeWnmNBzk=";
+  "150000:b3qNfpOUHfT5SJCJqFVM/w==:I2VAEcgPN0UGGrm2GTjHTH9lHeerVJ7QLM3tn+3q6qk=";
 
 function bytesToBase64(bytes: Uint8Array) {
   let binary = "";
@@ -86,7 +86,7 @@ export async function getInternalAdminUser() {
     if (parsed.expiresAt < Date.now()) return null;
     return {
       displayName: parsed.username,
-      email: process.env.ADMIN_RECOVERY_EMAIL || "administration@aurevia.local",
+      email: process.env.ADMIN_RECOVERY_EMAIL || "contact@velyo.pm",
       fullName: parsed.username,
     };
   } catch {

@@ -8,7 +8,7 @@ for (const root of ["app", "components", "data"]) {
   const walk = (dir) => fs.readdirSync(dir, { withFileTypes: true }).forEach((entry) => {
     const file = path.join(dir, entry.name);
     if (entry.isDirectory()) walk(file);
-    else if (/\.(tsx|ts)$/.test(entry.name) && !file.includes(`${path.sep}api${path.sep}`) && !file.includes(`${path.sep}administration${path.sep}`) && !/Admin/.test(entry.name) && !["LocaleController.tsx","HeroVideo.tsx","layout.tsx"].includes(entry.name)) files.push(file);
+    else if (/\.(tsx|ts)$/.test(entry.name) && !file.includes(`${path.sep}api${path.sep}`) && !file.includes(`${path.sep}administration${path.sep}`) && !/Admin/.test(entry.name) && !["LocaleController.tsx","layout.tsx"].includes(entry.name)) files.push(file);
   });
   walk(root);
 }
@@ -27,7 +27,7 @@ for (const file of files) {
   const seen = new Set();
   const add = (raw, position) => {
     const value = raw.trim();
-    if (value.length < 3 || !/[A-Za-zÀ-ÿ]/.test(value) || dictionaryKeys.has(normalize(value)) || /^(https?:|\/|[a-z0-9_.@-]+$|\(max-width:)/i.test(value) || /^(use client|application\/|image\/|AUREVIA|Vercel Inc\.|Resend, Inc\.|Garante per la protezione|Villa |Casa |Attique |Santa Margherita)/.test(value) || value.includes("{") || value.includes("}")) return;
+    if (value.length < 3 || !/[A-Za-zÀ-ÿ]/.test(value) || dictionaryKeys.has(normalize(value)) || /^(https?:|\/|[a-z0-9_.@-]+$|\(max-width:)/i.test(value) || /^(use client|application\/|image\/|VELYO|Vercel Inc\.|Resend, Inc\.|Garante per la protezione|Villa |Casa |Attique |Santa Margherita)/.test(value) || value.includes("{") || value.includes("}")) return;
     if (!seen.has(value)) {
       seen.add(value);
       missing.push([file, ast.getLineAndCharacterOfPosition(position).line + 1, value]);
