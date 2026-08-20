@@ -44,3 +44,4 @@ next-env.d.ts
 /work/
 /velyo-site.tar.gz
 /i18n-audit-output.txt
+/.ghconfig/
