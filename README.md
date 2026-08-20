@@ -1,13 +1,14 @@
 # Velyo Property Manager
 
-Cette branche est une transformation directe du projet Aurevia : même architecture multi-pages, mêmes routes fonctionnelles, mêmes formulaires, simulateur, administration et structure de contenu — avec une nouvelle identité Velyo et un standing plus accessible.
+Site officiel multi-pages de Velyo Property Manager, dédié à la gestion locative courte durée à Genova. Le projet réunit le site public, le simulateur, les formulaires, le catalogue de propriétés de démonstration et l’architecture d’administration.
 
 ## Direction Velyo
 
 - sans vidéo dans le hero ;
 - paysages liés à Genova ;
-- noir, crème et or utilisés avec plus de légèreté ;
-- typographie Manrope uniquement ;
+- palette de marque accessible : bleu `#1F5FBF`, bleu profond `#123A66`, encre `#172033`, bleu pâle `#EAF2FF`, fond `#F7FAFE` et blanc ;
+- architecture claire en grilles de service, cartes lisibles et parcours directs ;
+- Montserrat pour les titres et Lato pour les textes ;
 - langage plus direct et orienté service ;
 - expériences locales liées à Genova ;
 - propriétés de démonstration clairement identifiées.
@@ -15,7 +16,7 @@ Cette branche est une transformation directe du projet Aurevia : même architect
 ## Démarrage
 
 ```bash
-npm install
+npm ci
 npm run dev
 ```
 
@@ -34,4 +35,4 @@ Puis ouvrir `http://localhost:3000`.
 - `/valutazione`
 - `/faq`
 - `/connexion`
-- administration, API et pages légales conservées depuis la base Aurevia.
+- administration, API et pages légales.

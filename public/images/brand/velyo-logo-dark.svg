@@ -1,11 +1,11 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 430 120" role="img" aria-labelledby="title">
   <title id="title">Velyo Property Manager</title>
-  <g transform="translate(2 8)">
-    <path d="M21 10C40 18 51 44 62 73C69 91 77 100 92 107C74 84 71 58 58 34C49 18 37 9 21 10Z" fill="#111318"/>
-    <path d="M96 3C79 18 72 44 62 73C74 53 87 33 109 13C109 7 105 4 96 3Z" fill="#C9A24B"/>
+  <g transform="translate(1 0) scale(.92)">
+    <path d="M18 23.5C38.5 24.2 53.2 37.4 64.2 59.5C67 65.1 68.4 70.8 69 76C71.8 88.8 80.9 105.8 103.8 117.2C80.6 108.9 67.8 94.4 58.2 72.9C47.5 49 34.8 31.6 18 23.5Z" fill="#172033"/>
+    <path d="M96.2 10.2C103.6 11.1 109.7 14.2 112.7 19.3C114.5 22.5 113.8 25.7 110.9 28.5C92.3 45.8 78.9 61.3 69 76C74.2 55.7 82.4 29.1 96.2 10.2Z" fill="#2A67C7"/>
   </g>
-  <text x="124" y="66" fill="#111318" font-family="Manrope,Arial,sans-serif" font-size="55" font-weight="400" letter-spacing="5">velyo</text>
-  <line x1="126" y1="86" x2="158" y2="86" stroke="#C9A24B" stroke-width="2"/>
-  <text x="169" y="91" fill="#9B742F" font-family="Manrope,Arial,sans-serif" font-size="11" font-weight="700" letter-spacing="4">PROPERTY MANAGER</text>
-  <line x1="382" y1="86" x2="420" y2="86" stroke="#C9A24B" stroke-width="2"/>
+  <text x="124" y="66" fill="#172033" font-family="Montserrat,Arial,sans-serif" font-size="55" font-weight="400" letter-spacing="5">velyo</text>
+  <line x1="126" y1="86" x2="158" y2="86" stroke="#1F5FBF" stroke-width="2"/>
+  <text x="169" y="91" fill="#174C99" font-family="Montserrat,Arial,sans-serif" font-size="11" font-weight="700" letter-spacing="4">PROPERTY MANAGER</text>
+  <line x1="382" y1="86" x2="420" y2="86" stroke="#1F5FBF" stroke-width="2"/>
 </svg>

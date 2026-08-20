@@ -1,3 +1,3 @@
 import { LegalLayout } from "@/components/LegalPage";
-export const metadata = { title: "Conditions d’utilisation" };
+export const metadata = { title: "Conditions d’utilisation", alternates: { canonical: "/termini" } };
 export default function Page() { return <LegalLayout title="Conditions d’utilisation" intro="Règles applicables à la consultation du site Velyo."><h2>Utilisation du site</h2><p>Les informations publiées sont générales et peuvent évoluer. Elles ne remplacent pas une proposition commerciale ou un contrat.</p><h2>Estimations</h2><p>Les projections de revenus, tarifs et taux d’occupation restent indicatives et ne constituent pas une garantie.</p><h2>Contenus de démonstration</h2><p>Les propriétés, avis et certaines données visibles dans la version de travail doivent être remplacés ou validés avant publication commerciale.</p></LegalLayout>; }

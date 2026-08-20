@@ -1,14 +1,17 @@
 import type { Metadata } from "next";
 import { SiteShell } from "@/components/SiteShell";
 import { LocaleController } from "@/components/LocaleController";
-import "@fontsource/manrope/400.css";
-import "@fontsource/manrope/500.css";
-import "@fontsource/manrope/600.css";
-import "@fontsource/manrope/700.css";
+import "@fontsource/montserrat/400.css";
+import "@fontsource/montserrat/500.css";
+import "@fontsource/montserrat/600.css";
+import "@fontsource/montserrat/700.css";
+import "@fontsource/montserrat/800.css";
+import "@fontsource/lato/400.css";
+import "@fontsource/lato/700.css";
 import "./globals.css";
 import "./velyo.css";
 
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000";
+import { siteUrl } from "@/lib/site-metadata";
 const email = process.env.NEXT_PUBLIC_EMAIL || "contact@velyo.pm";
 
 export const metadata: Metadata = {
@@ -23,11 +26,12 @@ export const metadata: Metadata = {
     title: "Velyo Property Manager",
     description: "Votre bien, bien géré. Vos voyageurs, bien accueillis.",
     type: "website",
-    locale: "fr_FR",
+    locale: "it_IT",
+    alternateLocale: ["en_GB"],
     images: [{
-      url: "/images/home/genova-night.webp",
-      width: 1920,
-      height: 960,
+      url: "/og.png",
+      width: 1730,
+      height: 909,
       alt: "Velyo Property Manager à Genova",
     }],
   },
@@ -35,7 +39,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Velyo Property Manager",
     description: "Property management local à Genova.",
-    images: ["/images/home/genova-night.webp"],
+    images: ["/og.png"],
   },
   icons: {
     icon: [{ url: "/images/brand/velyo-mark.svg", type: "image/svg+xml" }],
@@ -55,7 +59,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         url: siteUrl,
         logo: `${siteUrl}/images/brand/velyo-logo-dark.svg`,
         email,
-        description: "Gestion locative et property management à Genova.",
+        description: "Gestione degli affitti brevi e property management a Genova.",
         areaServed: ["Genova", "Gênes", "Ligurie"],
       },
       {
@@ -63,14 +67,14 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         "@id": `${siteUrl}/#website`,
         url: siteUrl,
         name: "Velyo Property Manager",
-        inLanguage: "fr",
+        inLanguage: ["it", "en"],
         publisher: { "@id": `${siteUrl}/#organization` },
       },
     ],
   };
 
   return (
-    <html lang="fr">
+    <html lang="it">
       <body>
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
         <LocaleController><SiteShell>{children}</SiteShell></LocaleController>

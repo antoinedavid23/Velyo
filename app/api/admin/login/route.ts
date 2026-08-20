@@ -7,7 +7,7 @@ import {
 
 export async function POST(request: Request) {
   const body = (await request.json()) as { username?: string; password?: string };
-  const expectedUsername = process.env.ADMIN_USERNAME || "Aurevia";
+  const expectedUsername = process.env.ADMIN_USERNAME || "Velyo";
   const usernameMatches =
     body.username?.trim().toLowerCase() === expectedUsername.toLowerCase();
   const passwordMatches =

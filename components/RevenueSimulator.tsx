@@ -1,70 +1,120 @@
 "use client";
-import {useMemo,useState} from "react";
-import {motion} from "motion/react";
+
+import { useMemo, useState } from "react";
+import { motion } from "motion/react";
 import Link from "next/link";
-import {calculateRevenueEstimate,SimulatorInput} from "@/lib/simulator";
+import { SimulatorInput } from "@/lib/simulator";
 
-const initial:SimulatorInput={location:"Gênes",type:"Appartement",bedrooms:2,guests:4,area:90,finish:"Soigné",sea:true,pool:false,terrace:true,parking:false,days:300};
-const euro=(value:number)=>new Intl.NumberFormat("fr-FR",{style:"currency",currency:"EUR",maximumFractionDigits:0}).format(value);
+const initial: SimulatorInput = {
+  location: "Castelletto",
+  type: "Trois-pièces",
+  bedrooms: 2,
+  guests: 4,
+  area: 75,
+  finish: "Soigné",
+  transit: true,
+  elevator: true,
+  outdoor: true,
+  parking: false,
+  days: 260,
+};
 
-export function RevenueSimulator(){
- const [i,setI]=useState(initial);
- const [currentOccupancy,setCurrentOccupancy]=useState(45);
- const [currentNightly,setCurrentNightly]=useState(185);
- const r=useMemo(()=>calculateRevenueEstimate(i),[i]);
- const projected=useMemo(()=>{
-  const currentBookedNights=Math.round(i.days*(currentOccupancy/100));
-  const currentAnnual=Math.round(currentNightly*currentBookedNights);
-  const occupancy=currentOccupancy>80?currentOccupancy:Math.min(80,Math.max(60,r.occupancy,currentOccupancy+12));
-  const bookedNights=Math.round(i.days*(occupancy/100));
-  const nightlyCeiling=Math.round(currentNightly*1.2);
-  const nightly=Math.min(nightlyCeiling,Math.max(currentNightly,r.nightly));
-  const annual=Math.round(nightly*bookedNights);
-  const additionalNights=Math.max(0,bookedNights-currentBookedNights);
-  const occupancyContribution=Math.round(additionalNights*currentNightly);
-  const pricingContribution=Math.round(Math.max(0,nightly-currentNightly)*bookedNights);
-  return {currentAnnual,currentBookedNights,occupancy,nightly,bookedNights,additionalNights,occupancyContribution,pricingContribution,annual,gain:Math.max(0,annual-currentAnnual),gainRate:currentAnnual?Math.round((annual/currentAnnual-1)*100):0,multiplier:currentAnnual?annual/currentAnnual:0};
- },[currentNightly,currentOccupancy,i.days,r]);
- const set=(k:keyof SimulatorInput,v:string|number|boolean)=>setI(x=>({...x,[k]:v}));
- return <div className="simulator-layout">
-  <form className="form-card simulator-form" onSubmit={e=>e.preventDefault()}>
-   <section className="simulator-form-section simulator-current-section">
-   <p className="eyebrow"><span>01</span> Situation actuelle</p>
-   <div className="field-row"><label>Taux d’occupation actuel <output>{currentOccupancy}%</output><input className="aurevia-range" style={{background:`linear-gradient(to right, #c8a15a 0%, #c8a15a ${currentOccupancy}%, rgba(255,255,255,.24) ${currentOccupancy}%, rgba(255,255,255,.24) 100%)`}} type="range" min="0" max="100" value={currentOccupancy} onChange={e=>setCurrentOccupancy(+e.target.value)}/></label><label>Tarif actuel par nuit (€)<input type="number" min="0" value={currentNightly} onChange={e=>setCurrentNightly(+e.target.value)}/></label></div>
-   <p className="form-hint">Le scénario combine occupation optimisée et tarification dynamique, plafonnée à +20 % par nuit en moyenne.</p>
-   </section>
-   <section className="simulator-form-section simulator-property-section">
-   <p className="eyebrow simulator-subhead"><span>02</span> Votre propriété</p>
-   <div className="field-row">
-    <label>Localisation<input type="text" value={i.location} placeholder="Ville ou commune" autoComplete="address-level2" onChange={e=>set("location",e.target.value)}/></label>
-    <label>Type de bien<select value={i.type} onChange={e=>set("type",e.target.value)}>{["Appartement","Attique","Villa","Maison indépendante"].map(x=><option key={x}>{x}</option>)}</select></label>
-   </div>
-   <div className="field-row simulator-compact-grid"><label>Chambres<input type="number" min="1" max="10" value={i.bedrooms} onChange={e=>set("bedrooms",+e.target.value)}/></label><label>Capacité<input type="number" min="1" max="20" value={i.guests} onChange={e=>set("guests",+e.target.value)}/></label></div>
-   <div className="field-row simulator-compact-grid"><label>Surface en m²<input type="number" min="25" max="1000" value={i.area} onChange={e=>set("area",+e.target.value)}/></label><label>Finition<select value={i.finish} onChange={e=>set("finish",e.target.value)}>{["Essentiel","Soigné","Premium","Luxe"].map(x=><option key={x}>{x}</option>)}</select></label></div>
-   <label>Disponibilité annuelle <output>{i.days} jours</output><input className="aurevia-range" style={{background:`linear-gradient(to right, #c8a15a 0%, #c8a15a ${((i.days-60)/305)*100}%, rgba(255,255,255,.24) ${((i.days-60)/305)*100}%, rgba(255,255,255,.24) 100%)`}} type="range" min="60" max="365" value={i.days} onChange={e=>set("days",+e.target.value)}/></label>
-   <div className="field-row simulator-amenities">{([["sea","Vue mer"],["pool","Piscine / jacuzzi"],["terrace","Terrasse"],["parking","Parking"]] as const).map(([k,l])=><label key={k}><input type="checkbox" checked={i[k]} onChange={e=>set(k,e.target.checked)}/><span>{l}</span></label>)}</div>
-   </section>
-  </form>
-  <motion.aside className="result-panel" key={projected.annual} initial={{opacity:.5,y:10}} animate={{opacity:1,y:0}}>
-   <p className="eyebrow dark">Potentiel d’amélioration</p>
-   <small>Progression annuelle estimée</small><strong>+ {euro(projected.gain)}</strong>
-   <p className="range">× {projected.multiplier.toFixed(2).replace(".",",")} de chiffre d’affaires potentiel</p>
-   <div className="result-grid">
-    <div><small>Revenu actuel estimé</small>{euro(projected.currentAnnual)}</div>
-    <div><small>Revenu optimisé estimé</small>{euro(projected.annual)}</div>
-    <div><small>Tarif actuel / tarif moyen par nuit (tarification dynamique)</small>{euro(currentNightly)} → {euro(projected.nightly)}</div>
-    <div><small>Occupation actuelle / cible</small>{currentOccupancy}% → {projected.occupancy}%</div>
-    <div><small>Nuits supplémentaires</small>+ {projected.additionalNights}</div>
-    <div><small>Hausse tarifaire maximale</small>+20 % / nuit en moyenne</div>
-   </div>
-   <div className="result-explanation">
-    <p className="eyebrow dark">Pourquoi cet écart&nbsp;?</p>
-    <p>Le potentiel ne vient pas d’une hausse unique appliquée au hasard. Il additionne deux leviers, uniquement sur les <b>{i.days} jours</b> pendant lesquels votre bien est disponible.</p>
-    <div><span><b>01</b><small>Meilleure occupation</small></span><p><b>+ {projected.additionalNights} nuits</b>, soit environ <b>+ {euro(projected.occupancyContribution)}</b> au tarif actuel.</p></div>
-    <div><span><b>02</b><small>Tarification dynamique</small></span><p>Un tarif moyen passant de <b>{euro(currentNightly)}</b> à <b>{euro(projected.nightly)}</b>, soit environ <b>+ {euro(projected.pricingContribution)}</b> sur les nuits projetées.</p></div>
-   </div>
-   <p className="demo-note">Le potentiel représente une amélioration supposée par rapport aux données actuelles renseignées. Il ne constitue pas une garantie et doit être confirmé par une analyse du bien.</p>
-   <Link className="button" href="/valutazione">Recevoir une évaluation personnalisée</Link>
-  </motion.aside>
- </div>;
+const euro = (value: number) => new Intl.NumberFormat("fr-FR", { style: "currency", currency: "EUR", maximumFractionDigits: 0 }).format(value);
+const clamp = (value: number, min: number, max: number) => Math.min(max, Math.max(min, value));
+
+export function RevenueSimulator() {
+  const [i, setI] = useState(initial);
+  const [currentOccupancy, setCurrentOccupancy] = useState(60);
+  const [currentNightly, setCurrentNightly] = useState(82);
+  const projected = useMemo(() => {
+    const nightlyNow = clamp(currentNightly || 20, 20, 200);
+    const currentBookedNights = Math.round(i.days * (currentOccupancy / 100));
+    const currentAnnual = Math.round(nightlyNow * currentBookedNights);
+    const occupancyLift = 8 + (i.transit ? 1 : 0) + (i.outdoor ? 1 : 0) + (["Soigné", "Très soigné"].includes(i.finish) ? 1 : 0);
+    const occupancy = Math.min(92, currentOccupancy + occupancyLift);
+    const bookedNights = Math.round(i.days * (occupancy / 100));
+    const priceLiftPercent = 6 + (i.outdoor ? 1 : 0) + (i.finish === "Très soigné" ? 1 : 0);
+    const nightly = Math.round(nightlyNow * (1 + priceLiftPercent / 100));
+    const annual = Math.round(nightly * bookedNights);
+    const additionalNights = Math.max(0, bookedNights - currentBookedNights);
+    const occupancyContribution = Math.round(additionalNights * nightlyNow);
+    const pricingContribution = Math.round(Math.max(0, nightly - nightlyNow) * bookedNights);
+    const gain = Math.max(0, annual - currentAnnual);
+    return {
+      nightlyNow,
+      currentAnnual,
+      occupancy,
+      nightly,
+      bookedNights,
+      additionalNights,
+      occupancyContribution,
+      pricingContribution,
+      occupancyLift,
+      priceLiftPercent,
+      annual,
+      low: Math.round(annual * .9 / 100) * 100,
+      high: Math.round(annual * 1.1 / 100) * 100,
+      gain,
+    };
+  }, [currentNightly, currentOccupancy, i.days, i.finish, i.outdoor, i.transit]);
+  const set = (key: keyof SimulatorInput, value: string | number | boolean) => setI((current) => ({ ...current, [key]: value }));
+
+  return <div className="simulator-layout simulator-classic">
+    <form className="form-card simulator-form" onSubmit={(event) => event.preventDefault()}>
+      <section className="simulator-form-section simulator-current-section">
+        <p className="eyebrow"><span>01</span> Votre situation aujourd’hui</p>
+        <div className="field-row">
+          <label>Taux moyen de réservation <output>{currentOccupancy}%</output><input className="velyo-range" style={{ background: `linear-gradient(to right, #65A9F8 0%, #65A9F8 ${currentOccupancy}%, rgba(255,255,255,.24) ${currentOccupancy}%, rgba(255,255,255,.24) 100%)` }} type="range" min="25" max="80" value={currentOccupancy} onChange={(event) => setCurrentOccupancy(+event.target.value)} /></label>
+          <label>Prix moyen facturé par nuit <span className="simulator-price-field"><input type="number" min="20" max="200" step="1" value={currentNightly} onChange={(event) => setCurrentNightly(+event.target.value)} onBlur={() => setCurrentNightly((value) => clamp(value || 20, 20, 200))} /><small>€ / nuit</small></span></label>
+        </div>
+        <p className="form-hint">Le scénario part de vos chiffres, ajoute <b>au moins 8 points de réservation</b> et fait légèrement évoluer le prix moyen selon le logement.</p>
+      </section>
+
+      <section className="simulator-form-section simulator-property-section">
+        <p className="eyebrow simulator-subhead"><span>02</span> Votre bien</p>
+        <div className="field-row">
+          <label>Quartier<select value={i.location} onChange={(event) => set("location", event.target.value)}>{["Centro storico", "Castelletto", "Albaro", "Foce", "Marassi", "Sampierdarena", "Nervi", "Boccadasse", "Autre quartier de Genova"].map((value) => <option key={value}>{value}</option>)}</select></label>
+          <label>Configuration<select value={i.type} onChange={(event) => set("type", event.target.value)}>{["Studio", "Deux-pièces", "Trois-pièces", "Quatre-pièces et plus", "Petit logement indépendant"].map((value) => <option key={value}>{value}</option>)}</select></label>
+        </div>
+        <div className="field-row simulator-compact-grid">
+          <label>Chambres<input type="number" min="0" max="5" value={i.bedrooms} onChange={(event) => set("bedrooms", +event.target.value)} /></label>
+          <label>Voyageurs accueillis<input type="number" min="1" max="8" value={i.guests} onChange={(event) => set("guests", +event.target.value)} /></label>
+        </div>
+        <div className="field-row simulator-compact-grid">
+          <label>Surface en m²<input type="number" min="20" max="180" value={i.area} onChange={(event) => set("area", +event.target.value)} /></label>
+          <label>Présentation du logement<select value={i.finish} onChange={(event) => set("finish", event.target.value)}>{["À rafraîchir", "Simple et fonctionnel", "Soigné", "Très soigné"].map((value) => <option key={value}>{value}</option>)}</select></label>
+        </div>
+        <label>Jours disponibles à la location <output>{i.days} jours</output><input className="velyo-range" style={{ background: `linear-gradient(to right, #65A9F8 0%, #65A9F8 ${((i.days - 90) / 275) * 100}%, rgba(255,255,255,.24) ${((i.days - 90) / 275) * 100}%, rgba(255,255,255,.24) 100%)` }} type="range" min="90" max="365" value={i.days} onChange={(event) => set("days", +event.target.value)} /></label>
+        <div className="field-row simulator-amenities">{([
+          ["transit", "Transports proches"],
+          ["elevator", "Ascenseur"],
+          ["outdoor", "Balcon ou terrasse"],
+          ["parking", "Parking"],
+        ] as const).map(([key, label]) => <label key={key}><input type="checkbox" checked={i[key]} onChange={(event) => set(key, event.target.checked)} /><span>{label}</span></label>)}</div>
+      </section>
+    </form>
+
+    <motion.aside className="result-panel" key={`${projected.annual}-${projected.occupancy}`} initial={{ opacity: .55, y: 8 }} animate={{ opacity: 1, y: 0 }}>
+      <p className="eyebrow dark">Ordre de grandeur</p>
+      <small>Revenu locatif brut projeté</small>
+      <strong>≈ {euro(projected.annual)} <i>/ an</i></strong>
+      <p className="range">Fourchette prudente&nbsp;: {euro(projected.low)} à {euro(projected.high)}</p>
+      <div className="result-grid">
+        <div className="result-metric result-metric-current"><small>Situation actuelle</small><span>{euro(projected.currentAnnual)}</span><i>revenu annuel estimé</i></div>
+        <div className="result-metric result-metric-projected"><small>Projection centrale</small><span>{euro(projected.annual)}</span><i>revenu annuel indicatif</i></div>
+        <div className="result-metric"><small>Prix moyen par nuit</small><span>{euro(projected.nightlyNow)} → {euro(projected.nightly)}</span></div>
+        <div className="result-metric"><small>Occupation moyenne</small><span>{currentOccupancy}% → {projected.occupancy}% <em>+{projected.occupancyLift} pts</em></span></div>
+        <div className="result-metric"><small>Nuits réservées</small><span>{projected.bookedNights} <i>sur {i.days}</i></span></div>
+        <div className="result-metric result-metric-gain"><small>Progression annuelle</small><span>+ {euro(projected.gain)}</span></div>
+      </div>
+      <div className="result-explanation">
+        <p className="eyebrow dark">Comment lire cette estimation&nbsp;?</p>
+        <p>Le calcul reste volontairement mesuré. Il combine uniquement deux leviers sur les <b>{i.days} jours</b> où le logement est réellement disponible.</p>
+        <div><span><b>01</b><small>Calendrier mieux suivi</small></span><p><b>+ {projected.additionalNights} nuits</b> dans le scénario central, soit environ <b>+ {euro(projected.occupancyContribution)}</b> au prix actuel.</p></div>
+        <div><span><b>02</b><small>Prix adapté aux périodes</small></span><p>Un prix moyen passant de <b>{euro(projected.nightlyNow)}</b> à <b>{euro(projected.nightly)}</b>, soit une hausse mesurée de <b>{projected.priceLiftPercent} %</b>.</p></div>
+      </div>
+      <p className="demo-note">Estimation brute et non contractuelle, avant commission, ménage, charges, fiscalité et éventuels travaux. La saison, le quartier précis et la qualité réelle du logement peuvent modifier le résultat.</p>
+      <Link className="button" href="/valutazione">Parler de mon bien</Link>
+    </motion.aside>
+  </div>;
 }

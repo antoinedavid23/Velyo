@@ -1,8 +1,9 @@
 "use client";
 
 import { useEffect, useMemo, useState } from "react";
+import Link from "next/link";
+import { ArrowRight } from "lucide-react";
 import type { Property } from "@/data/content";
-import { properties as examples } from "@/data/content";
 import { PropertyCard } from "@/components/Cards";
 
 export function PropertyGrid() {
@@ -18,12 +19,16 @@ export function PropertyGrid() {
       .finally(() => setLoaded(true));
   }, []);
 
-  const collection = managed.length > 0 ? managed : examples;
-  const availableLocations = useMemo(() => ["Toutes", ...Array.from(new Set(collection.map((item) => item.location)))], [collection]);
-  const visible = location === "Toutes" ? collection : collection.filter((property) => property.location === location);
+  const availableLocations = useMemo(() => ["Toutes", ...Array.from(new Set(managed.map((item) => item.location)))], [managed]);
+  const visible = location === "Toutes" ? managed : managed.filter((property) => property.location === location);
+
+  if (!loaded) return <div className="property-empty-loading" role="status">Vérification des biens disponibles…</div>;
+
+  if (managed.length === 0) return <div className="property-empty" role="status">
+    <div className="property-empty-copy"><p className="eyebrow dark">Biens publiés</p><h2>Aucun bien présenté pour le moment.</h2><p>Cette page restera vide tant qu’un propriétaire n’aura pas autorisé la publication de son bien.</p><Link className="text-link" href="/valutazione">Confier votre bien à Velyo <ArrowRight size={16} /></Link></div>
+  </div>;
 
   return <>
-    {managed.length === 0 && loaded && <p className="demo-note">Collection de démonstration : les fiches doivent être remplacées par des biens réels et autorisés avant publication.</p>}
     <div className="property-filters" aria-label="Filtrer les propriétés par localisation">{availableLocations.map((item) => <button key={item} type="button" className={location === item ? "active" : ""} aria-pressed={location === item} onClick={() => setLocation(item)}>{item}</button>)}</div>
     <div className="card-grid three" aria-live="polite">{visible.map((property) => <PropertyCard key={property.slug} property={property} />)}</div>
   </>;

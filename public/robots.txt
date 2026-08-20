@@ -5,5 +5,5 @@ Disallow: /connexion
 Disallow: /api/
 Disallow: /grazie
 
-Sitemap: https://aurevia-genova.com/sitemap.xml
-Host: https://aurevia-genova.com
+Sitemap: https://velyo.pm/sitemap.xml
+Host: https://velyo.pm

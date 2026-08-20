@@ -121,10 +121,10 @@ async function translateText(text, language) {
 
 async function translateBatch(batch, language) {
   const tagged = batch
-    .map((value, index) => `[AUREVIA_${String(index).padStart(4, "0")}] ${value}`)
+    .map((value, index) => `[VELYO_${String(index).padStart(4, "0")}] ${value}`)
     .join("\n");
   const translated = await translateText(tagged, language);
-  const matches = [...translated.matchAll(/\[AUREVIA_(\d{4})\]\s*/g)];
+  const matches = [...translated.matchAll(/\[VELYO_(\d{4})\]\s*/g)];
   if (matches.length === batch.length) {
     return matches.map((match, index) => {
       const start = match.index + match[0].length;

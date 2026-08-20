@@ -78,7 +78,7 @@ function ensureSchema(db: RuntimeD1) {
 
 export async function getDb() {
   const cloudflareWorkersModule = "cloudflare:workers";
-  const { env } = await import(/* webpackIgnore: true */ cloudflareWorkersModule) as {
+  const { env } = await import(/* @vite-ignore */ cloudflareWorkersModule) as {
     env: { DB?: RuntimeD1 };
   };
   if (!env.DB) {

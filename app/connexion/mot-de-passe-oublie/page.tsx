@@ -2,7 +2,7 @@ import Link from "next/link";
 import { Mail } from "lucide-react";
 
 export default function Page() {
-  const email = process.env.ADMIN_RECOVERY_EMAIL || "contatto@aurevia-genova.com";
+  const email = process.env.ADMIN_RECOVERY_EMAIL || "contact@velyo.pm";
   return (
     <main className="admin-login-page">
       <section className="admin-login-form admin-recovery">
@@ -15,7 +15,7 @@ export default function Page() {
         </p>
         <a
           className="button"
-          href={`mailto:${email}?subject=Réinitialisation du compte administrateur AUREVIA`}
+          href={`mailto:${email}?subject=Réinitialisation du compte administrateur VELYO`}
         >
           Demander la réinitialisation
         </a>

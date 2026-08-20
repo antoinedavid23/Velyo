@@ -9,7 +9,7 @@ export async function GET() {
       headers: { "cache-control": "no-store, max-age=0" },
     });
   } catch (error) {
-    console.error("AUREVIA inbox loading failed", error);
+    console.error("VELYO inbox loading failed", error);
     return NextResponse.json({ error: "Boîte de réception indisponible" }, { status: 500 });
   }
 }
@@ -23,7 +23,7 @@ export async function PATCH(request: Request) {
   try {
     return NextResponse.json(await updateLeadStatus(body.id, body.status!));
   } catch (error) {
-    console.error("AUREVIA inbox update failed", error);
+    console.error("VELYO inbox update failed", error);
     return NextResponse.json({ error: "Mise à jour impossible" }, { status: 500 });
   }
 }

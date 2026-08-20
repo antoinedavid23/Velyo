@@ -173,7 +173,7 @@ export function AdminPropertyManager() {
   };
 
   return (
-    <div className="property-manager" id="biens">
+    <div className="property-manager">
       <div className="property-manager-toolbar">
         <div className="property-manager-stats">
           <span><strong>{items.length}</strong> au total</span>
@@ -217,7 +217,7 @@ export function AdminPropertyManager() {
               }} placeholder="Ex. Attico Castelletto" /></label>
               <label>Adresse web<input value={draft.slug} onChange={(e) => update("slug", slugify(e.target.value))} placeholder="attico-castelletto" /></label>
               <label>Type de bien<select value={draft.propertyType} onChange={(e) => update("propertyType", e.target.value)}>
-                {["Appartement", "Attique", "Villa", "Maison indépendante", "Palazzo", "Autre"].map((type) => <option key={type}>{type}</option>)}
+                {["Appartement", "Attique", "Villa", "Logement indépendant", "Palazzo", "Autre"].map((type) => <option key={type}>{type}</option>)}
               </select></label>
               <label>Localisation<input value={draft.location} onChange={(e) => update("location", e.target.value)} placeholder="Gênes — Albaro" /></label>
               <label>Adresse privée <small>Jamais affichée publiquement</small><input value={draft.address} onChange={(e) => update("address", e.target.value)} placeholder="Adresse complète" /></label>

@@ -8,12 +8,14 @@ async function source(path) {
   return readFile(new URL(path, root), "utf8");
 }
 
-test("the runtime locale is intentionally fixed to reviewed French copy", async () => {
+test("Italian is the default public language and English and French remain available", async () => {
   const locale = await source("components/LocaleController.tsx");
-  assert.match(locale, /locale:\s*"fr"/);
+  assert.match(locale, /locale:\s*"it"/);
+  assert.match(locale, /PUBLIC_LOCALES\s*=\s*\["it",\s*"en",\s*"fr"\]/);
+  assert.match(locale, /velyo-locale/);
 });
 
-test("key public files no longer expose the Aurevia brand", async () => {
+test("key public files expose Velyo without leaking the former brand", async () => {
   const files = [
     "app/page.tsx",
     "app/layout.tsx",
@@ -24,8 +26,7 @@ test("key public files no longer expose the Aurevia brand", async () => {
     "app/chi-siamo/page.tsx",
     "app/contatti/page.tsx",
   ];
-  for (const file of files) {
-    const content = await source(file);
-    assert.doesNotMatch(content, /AUREVIA/);
-  }
+  const contents = await Promise.all(files.map(source));
+  for (const content of contents) assert.doesNotMatch(content, /aurevia/i);
+  assert.match(contents.join("\n"), /velyo/i);
 });

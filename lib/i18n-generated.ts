@@ -9,6 +9,69 @@
 type GeneratedLocalized = Record<"it" | "en" | "es" | "ru" | "zh", string>;
 
 export const generatedMessages: Record<string, GeneratedLocalized> = {
+  "0 pour un studio": {
+    "it": "0 per un monolocale",
+    "en": "0 for a studio",
+    "es": "0 para un estudio",
+    "ru": "0 за студию",
+    "zh": "0 表示工作室"
+  },
+  "01 · Découverte": {
+    "it": "01 · Scoperta",
+    "en": "01 · Discovery",
+    "es": "01 · Descubrimiento",
+    "ru": "01 · Открытие",
+    "zh": "01 · 发现"
+  },
+  "01 · Le besoin": {
+    "it": "01 · Il bisogno",
+    "en": "01 · The need",
+    "es": "01 · La necesidad",
+    "ru": "01 · Необходимость",
+    "zh": "01 · 需要"
+  },
+  "02 · La sélection": {
+    "it": "02 · La selezione",
+    "en": "02 · The selection",
+    "es": "02 · La selección",
+    "ru": "02 · Выбор",
+    "zh": "02·选择"
+  },
+  "03 · La vérification": {
+    "it": "03 · Verifica",
+    "en": "03 · Verification",
+    "es": "03 · Verificación",
+    "ru": "03 · Проверка",
+    "zh": "03 · 验证"
+  },
+  "04 · Votre accord": {
+    "it": "04 · Il tuo accordo",
+    "en": "04 · Your agreement",
+    "es": "04 · Tu acuerdo",
+    "ru": "04 · Ваше согласие",
+    "zh": "04 · 您的同意"
+  },
+  "05 · La réservation": {
+    "it": "05 · Prenotazione",
+    "en": "05 · Reservation",
+    "es": "05 · Reserva",
+    "ru": "05 · Бронирование",
+    "zh": "05 · 预订"
+  },
+  "06 · L’organisation": {
+    "it": "06 · L'organizzazione",
+    "en": "06 · The organization",
+    "es": "06 · La organización",
+    "ru": "06 · Организация",
+    "zh": "06 · 组织"
+  },
+  "07 · Le service": {
+    "it": "07 · Il servizio",
+    "en": "07 · The service",
+    "es": "07 · El servicio",
+    "ru": "07 · Сервис",
+    "zh": "07·服务"
+  },
   "5 étoiles": {
     "it": "5 stelle",
     "en": "5 stars",
@@ -16,320 +79,390 @@ export const generatedMessages: Record<string, GeneratedLocalized> = {
     "ru": "5 звезд",
     "zh": "5 星"
   },
-  "À chaque bilan": {
-    "it": "Ad ogni valutazione",
-    "en": "At each assessment",
-    "es": "En cada evaluación",
-    "ru": "При каждой оценке",
-    "zh": "每次评估时"
+  "À distance, tout repose sur vous": {
+    "it": "A distanza, tutto dipende da te",
+    "en": "Remotely, everything depends on you",
+    "es": "A distancia, todo depende de ti",
+    "ru": "На удаленке все зависит от вас",
+    "zh": "远程，一切都取决于你"
   },
-  "À chaque demande": {
-    "it": "Ad ogni richiesta",
-    "en": "At each request",
-    "es": "En cada solicitud",
-    "ru": "Для каждого запроса",
-    "zh": "应每个请求"
+  "À prévoir séparément": {
+    "it": "Da fornire separatamente",
+    "en": "To be provided separately",
+    "es": "Se proporcionará por separado",
+    "ru": "Предоставляется отдельно",
+    "zh": "需单独提供"
   },
-  "À chaque rotation": {
-    "it": "Ad ogni rotazione",
-    "en": "At each rotation",
-    "es": "En cada rotación",
-    "ru": "С каждым вращением",
-    "zh": "每次旋转时"
+  "À propos": {
+    "it": "Informazioni",
+    "en": "About",
+    "es": "Acerca de",
+    "ru": "О себе",
+    "zh": "关于"
   },
-  "À distance, la moindre question peut rester en tête. Votre bien mérite une présence capable de veiller, de vérifier et d’agir sur place.": {
-    "it": "Da lontano, la minima domanda può rimanere in mente. Il Suo immobile merita una presenza capace di monitorare, verificare e intervenire sul posto.",
-    "en": "From a distance, the slightest question can stay in mind. Your property deserves a presence capable of monitoring, verifying and acting on site.",
-    "es": "Desde la distancia, la más mínima pregunta puede quedar en la mente. Su propiedad merece una presencia capaz de monitorear, verificar y actuar in situ.",
-    "ru": "На расстоянии малейший вопрос может остаться в вашей голове. Ваша собственность заслуживает присутствия, способного осуществлять мониторинг, проверку и действия на месте.",
-    "zh": "从远处看，最轻微的问题都可以留在脑海中。您的财产值得拥有能够在现场进行监控、验证和采取行动的人员。"
+  "À propos de Velyo": {
+    "it": "Informazioni su Velyo",
+    "en": "About Velyo",
+    "es": "Acerca de Velyo",
+    "ru": "О Вельо",
+    "zh": "关于 Velyo"
   },
-  "À distance, votre bien ne devrait pas devenir une succession de messages, de relances et d’imprévus à résoudre.": {
-    "it": "Da remoto, il Suo immobile non deve diventare un susseguirsi di messaggi, promemoria ed imprevisti da risolvere.",
-    "en": "Remotely, your property should not become a succession of messages, reminders and unforeseen events to resolve.",
-    "es": "De forma remota, tu propiedad no debe convertirse en una sucesión de mensajes, recordatorios e imprevistos que resolver.",
-    "ru": "На расстоянии ваша собственность не должна превращаться в череду сообщений, напоминаний и непредвиденных событий, которые необходимо разрешить.",
-    "zh": "从远处看，您的财产不应成为一系列需要解决的消息、提醒和不可预见的事件。"
+  "À rafraîchir": {
+    "it": "Per aggiornare",
+    "en": "To refresh",
+    "es": "Para actualizar",
+    "ru": "Чтобы обновить",
+    "zh": "刷新"
   },
-  "À Gênes, savoir qui appeler change tout.": {
-    "it": "A Genova sapere chi chiamare cambia tutto.",
-    "en": "In Genoa, knowing who to call changes everything.",
-    "es": "En Génova, saber a quién llamar lo cambia todo.",
-    "ru": "В Генуе знание того, кому позвонить, меняет все.",
-    "zh": "在热那亚，知道该给谁打电话会改变一切。"
+  "À réserver avec Velyo": {
+    "it": "Da prenotare con Velyo",
+    "en": "To be reserved with Velyo",
+    "es": "Para reservar con Velyo",
+    "ru": "Зарезервировано у Velyo",
+    "zh": "通过 Velyo 预订"
   },
-  "À la clôture": {
-    "it": "Alla chiusura",
-    "en": "At closing",
-    "es": "Al cierre",
-    "ru": "В конце",
-    "zh": "结束时"
+  "Accès au bien organisé": {
+    "it": "Accesso alla proprietà organizzata",
+    "en": "Access to the organized property",
+    "es": "Acceso a la propiedad organizada",
+    "ru": "Доступ к организованному имуществу",
+    "zh": "访问组织的财产"
   },
-  "À la fin d’un séjour, un accès n’est pas restitué. Le protocole convenu est déclenché et les actions nécessaires sont documentées.": {
-    "it": "Al termine del soggiorno, l'accesso non viene restituito. Viene attivato il protocollo concordato e vengono documentate le azioni necessarie.",
-    "en": "At the end of a stay, access is not returned. The agreed protocol is triggered and the necessary actions are documented.",
-    "es": "Al finalizar una estancia no se devuelve el acceso. Se activa el protocolo acordado y se documentan las acciones necesarias.",
-    "ru": "По окончании пребывания доступ не возвращается. Согласованный протокол запускается и необходимые действия документируются.",
-    "zh": "停留结束时，不会返回访问权限。触发商定的协议并记录必要的操作。"
+  "Accès et clés": {
+    "it": "Accesso e chiavi",
+    "en": "Access and keys",
+    "es": "Accesos y claves",
+    "ru": "Доступ и ключи",
+    "zh": "访问权限和密钥"
   },
-  "À votre arrivée, tout est prêt, suivi et fidèle à vos attentes. Vous profitez de votre bien au lieu de reprendre sa gestion.": {
-    "it": "Al Suo arrivo tutto è pronto, seguito e fedele alle Sue aspettative. Beneficia del Suo immobile invece di assumerne la gestione.",
-    "en": "When you arrive, everything is ready, followed and true to your expectations. You benefit from your property instead of taking over its management.",
-    "es": "Cuando llegas, todo está listo, seguido y fiel a tus expectativas. Usted se beneficia de su propiedad en lugar de hacerse cargo de su gestión.",
-    "ru": "Когда вы приедете, все будет готово, соблюдается и соответствует вашим ожиданиям. Вы получаете выгоду от своей собственности вместо того, чтобы брать на себя управление ею.",
-    "zh": "当您到达时，一切都已准备就绪，一切按您的期望进行。您从您的财产中受益，而不是接管其管理。"
+  "Accès et clés expliqués": {
+    "it": "Accesso e chiavi spiegate",
+    "en": "Access and keys explained",
+    "es": "Accesos y claves explicados",
+    "ru": "Объяснение доступа и ключей",
+    "zh": "访问权限和密钥说明"
   },
-  "Accès identifiés": {
-    "it": "Accesso identificato",
-    "en": "Identified access",
-    "es": "Acceso identificado",
-    "ru": "Идентифицированный доступ",
-    "zh": "已识别的访问权限"
+  "Accès et clés organisés": {
+    "it": "Accessi e chiavi organizzati",
+    "en": "Organized access and keys",
+    "es": "Accesos organizados y claves",
+    "ru": "Организованный доступ и ключи",
+    "zh": "组织访问和密钥"
   },
-  "Accès organisé": {
+  "Accès et consignes vérifiés": {
+    "it": "Accesso e istruzioni verificati",
+    "en": "Access and instructions verified",
+    "es": "Acceso e instrucciones verificadas",
+    "ru": "Доступ и инструкции подтверждены",
+    "zh": "访问权限和说明已验证"
+  },
+  "Accès et équipements": {
+    "it": "Accesso e attrezzature",
+    "en": "Access and equipment",
+    "es": "Acceso y equipamiento",
+    "ru": "Доступ и оборудование",
+    "zh": "访问和设备"
+  },
+  "Accès et équipements vérifiés": {
+    "it": "Accesso e attrezzature controllati",
+    "en": "Access and equipment checked",
+    "es": "Acceso y equipamiento comprobado",
+    "ru": "Доступ и оборудование проверены",
+    "zh": "检查访问和设备"
+  },
+  "Accès organisés": {
     "it": "Accesso organizzato",
     "en": "Organized access",
     "es": "Acceso organizado",
     "ru": "Организованный доступ",
     "zh": "组织访问"
   },
-  "Accès testés": {
-    "it": "Accesso testato",
-    "en": "Access tested",
-    "es": "Acceso probado",
-    "ru": "Доступ проверен",
-    "zh": "访问已测试"
+  "Accès privé à l’espace Velyo.": {
+    "it": "Accesso privato allo spazio Velyo.",
+    "en": "Private access to the Velyo space.",
+    "es": "Acceso privado al espacio Velyo.",
+    "ru": "Частный доступ к пространству Velyo.",
+    "zh": "Velyo 空间的私人访问权限。"
   },
-  "Accès, horaires et réalisation sont coordonnés pour limiter l’impact sur le bien et les séjours.": {
-    "it": "Accessi, orari e lavori sono coordinati per limitare l'impatto sull'immobile e sui soggiorni.",
-    "en": "Access, schedules and construction are coordinated to limit the impact on the property and stays.",
-    "es": "Se coordinan accesos, horarios y obras para limitar la afectación al inmueble y las estancias.",
-    "ru": "Доступ, графики и реализация скоординированы, чтобы ограничить воздействие на объект и проживание.",
-    "zh": "协调通行、时间表和施工，以限制对住宿和住宿的影响。"
+  "Accès suivis": {
+    "it": "Accesso tracciato",
+    "en": "Tracked access",
+    "es": "Acceso rastreado",
+    "ru": "Отслеживаемый доступ",
+    "zh": "跟踪访问"
   },
-  "Accompagnement dédié": {
-    "it": "Supporto dedicato",
-    "en": "Dedicated support",
-    "es": "Soporte dedicado",
-    "ru": "Специализированная поддержка",
-    "zh": "专门支持"
+  "Accès, clés et informations pratiques préparés avant l’installation des voyageurs.": {
+    "it": "Accesso, chiavi e informazioni pratiche preparate prima dell'arrivo dei viaggiatori.",
+    "en": "Access, keys and practical information prepared before travelers settle in.",
+    "es": "Accesos, claves e información práctica preparados antes de que los viajeros se instalen.",
+    "ru": "Доступ, ключи и практическая информация подготовлены до заселения путешественников.",
+    "zh": "旅客入住前准备好通道、钥匙和实用信息。"
   },
-  "Accord documenté": {
-    "it": "Accordo documentato",
-    "en": "Documented agreement",
-    "es": "Acuerdo documentado",
-    "ru": "Документированное соглашение",
-    "zh": "书面协议"
+  "Accès, clés et informations pratiques sont préparés avant l’installation des voyageurs.": {
+    "it": "Accesso, chiavi e informazioni pratiche vengono preparate prima che i viaggiatori si sistemino.",
+    "en": "Access, keys and practical information are prepared before travelers settle in.",
+    "es": "El acceso, las claves y la información práctica se preparan antes de que los viajeros se instalen.",
+    "ru": "Доступ, ключи и практическая информация подготавливаются до того, как путешественники заселятся.",
+    "zh": "出入通道、钥匙和实用信息均在旅客入住前准备好。"
   },
-  "Accueil AUREVIA": {
-    "it": "Casa AUREVIA",
-    "en": "Home AUREVIA",
-    "es": "Inicio AUREVIA",
-    "ru": "Главная АУРЕВИЯ",
-    "zh": "首页 AUREVIA"
+  "Accès, équipements et éventuels écarts sont contrôlés entre deux séjours.": {
+    "it": "L'accesso, le attrezzature e le eventuali discrepanze vengono verificate tra due soggiorni.",
+    "en": "Access, equipment and possible discrepancies are checked between two stays.",
+    "es": "Se comprueban accesos, equipamientos y posibles discrepancias entre dos estancias.",
+    "ru": "Доступ, оборудование и возможные несоответствия проверяются между двумя пребываниями.",
+    "zh": "我们会在两次入住之间检查通道、设备和可能存在的差异。"
   },
-  "Accueil personnalisé": {
-    "it": "Benvenuto personalizzato",
-    "en": "Personalized welcome",
-    "es": "Bienvenida personalizada",
-    "ru": "Персонализированный прием",
-    "zh": "个性化欢迎"
+  "Accueil de voyageurs dans un bien à Genova": {
+    "it": "Accogliere i viaggiatori in una struttura a Genova",
+    "en": "Welcoming travelers in a property in Genova",
+    "es": "Recibiendo a los viajeros en una propiedad en Génova",
+    "ru": "Встреча путешественников в отеле в Генуе",
+    "zh": "在热那亚的酒店欢迎旅客"
   },
-  "Accueil sur place ou arrivée autonome accompagnée": {
-    "it": "Accoglienza in loco o arrivo autonomo accompagnato",
-    "en": "Reception on site or accompanied autonomous arrival",
-    "es": "Recepción in situ o llegada autónoma acompañada",
-    "ru": "Прием на месте или сопровождаемый автономный приезд",
-    "zh": "现场接待或陪同自主抵达"
+  "Accueil romantique": {
+    "it": "Benvenuto romantico",
+    "en": "Romantic welcome",
+    "es": "Bienvenida romántica",
+    "ru": "Романтический прием",
+    "zh": "浪漫的欢迎"
   },
-  "Accueil voyageurs": {
-    "it": "Accoglienza dei viaggiatori",
-    "en": "Reception of travelers",
-    "es": "Recepción de viajeros",
-    "ru": "Приветствуя путешественников",
-    "zh": "接待旅客"
+  "Accueil sur place ou à distance": {
+    "it": "Ricezione in loco o remota",
+    "en": "On-site or remote reception",
+    "es": "Recepción presencial o remota",
+    "ru": "Прием на месте или удаленно",
+    "zh": "现场或远程接收"
   },
-  "Actions tracées": {
-    "it": "Azioni tracciate",
-    "en": "Traced actions",
-    "es": "Acciones rastreadas",
-    "ru": "Отслеживаемые действия",
-    "zh": "追踪的操作"
+  "Accueil Velyo Property Manager": {
+    "it": "Gestore della proprietà della casa Velyo",
+    "en": "Home Velyo Property Manager",
+    "es": "Inicio Velyo Administrador de propiedades",
+    "ru": "Домой Управляющий недвижимостью Velyo",
+    "zh": "Home Velyo 物业经理"
   },
-  "Activité de la période": {
-    "it": "Attività del periodo",
-    "en": "Activity of the period",
-    "es": "Actividad del periodo",
-    "ru": "Активность периода",
-    "zh": "期间的活动"
+  "Achats réalisés localement": {
+    "it": "Acquisti effettuati localmente",
+    "en": "Purchases made locally",
+    "es": "Compras realizadas localmente",
+    "ru": "Покупки, сделанные на месте",
+    "zh": "本地购买"
   },
-  "Agir avant que le détail ne devienne un problème.": {
-    "it": "Agisci prima che i dettagli diventino un problema.",
-    "en": "Act before the detail becomes a problem.",
-    "es": "Actúa antes de que el detalle se convierta en un problema.",
-    "ru": "Действуйте до того, как детали станут проблемой.",
-    "zh": "在细节成为问题之前采取行动。"
+  "Achats, billets et réservations payés directement par le voyageur": {
+    "it": "Acquisti, biglietti e prenotazioni pagati direttamente dal viaggiatore",
+    "en": "Purchases, tickets and reservations paid directly by the traveler",
+    "es": "Compras, billetes y reservas pagadas directamente por el viajero",
+    "ru": "Покупки, билеты и бронирование, оплаченные непосредственно путешественником",
+    "zh": "由旅客直接支付的购买、门票和预订"
   },
-  "Ajustements selon la demande réelle": {
-    "it": "Adeguamenti in base alla domanda effettiva",
-    "en": "Adjustments according to actual demand",
-    "es": "Ajustes según demanda real",
-    "ru": "Корректировки на основе фактического спроса",
-    "zh": "根据实际需求调整"
+  "Actions d’amélioration proposées": {
+    "it": "Azioni di miglioramento proposte",
+    "en": "Proposed improvement actions",
+    "es": "Acciones de mejora propuestas",
+    "ru": "Предлагаемые действия по улучшению",
+    "zh": "提议的改进措施"
   },
-  "Ajuster la demande": {
-    "it": "Regola la domanda",
-    "en": "Adjust demand",
-    "es": "Ajustar demanda",
-    "ru": "Корректировка спроса",
-    "zh": "调整需求"
+  "Activité relue": {
+    "it": "Attività riletta",
+    "en": "Activity reread",
+    "es": "Actividad releída",
+    "ru": "Перечитывание активности",
+    "zh": "活动重读"
   },
-  "Amélioration continue de la présentation": {
-    "it": "Miglioramento continuo della presentazione",
-    "en": "Continuous improvement of the presentation",
-    "es": "Mejora continua de la presentación",
-    "ru": "Постоянное улучшение презентации",
-    "zh": "持续改进演示文稿"
+  "Activité résumée clairement": {
+    "it": "Attività chiaramente riassunta",
+    "en": "Activity clearly summarized",
+    "es": "Actividad claramente resumida",
+    "ru": "Четкое описание действий",
+    "zh": "活动总结清晰"
   },
-  "Analyse confidentielle du marché local": {
-    "it": "Analisi riservata del mercato locale",
-    "en": "Confidential analysis of the local market",
-    "es": "Análisis confidencial del mercado local",
-    "ru": "Конфиденциальный анализ местного рынка",
-    "zh": "本地市场机密分析"
+  "Adresses adaptées au séjour": {
+    "it": "Indirizzi adatti al tuo soggiorno",
+    "en": "Addresses suitable for your stay",
+    "es": "Direcciones adecuadas para su estancia",
+    "ru": "Адреса, подходящие для вашего проживания",
+    "zh": "适合您住宿的地址"
   },
-  "Après chaque opération": {
-    "it": "Dopo ogni operazione",
-    "en": "After each operation",
-    "es": "Después de cada operación",
-    "ru": "После каждой операции",
-    "zh": "每次操作后"
+  "Aide avec les équipements": {
+    "it": "Aiuto con l'attrezzatura",
+    "en": "Help with equipment",
+    "es": "Ayuda con el equipo",
+    "ru": "Помощь с оборудованием",
+    "zh": "设备帮助"
   },
-  "Après l’arrivée": {
-    "it": "Dopo l'arrivo",
-    "en": "After arrival",
-    "es": "Después de la llegada",
-    "ru": "После прибытия",
-    "zh": "抵达后"
+  "Aide pendant l’installation": {
+    "it": "Aiuto durante l'installazione",
+    "en": "Help during installation",
+    "es": "Ayuda durante la instalación",
+    "ru": "Помощь при установке",
+    "zh": "安装期间的帮助"
   },
-  "Après préparation": {
-    "it": "Dopo la preparazione",
-    "en": "After preparation",
-    "es": "Después de la preparación",
-    "ru": "После приготовления",
-    "zh": "准备后"
+  "Alternative recherchée": {
+    "it": "Si cerca alternativa",
+    "en": "Alternative sought",
+    "es": "Se busca alternativa",
+    "ru": "Поиск альтернативы",
+    "zh": "寻求替代方案"
   },
-  "Après une rotation, un élément de linge manque et une anomalie est relevée dans une chambre. L’équipe intervient avant l’arrivée suivante.": {
-    "it": "Dopo una rotazione, manca un capo di biancheria e si nota un'anomalia in una stanza. La squadra interviene prima del prossimo arrivo.",
-    "en": "After a rotation, an item of linen is missing and an anomaly is noted in a room. The team intervenes before the next arrival.",
-    "es": "Después de una rotación, falta una prenda de vestir y se detecta una anomalía en una habitación. El equipo interviene antes de la próxima llegada.",
-    "ru": "После ротации отсутствует предмет белья и в комнате отмечается аномалия. Команда вмешивается перед следующим прибытием.",
-    "zh": "轮换后，一件亚麻制品丢失，并且房间内出现异常情况。团队在下次到达之前进行干预。"
+  "Alternative recherchée en cas d’imprévu": {
+    "it": "Alternativa ricercata in caso di imprevisto",
+    "en": "Alternative sought in the event of an unforeseen event",
+    "es": "Se busca alternativa ante un imprevisto",
+    "ru": "Альтернативный вариант на случай непредвиденного события",
+    "zh": "发生不可预见事件时寻求替代方案"
   },
-  "Après validation": {
-    "it": "Dopo la convalida",
-    "en": "After validation",
-    "es": "Después de la validación",
-    "ru": "После проверки",
-    "zh": "验证后"
+  "Ambiance choisie avec le voyageur": {
+    "it": "Atmosfera scelta con il viaggiatore",
+    "en": "Atmosphere chosen with the traveler",
+    "es": "Ambiente elegido con el viajero",
+    "ru": "Атмосфера выбрана вместе с путешественником",
+    "zh": "与旅行者一起选择的氛围"
   },
-  "Après votre accord": {
-    "it": "Dopo il Suo accordo",
-    "en": "After your agreement",
-    "es": "Después de su acuerdo",
-    "ru": "После вашего согласия",
-    "zh": "在您同意后"
+  "Analyse du quartier": {
+    "it": "Analisi del quartiere",
+    "en": "Neighborhood analysis",
+    "es": "Análisis de barrio",
+    "ru": "Анализ соседства",
+    "zh": "邻域分析"
   },
-  "Arbitrages expliqués": {
-    "it": "Spiegazione degli arbitrati",
-    "en": "Arbitrations explained",
-    "es": "Arbitrajes explicados",
-    "ru": "Объяснение арбитража",
-    "zh": "仲裁解释"
+  "Annonce créée ou optimisée": {
+    "it": "Annuncio creato o ottimizzato",
+    "en": "Ad created or optimized",
+    "es": "Anuncio creado u optimizado",
+    "ru": "Объявление создано или оптимизировано",
+    "zh": "创建或优化的广告"
+  },
+  "Annonce structurée": {
+    "it": "Annuncio strutturato",
+    "en": "Structured announcement",
+    "es": "Anuncio estructurado",
+    "ru": "Структурированное объявление",
+    "zh": "结构化公告"
+  },
+  "Anomalies signalées au propriétaire": {
+    "it": "Anomalie segnalate al proprietario",
+    "en": "Anomalies reported to the owner",
+    "es": "Anomalías reportadas al propietario",
+    "ru": "Об аномалиях сообщили владельцу",
+    "zh": "向所有者报告异常情况"
+  },
+  "Appartement lumineux prêt à recevoir des voyageurs": {
+    "it": "Luminoso appartamento pronto a ricevere viaggiatori",
+    "en": "Bright apartment ready to receive travelers",
+    "es": "Luminoso departamento listo para recibir viajeros",
+    "ru": "Светлая квартира готова принять путешественников",
+    "zh": "明亮的公寓已准备好接待旅客"
+  },
+  "Après le départ, le bien est nettoyé, contrôlé et réapprovisionné. Tout écart est traité avant d’accueillir les voyageurs suivants.": {
+    "it": "Dopo la partenza, la proprietà viene pulita, controllata e rifornita. Eventuali discrepanze verranno affrontate prima di accogliere i viaggiatori successivi.",
+    "en": "After departure, the property is cleaned, checked and restocked. Any discrepancies are addressed before welcoming subsequent travelers.",
+    "es": "Después de la salida, la propiedad se limpia, revisa y reabastece. Cualquier discrepancia se soluciona antes de dar la bienvenida a viajeros posteriores.",
+    "ru": "После отъезда проводится уборка, проверка и пополнение запасов. Любые неточности устраняются до приема последующих путешественников.",
+    "zh": "退房后，酒店会进行清洁、检查并补充库存。任何差异都会在欢迎后续旅客之前得到解决。"
+  },
+  "Après validation, Velyo réserve le service et réunit les confirmations utiles au même endroit.": {
+    "it": "Dopo la convalida, Velyo prenota il servizio e raccoglie nello stesso luogo le conferme utili.",
+    "en": "After validation, Velyo reserves the service and collects the useful confirmations in the same place.",
+    "es": "Después de la validación, Velyo reserva el servicio y recoge las confirmaciones útiles en el mismo lugar.",
+    "ru": "После проверки Velyo резервирует услугу и собирает полезные подтверждения в том же месте.",
+    "zh": "验证后，Velyo 保留服务并在同一位置收集有用的确认信息。"
+  },
+  "Arrivée accompagnée": {
+    "it": "Arrivo accompagnato",
+    "en": "Accompanied arrival",
+    "es": "Llegada acompañada",
+    "ru": "Прибытие в сопровождении",
+    "zh": "陪同抵达"
+  },
+  "Arrivée autonome": {
+    "it": "Arrivo autonomo",
+    "en": "Autonomous arrival",
+    "es": "Llegada autónoma",
+    "ru": "Автономное прибытие",
+    "zh": "自主到达"
+  },
+  "Arrivées": {
+    "it": "Arrivi",
+    "en": "Arrivals",
+    "es": "Llegadas",
+    "ru": "Прибытие",
+    "zh": "到达"
+  },
+  "Arrivées coordonnées": {
+    "it": "Arrivi coordinati",
+    "en": "Coordinated arrivals",
+    "es": "Llegadas coordinadas",
+    "ru": "Скоординированные прибытия",
+    "zh": "协调到达"
+  },
+  "Arrivées et départs coordonnés": {
+    "it": "Arrivi e partenze coordinati",
+    "en": "Coordinated arrivals and departures",
+    "es": "Llegadas y salidas coordinadas",
+    "ru": "Скоординированные прибытия и отправления",
+    "zh": "协调到达和出发"
+  },
+  "Arrivées et départs organisés": {
+    "it": "Arrivi e partenze organizzati",
+    "en": "Organized arrivals and departures",
+    "es": "Llegadas y salidas organizadas",
+    "ru": "Организованные приезды и отъезды",
+    "zh": "组织抵达和出发"
+  },
+  "Arrivées et déplacements": {
+    "it": "Arrivi e viaggi",
+    "en": "Arrivals and travel",
+    "es": "Llegadas y viajes",
+    "ru": "Прибытие и путешествие",
+    "zh": "抵达和旅行"
   },
   "Arrivées tardives organisées selon les conditions convenues": {
     "it": "Arrivi tardivi organizzati secondo le condizioni concordate",
     "en": "Late arrivals organized according to agreed conditions",
     "es": "Llegadas tardías organizadas según condiciones acordadas",
-    "ru": "Опоздание организовано в соответствии с согласованными условиями.",
+    "ru": "Опоздание организовано по согласованным условиям.",
     "zh": "根据约定条件组织迟到者"
   },
-  "Assurance et télésurveillance non comprises": {
-    "it": "Assicurazione e monitoraggio remoto non inclusi",
-    "en": "Insurance and remote monitoring not included",
-    "es": "Seguros y seguimiento remoto no incluidos",
-    "ru": "Страховка и удаленный мониторинг не включены.",
-    "zh": "不包括保险和远程监控"
+  "Artisan adapté recherché": {
+    "it": "Cercasi artigiano adattato",
+    "en": "Adapted craftsman wanted",
+    "es": "Se busca artesano adaptado",
+    "ru": "Требуется мастер по адаптации",
+    "zh": "需要适应工匠"
   },
-  "Attentes clarifiées": {
-    "it": "Aspettative chiarite",
-    "en": "Expectations clarified",
-    "es": "Expectativas aclaradas",
-    "ru": "Уточнение ожиданий",
-    "zh": "明确预期"
-  },
-  "Attention portée aux premières heures": {
-    "it": "Attenzione alle prime ore del mattino",
-    "en": "Pay attention to the early hours",
-    "es": "Atentos a la madrugada",
-    "ru": "Будьте осторожны в ранние часы",
-    "zh": "注意凌晨时间"
-  },
-  "Au démarrage": {
-    "it": "All'avvio",
-    "en": "At startup",
-    "es": "Al inicio",
-    "ru": "При запуске",
-    "zh": "启动时"
-  },
-  "Aucun engagement n’est pris sans validation. Une fois l’option choisie, nous confirmons chaque détail.": {
-    "it": "Nessun impegno viene preso senza convalida. Una volta scelta l'opzione, confermiamo ogni dettaglio.",
-    "en": "No commitment is made without validation. Once the option is chosen, we confirm every detail.",
-    "es": "No se realiza ningún compromiso sin validación. Una vez elegida la opción, confirmamos cada detalle.",
-    "ru": "Никакие обязательства не принимаются без подтверждения. После того, как вариант выбран, мы уточняем каждую деталь.",
-    "zh": "未经验证不得做出任何承诺。一旦选择了选项，我们就会确认每一个细节。"
+  "Assistance à la demande": {
+    "it": "Supporto su richiesta",
+    "en": "On-demand support",
+    "es": "Soporte bajo demanda",
+    "ru": "Поддержка по требованию",
+    "zh": "按需支持"
   },
   "Audit du bien et de son positionnement": {
     "it": "Verifica dell'immobile e del suo posizionamento",
     "en": "Audit of the property and its positioning",
     "es": "Auditoría del inmueble y su posicionamiento",
-    "ru": "Аудит объекта недвижимости и его позиционирования",
-    "zh": "对财产及其定位的审计"
+    "ru": "Аудит объекта и его позиционирования",
+    "zh": "财产及其定位的审计"
   },
-  "AUREVIA | Gestione di proprietà a Genova e in Liguria": {
-    "it": "AUREVIA | Amministrazioni immobiliari a Genova e in Liguria",
-    "en": "AUREVIA | Property management in Genova and Liguria",
-    "es": "AUREVIA | Gestión de propiedades en Génova y Liguria",
-    "ru": "АУРЕВИЯ | Управление недвижимостью в Генуе и Лигурии",
-    "zh": "AUREVIA |热那亚和利古里亚的物业管理"
-  },
-  "AUREVIA coordonne la mise en valeur, les voyageurs, les prestataires et les performances depuis un interlocuteur unique.": {
-    "it": "AUREVIA coordina sviluppo, viaggiatori, fornitori di servizi e prestazioni da un unico punto di contatto.",
-    "en": "AUREVIA coordinates development, travelers, service providers and performances from a single point of contact.",
-    "es": "AUREVIA coordina el desarrollo, los viajeros, los proveedores de servicios y las actuaciones desde un único punto de contacto.",
-    "ru": "AUREVIA координирует развитие, путешественников, поставщиков услуг и выступления из единого центра.",
-    "zh": "AUREVIA 通过单一联系人协调开发、旅客、服务提供商和表演。"
-  },
-  "AUREVIA filtre le bruit, porte le quotidien et vous rend la bonne information au bon moment.": {
-    "it": "AUREVIA filtra il rumore, copre la vita di tutti i giorni e Le dà le informazioni giuste al momento giusto.",
-    "en": "AUREVIA filters the noise, covers everyday life and gives you the right information at the right time.",
-    "es": "AUREVIA filtra el ruido, cubre la vida cotidiana y te brinda la información adecuada en el momento adecuado.",
-    "ru": "AUREVIA фильтрует шум, освещает повседневную жизнь и предоставляет вам нужную информацию в нужное время.",
-    "zh": "AUREVIA 过滤噪音，涵盖日常生活并在正确的时间为您提供正确的信息。"
-  },
-  "AUREVIA transmet les informations utiles, suit la réalisation et recueille les retours afin d’améliorer le dispositif.": {
-    "it": "AUREVIA trasmette informazioni utili, monitora l'implementazione e raccoglie feedback al fine di migliorare il sistema.",
-    "en": "AUREVIA transmits useful information, monitors the implementation and collects feedback in order to improve the system.",
-    "es": "AUREVIA transmite información útil, monitoriza la implementación y recoge feedback para mejorar el sistema.",
-    "ru": "AUREVIA передает полезную информацию, контролирует реализацию и собирает отзывы с целью улучшения системы.",
-    "zh": "AUREVIA 传输有用信息、监控实施情况并收集反馈以改进系统。"
+  "Auditer le bien": {
+    "it": "Controlla la proprietà",
+    "en": "Audit the property",
+    "es": "Auditar la propiedad",
+    "ru": "Проведите аудит объекта",
+    "zh": "审计财产"
   },
   "Avant l’arrivée": {
     "it": "Prima dell'arrivo",
     "en": "Before arrival",
     "es": "Antes de la llegada",
-    "ru": "До прибытия",
+    "ru": "До приезда",
     "zh": "抵达前"
+  },
+  "Avant l’arrivée, nous contrôlons le bien, préparons le linge, vérifions les accès et transmettons toutes les informations utiles.": {
+    "it": "Prima dell'arrivo controlliamo l'immobile, prepariamo la biancheria, controlliamo gli accessi e trasmettiamo tutte le informazioni utili.",
+    "en": "Before arrival, we check the property, prepare the laundry, check access and transmit all useful information.",
+    "es": "Antes de la llegada, revisamos la propiedad, preparamos la ropa, verificamos el acceso y transmitimos toda la información útil.",
+    "ru": "Перед приездом мы проверяем объект, готовим белье, проверяем доступ и передаем всю полезную информацию.",
+    "zh": "抵达前，我们会检查住宿、准备衣物、检查通道并传输所有有用信息。"
   },
   "Avant le séjour": {
     "it": "Prima del soggiorno",
@@ -338,159 +471,285 @@ export const generatedMessages: Record<string, GeneratedLocalized> = {
     "ru": "До пребывания",
     "zh": "入住前"
   },
-  "Avant toute mise en location, nous examinons le positionnement, les équipements et le parcours d’arrivée. La présentation est construite pour valoriser les qualités réelles du bien sans créer de promesse artificielle.": {
-    "it": "Prima di ogni noleggio, esaminiamo il posizionamento, l'attrezzatura e il percorso di arrivo. La presentazione è costruita per evidenziare le reali qualità dell'immobile senza creare una promessa artificiale.",
-    "en": "Before any rental, we examine the positioning, the equipment and the arrival route. The presentation is constructed to highlight the real qualities of the property without creating an artificial promise.",
-    "es": "Antes de cualquier alquiler, examinamos el posicionamiento, el equipamiento y la ruta de llegada. La presentación está construida para resaltar las cualidades reales de la propiedad sin crear una promesa artificial.",
-    "ru": "Перед арендой мы проверяем расположение, оборудование и маршрут прибытия. Презентация построена так, чтобы подчеркнуть реальные качества объекта без создания искусственных обещаний.",
-    "zh": "在任何租赁之前，我们都会检查定位、设备和到达路线。该演示的目的是突出该房产的真实品质，而不是制造人为的承诺。"
+  "Avant ou après le séjour": {
+    "it": "Prima o dopo il soggiorno",
+    "en": "Before or after the stay",
+    "es": "Antes o después de la estancia",
+    "ru": "До или после пребывания",
+    "zh": "入住之前或之后"
   },
-  "Bien prêt à recevoir": {
-    "it": "Ben pronto a ricevere",
-    "en": "Well ready to receive",
-    "es": "Bueno listo para recibir",
-    "ru": "Готова принять",
-    "zh": "准备好接收"
+  "Avant ou pendant le séjour": {
+    "it": "Prima o durante il soggiorno",
+    "en": "Before or during the stay",
+    "es": "Antes o durante la estancia",
+    "ru": "До или во время пребывания",
+    "zh": "入住之前或期间"
   },
-  "Bien-être": {
-    "it": "Benessere",
-    "en": "Well-being",
-    "es": "Bienestar",
-    "ru": "Благополучие",
-    "zh": "幸福"
+  "Avis précédents": {
+    "it": "Recensioni precedenti",
+    "en": "Previous reviews",
+    "es": "Revisiones anteriores",
+    "ru": "Предыдущие отзывы",
+    "zh": "之前的评论"
   },
-  "Bilan périodique": {
-    "it": "Revisione periodica",
-    "en": "Periodic review",
-    "es": "Revisión periódica",
-    "ru": "Периодическая проверка",
-    "zh": "定期审核"
+  "Besoin qualifié": {
+    "it": "Esigenza qualificata",
+    "en": "Qualified need",
+    "es": "Necesidad calificada",
+    "ru": "Квалифицированная потребность",
+    "zh": "合格的需求"
   },
-  "Bilan régulier et lisible": {
-    "it": "Bilancio regolare e leggibile",
-    "en": "Regular and readable balance sheet",
-    "es": "Balance regular y legible",
-    "ru": "Обычный и читаемый балансовый отчет",
-    "zh": "常规且可读的资产负债表"
+  "Besoin reformulé": {
+    "it": "Esigenza riformulata",
+    "en": "Reformulated need",
+    "es": "Necesidad reformulada",
+    "ru": "Переформулированная потребность",
+    "zh": "重新表述的需求"
   },
-  "Calendrier centralisé": {
-    "it": "Calendario centralizzato",
-    "en": "Centralized calendar",
-    "es": "Calendario centralizado",
-    "ru": "Централизованный календарь",
-    "zh": "集中式日历"
+  "Bien contrôlé avant l’arrivée": {
+    "it": "Ben controllato prima dell'arrivo",
+    "en": "Well checked before arrival",
+    "es": "Bien revisado antes de la llegada",
+    "ru": "Хорошо проверили перед приездом",
+    "zh": "抵达前仔细检查"
   },
-  "Calendrier, partenaires, accès et procédures sont réunis pour que chaque intervention suive le même niveau d’exigence.": {
-    "it": "Calendario, partner, accessi e procedure sono riuniti in modo che ogni intervento segua lo stesso livello di requisiti.",
-    "en": "Calendar, partners, access and procedures are brought together so that each intervention follows the same level of requirements.",
-    "es": "Calendario, socios, accesos y trámites se reúnen para que cada intervención siga el mismo nivel de requisitos.",
-    "ru": "Календарь, партнеры, доступ и процедуры объединены таким образом, что каждое вмешательство соответствует одному и тому же уровню требований.",
-    "zh": "日历、合作伙伴、访问权限和程序汇集在一起，以便每次干预都遵循相同级别的要求。"
+  "Bien préparé par Velyo à Genova": {
+    "it": "Ben preparato da Velyo a Genova",
+    "en": "Well prepared by Velyo in Genova",
+    "es": "Bien preparado por Velyo en Génova",
+    "ru": "Хорошо подготовился Velyo в Генуе",
+    "zh": "热那亚的 Velyo 已做好充分准备"
   },
-  "Cartographier les accès": {
-    "it": "Accesso alla mappa",
-    "en": "Map access",
-    "es": "Acceso al mapa",
-    "ru": "Доступ к карте",
-    "zh": "地图访问"
+  "Bien Velyo": {
+    "it": "Bravo Velyo",
+    "en": "Good Velyo",
+    "es": "Buen Velyo",
+    "ru": "Доброе Вельо",
+    "zh": "好 Velyo"
   },
-  "Centraliser l’activité": {
-    "it": "Centralizza l'attività",
-    "en": "Centralize the activity",
-    "es": "Centralizar la actividad",
-    "ru": "Централизуйте деятельность",
-    "zh": "集中活动"
+  "Biens confiés à Velyo": {
+    "it": "Proprietà affidata a Velyo",
+    "en": "Property entrusted to Velyo",
+    "es": "Propiedad confiada a Velyo",
+    "ru": "Имущество, доверенное Вельо",
+    "zh": "财产委托给 Velyo"
   },
-  "Chaîne d’alerte": {
-    "it": "Catena di avvisi",
-    "en": "Alert chain",
-    "es": "Cadena de alertas",
-    "ru": "Цепочка оповещений",
-    "zh": "警报链"
+  "Biens gérés par Velyo": {
+    "it": "Proprietà gestite da Velyo",
+    "en": "Properties managed by Velyo",
+    "es": "Propiedades administradas por Velyo",
+    "ru": "Объекты, находящиеся под управлением Velyo",
+    "zh": "由 Velyo 管理的属性"
   },
-  "Chaque ajustement expliqué": {
-    "it": "Spiegazione di ogni regolazione",
-    "en": "Each adjustment explained",
-    "es": "Cada ajuste explicado",
-    "ru": "Объяснение каждой настройки",
-    "zh": "每项调整说明"
+  "Budget et seuils définis": {
+    "it": "Budget e soglie definiti",
+    "en": "Budget and thresholds defined",
+    "es": "Presupuesto y umbrales definidos",
+    "ru": "Определен бюджет и пороговые значения",
+    "zh": "定义的预算和阈值"
   },
-  "Chaque décision expliquée, chaque performance suivie": {
-    "it": "Ogni decisione spiegata, ogni prestazione monitorata",
-    "en": "Every decision explained, every performance monitored",
-    "es": "Cada decisión explicada, cada desempeño monitoreado",
-    "ru": "Каждое решение объяснено, каждое исполнение отслеживается.",
-    "zh": "解释每项决定，监控每项表现"
+  "Budget précisé": {
+    "it": "Budget specificato",
+    "en": "Budget specified",
+    "es": "Presupuesto especificado",
+    "ru": "Бюджет указан",
+    "zh": "指定预算"
   },
-  "Chaque demande est traitée de manière confidentielle et seules les informations nécessaires sont recueillies.": {
-    "it": "Ogni richiesta viene trattata in modo confidenziale e vengono raccolte solo le informazioni necessarie.",
-    "en": "Each request is treated confidentially and only the necessary information is collected.",
-    "es": "Cada solicitud se trata de forma confidencial y solo se recopila la información necesaria.",
-    "ru": "Каждый запрос рассматривается конфиденциально и собирается только необходимая информация.",
-    "zh": "每个请求都会得到保密处理，并且仅收集必要的信息。"
+  "Cadre personnalisé": {
+    "it": "Cornice personalizzata",
+    "en": "Custom frame",
+    "es": "Marco personalizado",
+    "ru": "Пользовательская рамка",
+    "zh": "自定义框架"
   },
-  "Chaque demande privée est organisée avec précision, discrétion et réactivité.": {
-    "it": "Ogni richiesta privata è organizzata con precisione, discrezione e reattività.",
-    "en": "Each private request is organized with precision, discretion and responsiveness.",
-    "es": "Cada solicitud privada se organiza con precisión, discreción y capacidad de respuesta.",
-    "ru": "Каждый частный запрос организуется с точностью, осмотрительностью и оперативностью.",
-    "zh": "每个私人请求都经过精确、谨慎和响应性的组织。"
+  "Cadrer le service": {
+    "it": "Inquadramento del servizio",
+    "en": "Framing the service",
+    "es": "Enmarcando el servicio",
+    "ru": "Создание сервиса",
+    "zh": "构建服务"
   },
-  "Chaque pièce, équipement et attention particulière est intégré à une fiche de préparation propre au bien.": {
-    "it": "Ogni parte, dotazione e attenzione particolare è integrata in una scheda di preparazione specifica per l'immobile.",
-    "en": "Each part, equipment and special attention is integrated into a preparation sheet specific to the property.",
-    "es": "Cada pieza, equipamiento y atención especial se integra en una ficha de preparación específica del inmueble.",
-    "ru": "Каждая деталь, оборудование и особое внимание включены в лист подготовки, соответствующий конкретному объекту.",
-    "zh": "每个部件、设备和特别注意事项都集成到针对该房产的准备表中。"
+  "Calendrier configuré": {
+    "it": "Calendario configurato",
+    "en": "Configured calendar",
+    "es": "Calendario configurado",
+    "ru": "Настроенный календарь",
+    "zh": "配置的日历"
   },
-  "Chaque propriété confiée à AUREVIA est veillée, préservée et entourée de la même attention que si elle était la nôtre.": {
-    "it": "Ogni immobile affidato ad AUREVIA è curato, preservato e riceve la stessa attenzione come se fosse nostro.",
-    "en": "Each property entrusted to AUREVIA is looked after, preserved and given the same attention as if it were ours.",
-    "es": "Cada propiedad confiada a AUREVIA es cuidada, preservada y tratada como si fuera nuestra.",
-    "ru": "За каждой собственностью, доверенной AUREVIA, заботятся, сохраняют и уделяют ей такое же внимание, как если бы она была нашей.",
-    "zh": "委托给 AUREVIA 的每项财产都得到像我们自己的财产一样的照顾、保存和关注。"
+  "Calendrier et consignes réunis": {
+    "it": "Calendario e istruzioni combinati",
+    "en": "Calendar and instructions combined",
+    "es": "Calendario e instrucciones combinados",
+    "ru": "Календарь и инструкции вместе",
+    "zh": "日历和说明相结合"
   },
-  "Chaque voyageur doit sentir qu’il était attendu. Nous préparons une arrivée fluide, attentive et fidèle au caractère de votre bien.": {
-    "it": "Ogni viaggiatore deve sentirsi atteso. Prepariamo un arrivo tranquillo, attento e fedele al carattere della Sua proprietà.",
-    "en": "Every traveler must feel that they are expected. We prepare a smooth, attentive arrival that is faithful to the character of your property.",
-    "es": "Todo viajero debe sentirse esperado. Preparamos una llegada tranquila, atenta y fiel al carácter de su propiedad.",
-    "ru": "Каждый путешественник должен чувствовать, что его ждут. Мы подготовим плавный и внимательный приезд, который будет соответствовать характеру вашего объекта.",
-    "zh": "每个旅行者都必须感到自己受到期待。我们将忠实于您酒店的特色，为您准备顺利、周到的抵达。"
+  "Calendrier et réservations": {
+    "it": "Calendario e prenotazioni",
+    "en": "Calendar and reservations",
+    "es": "Calendario y reservas",
+    "ru": "Календарь и бронирование",
+    "zh": "日历和预订"
   },
-  "Chauffeur dédié": {
-    "it": "Autista dedicato",
-    "en": "Dedicated driver",
-    "es": "Controlador dedicado",
-    "ru": "Специальный драйвер",
-    "zh": "专用驱动程序"
+  "Calendrier, réservations et échanges voyageurs pilotés par un interlocuteur unique.": {
+    "it": "Calendario, prenotazioni e scambi passeggeri gestiti da un unico contatto.",
+    "en": "Calendar, reservations and passenger exchanges managed by a single contact.",
+    "es": "Calendario, reservas y cambios de pasajeros gestionados por un único contacto.",
+    "ru": "Календарь, бронирование и обмен пассажирами управляются одним контактом.",
+    "zh": "日历、预订和乘客交换由单一联系人管理。"
+  },
+  "Canaux de réservation": {
+    "it": "Canali di prenotazione",
+    "en": "Booking channels",
+    "es": "Canales de reserva",
+    "ru": "Бронирование каналов",
+    "zh": "预订渠道"
+  },
+  "Capacité": {
+    "it": "Capacità",
+    "en": "Capacity",
+    "es": "Capacidad",
+    "ru": "Вместимость",
+    "zh": "容量"
+  },
+  "catalog-card service-catalog-card": {
+    "it": "scheda-catalogo-scheda-catalogo-servizi",
+    "en": "catalog-card service-catalog-card",
+    "es": "tarjeta-catálogo tarjeta-catálogo-servicio",
+    "ru": "карточка-каталог услуг-каталог-карточка",
+    "zh": "目录卡服务目录卡"
+  },
+  "Ce que nous gérons": {
+    "it": "Cosa gestiamo",
+    "en": "What we manage",
+    "es": "Qué gestionamos",
+    "ru": "Чем мы управляем",
+    "zh": "我们管理什么"
+  },
+  "Ce que Velyo cherche à comprendre": {
+    "it": "Ciò che Velyo cerca di capire",
+    "en": "What Velyo seeks to understand",
+    "es": "Lo que Velyo busca entender",
+    "ru": "Что Вельо пытается понять",
+    "zh": "Velyo 试图了解什么"
+  },
+  "Ce que vous gardez": {
+    "it": "Quello che tieni",
+    "en": "What you keep",
+    "es": "Lo que guardas",
+    "ru": "Что вы храните",
+    "zh": "你保留的东西"
+  },
+  "Ce que vous recevez": {
+    "it": "Quello che ricevi",
+    "en": "What you receive",
+    "es": "Lo que recibes",
+    "ru": "Что вы получаете",
+    "zh": "您收到的内容"
+  },
+  "Ce que vous voulez déléguer": {
+    "it": "Cosa vuoi delegare",
+    "en": "What you want to delegate",
+    "es": "Lo que quieres delegar",
+    "ru": "Что вы хотите делегировать",
+    "zh": "您想要委托的内容"
+  },
+  "Chaque ajustement peut être expliqué": {
+    "it": "Ogni regolazione può essere spiegata",
+    "en": "Each adjustment can be explained",
+    "es": "Cada ajuste se puede explicar",
+    "ru": "Каждую настройку можно объяснить",
+    "zh": "每个调整都可以解释"
+  },
+  "Chaque arrivée devient simple.": {
+    "it": "Ogni arrivo diventa semplice.",
+    "en": "Each arrival becomes simple.",
+    "es": "Cada llegada se vuelve sencilla.",
+    "ru": "Каждый приход становится простым.",
+    "zh": "每次到达都变得简单。"
+  },
+  "Chaque imprévu devient une action.": {
+    "it": "Ogni imprevisto diventa un'azione.",
+    "en": "Each unforeseen event becomes an action.",
+    "es": "Cada imprevisto se convierte en una acción.",
+    "ru": "Каждое непредвиденное событие становится действием.",
+    "zh": "每个不可预见的事件都会成为一个操作。"
+  },
+  "Chaque imprévu est suivi jusqu’à sa résolution": {
+    "it": "Ogni imprevisto viene seguito fino alla sua risoluzione",
+    "en": "Each unforeseen event is followed until its resolution",
+    "es": "Cada imprevisto se sigue hasta su resolución",
+    "ru": "Каждое непредвиденное событие отслеживается до его разрешения.",
+    "zh": "跟踪每个不可预见的事件，直至解决"
+  },
+  "Chaque intervenant suit le même cadre": {
+    "it": "Ogni relatore segue lo stesso quadro",
+    "en": "Each speaker follows the same framework",
+    "es": "Cada ponente sigue el mismo marco",
+    "ru": "Все выступающие следуют одной и той же схеме.",
+    "zh": "每个演讲者都遵循相同的框架"
+  },
+  "Chaque réservation suit un processus précis, de la confirmation au départ, avec un interlocuteur local pour les voyageurs.": {
+    "it": "Ogni prenotazione segue un iter preciso, dalla conferma alla partenza, con un contatto locale per i viaggiatori.",
+    "en": "Each reservation follows a precise process, from confirmation to departure, with a local contact for travelers.",
+    "es": "Cada reserva sigue un proceso preciso, desde la confirmación hasta la salida, con un contacto local para los viajeros.",
+    "ru": "Каждое бронирование следует четкому процессу, от подтверждения до отъезда, с местным контактным лицом для путешественников.",
+    "zh": "每次预订从确认到出发都遵循精确的流程，并有当地旅客联系人。"
+  },
+  "Charges estimées": {
+    "it": "Spese stimate",
+    "en": "Estimated charges",
+    "es": "Cargos estimados",
+    "ru": "Ориентировочная стоимость",
+    "zh": "预计费用"
+  },
+  "Chercher le bon prestataire": {
+    "it": "Trova il fornitore di servizi giusto",
+    "en": "Find the right service provider",
+    "es": "Encuentre el proveedor de servicios adecuado",
+    "ru": "Найдите подходящего поставщика услуг",
+    "zh": "寻找合适的服务提供商"
+  },
+  "Chez Velyo, nous pensons qu’une valeur créée autour de votre bien doit aussi vous revenir. Lorsqu’un voyageur choisit une option que nous avons sélectionnée et coordonnée, 25 % du bénéfice net vous est reversé. Ce fonctionnement nous paraît simplement plus juste : le prix, le coût du prestataire et la répartition restent toujours visibles.": {
+    "it": "Noi di Velyo crediamo che il valore creato attorno alla tua proprietà debba ritornare anche a te. Quando un viaggiatore sceglie un'opzione che abbiamo selezionato e coordinato, ti viene restituito il 25% dell'utile netto. Questa operazione ci sembra semplicemente più giusta: il prezzo, il costo del fornitore del servizio e la distribuzione rimangono sempre visibili.",
+    "en": "At Velyo, we believe that value created around your property should also return to you. When a traveler chooses an option that we have selected and coordinated, 25% of the net profit is returned to you. This operation simply seems fairer to us: the price, the service provider's cost and the distribution always remain visible.",
+    "es": "En Velyo, creemos que el valor creado alrededor de su propiedad también debería regresar a usted. Cuando un viajero elige una opción que hemos seleccionado y coordinado, se le devuelve el 25% del beneficio neto. Esta operación nos parece simplemente más justa: el precio, el coste del proveedor del servicio y la distribución siempre son visibles.",
+    "ru": "Мы в Velyo считаем, что ценность, созданная вокруг вашей собственности, также должна возвращаться к вам. Когда путешественник выбирает вариант, который мы подобрали и согласовали, вам возвращается 25% чистой прибыли. Просто эта операция кажется нам более справедливой: цена, стоимость поставщика услуг и распределение всегда остаются видимыми.",
+    "zh": "在 Velyo，我们相信围绕您的财产创造的价值也应该回报给您。当旅行者选择我们精心挑选和协调的选项时，净利润的 25% 将返还给您。这种操作对我们来说似乎更公平：价格、服务提供商的成本和分配始终保持可见。"
   },
   "Choisir la langue": {
-    "it": "Scelga la lingua",
+    "it": "Scegli la lingua",
     "en": "Choose language",
     "es": "Elige idioma",
-    "ru": "Выберите язык",
+    "ru": "Выбрать язык",
     "zh": "选择语言"
   },
-  "Choix propriétaire": {
-    "it": "Scelta del proprietario",
-    "en": "Owner choice",
-    "es": "Elección del propietario",
-    "ru": "Выбор владельца",
-    "zh": "所有者选择"
+  "Choix expliqués au propriétaire": {
+    "it": "Scelte spiegate al proprietario",
+    "en": "Choices explained to the owner",
+    "es": "Opciones explicadas al propietario",
+    "ru": "Варианты выбора объяснены владельцу",
+    "zh": "向所有者解释选择"
   },
-  "Classer les éléments": {
-    "it": "Classificare gli elementi",
-    "en": "Classify the elements",
-    "es": "Clasificar los elementos",
-    "ru": "Классифицируйте элементы",
-    "zh": "对元素进行分类"
+  "Clarté": {
+    "it": "Chiarezza",
+    "en": "Clarity",
+    "es": "Claridad",
+    "ru": "Ясность",
+    "zh": "清晰度"
   },
-  "Clés, badges, équipements sensibles et personnes autorisées sont recensés dans un cadre confidentiel.": {
-    "it": "Chiavi, badge, apparecchiature sensibili e persone autorizzate sono elencate in un quadro riservato.",
-    "en": "Keys, badges, sensitive equipment and authorized people are listed in a confidential framework.",
-    "es": "Las llaves, credenciales, equipos sensibles y personas autorizadas se enumeran en un marco confidencial.",
-    "ru": "Ключи, бейджи, конфиденциальное оборудование и уполномоченные лица перечислены в конфиденциальной среде.",
-    "zh": "钥匙、徽章、敏感设备和授权人员均列在机密框架中。"
+  "Clés et accès suivis": {
+    "it": "Chiavi e accessi tracciati",
+    "en": "Keys and access tracked",
+    "es": "Claves y acceso rastreados",
+    "ru": "Ключи и доступ отслеживаются",
+    "zh": "跟踪密钥和访问权限"
+  },
+  "Clientèle cible": {
+    "it": "Clientela target",
+    "en": "Target clientele",
+    "es": "Clientela objetivo",
+    "ru": "Целевая клиентура",
+    "zh": "目标客户"
   },
   "Combien de temps faut-il pour démarrer ?": {
     "it": "Quanto tempo ci vuole per iniziare?",
@@ -500,130 +759,165 @@ export const generatedMessages: Record<string, GeneratedLocalized> = {
     "zh": "需要多长时间才能开始？"
   },
   "Comment gérez-vous la maintenance ?": {
-    "it": "Come gestisce la manutenzione?",
+    "it": "Come gestisci la manutenzione?",
     "en": "How do you manage maintenance?",
-    "es": "¿Cómo gestionáis el mantenimiento?",
+    "es": "¿Cómo gestionas el mantenimiento?",
     "ru": "Как вы осуществляете техническое обслуживание?",
     "zh": "您如何管理维护？"
   },
-  "Comment les tarifs sont-ils définis ?": {
-    "it": "Come vengono definiti i prezzi?",
-    "en": "How are prices defined?",
-    "es": "¿Cómo se definen los precios?",
-    "ru": "Как определяются цены?",
-    "zh": "价格是如何定义的？"
+  "Comment nous gérons": {
+    "it": "Come ce la caviamo",
+    "en": "How we manage",
+    "es": "Cómo gestionamos",
+    "ru": "Как мы справляемся",
+    "zh": "我们如何管理"
   },
-  "Comment protégez-vous la confidentialité ?": {
-    "it": "Come tutelate la riservatezza?",
-    "en": "How do you protect confidentiality?",
-    "es": "¿Cómo se protege la confidencialidad?",
-    "ru": "Как вы защищаете конфиденциальность?",
-    "zh": "如何保护机密性？"
+  "Comment serai-je informé ?": {
+    "it": "Come verrò informato?",
+    "en": "How will I be informed?",
+    "es": "¿Cómo seré informado?",
+    "ru": "Как я буду проинформирован?",
+    "zh": "我将如何获悉？"
   },
-  "Comprendre le bien": {
-    "it": "Comprendere la proprietà",
-    "en": "Understanding the property",
-    "es": "Entendiendo la propiedad",
-    "ru": "Понимание свойства",
-    "zh": "了解该属性"
+  "Comment sont facturés le ménage et les interventions ?": {
+    "it": "Come vengono fatturate le pulizie e gli interventi?",
+    "en": "How are cleaning and interventions billed?",
+    "es": "¿Cómo se facturan las limpiezas e intervenciones?",
+    "ru": "Как выставляются счета за уборку и ремонт?",
+    "zh": "清洁和干预如何计费？"
   },
-  "Compte rendu consolidé": {
-    "it": "Rapporto consolidato",
-    "en": "Consolidated report",
-    "es": "Informe consolidado",
-    "ru": "Сводный отчет",
-    "zh": "综合报告"
+  "Comment Velyo prévoit d’utiliser les informations transmises par les formulaires.": {
+    "it": "Come Velyo intende utilizzare le informazioni trasmesse dai moduli.",
+    "en": "How Velyo plans to use the information transmitted by the forms.",
+    "es": "Cómo planea Velyo utilizar la información transmitida por los formularios.",
+    "ru": "Как Velyo планирует использовать информацию, передаваемую через формы.",
+    "zh": "Velyo 计划如何使用表单传输的信息。"
   },
-  "Compte rendu propriétaire clair et privilégié": {
-    "it": "Rapporto proprietario chiaro e privilegiato",
-    "en": "Clear and privileged owner report",
-    "es": "Informe de propietario claro y privilegiado",
-    "ru": "Отчет об открытых и привилегированных владельцах",
-    "zh": "清晰且特权的所有者报告"
+  "Composition adaptée au budget": {
+    "it": "Composizione adattata al budget",
+    "en": "Composition adapted to the budget",
+    "es": "Composición adaptada al presupuesto",
+    "ru": "Состав адаптирован под бюджет",
+    "zh": "根据预算调整的组合"
   },
-  "Compte rendu propriétaire régulier": {
-    "it": "Rapporto proprietario regolare",
-    "en": "Regular owner report",
-    "es": "Informe periódico del propietario",
-    "ru": "Отчет обычного владельца",
-    "zh": "定期所有者报告"
+  "Comprendre la demande": {
+    "it": "Comprensione della richiesta",
+    "en": "Understanding the request",
+    "es": "Entendiendo la solicitud",
+    "ru": "Понимание запроса",
+    "zh": "了解请求"
   },
-  "Compte rendu régulier": {
-    "it": "Rapporto regolare",
-    "en": "Regular report",
+  "Comprendre votre bien": {
+    "it": "Comprendere la tua proprietà",
+    "en": "Understanding your property",
+    "es": "Entendiendo su propiedad",
+    "ru": "Понимание вашего объекта",
+    "zh": "了解您的财产"
+  },
+  "Compte rendu périodique": {
+    "it": "Rapporto periodico",
+    "en": "Periodic report",
     "es": "Informe periódico",
-    "ru": "Регулярный отчет",
+    "ru": "Периодический отчет",
     "zh": "定期报告"
   },
-  "Conception de l’événement": {
-    "it": "Progettazione di eventi",
-    "en": "Event design",
-    "es": "Diseño de eventos",
-    "ru": "Оформление мероприятий",
-    "zh": "活动设计"
-  },
-  "Concevoir l’expérience": {
-    "it": "Progetti l'esperienza",
-    "en": "Design the experience",
-    "es": "Diseña la experiencia",
-    "ru": "Создайте впечатления",
-    "zh": "设计体验"
-  },
-  "Concevoir mon parcours d’accueil": {
-    "it": "Progetti il mio viaggio di benvenuto",
-    "en": "Design my welcome journey",
-    "es": "Diseñar mi viaje de bienvenida",
-    "ru": "Создайте мое долгожданное путешествие",
-    "zh": "设计我的欢迎旅程"
+  "Conciergerie locale et gestion locative à Genova": {
+    "it": "Concierge locale e gestione degli affitti a Genova",
+    "en": "Local concierge and rental management in Genova",
+    "es": "Conserjería local y gestión de alquileres en Génova",
+    "ru": "Местный консьерж и управление арендой в Генуе",
+    "zh": "热那亚当地礼宾服务和租赁管理"
   },
   "Conciergerie personnalisée": {
     "it": "Servizio concierge personalizzato",
     "en": "Personalized concierge service",
     "es": "Servicio de conserjería personalizado",
-    "ru": "Персонализированная консьерж-служба",
+    "ru": "Персонализированный консьерж-сервис",
     "zh": "个性化礼宾服务"
   },
-  "Conditions confirmées": {
-    "it": "Condizioni confermate",
-    "en": "Conditions confirmed",
-    "es": "Condiciones confirmadas",
-    "ru": "Условия подтверждены",
-    "zh": "条件已确认"
+  "Conditions d’utilisation": {
+    "it": "Condizioni d'uso",
+    "en": "Conditions of use",
+    "es": "Condiciones de uso",
+    "ru": "Условия использования",
+    "zh": "使用条件"
   },
-  "Conditions générales": {
-    "it": "Condizioni generali",
-    "en": "General conditions",
-    "es": "Condiciones generales",
-    "ru": "Общие условия",
-    "zh": "一般条件"
+  "Conditions expliquées": {
+    "it": "Condizioni spiegate",
+    "en": "Conditions explained",
+    "es": "Condiciones explicadas",
+    "ru": "Объяснение условий",
+    "zh": "条件说明"
   },
-  "Confier sans perdre le contrôle": {
-    "it": "Fiducia senza perdere il controllo",
-    "en": "Confidence without losing control",
-    "es": "Confianza sin perder el control",
-    "ru": "Уверенность без потери контроля",
-    "zh": "自信而不失控"
+  "Conditions vérifiées": {
+    "it": "Condizioni controllate",
+    "en": "Conditions checked",
+    "es": "Condiciones comprobadas",
+    "ru": "Условия проверены",
+    "zh": "检查条件"
   },
-  "Confirmation écrite": {
-    "it": "Conferma scritta",
-    "en": "Written confirmation",
-    "es": "Confirmación por escrito",
-    "ru": "Письменное подтверждение",
-    "zh": "书面确认"
+  "Conduite à tenir en cas d’incident": {
+    "it": "Cosa fare in caso di incidente",
+    "en": "What to do in the event of an incident",
+    "es": "Qué hacer en caso de incidente",
+    "ru": "Что делать в случае происшествия",
+    "zh": "发生事故时该怎么办"
   },
-  "Confirmer l’installation": {
-    "it": "Confermi l'installazione",
-    "en": "Confirm installation",
-    "es": "Confirmar instalación",
-    "ru": "Подтвердите установку",
-    "zh": "确认安装"
+  "Confidentialité": {
+    "it": "Riservatezza",
+    "en": "Confidentiality",
+    "es": "Confidencialidad",
+    "ru": "Конфиденциальность",
+    "zh": "保密"
   },
-  "Conseils décoration et équipements": {
-    "it": "Consulenza per decorazioni e attrezzature",
-    "en": "Decoration and equipment advice",
-    "es": "Asesoramiento en decoración y equipamiento",
-    "ru": "Советы по декорированию и оснащению",
-    "zh": "装修和设备建议"
+  "Confier mon bien": {
+    "it": "Affida la mia proprietà",
+    "en": "Entrust my property",
+    "es": "Confiar mi propiedad",
+    "ru": "Доверьте мою собственность",
+    "zh": "委托我的财产"
+  },
+  "Confier votre bien": {
+    "it": "Affida il tuo immobile",
+    "en": "Entrust your property",
+    "es": "Confía tu propiedad",
+    "ru": "Доверьте свое имущество",
+    "zh": "委托您的财产"
+  },
+  "Confirmation centralisée": {
+    "it": "Conferma centralizzata",
+    "en": "Centralized confirmation",
+    "es": "Confirmación centralizada",
+    "ru": "Централизованное подтверждение",
+    "zh": "集中确认"
+  },
+  "Confirmation envoyée": {
+    "it": "Conferma inviata",
+    "en": "Confirmation sent",
+    "es": "Confirmación enviada",
+    "ru": "Подтверждение отправлено",
+    "zh": "确认已发送"
+  },
+  "Confort du séjour": {
+    "it": "Confort del soggiorno",
+    "en": "Comfort of the stay",
+    "es": "Comodidad de la estancia",
+    "ru": "Комфорт проживания",
+    "zh": "住宿舒适度"
+  },
+  "Conseils adaptés au quartier": {
+    "it": "Consigli adattati al quartiere",
+    "en": "Advice adapted to the neighborhood",
+    "es": "Consejos adaptados al barrio",
+    "ru": "Советы, адаптированные к месту проживания",
+    "zh": "适合社区的建议"
+  },
+  "Conseils de présentation et d’équipement": {
+    "it": "Presentazione e consulenza sull'attrezzatura",
+    "en": "Presentation and equipment advice",
+    "es": "Asesoramiento en presentación y equipamiento",
+    "ru": "Презентация и консультации по оборудованию",
+    "zh": "演示和设备建议"
   },
   "Consignes centralisées": {
     "it": "Istruzioni centralizzate",
@@ -632,61 +926,33 @@ export const generatedMessages: Record<string, GeneratedLocalized> = {
     "ru": "Централизованные инструкции",
     "zh": "集中指令"
   },
-  "Consignes personnalisées": {
-    "it": "Istruzioni personalizzate",
-    "en": "Personalized instructions",
-    "es": "Instrucciones personalizadas",
-    "ru": "Персональные инструкции",
-    "zh": "个性化说明"
+  "Consignes du bien": {
+    "it": "Istruzioni sulla proprietà",
+    "en": "Property instructions",
+    "es": "Instrucciones de propiedad",
+    "ru": "Инструкции по недвижимости",
+    "zh": "物业说明"
   },
-  "Consignes propres à chaque pièce": {
-    "it": "Istruzioni specifiche per ogni parte",
-    "en": "Instructions specific to each part",
-    "es": "Instrucciones específicas de cada pieza",
-    "ru": "Инструкции, специфичные для каждой детали.",
-    "zh": "每个部分的具体说明"
+  "Consommables complétés selon l’inventaire": {
+    "it": "Materiali di consumo completati secondo l'inventario",
+    "en": "Consumables completed according to inventory",
+    "es": "Consumibles completados según inventario",
+    "ru": "Расходные материалы комплектуются согласно описи",
+    "zh": "根据库存完成消耗品"
   },
-  "Construction du tarif et des conditions": {
-    "it": "Costruzione del prezzo e delle condizioni",
-    "en": "Construction of the price and conditions",
-    "es": "Construcción del precio y condiciones",
-    "ru": "Строительство цена и условия",
-    "zh": "建造价格和条件"
+  "Consommables réapprovisionnés": {
+    "it": "Materiali di consumo riforniti",
+    "en": "Consumables replenished",
+    "es": "Consumibles reabastecidos",
+    "ru": "Расходники пополнены",
+    "zh": "消耗品已补充"
   },
-  "Construire la stratégie": {
-    "it": "Costruisca la strategia",
-    "en": "Build the strategy",
-    "es": "Construir la estrategia",
-    "ru": "Разработайте стратегию",
-    "zh": "制定策略"
-  },
-  "Construire une stratégie singulière": {
-    "it": "Costruisca una strategia unica",
-    "en": "Build a unique strategy",
-    "es": "Construye una estrategia única",
-    "ru": "Создайте уникальную стратегию",
-    "zh": "制定独特的策略"
-  },
-  "Continuez à faire défiler.": {
-    "it": "Continui a scorrere.",
-    "en": "Keep scrolling.",
-    "es": "Sigue desplazándote.",
-    "ru": "Продолжайте прокручивать.",
-    "zh": "继续滚动。"
-  },
-  "Contraintes d’exploitation": {
-    "it": "Vincoli operativi",
-    "en": "Operating constraints",
-    "es": "Restricciones operativas",
-    "ru": "Эксплуатационные ограничения",
-    "zh": "运营限制"
-  },
-  "Contraintes et priorités": {
-    "it": "Vincoli e priorità",
-    "en": "Constraints and priorities",
-    "es": "Restricciones y prioridades",
-    "ru": "Ограничения и приоритеты",
-    "zh": "限制和优先事项"
+  "Contraintes du lieu relevées": {
+    "it": "Vincoli di posizione annotati",
+    "en": "Location constraints noted",
+    "es": "Se observaron restricciones de ubicación",
+    "ru": "Учтены ограничения по местоположению",
+    "zh": "注意到位置限制"
   },
   "Contraintes identifiées": {
     "it": "Vincoli identificati",
@@ -695,159 +961,75 @@ export const generatedMessages: Record<string, GeneratedLocalized> = {
     "ru": "Выявлены ограничения",
     "zh": "已确定的限制"
   },
-  "Contrôle après intervention": {
-    "it": "Controllo dopo l'intervento",
-    "en": "Check after intervention",
-    "es": "Comprobación tras intervención",
-    "ru": "Проверка после вмешательства",
-    "zh": "干预后检查"
+  "Contrôle": {
+    "it": "Controllo",
+    "en": "Control",
+    "es": "Controlar",
+    "ru": "Управление",
+    "zh": "控制"
   },
-  "Contrôle ciblé": {
-    "it": "Controllo mirato",
-    "en": "Targeted control",
-    "es": "Control dirigido",
-    "ru": "Целенаправленный контроль",
-    "zh": "有针对性的控制"
+  "Contrôle après départ": {
+    "it": "Controllo dopo la partenza",
+    "en": "Check after departure",
+    "es": "Consulta después de la salida",
+    "ru": "Проверка после отъезда",
+    "zh": "出发后检查"
   },
-  "Contrôle de la prestation": {
-    "it": "Controllo del servizio",
-    "en": "Control of the service",
-    "es": "Control del servicio",
-    "ru": "Управление сервисом",
-    "zh": "服务控制"
+  "Contrôle après passage": {
+    "it": "Ispezione dopo il passaggio",
+    "en": "Inspection after passage",
+    "es": "Inspección después del paso",
+    "ru": "Осмотр после прохождения",
+    "zh": "通过后检查"
   },
-  "Contrôle visuel": {
-    "it": "Ispezione visiva",
-    "en": "Visual inspection",
-    "es": "Inspección visual",
-    "ru": "Визуальный осмотр",
-    "zh": "目视检查"
+  "Contrôle d'une chambre préparée après un séjour": {
+    "it": "Controllo di una camera preparata dopo un soggiorno",
+    "en": "Checking a room prepared after a stay",
+    "es": "Comprobando una habitación preparada después de una estancia",
+    "ru": "Проверка подготовленности номера после проживания",
+    "zh": "检查住宿后准备的房间"
   },
-  "Contrôle visuel après intervention": {
-    "it": "Ispezione visiva dopo l'intervento",
-    "en": "Visual inspection after intervention",
-    "es": "Inspección visual tras la intervención",
-    "ru": "Визуальный осмотр после вмешательства",
-    "zh": "干预后目视检查"
+  "Contrôle entre séjours": {
+    "it": "Controllo tra soggiorni",
+    "en": "Control between stays",
+    "es": "Control entre estancias",
+    "ru": "Контроль между пребываниями",
+    "zh": "停留之间的控制"
   },
-  "Contrôler et archiver": {
-    "it": "Controlli e archivi",
-    "en": "Check and archive",
-    "es": "Comprobar y archivar",
-    "ru": "Проверить и заархивировать",
-    "zh": "检查并存档"
+  "Coordonnées réunies": {
+    "it": "Coordinate raccolte",
+    "en": "Coordinates gathered",
+    "es": "Coordenadas reunidas",
+    "ru": "Координаты собраны",
+    "zh": "坐标已收集"
   },
-  "Contrôler le bien": {
-    "it": "Controlli la risorsa",
-    "en": "Check the asset",
-    "es": "Verificar el activo",
-    "ru": "Проверьте объект",
-    "zh": "检查资产"
-  },
-  "Contrôler le résultat": {
-    "it": "Controlli il risultato",
-    "en": "Check the result",
-    "es": "Comprueba el resultado",
-    "ru": "Проверьте результат",
-    "zh": "检查结果"
-  },
-  "Contrôler les mouvements": {
-    "it": "Controlli i movimenti",
-    "en": "Control movements",
-    "es": "Controlar movimientos",
-    "ru": "Контролируйте движения",
-    "zh": "控制运动"
-  },
-  "Contrôles attendus": {
-    "it": "Controlli previsti",
-    "en": "Expected controls",
-    "es": "Controles esperados",
-    "ru": "Ожидаемые элементы управления",
-    "zh": "预期控制"
-  },
-  "Contrôles préventifs convenus": {
-    "it": "Controlli preventivi concordati",
-    "en": "Agreed preventive controls",
-    "es": "Controles preventivos acordados",
-    "ru": "Согласованные профилактические меры",
-    "zh": "商定的预防性控制措施"
-  },
-  "Coordination aéroport": {
-    "it": "Coordinamento aeroportuale",
-    "en": "Airport coordination",
-    "es": "Coordinación aeroportuaria",
-    "ru": "Координация аэропорта",
-    "zh": "机场协调"
-  },
-  "Coordination des équipes": {
-    "it": "Coordinamento della squadra",
-    "en": "Team coordination",
-    "es": "Coordinación del equipo",
-    "ru": "Координация команды",
-    "zh": "团队协调"
-  },
-  "Coordination des intervenants": {
-    "it": "Coordinamento delle parti interessate",
-    "en": "Coordination of stakeholders",
-    "es": "Coordinación de stakeholders",
-    "ru": "Координация заинтересованных сторон",
-    "zh": "利益相关者的协调"
-  },
-  "Coordination du ménage et du linge": {
-    "it": "Coordinamento delle pulizie e della lavanderia",
-    "en": "Coordination of cleaning and laundry",
-    "es": "Coordinación de limpieza y lavandería",
-    "ru": "Координация уборки и стирки",
-    "zh": "清洁和洗衣的协调"
-  },
-  "Coordination en cas d’incident": {
-    "it": "Coordinamento in caso di incidente",
-    "en": "Coordination in the event of an incident",
-    "es": "Coordinación en caso de incidencia",
-    "ru": "Координация в случае инцидента",
-    "zh": "发生事件时的协调"
-  },
-  "Coordination opérationnelle": {
-    "it": "Coordinamento operativo",
-    "en": "Operational coordination",
-    "es": "Coordinación operativa",
-    "ru": "Оперативная координация",
-    "zh": "运营协调"
-  },
-  "Coordonnées": {
-    "it": "Dettagli di contatto",
-    "en": "Contact details",
-    "es": "Datos de contacto",
-    "ru": "Контактная информация",
-    "zh": "联系方式"
-  },
-  "Coordonner l’expérience": {
-    "it": "Coordina l'esperimento",
-    "en": "Coordinate the experiment",
-    "es": "Coordinar el experimento",
-    "ru": "Координируйте эксперимент",
-    "zh": "协调实验"
-  },
-  "Correction avant la prochaine arrivée": {
-    "it": "Correzione prima del prossimo arrivo",
-    "en": "Correction before next arrival",
-    "es": "Corrección antes de la próxima llegada",
-    "ru": "Исправление перед следующим приездом.",
-    "zh": "下次到达前更正"
-  },
-  "Correction coordonnée": {
-    "it": "Correzione coordinata",
-    "en": "Coordinated correction",
-    "es": "Corrección coordinada",
-    "ru": "Скоординированная коррекция",
-    "zh": "协调校正"
+  "Courses avant l’arrivée": {
+    "it": "Gare prima dell'arrivo",
+    "en": "Races before arrival",
+    "es": "Carreras antes de la llegada",
+    "ru": "Забеги перед приездом",
+    "zh": "抵达前的比赛"
   },
   "Coût annoncé": {
     "it": "Costo annunciato",
     "en": "Announced cost",
     "es": "Costo anunciado",
-    "ru": "Объявленная стоимость",
+    "ru": "Объявлена стоимость",
     "zh": "公布的费用"
+  },
+  "Coûts d’exploitation": {
+    "it": "Costi operativi",
+    "en": "Operating costs",
+    "es": "Costos operativos",
+    "ru": "Эксплуатационные расходы",
+    "zh": "运营成本"
+  },
+  "Coûts d’exploitation observés": {
+    "it": "Costi operativi osservati",
+    "en": "Observed operating costs",
+    "es": "Costos operativos observados",
+    "ru": "Наблюдаемые эксплуатационные расходы",
+    "zh": "观察到的运营成本"
   },
   "Création ou optimisation de l’annonce": {
     "it": "Creazione o ottimizzazione dell'annuncio",
@@ -855,6 +1037,34 @@ export const generatedMessages: Record<string, GeneratedLocalized> = {
     "es": "Creación u optimización del anuncio",
     "ru": "Создание или оптимизация объявления",
     "zh": "广告的制作或优化"
+  },
+  "Créneau confirmé": {
+    "it": "Slot confermato",
+    "en": "Slot confirmed",
+    "es": "Plaza confirmada",
+    "ru": "Слот подтвержден",
+    "zh": "插槽已确认"
+  },
+  "Créneau défini": {
+    "it": "Slot definito",
+    "en": "Slot defined",
+    "es": "Ranura definida",
+    "ru": "Слот определен",
+    "zh": "插槽定义"
+  },
+  "Créneau réservé": {
+    "it": "Spazio riservato",
+    "en": "Reserved slot",
+    "es": "Espacio reservado",
+    "ru": "Зарезервированный слот",
+    "zh": "预留插槽"
+  },
+  "Cuisine équipée": {
+    "it": "Cucina attrezzata",
+    "en": "Equipped kitchen",
+    "es": "Cocina equipada",
+    "ru": "Оборудованная кухня",
+    "zh": "设备齐全的厨房"
   },
   "Dans la durée": {
     "it": "Nel tempo",
@@ -866,387 +1076,380 @@ export const generatedMessages: Record<string, GeneratedLocalized> = {
   "Dans quelles zones intervenez-vous ?": {
     "it": "In quali settori operate?",
     "en": "In which areas do you operate?",
-    "es": "¿En qué zonas operas?",
+    "es": "¿En qué áreas opera?",
     "ru": "В каких сферах вы работаете?",
     "zh": "你们在哪些地区开展业务？"
   },
-  "Décisions conservées": {
-    "it": "Decisioni mantenute",
-    "en": "Decisions retained",
-    "es": "Decisiones mantenidas",
-    "ru": "Решения сохранены",
-    "zh": "保留决定"
+  "De l’arrivée au départ, Velyo répond aux voyageurs, coordonne les demandes et fait avancer les éventuels imprévus sur place.": {
+    "it": "Dall'arrivo alla partenza, Velyo risponde ai viaggiatori, coordina le richieste e anticipa eventuali imprevisti sul posto.",
+    "en": "From arrival to departure, Velyo responds to travelers, coordinates requests and advances any unforeseen events on site.",
+    "es": "Desde la llegada hasta la salida, Velyo responde a los viajeros, coordina las solicitudes y adelanta cualquier imprevisto en el sitio.",
+    "ru": "От прибытия до отъезда Velyo отвечает путешественникам, координирует запросы и предупреждает о любых непредвиденных событиях на территории.",
+    "zh": "从抵达到离开，Velyo 都会响应旅客、协调请求并提前处理现场任何不可预见的事件。"
   },
-  "Décisions documentées": {
-    "it": "Decisioni documentate",
-    "en": "Documented decisions",
-    "es": "Decisiones documentadas",
-    "ru": "Документированные решения",
-    "zh": "记录决定"
+  "De la réservation au départ, découvrez précisément ce que nous gérons pour votre bien.": {
+    "it": "Dalla prenotazione alla partenza, scopri esattamente cosa gestiamo per la tua struttura.",
+    "en": "From reservation to departure, find out exactly what we manage for your property.",
+    "es": "Desde la reserva hasta la salida, descubre exactamente lo que gestionamos para tu propiedad.",
+    "ru": "От бронирования до отъезда: узнайте, чем именно мы управляем для вашего объекта.",
+    "zh": "从预订到出发，准确了解我们为您的酒店管理的内容。"
   },
-  "Décisions tracées": {
-    "it": "Decisioni tracciate",
-    "en": "Decisions traced",
-    "es": "Decisiones rastreadas",
-    "ru": "Отслеживание решений",
-    "zh": "追踪的决定"
+  "Décisions importantes retrouvables": {
+    "it": "Decisioni importanti trovate",
+    "en": "Important decisions found",
+    "es": "Se encontraron decisiones importantes",
+    "ru": "Найдены важные решения",
+    "zh": "发现重要决定"
   },
-  "Découverte complète de votre bien": {
-    "it": "Scoperta completa del Suo immobile",
-    "en": "Complete discovery of your property",
-    "es": "Descubrimiento completo de su propiedad",
-    "ru": "Полное обнаружение вашей собственности",
-    "zh": "彻底发现您的财产"
+  "Décoration légère, gâteau, boissons ou petit cadeau sont installés avant l’arrivée, selon la demande.": {
+    "it": "Decorazioni luminose, torte, bevande o piccoli regali vengono installati prima dell'arrivo, secondo la richiesta.",
+    "en": "Light decoration, cake, drinks or small gift are installed before arrival, according to request.",
+    "es": "Se instala decoración luminosa, tarta, bebidas o pequeño obsequio antes de la llegada, según petición.",
+    "ru": "Световое оформление, торт, напитки или небольшой подарок устанавливаются перед заездом по желанию.",
+    "zh": "根据要求，在抵达前安装灯光装饰、蛋糕、饮料或小礼物。"
   },
-  "Découvrez le potentiel de votre propriété": {
-    "it": "Scopra le potenzialità del Suo immobile",
-    "en": "Discover the potential of your property",
-    "es": "Descubra el potencial de su propiedad",
-    "ru": "Откройте для себя потенциал вашей недвижимости",
-    "zh": "发现您的财产的潜力"
+  "Découverte": {
+    "it": "Scoperta",
+    "en": "Discovery",
+    "es": "Descubrimiento",
+    "ru": "Открытие",
+    "zh": "发现"
   },
-  "Définir le cadre": {
-    "it": "Definisca cornice",
-    "en": "Define frame",
-    "es": "Definir marco",
-    "ru": "Определить рамку",
-    "zh": "定义框架"
+  "Découvrez comment Velyo organise, exploite et suit votre bien au quotidien.": {
+    "it": "Scopri come Velyo organizza, gestisce e monitora quotidianamente la tua proprietà.",
+    "en": "Discover how Velyo organizes, operates and monitors your property on a daily basis.",
+    "es": "Descubra cómo Velyo organiza, opera y monitorea su propiedad a diario.",
+    "ru": "Узнайте, как Velyo ежедневно организует, управляет и контролирует вашу собственность.",
+    "zh": "了解 Velyo 如何每天组织、运营和监控您的财产。"
   },
-  "Définir le standard": {
-    "it": "Definire lo standard",
-    "en": "Define the standard",
-    "es": "Definir el estándar",
-    "ru": "Определите стандарт",
-    "zh": "定义标准"
+  "Découvrir Genova": {
+    "it": "Scopri Genova",
+    "en": "Discover Genova",
+    "es": "Descubre Génova",
+    "ru": "Откройте для себя Геную",
+    "zh": "探索热那亚"
   },
-  "Définir le standard de mon bien": {
-    "it": "Definisca lo standard della mia proprietà",
-    "en": "Define the standard of my property",
-    "es": "Definir el estándar de mi propiedad",
-    "ru": "Определите стандарты моей собственности",
-    "zh": "定义我的财产的标准"
+  "Découvrir la gestion complète": {
+    "it": "Scopri il gestionale completo",
+    "en": "Discover the complete management",
+    "es": "Descubre la gestión completa",
+    "ru": "Откройте для себя полное управление",
+    "zh": "探索完整的管理"
   },
-  "Définir les procédures": {
-    "it": "Definire le procedure",
-    "en": "Define procedures",
-    "es": "Definir procedimientos",
-    "ru": "Определение процедур",
-    "zh": "定义程序"
+  "Décrivez votre besoin en quelques mots.": {
+    "it": "Descrivi la tua esigenza in poche parole.",
+    "en": "Describe your need in a few words.",
+    "es": "Describe tu necesidad en pocas palabras.",
+    "ru": "Опишите в нескольких словах вашу потребность.",
+    "zh": "用几句话描述您的需求。"
   },
-  "Définir mon service de conciergerie": {
-    "it": "Definisca il mio servizio di portineria",
-    "en": "Define my concierge service",
-    "es": "Definir mi servicio de conserjería",
-    "ru": "Определите мою консьерж-службу",
-    "zh": "定义我的礼宾服务"
+  "Décrivez votre situation en quelques mots.": {
+    "it": "Descrivi la tua situazione in poche parole.",
+    "en": "Describe your situation in a few words.",
+    "es": "Describe tu situación en pocas palabras.",
+    "ru": "Опишите в нескольких словах вашу ситуацию.",
+    "zh": "用几句话描述一下您的情况。"
   },
-  "Définition d’un cadre de confiance": {
-    "it": "Definizione di un quadro di fiducia",
-    "en": "Definition of a trust framework",
-    "es": "Definición de marco de confianza",
-    "ru": "Определение структуры доверия",
-    "zh": "信任框架的定义"
+  "Définir la stratégie": {
+    "it": "Definire la strategia",
+    "en": "Define strategy",
+    "es": "Definir estrategia",
+    "ru": "Определить стратегию",
+    "zh": "定义策略"
   },
-  "Définition de l’offre": {
-    "it": "Definizione dell'offerta",
-    "en": "Definition of the offer",
-    "es": "Definición de la oferta",
-    "ru": "Определение предложения",
-    "zh": "优惠的定义"
+  "Définir notre cadre": {
+    "it": "Definire la nostra struttura",
+    "en": "Define our framework",
+    "es": "Definir nuestro marco",
+    "ru": "Определите нашу структуру",
+    "zh": "定义我们的框架"
   },
-  "Dépenses et interventions": {
-    "it": "Spese e interventi",
-    "en": "Expenditures and interventions",
-    "es": "Gastos e intervenciones",
-    "ru": "Расходы и мероприятия",
-    "zh": "支出和干预措施"
+  "Délais soumis à la disponibilité réelle des artisans": {
+    "it": "Scadenze soggette all'effettiva disponibilità degli artigiani",
+    "en": "Deadlines subject to the actual availability of craftsmen",
+    "es": "Plazos sujetos a la disponibilidad real de artesanos",
+    "ru": "Сроки выполнения при фактическом наличии мастеров",
+    "zh": "截止日期视工匠的实际情况而定"
   },
-  "Dernier contrôle du bien": {
-    "it": "Ultimo sopralluogo dell'immobile",
-    "en": "Last inspection of the property",
-    "es": "Última inspección del inmueble",
-    "ru": "Последний осмотр объекта",
-    "zh": "最后一次检查房产"
+  "Demande bien enregistrée.": {
+    "it": "Richiesta registrata con successo.",
+    "en": "Request successfully recorded.",
+    "es": "Solicitud registrada exitosamente.",
+    "ru": "Запрос успешно зарегистрирован.",
+    "zh": "请求已成功记录。"
   },
-  "Derrière une porte, il y a vos habitudes, vos souvenirs et une part de votre intimité. Nous entrons dans cet univers avec retenue. Seules les personnes nécessaires savent ce qu’elles doivent savoir, et rien de plus.": {
-    "it": "Dietro una porta ci sono le Sue abitudini, i Suoi ricordi e una parte della Sua privacy. Entriamo in questo universo con moderazione. Solo le persone necessarie sanno quello che devono sapere e niente di più.",
-    "en": "Behind a door, there are your habits, your memories and a part of your privacy. We enter this universe with restraint. Only the necessary people know what they need to know, and nothing more.",
-    "es": "Detrás de una puerta, están tus hábitos, tus recuerdos y una parte de tu privacidad. Entramos en este universo con moderación. Sólo las personas necesarias saben lo que necesitan saber y nada más.",
-    "ru": "За дверью — ваши привычки, ваши воспоминания и часть вашей личной жизни. Мы входим в эту вселенную сдержанно. Только нужные люди знают то, что им нужно знать, и не более того.",
-    "zh": "门的后面，有你的习惯、你的记忆和你的一部分隐私。我们带着克制进入这个宇宙。只有必要的人知道他们需要知道什么，仅此而已。"
+  "Demande précisée selon le séjour": {
+    "it": "Richiesta specificata in base al soggiorno",
+    "en": "Request specified according to the stay",
+    "es": "Solicitud especificada según la estancia",
+    "ru": "Запрос указан в зависимости от пребывания",
+    "zh": "根据住宿指定的请求"
   },
-  "Des accès suivis avec rigueur": {
-    "it": "Accesso monitorato rigorosamente",
-    "en": "Access monitored rigorously",
-    "es": "Acceso monitorizado rigurosamente",
-    "ru": "Доступ строго контролируется",
-    "zh": "访问受到严格监控"
+  "Demande reçue": {
+    "it": "Richiesta ricevuta",
+    "en": "Request received",
+    "es": "Solicitud recibida",
+    "ru": "Запрос получен",
+    "zh": "收到请求"
   },
-  "Des appartements, attiques, villas et maisons indépendantes correspondant aux standards AUREVIA.": {
-    "it": "Appartamenti, attici, ville e case indipendenti conformi agli standard AUREVIA.",
-    "en": "Apartments, penthouses, villas and independent houses corresponding to AUREVIA standards.",
-    "es": "Apartamentos, áticos, villas y casas independientes correspondientes a los estándares de AUREVIA.",
-    "ru": "Квартиры, пентхаусы, виллы и отдельные дома, соответствующие стандартам AUREVIA.",
-    "zh": "符合 AUREVIA 标准的公寓、顶层公寓、别墅和独立住宅。"
+  "Demandes et prestataires coordonnés": {
+    "it": "Richieste coordinate e fornitori di servizi",
+    "en": "Coordinated requests and service providers",
+    "es": "Solicitudes coordinadas y proveedores de servicios",
+    "ru": "Скоординированные запросы и поставщики услуг",
+    "zh": "协调请求和服务提供商"
   },
-  "Des artisans coordonnés sur place": {
-    "it": "Artigiani coordinati in cantiere",
-    "en": "Craftsmen coordinated on site",
-    "es": "Artesanos coordinados en obra",
-    "ru": "Мастера координируют свои действия на месте",
-    "zh": "现场协调的工匠"
+  "Départs contrôlés": {
+    "it": "Partenze controllate",
+    "en": "Controlled departures",
+    "es": "Salidas controladas",
+    "ru": "Контролируемые выезды",
+    "zh": "受控出发"
   },
-  "Des comptes rendus structurés pour suivre clairement chaque opération.": {
-    "it": "Report strutturati per seguire con chiarezza ogni operazione.",
-    "en": "Structured reports to clearly follow each operation.",
-    "es": "Informes estructurados para seguir claramente cada operación.",
-    "ru": "Структурированные отчеты для четкого отслеживания каждой операции.",
-    "zh": "清晰地跟踪每项操作的结构化报告。"
+  "Dépenses et justificatifs": {
+    "it": "Spese e documenti giustificativi",
+    "en": "Expenses and supporting documents",
+    "es": "Gastos y justificantes",
+    "ru": "Расходы и подтверждающие документы",
+    "zh": "费用和证明文件"
   },
-  "Des décisions prises au bon moment": {
-    "it": "Decisioni prese al momento giusto",
-    "en": "Decisions taken at the right time",
-    "es": "Decisiones tomadas en el momento adecuado",
-    "ru": "Решения приняты в нужное время",
-    "zh": "在正确的时间做出的决定"
+  "Dépenses et justificatifs classés": {
+    "it": "Spese classificate e documenti giustificativi",
+    "en": "Classified expenses and supporting documents",
+    "es": "Gastos clasificados y justificantes",
+    "ru": "Классифицированные расходы и подтверждающие документы",
+    "zh": "分类费用和证明文件"
   },
-  "Des demeures au caractère affirmé": {
-    "it": "Residenze dal carattere forte",
-    "en": "Residences with a strong character",
-    "es": "Residencias con fuerte carácter",
-    "ru": "Резиденции с сильным характером",
-    "zh": "个性鲜明的住宅"
+  "Des arrivées plus fluides et beaucoup moins d’appels.": {
+    "it": "Arrivi più fluidi e molte meno chiamate.",
+    "en": "Smoother arrivals and many fewer calls.",
+    "es": "Llegadas más fluidas y muchas menos llamadas.",
+    "ru": "Более плавные прибытия и гораздо меньше звонков.",
+    "zh": "到达更顺畅，来电更少。"
   },
-  "Des déplacements coordonnés avec confort et discrétion.": {
-    "it": "Viaggi coordinati con comodità e discrezione.",
-    "en": "Coordinated travel with comfort and discretion.",
-    "es": "Viajes coordinados con comodidad y discreción.",
-    "ru": "Скоординированное путешествие с комфортом и конфиденциальностью.",
-    "zh": "舒适、谨慎地协调旅行。"
+  "Des attentions pratiques ou de bien-être, préparées selon les besoins réels des voyageurs.": {
+    "it": "Attenzioni pratiche o di benessere, preparate secondo le reali esigenze dei viaggiatori.",
+    "en": "Practical or well-being attentions, prepared according to the real needs of travelers.",
+    "es": "Atenciones prácticas o de bienestar, preparadas según las necesidades reales de los viajeros.",
+    "ru": "Практические или оздоровительные услуги, подготовленные в соответствии с реальными потребностями путешественников.",
+    "zh": "根据旅行者的真实需求准备的实用或福祉关注。"
   },
-  "Dès le départ": {
-    "it": "Dall'inizio",
-    "en": "From the start",
-    "es": "Desde el principio",
-    "ru": "С самого начала",
-    "zh": "从一开始"
+  "Des idées, des visites et des expériences locales adaptées au rythme du séjour.": {
+    "it": "Idee, visite ed esperienze locali adattate al ritmo del soggiorno.",
+    "en": "Ideas, visits and local experiences adapted to the rhythm of the stay.",
+    "es": "Ideas, visitas y experiencias locales adaptadas al ritmo de la estancia.",
+    "ru": "Идеи, посещения и местные впечатления, адаптированные к ритму пребывания.",
+    "zh": "想法、参观和当地体验适应住宿节奏。"
   },
-  "Dès le signalement": {
-    "it": "Su segnalazione",
-    "en": "Upon reporting",
-    "es": "Al informar",
-    "ru": "После сообщения",
-    "zh": "报告后"
+  "Des nouvelles au rythme choisi, avec les faits utiles et les décisions à prendre.": {
+    "it": "Notizie al ritmo che preferisci, con fatti utili e decisioni da prendere.",
+    "en": "News at your chosen pace, with useful facts and decisions to be made.",
+    "es": "Noticias al ritmo que elijas, con datos útiles y decisiones que tomar.",
+    "ru": "Новости в выбранном вами темпе, с полезными фактами и решениями, которые предстоит принять.",
+    "zh": "按照您选择的节奏发布新闻，提供有用的事实和需要做出的决定。"
   },
-  "Des lieux, maisons et rencontres soigneusement sélectionnés.": {
-    "it": "Luoghi, case e incontri accuratamente selezionati.",
-    "en": "Carefully selected places, houses and meetings.",
-    "es": "Lugares, casas y reuniones cuidadosamente seleccionados.",
-    "ru": "Тщательно выбранные места, дома и встречи.",
-    "zh": "精心挑选的地点、房屋和会议。"
+  "des revenus locatifs encaissés, hors ménage et dépenses externes": {
+    "it": "redditi da locazione riscossi, escluse le spese domestiche ed esterne",
+    "en": "rental income collected, excluding household and external expenses",
+    "es": "ingresos por alquiler recaudados, excluidos gastos domésticos y externos",
+    "ru": "собранный доход от аренды, за исключением домашних и внешних расходов",
+    "zh": "收取的租金收入，不包括家庭和外部开支"
   },
-  "Des moments exclusifs, organisés sur mesure": {
-    "it": "Momenti esclusivi, organizzati su misura",
-    "en": "Exclusive moments, organized to measure",
-    "es": "Momentos exclusivos, organizados a medida",
-    "ru": "Эксклюзивные моменты, организованные для незабываемых впечатлений",
-    "zh": "独家时刻，精心组织以衡量"
+  "Des vélos adaptés au parcours sont réservés auprès d’un partenaire et remis au créneau convenu.": {
+    "it": "Le bici adatte al percorso vengono prenotate con un partner e consegnate nella fascia oraria concordata.",
+    "en": "Bikes suitable for the route are reserved with a partner and delivered at the agreed time slot.",
+    "es": "Las bicicletas adecuadas para la ruta se reservan con un socio y se entregan en el horario acordado.",
+    "ru": "Велосипеды, подходящие для маршрута, резервируются у партнера и доставляются в согласованное время.",
+    "zh": "适合该路线的自行车由合作伙伴预订，并在约定的时间段交付。"
   },
-  "Des occasions orchestrées avec attention jusque dans les détails.": {
-    "it": "Occasioni orchestrate con attenzione ai dettagli.",
-    "en": "Occasions orchestrated with attention down to the details.",
-    "es": "Ocasiones orquestadas con atención al detalle.",
-    "ru": "Мероприятия организованы с вниманием к деталям.",
-    "zh": "精心策划的场合注重细节。"
+  "Deux salles d’eau": {
+    "it": "Due bagni",
+    "en": "Two bathrooms",
+    "es": "Dos baños",
+    "ru": "Два санузла",
+    "zh": "两间浴室"
   },
-  "Dès réception": {
-    "it": "Al ricevimento",
-    "en": "Upon receipt",
-    "es": "Al recibirlo",
-    "ru": "При получении",
-    "zh": "收到后"
+  "Deux-pièces": {
+    "it": "Due pezzi",
+    "en": "Two-piece",
+    "es": "Dos piezas",
+    "ru": "Двойка",
+    "zh": "两件套"
   },
-  "Des réponses claires avant de commencer": {
-    "it": "Risposte chiare prima di iniziare",
-    "en": "Clear answers before you start",
-    "es": "Borra las respuestas antes de empezar",
-    "ru": "Прежде чем начать, проясните ответы",
-    "zh": "开始之前明确答案"
+  "Disponibilité réelle": {
+    "it": "Disponibilità effettiva",
+    "en": "Actual availability",
+    "es": "Disponibilidad real",
+    "ru": "Фактическое наличие",
+    "zh": "实际可用性"
   },
-  "Des soins et moments de détente directement dans la propriété.": {
-    "it": "Trattamenti e momenti di relax direttamente in struttura.",
-    "en": "Treatments and moments of relaxation directly in the property.",
-    "es": "Tratamientos y momentos de relax directamente en la propiedad.",
-    "ru": "Процедуры и моменты релаксации прямо на территории отеля.",
-    "zh": "直接在酒店内享受护理和放松时刻。"
+  "Disponibilité réellement vérifiée": {
+    "it": "Disponibilità effettivamente verificata",
+    "en": "Availability actually checked",
+    "es": "Disponibilidad realmente comprobada",
+    "ru": "Наличие действительно проверено",
+    "zh": "实际检查的可用性"
   },
-  "Des tarifs connus avant de décider": {
-    "it": "Conoscere i prezzi prima di decidere",
-    "en": "Known prices before deciding",
-    "es": "Precios conocidos antes de decidir",
-    "ru": "Цены известны до принятия решения",
-    "zh": "决定前已知价格"
+  "Disponibilités vérifiées": {
+    "it": "Disponibilità verificata",
+    "en": "Availability checked",
+    "es": "Disponibilidad comprobada",
+    "ru": "Наличие проверено",
+    "zh": "检查可用性"
   },
-  "Des voyageurs attendus, jamais livrés à eux-mêmes": {
-    "it": "Viaggiatori attesi, mai abbandonati a se stessi",
-    "en": "Expected travelers, never left to their own devices",
-    "es": "Viajeros esperados, nunca abandonados a su suerte",
-    "ru": "Ожидаемые путешественники, никогда не предоставленные самим себе",
-    "zh": "预期的旅行者，切勿自行其事"
+  "Dites-nous ce que vous louez, comment vous le gérez aujourd’hui et ce que vous souhaitez déléguer.": {
+    "it": "Raccontaci cosa affitti, come lo gestisci oggi e cosa vuoi delegare.",
+    "en": "Tell us what you rent, how you manage it today and what you want to delegate.",
+    "es": "Cuéntanos qué alquilas, cómo lo gestionas hoy y qué quieres delegar.",
+    "ru": "Расскажите, что вы арендуете, как вы этим распоряжаетесь сегодня и что хотите делегировать.",
+    "zh": "告诉我们您租用了什么、您今天如何管理它以及您想要委托什么。"
   },
-  "Détenteurs connus": {
-    "it": "Detentori conosciuti",
-    "en": "Known holders",
-    "es": "Titulares conocidos",
-    "ru": "Известные владельцы",
-    "zh": "已知持有者"
+  "Documents spécialisés à valider avec les professionnels concernés": {
+    "it": "Documenti specialistici da convalidare con i professionisti interessati",
+    "en": "Specialized documents to be validated with the professionals concerned",
+    "es": "Documentos especializados a validar con los profesionales interesados",
+    "ru": "Специализированные документы, подлежащие проверке соответствующими специалистами.",
+    "zh": "需要相关专业人士验证的专业文件"
   },
-  "Devis présenté avant intervention": {
-    "it": "Preventivo presentato prima dell'intervento",
-    "en": "Quote presented before intervention",
-    "es": "Cotización presentada antes de la intervención",
-    "ru": "Цитата представлена до вмешательства",
-    "zh": "干预前提供的报价"
+  "Double séjour": {
+    "it": "Soggiorno doppio",
+    "en": "Double stay",
+    "es": "Estadía doble",
+    "ru": "Двухместное размещение",
+    "zh": "双人住宿"
   },
-  "Discrétion": {
-    "it": "Discrezione",
-    "en": "Discretion",
-    "es": "Discreción",
-    "ru": "По усмотрению",
-    "zh": "酌情权"
+  "Durée et tarif annoncés": {
+    "it": "Durata e prezzo annunciati",
+    "en": "Duration and price announced",
+    "es": "Duración y precio anunciados",
+    "ru": "Объявлены продолжительность и цена",
+    "zh": "期限和价格已公布"
   },
-  "Discrétion absolue": {
-    "it": "Discrezione assoluta",
-    "en": "Absolute discretion",
-    "es": "Absoluta discreción",
-    "ru": "Абсолютное усмотрение",
-    "zh": "绝对酌情权"
+  "Durées adaptées": {
+    "it": "Durate adattate",
+    "en": "Adapted durations",
+    "es": "Duraciones adaptadas",
+    "ru": "Адаптированная длительность",
+    "zh": "调整时长"
   },
-  "Disponibilité pendant l’installation": {
-    "it": "Disponibilità durante l'installazione",
-    "en": "Availability during installation",
-    "es": "Disponibilidad durante la instalación",
-    "ru": "Доступность во время установки",
-    "zh": "安装期间的可用性"
+  "Durées minimales ajustées": {
+    "it": "Durate minime modificate",
+    "en": "Adjusted minimum durations",
+    "es": "Duraciones mínimas ajustadas",
+    "ru": "Скорректирована минимальная продолжительность.",
+    "zh": "调整后的最短持续时间"
   },
-  "Disponibilités, contraintes, historique de location, attentes particulières…": {
-    "it": "Disponibilità, vincoli, storia degli affitti, aspettative specifiche...",
-    "en": "Availability, constraints, rental history, specific expectations…",
-    "es": "Disponibilidad, limitaciones, historial de alquiler, expectativas específicas…",
-    "ru": "Наличие, ограничения, история аренды, особые ожидания…",
-    "zh": "可用性、限制、租赁历史、具体期望……"
-  },
-  "Documents spécialisés à valider avec vos conseils": {
-    "it": "Documenti specializzati da convalidare con la Sua consulenza",
-    "en": "Specialized documents to be validated with your advice",
-    "es": "Documentos especializados a validar con tu asesoramiento",
-    "ru": "Специализированные документы, которые необходимо проверить по вашему совету.",
-    "zh": "需要根据您的建议进行验证的专业文件"
-  },
-  "Documents structurés": {
-    "it": "Documenti strutturati",
-    "en": "Structured documents",
-    "es": "Documentos estructurados",
-    "ru": "Структурированные документы",
-    "zh": "结构化文档"
-  },
-  "Dossier AUREVIA préparé pour un propriétaire": {
-    "it": "File AUREVIA preparato per un proprietario",
-    "en": "AUREVIA file prepared for an owner",
-    "es": "Fichero AUREVIA preparado para un propietario",
-    "ru": "Файл AUREVIA подготовлен для владельца",
-    "zh": "为所有者准备的 AUREVIA 文件"
-  },
-  "Durées de séjour pensées avec cohérence": {
-    "it": "Durata del soggiorno progettata con coerenza",
-    "en": "Length of stay designed with consistency",
-    "es": "Duración de la estancia diseñada con coherencia",
-    "ru": "Продолжительность пребывания рассчитана последовательно",
-    "zh": "设计的停留时间保持一致"
-  },
-  "Écart signalé": {
-    "it": "Deviazione segnalata",
-    "en": "Deviation reported",
-    "es": "Desviación reportada",
-    "ru": "Сообщено об отклонении",
-    "zh": "报告偏差"
+  "Durées optimisées": {
+    "it": "Durate ottimizzate",
+    "en": "Optimized durations",
+    "es": "Duraciones optimizadas",
+    "ru": "Оптимизированная длительность",
+    "zh": "优化时长"
   },
   "Écarts documentés": {
     "it": "Deviazioni documentate",
     "en": "Documented deviations",
     "es": "Desviaciones documentadas",
-    "ru": "Документированные отклонения",
+    "ru": "Задокументированные отклонения",
     "zh": "记录的偏差"
   },
-  "Échanger en toute confidentialité": {
-    "it": "Scambio in completa riservatezza",
-    "en": "Exchange in complete confidentiality",
-    "es": "Intercambio con total confidencialidad",
-    "ru": "Обмен при полной конфиденциальности",
-    "zh": "完全保密的交换"
+  "Écarts signalés": {
+    "it": "Discrepanze segnalate",
+    "en": "Discrepancies reported",
+    "es": "Discrepancias reportadas",
+    "ru": "Сообщены о несоответствиях",
+    "zh": "报告了差异"
   },
-  "Échanges centralisés": {
-    "it": "Scambi centralizzati",
-    "en": "Centralized exchanges",
-    "es": "Intercambios centralizados",
-    "ru": "Централизованные биржи",
-    "zh": "中心化交易所"
+  "Écrivez-nous directement. Une personne vous répond depuis Genova.": {
+    "it": "Scrivici direttamente. Qualcuno ti risponderà da Genova.",
+    "en": "Write to us directly. Someone will answer you from Genova.",
+    "es": "Escríbenos directamente. Alguien te responderá desde Génova.",
+    "ru": "Напишите нам напрямую. Вам ответят из Генуи.",
+    "zh": "直接写信给我们。热那亚会有人回答您。"
   },
-  "Écoute précise de la demande": {
-    "it": "Ascolto preciso della richiesta",
-    "en": "Precise listening to the request",
-    "es": "Escucha precisa de la solicitud",
-    "ru": "Точное прослушивание запроса",
-    "zh": "精准监听请求"
+  "Engagement précédent": {
+    "it": "Impegno precedente",
+    "en": "Previous commitment",
+    "es": "Compromiso anterior",
+    "ru": "Предыдущее обязательство",
+    "zh": "先前的承诺"
   },
-  "Éléments utiles préparés pour vous": {
-    "it": "Elementi utili preparati per Lei",
-    "en": "Useful elements prepared for you",
-    "es": "Elementos útiles preparados para ti",
-    "ru": "Полезные элементы подготовлены для вас",
-    "zh": "为您准备的有用元素"
-  },
-  "En cas d’incident": {
-    "it": "In caso di incidente",
-    "en": "In the event of an incident",
-    "es": "En caso de incidencia",
-    "ru": "В случае инцидента",
-    "zh": "如果发生事故"
-  },
-  "Envoyer la demande confidentielle": {
-    "it": "Invii richiesta riservata",
-    "en": "Send confidential request",
-    "es": "Enviar solicitud confidencial",
-    "ru": "Отправить конфиденциальный запрос",
-    "zh": "发送保密请求"
+  "Entre deux séjours, Velyo coordonne le ménage, le linge, les réassorts, les vérifications et les interventions nécessaires.": {
+    "it": "Tra un soggiorno e l'altro Velyo coordina la pulizia, la biancheria, il riassortimento, i controlli e gli interventi necessari.",
+    "en": "Between two stays, Velyo coordinates cleaning, linen, restocking, checks and necessary interventions.",
+    "es": "Entre dos estancias, Velyo coordina la limpieza, la ropa de cama, la reposición, los controles y las intervenciones necesarias.",
+    "ru": "Между двумя визитами Velyo координирует уборку, смену белья, пополнение запасов, проверки и необходимые вмешательства.",
+    "zh": "在两次入住之间，Velyo 协调清洁、布草、补货、检查和必要的干预措施。"
   },
   "Envoyer le message": {
-    "it": "Invii messaggio",
+    "it": "Invia messaggio",
     "en": "Send message",
     "es": "Enviar mensaje",
     "ru": "Отправить сообщение",
     "zh": "发送消息"
   },
-  "Équipements de sécurité proposés sur devis": {
-    "it": "Dotazioni di sicurezza offerte su preventivo",
-    "en": "Safety equipment offered on quote",
-    "es": "Equipos de seguridad ofrecidos bajo cotización",
-    "ru": "Оборудование для обеспечения безопасности предлагается по цене.",
-    "zh": "报价中提供的安全设备"
+  "Équipement à réserver": {
+    "it": "Attrezzatura da prenotare",
+    "en": "Equipment to reserve",
+    "es": "Equipo para reservar",
+    "ru": "Оборудование в резерве",
+    "zh": "预留设备"
   },
-  "Équipements prioritaires vérifiés": {
-    "it": "Attrezzatura prioritaria controllata",
-    "en": "Priority equipment checked",
-    "es": "Equipos prioritarios comprobados",
-    "ru": "Приоритетное оборудование проверено",
-    "zh": "检查优先设备"
+  "Équipement adapté à l’âge": {
+    "it": "Attrezzatura adatta all'età",
+    "en": "Age-appropriate equipment",
+    "es": "Equipo apropiado para la edad",
+    "ru": "Оборудование, соответствующее возрасту",
+    "zh": "适合年龄的装备"
   },
-  "Établir la situation": {
-    "it": "Stabilisci la situazione",
-    "en": "Establish the situation",
-    "es": "Establecer la situación",
-    "ru": "Выясните ситуацию.",
-    "zh": "确定情况"
+  "Équipements essentiels contrôlés": {
+    "it": "Attrezzatura essenziale controllata",
+    "en": "Essential equipment controlled",
+    "es": "Equipos esenciales controlados",
+    "ru": "Основное оборудование под контролем",
+    "zh": "受控的基本设备"
+  },
+  "Équipements essentiels présentés": {
+    "it": "Presentata l'attrezzatura essenziale",
+    "en": "Essential equipment presented",
+    "es": "Se presenta el equipo esencial",
+    "ru": "Представлено необходимое оборудование",
+    "zh": "赠送基本设备"
+  },
+  "Équipements vérifiés": {
+    "it": "Attrezzatura verificata",
+    "en": "Verified equipment",
+    "es": "Equipo verificado",
+    "ru": "Проверенное оборудование",
+    "zh": "已验证的设备"
+  },
+  "Espace propriétaire": {
+    "it": "Spazio proprietario",
+    "en": "Owner space",
+    "es": "Espacio propietario",
+    "ru": "Пространство владельца",
+    "zh": "所有者空间"
+  },
+  "Estimation des revenus locatifs à Genova": {
+    "it": "Reddito locativo stimato a Genova",
+    "en": "Estimated rental income in Genova",
+    "es": "Ingresos estimados por alquiler en Génova",
+    "ru": "Ориентировочный доход от аренды в Генуе",
+    "zh": "热那亚的预计租金收入"
+  },
+  "Estimer mon bien": {
+    "it": "Stima la mia proprietà",
+    "en": "Estimate my property",
+    "es": "Estimar mi propiedad",
+    "ru": "Оцените мою недвижимость",
+    "zh": "估计我的财产"
+  },
+  "Estimez le revenu brut possible de votre bien selon son prix, sa disponibilité et son niveau d’occupation.": {
+    "it": "Stima il possibile reddito lordo della tua proprietà in base al prezzo, alla disponibilità e al livello di occupazione.",
+    "en": "Estimate the possible gross income from your property based on its price, availability and occupancy level.",
+    "es": "Estima los posibles ingresos brutos de tu propiedad en función de su precio, disponibilidad y nivel de ocupación.",
+    "ru": "Оцените возможный валовой доход от вашего объекта недвижимости, исходя из его цены, доступности и уровня заполняемости.",
+    "zh": "根据您的房产的价格、可用性和入住率估算其可能产生的总收入。"
   },
   "Étape précédente": {
     "it": "Passaggio precedente",
@@ -1262,6 +1465,13 @@ export const generatedMessages: Record<string, GeneratedLocalized> = {
     "ru": "Следующий шаг",
     "zh": "下一步"
   },
+  "Étapes de réservation": {
+    "it": "Passaggi di prenotazione",
+    "en": "Reservation steps",
+    "es": "Pasos de reserva",
+    "ru": "Этапы бронирования",
+    "zh": "预订步骤"
+  },
   "Étapes du service": {
     "it": "Fasi di servizio",
     "en": "Service steps",
@@ -1269,68 +1479,61 @@ export const generatedMessages: Record<string, GeneratedLocalized> = {
     "ru": "Этапы обслуживания",
     "zh": "服务步骤"
   },
-  "Étude personnalisée · 2 à 4 jours": {
-    "it": "Studio personalizzato · Da 2 a 4 giorni",
-    "en": "Personalized study · 2 to 4 days",
-    "es": "Estudio personalizado · 2 a 4 días",
-    "ru": "Персонализированное исследование · 2–4 дня",
-    "zh": "个性化学习 · 2 至 4 天"
+  "État du bien contrôlé": {
+    "it": "Stato del bene controllato",
+    "en": "Status of the controlled asset",
+    "es": "Estado del activo controlado",
+    "ru": "Статус подконтрольного актива",
+    "zh": "受控资产的状态"
   },
-  "Étudier le potentiel de mon bien": {
-    "it": "Studia il potenziale del mio immobile",
-    "en": "Study the potential of my property",
-    "es": "Estudiar el potencial de mi propiedad",
-    "ru": "Изучите потенциал моей собственности",
-    "zh": "研究我的财产的潜力"
+  "État du bien vérifié": {
+    "it": "Stato del bene controllato",
+    "en": "Status of the checked asset",
+    "es": "Estado del activo verificado",
+    "ru": "Статус проверенного актива",
+    "zh": "已检查资产的状态"
   },
-  "Évaluation privée": {
-    "it": "Recensione privata",
-    "en": "Private review",
-    "es": "Revisión privada",
-    "ru": "Частный отзыв",
-    "zh": "私人评论"
+  "État et équipements vérifiés": {
+    "it": "Stato e attrezzatura controllati",
+    "en": "Status and equipment checked",
+    "es": "Estado y equipamiento comprobado",
+    "ru": "Статус и оборудование проверены",
+    "zh": "状态和设备已检查"
   },
-  "Évaluation rapide de chaque anomalie": {
-    "it": "Valutazione rapida di ogni anomalia",
-    "en": "Rapid assessment of each anomaly",
-    "es": "Evaluación rápida de cada anomalía",
-    "ru": "Быстрая оценка каждой аномалии",
-    "zh": "快速评估每个异常情况"
+  "État et points d’attention": {
+    "it": "Stato e punti di attenzione",
+    "en": "Status and points of attention",
+    "es": "Estado y puntos de atención",
+    "ru": "Статус и моменты внимания",
+    "zh": "现状及注意事项"
   },
-  "Évaluer mes besoins de maintenance": {
-    "it": "Valuta le mie esigenze di manutenzione",
-    "en": "Evaluate my maintenance needs",
-    "es": "Evaluar mis necesidades de mantenimiento",
-    "ru": "Оцените мои потребности в обслуживании",
-    "zh": "评估我的维护需求"
+  "État initial du bien noté": {
+    "it": "Stato iniziale del bene annotato",
+    "en": "Initial state of the noted asset",
+    "es": "Estado inicial del activo anotado",
+    "ru": "Исходное состояние отмеченного актива",
+    "zh": "指定资产的初始状态"
   },
-  "Événements privés": {
-    "it": "Eventi privati",
-    "en": "Private events",
-    "es": "Eventos privados",
-    "ru": "Частные мероприятия",
-    "zh": "私人活动"
+  "Ex. Je loue mon appartement pendant mes absences et je cherche quelqu’un pour préparer le logement, accueillir les voyageurs et suivre le ménage.": {
+    "it": "Es. Affitto il mio appartamento durante le mie assenze e cerco qualcuno che si occupi della preparazione dell'alloggio, dell'accoglienza dei viaggiatori e del monitoraggio delle pulizie.",
+    "en": "Ex. I rent my apartment during my absences and I am looking for someone to prepare the accommodation, welcome travelers and monitor the cleaning.",
+    "es": "Ej. Alquilo mi apartamento durante mis ausencias y busco a alguien que prepare el alojamiento, reciba a los viajeros y vigile la limpieza.",
+    "ru": "Пр. Сдаю квартиру на время своего отсутствия и ищу человека, который будет готовить жилье, встречать путешественников и следить за уборкой.",
+    "zh": "例如。我在缺席期间租用公寓，并正在寻找有人准备住宿、欢迎旅客并监督清洁工作。"
   },
-  "Exécution": {
-    "it": "Esecuzione",
-    "en": "Execution",
-    "es": "Ejecución",
-    "ru": "Казнь",
-    "zh": "执行"
+  "Exemple de bien côtier géré à Genova.": {
+    "it": "Esempio di proprietà costiera gestita a Genova.",
+    "en": "Example of coastal property managed in Genova.",
+    "es": "Ejemplo de propiedad costera gestionada en Génova.",
+    "ru": "Пример прибрежной собственности, управляемой в Генуе.",
+    "zh": "热那亚管理的沿海财产示例。"
   },
-  "Expérience proposée aux voyageurs": {
-    "it": "Esperienza offerta ai viaggiatori",
-    "en": "Experience offered to travelers",
-    "es": "Experiencia ofrecida a viajeros",
-    "ru": "Опыт, предлагаемый путешественникам",
-    "zh": "为旅行者提供的体验"
-  },
-  "Expérience voyageur pensée sans rupture": {
-    "it": "Esperienza di viaggio progettata senza interruzioni",
-    "en": "Traveler experience designed without disruption",
-    "es": "Experiencia del viajero diseñada sin interrupciones",
-    "ru": "Удобство для путешественников, продуманное без сбоев",
-    "zh": "设计无中断的旅行者体验"
+  "Exemple éditorial, sans disponibilité commerciale réelle.": {
+    "it": "Esempio editoriale, senza reale disponibilità commerciale.",
+    "en": "Editorial example, without real commercial availability.",
+    "es": "Ejemplo editorial, sin disponibilidad comercial real.",
+    "ru": "Редакционный пример, без реальной коммерческой доступности.",
+    "zh": "编辑示例，没有真正的商业可用性。"
   },
   "Expériences": {
     "it": "Esperimenti",
@@ -1339,36 +1542,15 @@ export const generatedMessages: Record<string, GeneratedLocalized> = {
     "ru": "Эксперименты",
     "zh": "实验"
   },
-  "Expériences locales": {
-    "it": "Esperienze locali",
-    "en": "Local experiences",
-    "es": "Experiencias locales",
-    "ru": "Местный опыт",
-    "zh": "当地体验"
-  },
-  "Faire analyser la gestion de mon bien": {
-    "it": "Faccio analizzare la gestione del mio immobile",
-    "en": "Have the management of my property analyzed",
-    "es": "Que analicen la gestión de mi propiedad",
-    "ru": "Проанализировать управление моей собственностью",
-    "zh": "分析我的财产管理情况"
-  },
-  "Faisons connaissance avec votre propriété": {
-    "it": "Conosciamo meglio il Suo immobile",
-    "en": "Let’s get to know your property",
-    "es": "Conozcamos su propiedad",
-    "ru": "Давайте познакомимся с вашим объектом недвижимости",
-    "zh": "让我们了解一下您的财产"
-  },
-  "Faites défiler pour poursuivre le récit.": {
-    "it": "Scorri verso il basso per continuare la storia.",
-    "en": "Scroll down to continue the story.",
-    "es": "Desplázate hacia abajo para continuar la historia.",
-    "ru": "Прокрутите вниз, чтобы продолжить историю.",
-    "zh": "向下滚动以继续故事。"
+  "Expériences voyageurs sélectionnées": {
+    "it": "Esperienze di viaggio selezionate",
+    "en": "Selected traveler experiences",
+    "es": "Experiencias de viajero seleccionadas",
+    "ru": "Избранные впечатления от путешественников",
+    "zh": "精选旅行者体验"
   },
   "Fermer le menu": {
-    "it": "Chiuda il menu",
+    "it": "Chiudi il menu",
     "en": "Close menu",
     "es": "Cerrar menú",
     "ru": "Закрыть меню",
@@ -1377,16 +1559,51 @@ export const generatedMessages: Record<string, GeneratedLocalized> = {
   "Fiabilité": {
     "it": "Affidabilità",
     "en": "Reliability",
-    "es": "Fiabilidad",
+    "es": "Confiabilidad",
     "ru": "Надежность",
     "zh": "可靠性"
   },
+  "Fiche de démonstration destinée à valider la structure du catalogue Velyo.": {
+    "it": "Scheda dimostrativa destinata a validare la struttura del catalogo Velyo.",
+    "en": "Demonstration sheet intended to validate the structure of the Velyo catalog.",
+    "es": "Ficha demostrativa destinada a validar la estructura del catálogo Velyo.",
+    "ru": "Демонстрационный лист, предназначенный для проверки структуры каталога Velyo.",
+    "zh": "用于验证 Velyo 目录结构的演示表。"
+  },
+  "Fiche de démonstration, à remplacer par un bien autorisé.": {
+    "it": "Foglio dimostrativo, da sostituire con un prodotto autorizzato.",
+    "en": "Demonstration sheet, to be replaced by an authorized product.",
+    "es": "Hoja de demostración, a sustituir por un producto autorizado.",
+    "ru": "Демонстрационный лист, подлежащий замене авторизованным продуктом.",
+    "zh": "演示表，将替换为授权产品。"
+  },
+  "Fiche exemple pour tester le parcours de consultation.": {
+    "it": "Scheda di esempio per testare il processo di consultazione.",
+    "en": "Example sheet to test the consultation process.",
+    "es": "Hoja de ejemplo para probar el proceso de consulta.",
+    "ru": "Пример листа для проверки процесса консультации.",
+    "zh": "用于测试咨询流程的示例表。"
+  },
   "Filtrer les propriétés par localisation": {
-    "it": "Filtra le proprietà per località",
+    "it": "Filtra le proprietà per posizione",
     "en": "Filter properties by location",
     "es": "Filtrar propiedades por ubicación",
-    "ru": "Фильтрация свойств по местоположению",
+    "ru": "Фильтровать объекты по местоположению",
     "zh": "按位置过滤属性"
+  },
+  "Fleurs, lumière douce, message et attention gourmande préparent une arrivée particulière.": {
+    "it": "Fiori, luci soffuse, messaggi e attenzioni gourmet preparano un arrivo speciale.",
+    "en": "Flowers, soft light, message and gourmet attention prepare a special arrival.",
+    "es": "Flores, luz tenue, mensaje y atención gourmet preparan una llegada especial.",
+    "ru": "Цветы, мягкий свет, послание и изысканное внимание готовят особое прибытие.",
+    "zh": "鲜花、柔和的灯光、信息和美食关注准备着特别的到来。"
+  },
+  "Français": {
+    "it": "Francese",
+    "en": "French",
+    "es": "Francés",
+    "ru": "Французский",
+    "zh": "法语"
   },
   "Gênes": {
     "it": "Genova",
@@ -1402,6 +1619,27 @@ export const generatedMessages: Record<string, GeneratedLocalized> = {
     "ru": "Генуя, Портофино…",
     "zh": "热那亚、波托菲诺…"
   },
+  "Genova au bleu du soir": {
+    "it": "Genova nel blu della sera",
+    "en": "Genova in the evening blue",
+    "es": "Génova en el azul de la tarde",
+    "ru": "Генуя в вечерней синеве",
+    "zh": "傍晚蓝色的热那亚"
+  },
+  "Genova entre façades historiques et mer à l’heure bleue": {
+    "it": "Genova tra facciate storiche e mare all'ora blu",
+    "en": "Genova between historic facades and sea at blue hour",
+    "es": "Génova entre fachadas históricas y el mar en la hora azul",
+    "ru": "Генуя между историческими фасадами и морем в синий час",
+    "zh": "蓝色时刻的热那亚位于历史悠久的外墙和大海之间"
+  },
+  "Gérer les séjours": {
+    "it": "Gestisci i soggiorni",
+    "en": "Manage stays",
+    "es": "Gestionar estancias",
+    "ru": "Управление пребыванием",
+    "zh": "管理住宿"
+  },
   "Gestion complète": {
     "it": "Gestione completa",
     "en": "Complete management",
@@ -1409,96 +1647,180 @@ export const generatedMessages: Record<string, GeneratedLocalized> = {
     "ru": "Полное управление",
     "zh": "完整管理"
   },
-  "Gestion de propriété": {
-    "it": "Gestione immobiliare",
-    "en": "Property management",
-    "es": "Gestión de propiedades",
-    "ru": "Управление недвижимостью",
-    "zh": "物业管理"
-  },
-  "Gestion des incidents": {
-    "it": "Gestione degli incidenti",
-    "en": "Incident management",
-    "es": "Gestión de incidencias",
-    "ru": "Управление инцидентами",
-    "zh": "事件管理"
-  },
   "Gestion intégrale du bien": {
-    "it": "Gestione completa dell'immobile",
+    "it": "Gestione completa della proprietà",
     "en": "Comprehensive management of the property",
     "es": "Gestión integral del inmueble",
-    "ru": "Комплексное управление объектом недвижимости",
+    "ru": "Комплексное управление объектом",
     "zh": "物业综合管理"
   },
-  "Gestion Sérénité": {
-    "it": "Gestione della serenità",
-    "en": "Serenity Management",
-    "es": "Gestión de la serenidad",
-    "ru": "Управление спокойствием",
-    "zh": "宁静管理"
+  "Gestion locative pour propriétaires à Genova": {
+    "it": "Gestione affitti per proprietari a Genova",
+    "en": "Rental management for owners in Genova",
+    "es": "Gestión de alquileres para propietarios en Génova",
+    "ru": "Управление арендой для владельцев в Генуе",
+    "zh": "热那亚业主的租赁管理"
   },
-  "Gestione esclusiva di proprietà e ospitalità su misura a Genova e in Liguria.": {
-    "it": "Gestione e ospitalità di immobili esclusivi situati a Genova e in Liguria.",
-    "en": "Exclusive property management and hospitality located in Genova and Liguria.",
-    "es": "Gestión exclusiva de propiedades y hostelería ubicadas en Génova y Liguria.",
-    "ru": "Эксклюзивное управление недвижимостью и гостиничный бизнес, расположенный в Генуе и Лигурии.",
-    "zh": "位于热那亚和利古里亚的独家物业管理和接待服务。"
+  "Gestion locative, accueil voyageurs, entretien et suivi propriétaire à Genova.": {
+    "it": "Gestione noleggio, accoglienza passeggeri, manutenzione e monitoraggio proprietario a Genova.",
+    "en": "Rental management, passenger reception, maintenance and owner monitoring in Genova.",
+    "es": "Gestión de alquileres, recepción de pasajeros, mantenimiento y seguimiento de propietarios en Génova.",
+    "ru": "Управление арендой, прием пассажиров, обслуживание и мониторинг владельцев в Генуе.",
+    "zh": "热那亚的租赁管理、乘客接待、维护和业主监控。"
   },
-  "Historique conservé": {
-    "it": "Storia preservata",
-    "en": "History preserved",
-    "es": "Historia preservada",
-    "ru": "История сохранена",
-    "zh": "历史记录已保存"
+  "Gestion multi-biens": {
+    "it": "Gestione multi-asset",
+    "en": "Multi-asset management",
+    "es": "Gestión de múltiples activos",
+    "ru": "Управление несколькими активами",
+    "zh": "多资产管理"
   },
-  "Horaires, accès et ajustements sont suivis par AUREVIA, avec un point de contrôle après la prestation.": {
-    "it": "Orari, accessi e regolazioni sono monitorati da AUREVIA, con un checkpoint dopo il servizio.",
-    "en": "Schedules, access and adjustments are monitored by AUREVIA, with a checkpoint after the service.",
-    "es": "Horarios, accesos y ajustes son monitorizados por AUREVIA, con un punto de control posterior al servicio.",
-    "ru": "Расписания, доступ и корректировки контролируются AUREVIA с контрольной точкой после оказания услуги.",
-    "zh": "时间表、访问和调整由 AUREVIA 监控，并在服务后设置检查点。"
+  "Gestion quotidienne incluse": {
+    "it": "Gestione quotidiana inclusa",
+    "en": "Daily management included",
+    "es": "Gestión diaria incluida",
+    "ru": "Включено ежедневное управление",
+    "zh": "包括日常管理"
   },
-  "Hospitalité d’excellence": {
-    "it": "Ospitalità d'eccellenza",
-    "en": "Hospitality of excellence",
-    "es": "Hospitalidad de excelencia",
-    "ru": "Превосходное гостеприимство",
-    "zh": "卓越的款待"
+  "Gestion sur mesure": {
+    "it": "Gestione su misura",
+    "en": "Tailor-made management",
+    "es": "Gestión a medida",
+    "ru": "Индивидуальное управление",
+    "zh": "量身定制的管理"
   },
-  "Identification des temps forts et des périodes calmes": {
-    "it": "Identificazione di periodi forti e periodi tranquilli",
-    "en": "Identification of strong times and quiet periods",
-    "es": "Identificación de épocas fuertes y épocas de calma",
-    "ru": "Определение сильных периодов и периодов затишья",
-    "zh": "识别强时期和平静时期"
+  "Gestion, accueil, préparation du logement, maintenance et services voyageurs commercialisés avec clarté à Genova.": {
+    "it": "Gestione, accoglienza, preparazione alloggi, manutenzione e servizi ai passeggeri chiaramente commercializzati a Genova.",
+    "en": "Management, reception, accommodation preparation, maintenance and passenger services clearly marketed in Genova.",
+    "es": "Servicios de gestión, recepción, preparación de alojamiento, mantenimiento y pasajeros claramente comercializados en Génova.",
+    "ru": "Управление, прием, подготовка к размещению, обслуживание и пассажирские услуги четко продаются в Генуе.",
+    "zh": "管理、接待、住宿准备、维护和乘客服务在热那亚明确销售。"
   },
-  "Incidents historisés": {
-    "it": "Incidenti storici",
-    "en": "Historical incidents",
-    "es": "Incidencias históricas",
-    "ru": "Исторические происшествия",
-    "zh": "历史事件"
+  "Guide local sélectionné": {
+    "it": "Guida locale selezionata",
+    "en": "Local guide selected",
+    "es": "Guía local seleccionado",
+    "ru": "Выбран местный гид",
+    "zh": "已选择本地向导"
   },
-  "Information propriétaire si nécessaire": {
-    "it": "Informazioni riservate se necessarie",
-    "en": "Proprietary information if necessary",
-    "es": "Información propia si es necesario",
-    "ru": "При необходимости конфиденциальная информация.",
-    "zh": "必要时提供专有信息"
+  "Habitudes du lieu notées": {
+    "it": "Annotate le abitudini del luogo",
+    "en": "Habits of the place noted",
+    "es": "Hábitos del lugar anotados",
+    "ru": "Привычки места отмечены",
+    "zh": "记录地点的习惯"
   },
-  "Information structurée": {
-    "it": "Informazioni strutturate",
-    "en": "Structured information",
-    "es": "Información estructurada",
-    "ru": "Структурированная информация",
-    "zh": "结构化信息"
+  "Historique du bien": {
+    "it": "Storia della proprietà",
+    "en": "History of the property",
+    "es": "Historia de la propiedad",
+    "ru": "История объекта",
+    "zh": "该物业的历史"
   },
-  "Informations centralisées": {
-    "it": "Informazioni centralizzate",
-    "en": "Centralized information",
-    "es": "Información centralizada",
-    "ru": "Централизованная информация",
-    "zh": "集中信息"
+  "Horaire suivi en temps réel": {
+    "it": "Programma monitorato in tempo reale",
+    "en": "Schedule monitored in real time",
+    "es": "Horario monitoreado en tiempo real",
+    "ru": "Расписание отслеживается в режиме реального времени",
+    "zh": "实时监控日程"
+  },
+  "Identification, hébergement et responsabilité du site Velyo.": {
+    "it": "Identificazione, hosting e responsabilità del sito Velyo.",
+    "en": "Identification, hosting and responsibility of the Velyo site.",
+    "es": "Identificación, alojamiento y responsabilidad del sitio Velyo.",
+    "ru": "Идентификация, хостинг и ответственность сайта Velyo.",
+    "zh": "Velyo 网站的标识、托管和责任。"
+  },
+  "Imprévu traité": {
+    "it": "Gestito in modo imprevisto",
+    "en": "Unforeseen handled",
+    "es": "Imprevistos manejados",
+    "ru": "Непредвиденное устранено",
+    "zh": "意外处理"
+  },
+  "Imprévus pris en charge": {
+    "it": "Eventi imprevisti risolti",
+    "en": "Unexpected events taken care of",
+    "es": "Eventos inesperados solucionados",
+    "ru": "Неожиданные события устранены",
+    "zh": "意外事件得到处理"
+  },
+  "Imprévus suivis": {
+    "it": "Seguirono eventi imprevisti",
+    "en": "Unforeseen events followed",
+    "es": "Siguieron imprevistos",
+    "ru": "Последовали непредвиденные события",
+    "zh": "发生了不可预见的事件"
+  },
+  "Imprévus traités": {
+    "it": "Eventi imprevisti gestiti",
+    "en": "Unforeseen events handled",
+    "es": "Imprevistos manejados",
+    "ru": "Непредвиденные события обработаны",
+    "zh": "处理意外事件"
+  },
+  "Incidents conservés dans l’historique": {
+    "it": "Incidenti rimasti nella storia",
+    "en": "Incidents kept in history",
+    "es": "Incidencias guardadas en el historial",
+    "ru": "Инциденты сохраняются в истории",
+    "zh": "历史记录的事件"
+  },
+  "Incidents récurrents": {
+    "it": "Incidenti ricorrenti",
+    "en": "Recurring incidents",
+    "es": "Incidentes recurrentes",
+    "ru": "Повторяющиеся инциденты",
+    "zh": "重复发生的事件"
+  },
+  "Incidents suivis jusqu’à leur résolution": {
+    "it": "Gli incidenti si susseguirono fino alla loro risoluzione",
+    "en": "Incidents followed until their resolution",
+    "es": "Incidentes seguidos hasta su resolución",
+    "ru": "Инциденты отслеживались до их разрешения",
+    "zh": "跟踪事件直至解决"
+  },
+  "Indiquez l’adresse du bien.": {
+    "it": "Indicare l'indirizzo dell'immobile.",
+    "en": "Indicate the address of the property.",
+    "es": "Indique la dirección del inmueble.",
+    "ru": "Укажите адрес объекта недвижимости.",
+    "zh": "注明该房产的地址。"
+  },
+  "Indiquez la surface.": {
+    "it": "Indicare la superficie.",
+    "en": "Indicate the surface area.",
+    "es": "Indicar la superficie.",
+    "ru": "Укажите площадь поверхности.",
+    "zh": "指示表面积。"
+  },
+  "Indiquez la ville.": {
+    "it": "Indicare la città.",
+    "en": "Indicate the city.",
+    "es": "Indica la ciudad.",
+    "ru": "Укажите город.",
+    "zh": "指示城市。"
+  },
+  "Indiquez un numéro de téléphone.": {
+    "it": "Inserisci un numero di telefono.",
+    "en": "Enter a telephone number.",
+    "es": "Ingrese un número de teléfono.",
+    "ru": "Введите номер телефона.",
+    "zh": "输入电话号码。"
+  },
+  "Indiquez votre nom.": {
+    "it": "Indica il tuo nome.",
+    "en": "Indicate your name.",
+    "es": "Indica tu nombre.",
+    "ru": "Укажите свое имя.",
+    "zh": "请注明您的姓名。"
+  },
+  "Indiquez votre prénom.": {
+    "it": "Indica il tuo nome.",
+    "en": "Indicate your first name.",
+    "es": "Indique su nombre.",
+    "ru": "Укажите свое имя.",
+    "zh": "请注明您的名字。"
   },
   "Informations légales": {
     "it": "Informazioni legali",
@@ -1507,96 +1829,61 @@ export const generatedMessages: Record<string, GeneratedLocalized> = {
     "ru": "Юридическая информация",
     "zh": "法律信息"
   },
-  "Installation à domicile": {
-    "it": "Installazione domestica",
-    "en": "Home installation",
-    "es": "Instalación en vivienda",
-    "ru": "Домашняя установка",
-    "zh": "家庭安装"
+  "Informations pratiques réunies": {
+    "it": "Informazioni pratiche raccolte",
+    "en": "Practical information gathered",
+    "es": "Información práctica recopilada",
+    "ru": "Собрана практическая информация",
+    "zh": "收集的实用信息"
   },
-  "Installer les standards": {
-    "it": "Installa gli standard",
-    "en": "Install standards",
-    "es": "Instalar estándares",
-    "ru": "Установить стандарты",
-    "zh": "安装标准"
+  "Informations sur les transports": {
+    "it": "Informazioni sul trasporto",
+    "en": "Transport information",
+    "es": "Información de transporte",
+    "ru": "Информация о транспорте",
+    "zh": "交通信息"
   },
-  "Instructions simples et précises": {
-    "it": "Istruzioni semplici e precise",
-    "en": "Simple and precise instructions",
-    "es": "Instrucciones sencillas y precisas",
-    "ru": "Простые и точные инструкции",
-    "zh": "简单而精确的说明"
+  "Installation accompagnée": {
+    "it": "Installazione accompagnata",
+    "en": "Accompanied installation",
+    "es": "Instalación acompañada",
+    "ru": "Сопровождаемая установка",
+    "zh": "伴随安装"
   },
-  "Intégration au parcours de réservation": {
-    "it": "Integrazione nel processo di prenotazione",
-    "en": "Integration into the reservation process",
-    "es": "Integración en el proceso de reserva",
-    "ru": "Интеграция в процесс бронирования",
-    "zh": "集成到预订流程中"
+  "Installation avant l’arrivée": {
+    "it": "Installazione prima dell'arrivo",
+    "en": "Installation before arrival",
+    "es": "Instalación antes de la llegada",
+    "ru": "Установка до приезда",
+    "zh": "抵达前安装"
   },
-  "Inventaire actualisé": {
-    "it": "Inventario aggiornato",
-    "en": "Updated inventory",
-    "es": "Inventario actualizado",
-    "ru": "Обновлен инвентарь.",
-    "zh": "更新库存"
+  "Installation discrète": {
+    "it": "Installazione discreta",
+    "en": "Discreet installation",
+    "es": "Instalación discreta",
+    "ru": "Скрытая установка",
+    "zh": "谨慎安装"
   },
-  "Inventaire de départ": {
-    "it": "Avvio dell'inventario",
-    "en": "Starting inventory",
-    "es": "Inventario inicial",
-    "ru": "Начальная инвентаризация",
-    "zh": "起始库存"
+  "Intervenants coordonnés": {
+    "it": "Relatori coordinati",
+    "en": "Coordinated speakers",
+    "es": "Ponentes coordinados",
+    "ru": "Согласованные спикеры",
+    "zh": "协调扬声器"
   },
-  "Inventaire des attentions essentielles": {
-    "it": "Inventario delle attenzioni essenziali",
-    "en": "Inventory of essential attentions",
-    "es": "Inventario de atenciones esenciales",
-    "ru": "Перечень важных мер вмешательства",
-    "zh": "基本注意事项清单"
+  "Je ne passe plus d’un prestataire à l’autre : Velyo coordonne et revient vers moi avec une réponse claire.": {
+    "it": "Non vado più da un fornitore di servizi all'altro: Velyo si coordina e torna da me con una risposta chiara.",
+    "en": "I no longer go from one service provider to another: Velyo coordinates and comes back to me with a clear answer.",
+    "es": "Ya no paso de un proveedor de servicios a otro: Velyo coordina y regresa a mí con una respuesta clara.",
+    "ru": "Я больше не хожу от одного поставщика услуг к другому: Velyo координирует и приходит ко мне с четким ответом.",
+    "zh": "我不再从一个服务提供商转到另一个服务提供商：Velyo 进行协调并给我提供明确的答案。"
   },
-  "Inventaire des besoins": {
-    "it": "Necessita di inventario",
-    "en": "Needs inventory",
-    "es": "Necesita inventario",
-    "ru": "Нужен инвентарь",
-    "zh": "需要库存"
-  },
-  "Inventaire du linge": {
-    "it": "Inventario della biancheria",
-    "en": "Linen inventory",
-    "es": "Inventario de ropa blanca",
-    "ru": "Льняной инвентарь",
-    "zh": "亚麻库存"
-  },
-  "Inventaires, vérifications et procédures claires pour protéger votre bien.": {
-    "it": "Inventari, verifiche e procedure chiare per tutelare il Suo immobile.",
-    "en": "Inventories, verifications and clear procedures to protect your property.",
-    "es": "Inventarios, verificaciones y procedimientos claros para proteger su propiedad.",
-    "ru": "Инвентаризация, проверки и четкие процедуры для защиты вашей собственности.",
-    "zh": "保护您财产的库存、验证和明确程序。"
-  },
-  "Itinéraire personnalisé": {
-    "it": "Itinerario personalizzato",
-    "en": "Personalized itinerary",
-    "es": "Itinerario personalizado",
-    "ru": "Персонализированный маршрут",
-    "zh": "个性化行程"
-  },
-  "Jour d’arrivée": {
-    "it": "Giorno di arrivo",
-    "en": "Day of arrival",
-    "es": "Día de llegada",
-    "ru": "День прибытия",
-    "zh": "抵达日"
-  },
-  "Jusqu’à la réalisation": {
-    "it": "Fino alla realizzazione",
-    "en": "Until realization",
-    "es": "Hasta la realización",
-    "ru": "До реализации",
-    "zh": "直到实现"
+  "Je sais qui suit le bien, ce qui a été fait et quand une décision m’appartient.": {
+    "it": "So chi sta seguendo il bene, cosa è stato fatto e quando spetta a me prendere una decisione.",
+    "en": "I know who is following the good, what has been done and when a decision is mine.",
+    "es": "Sé quién sigue el bien, qué se ha hecho y cuándo una decisión es mía.",
+    "ru": "Я знаю, кто следит за добром, что сделано и когда решение мое.",
+    "zh": "我知道谁在追随善行、做了什么以及何时由我做出决定。"
   },
   "Justificatifs classés": {
     "it": "Documenti giustificativi classificati",
@@ -1605,1342 +1892,1335 @@ export const generatedMessages: Record<string, GeneratedLocalized> = {
     "ru": "Секретные подтверждающие документы",
     "zh": "机密证明文件"
   },
-  "Justificatifs, validations et comptes rendus sont associés à l’action correspondante.": {
-    "it": "Documenti di supporto, convalide e report sono associati all'azione corrispondente.",
-    "en": "Supporting documents, validations and reports are associated with the corresponding action.",
-    "es": "Los documentos soporte, validaciones e informes están asociados a la acción correspondiente.",
-    "ru": "Подтверждающие документы, проверки и отчеты связаны с соответствующим действием.",
-    "zh": "支持文档、验证和报告与相应的操作相关联。"
+  "Kit bébé": {
+    "it": "Kit per neonati",
+    "en": "Baby kit",
+    "es": "Kit de bebé",
+    "ru": "Детский комплект",
+    "zh": "婴儿套件"
   },
-  "L’absence": {
-    "it": "L'assenza",
-    "en": "The absence",
-    "es": "La ausencia",
-    "ru": "Отсутствие",
-    "zh": "缺席"
+  "L’annonce, le calendrier et le tarif de départ sont configurés pour obtenir les premières réservations sans dégrader le positionnement du bien.": {
+    "it": "L'annuncio, il calendario e il prezzo di partenza sono configurati per ottenere le prime prenotazioni senza degradare il posizionamento dell'immobile.",
+    "en": "The announcement, the calendar and the starting price are configured to obtain the first reservations without degrading the positioning of the property.",
+    "es": "El anuncio, el calendario y el precio de salida están configurados para obtener las primeras reservas sin degradar el posicionamiento del inmueble.",
+    "ru": "Объявление, календарь и стартовая цена настроены так, чтобы получить первые бронирования без ухудшения позиционирования объекта.",
+    "zh": "公告、日历和起始价格的配置是为了在不降低酒店定位的情况下获得第一批预订。"
   },
-  "L’ajustement est explicable, mesurable et ne repose jamais sur une promesse de revenu garanti.": {
-    "it": "L'aggiustamento è spiegabile, misurabile e non si basa mai su una promessa di reddito garantito.",
-    "en": "The adjustment is explainable, measurable and is never based on a promise of guaranteed income.",
-    "es": "El ajuste es explicable, mensurable y nunca se basa en una promesa de ingresos garantizados.",
-    "ru": "Эта корректировка объяснима, измерима и никогда не основана на обещании гарантированного дохода.",
-    "zh": "该调整是可解释、可衡量的，并且绝不基于保证收入的承诺。"
+  "L’annonce, les photographies, le calendrier et la stratégie tarifaire sont préparés pour lancer la location sur des bases solides.": {
+    "it": "L'annuncio, le fotografie, il calendario e la strategia dei prezzi sono preparati per lanciare il noleggio su solide basi.",
+    "en": "The announcement, photographs, calendar and pricing strategy are prepared to launch the rental on solid foundations.",
+    "es": "El anuncio, las fotografías, el calendario y la estrategia de precios están preparados para lanzar el alquiler sobre bases sólidas.",
+    "ru": "Анонс, фотографии, календарь и ценовая стратегия подготовлены для запуска проката на прочной основе.",
+    "zh": "公告、照片、日历和定价策略已准备好，为推出租赁奠定了坚实的基础。"
   },
-  "L’arrivée est accompagnée sur place ou à distance selon le cadre choisi, avec des instructions claires.": {
-    "it": "L'arrivo viene accompagnato in loco o da remoto a seconda dell'impostazione scelta, con istruzioni chiare.",
-    "en": "Arrival is accompanied on site or remotely depending on the chosen setting, with clear instructions.",
-    "es": "La llegada es acompañada in situ o de forma remota según el entorno elegido, con instrucciones claras.",
-    "ru": "Прибытие сопровождается на месте или удаленно в зависимости от выбранных настроек с четкими инструкциями.",
-    "zh": "根据所选设置，将在现场或远程陪同抵达，并提供明确的说明。"
+  "L’envoi n’a pas abouti. Réessayez dans un instant.": {
+    "it": "L'invio non è andato a buon fine. Riprova tra un attimo.",
+    "en": "The sending was not successful. Try again in a moment.",
+    "es": "El envío no fue exitoso. Inténtalo de nuevo en un momento.",
+    "ru": "Отправка не удалась. Повторите попытку через минуту.",
+    "zh": "发送失败。稍后再试一次。"
   },
-  "L’arte di prendersi cura di ciò che conta.": {
-    "it": "L’arte di prisersi cura di ciò che conta.",
-    "en": "L’arte di prisersi cura di ciò che conta.",
-    "es": "L'arte di prisersi cura di ciò che conta.",
-    "ru": "L’arte di prisersi cura di ciò che conta.",
-    "zh": "L'arte di prisersi cura di ciò che conta。"
+  "L’historique reste facile à retrouver": {
+    "it": "La storia rimane facile da trovare",
+    "en": "History remains easy to find",
+    "es": "El historial sigue siendo fácil de encontrar",
+    "ru": "Историю по-прежнему легко найти",
+    "zh": "历史仍然很容易找到"
   },
-  "L’envoi a échoué. Vérifiez votre connexion puis réessayez.": {
-    "it": "Invio non riuscito. Controlla la connessione e riprova.",
-    "en": "Sending failed. Check your connection then try again.",
-    "es": "Error en el envío. Verifique su conexión y vuelva a intentarlo.",
-    "ru": "Не удалось отправить. Проверьте соединение и повторите попытку.",
-    "zh": "发送失败。检查您的连接，然后重试。"
+  "L’imprévu est vérifié sur place, confié à la bonne personne puis suivi jusqu’à sa résolution.": {
+    "it": "L'imprevisto viene verificato in loco, affidato alla persona giusta e poi seguito fino alla sua risoluzione.",
+    "en": "The unforeseen event is checked on site, entrusted to the right person then followed until it is resolved.",
+    "es": "El imprevisto se controla in situ, se confía a la persona adecuada y se sigue hasta su resolución.",
+    "ru": "Непредвиденное событие проверяется на месте, передается нужному человеку, а затем отслеживается до тех пор, пока оно не будет решено.",
+    "zh": "现场检查不可预见的事件，委托给正确的人员，然后跟踪直至解决。"
   },
-  "L’équipe anticipe les détails opérationnels et nous tient informés sans multiplier les messages.": {
-    "it": "Il team anticipa i dettagli operativi e ci tiene informati senza moltiplicare i messaggi.",
-    "en": "The team anticipates operational details and keeps us informed without multiplying messages.",
-    "es": "El equipo anticipa los detalles operativos y nos mantiene informados sin multiplicar mensajes.",
-    "ru": "Команда предвидит оперативные детали и держит нас в курсе, не увеличивая количество сообщений.",
-    "zh": "该团队预测操作细节并让我们随时了解情况，而不会增加消息。"
+  "La composition, les éventuelles allergies et le budget sont validés à l’avance.": {
+    "it": "La composizione, le eventuali allergie e il budget vengono convalidati in anticipo.",
+    "en": "The composition, possible allergies and the budget are validated in advance.",
+    "es": "La composición, posibles alergias y el presupuesto se validan previamente.",
+    "ru": "Состав, возможная аллергия и бюджет согласовываются заранее.",
+    "zh": "成分、可能的过敏和预算均已提前验证。"
   },
-  "L’essentiel accessible immédiatement": {
-    "it": "L'essenziale immediatamente accessibile",
-    "en": "The essentials immediately accessible",
-    "es": "Lo esencial inmediatamente accesible",
-    "ru": "Все самое необходимое доступно сразу",
-    "zh": "可立即获取的必需品"
+  "La connexion a été interrompue. Réessayez dans un instant.": {
+    "it": "La connessione è stata interrotta. Riprova tra un attimo.",
+    "en": "The connection was interrupted. Try again in a moment.",
+    "es": "La conexión fue interrumpida. Inténtalo de nuevo en un momento.",
+    "ru": "Соединение прервано. Повторите попытку через минуту.",
+    "zh": "连接已中断。稍后再试一次。"
   },
-  "L’expérience commence avant la porte : dans la fluidité des échanges, la justesse des attentions et le sentiment d’être attendu.": {
-    "it": "L'esperienza inizia davanti alla porta: nella fluidità degli scambi, nella precisione dell'attenzione e nella sensazione di essere attesi.",
-    "en": "The experience begins before the door: in the fluidity of exchanges, the accuracy of attention and the feeling of being expected.",
-    "es": "La experiencia comienza ante la puerta: en la fluidez de los intercambios, la precisión de la atención y el sentimiento de ser esperado.",
-    "ru": "Опыт начинается еще за дверью: в плавности обмена информацией, точности внимания и ощущении того, что вас ждут.",
-    "zh": "体验在门前开始：交流的流畅性、注意力的准确性和被期待的感觉。"
+  "La disponibilité, le tarif, le lieu d’intervention et les conditions sont confirmés directement.": {
+    "it": "Disponibilità, prezzo, luogo di intervento e condizioni vengono confermati direttamente.",
+    "en": "Availability, price, location of intervention and conditions are confirmed directly.",
+    "es": "Disponibilidad, precio, lugar de intervención y condiciones se confirman directamente.",
+    "ru": "Наличие, цена, место проведения и условия подтверждаются напрямую.",
+    "zh": "直接确认可用性、价格、干预地点和条件。"
   },
-  "L’historique de votre bien préservé": {
-    "it": "La storia del Suo bene preservato",
-    "en": "The history of your preserved property",
-    "es": "La historia de su propiedad preservada",
-    "ru": "История вашей сохранившейся собственности",
-    "zh": "您保存的财产的历史"
+  "La formule, la durée et le tarif sont validés par le voyageur avant confirmation.": {
+    "it": "La ​​formula, la durata e il prezzo vengono convalidati dal viaggiatore prima della conferma.",
+    "en": "The formula, duration and price are validated by the traveler before confirmation.",
+    "es": "La ​​fórmula, duración y precio son validados por el viajero antes de la confirmación.",
+    "ru": "Формула, продолжительность и цена проверяются путешественником перед подтверждением.",
+    "zh": "公式、持续时间和价格由旅客在确认前进行验证。"
   },
-  "L’intégrer à la réservation": {
-    "it": "Integralo nella prenotazione",
-    "en": "Integrate it into the reservation",
-    "es": "Integrarlo en la reserva",
-    "ru": "Интегрируйте его в бронирование",
-    "zh": "将其集成到预订中"
+  "La liste des achats, le budget et le coût de préparation sont confirmés avant intervention.": {
+    "it": "L'elenco degli acquisti, il budget e il costo di preparazione vengono confermati prima dell'intervento.",
+    "en": "The list of purchases, the budget and the preparation cost are confirmed before intervention.",
+    "es": "La lista de compras, el presupuesto y el coste de preparación se confirman antes de la intervención.",
+    "ru": "Список покупок, бюджет и стоимость подготовки уточняются перед вмешательством.",
+    "zh": "干预前确认采购清单、预算和准备成本。"
   },
-  "L’option et le tarif présentés": {
-    "it": "L'opzione e il prezzo presentati",
-    "en": "The option and price presented",
-    "es": "La opción y precio presentado",
-    "ru": "Представленный вариант и цена",
-    "zh": "提供的选项和价格"
+  "La location actuelle": {
+    "it": "Noleggio attuale",
+    "en": "Current rental",
+    "es": "Alquiler actual",
+    "ru": "Текущий прокат",
+    "zh": "当前租金"
   },
-  "La confiance se construit lorsque la promesse tient aussi les jours compliqués. Nous prenons la situation en main, coordonnons les bonnes personnes et revenons vers vous avec une réponse claire — pas avec un problème de plus.": {
-    "it": "La fiducia si costruisce quando la promessa mantiene anche nei giorni complicati. Prendiamo in carico la situazione, coordiniamo le persone giuste e torniamo da Lei con una risposta chiara, senza un altro problema.",
-    "en": "Trust is built when the promise also keeps on complicated days. We take charge of the situation, coordinate the right people and come back to you with a clear answer — not one more problem.",
-    "es": "La confianza se construye cuando la promesa también se cumple en los días complicados. Nos hacemos cargo de la situación, coordinamos a las personas adecuadas y regresamos a usted con una respuesta clara: ni un problema más.",
-    "ru": "Доверие строится, когда обещание выполняется и в трудные дни. Мы берем ситуацию на себя, координируем нужных людей и возвращаемся к вам с четким ответом — и не еще одной проблемой.",
-    "zh": "当承诺在复杂的日子里也能兑现时，就会建立信任。我们负责掌控局势，协调合适的人员，并为您提供明确的答案——不再是一个问题。"
+  "La location est gérée": {
+    "it": "Il noleggio è gestito",
+    "en": "The rental is managed",
+    "es": "Se gestiona el alquiler",
+    "ru": "Прокат организован",
+    "zh": "租赁管理"
   },
-  "La côte ligure vue depuis la mer, avec des itinéraires conçus sur demande.": {
-    "it": "La costa ligure vista dal mare, con itinerari studiati su richiesta.",
-    "en": "The Ligurian coast seen from the sea, with itineraries designed on request.",
-    "es": "La costa de Liguria vista desde el mar, con itinerarios diseñados bajo pedido.",
-    "ru": "Лигурийское побережье, вид с моря, маршруты разрабатываются по запросу.",
-    "zh": "从海上看到的利古里亚海岸，行程可根据要求设计。"
+  "La prochaine action est clairement identifiée": {
+    "it": "L'azione successiva è chiaramente identificata",
+    "en": "The next action is clearly identified",
+    "es": "La siguiente acción está claramente identificada",
+    "ru": "Следующее действие четко обозначено",
+    "zh": "明确确定下一步行动"
   },
-  "La décision est prise avec les bonnes informations et l’intervention reste entièrement suivie.": {
-    "it": "La decisione viene presa con le giuste informazioni e l'intervento rimane integralmente seguito.",
-    "en": "The decision is made with the right information and the intervention remains fully followed.",
-    "es": "La decisión se toma con la información correcta y la intervención se sigue íntegramente.",
-    "ru": "Решение принимается на основе правильной информации, и вмешательство полностью выполняется.",
-    "zh": "该决定是根据正确的信息做出的，并且干预措施仍然得到充分遵循。"
+  "La proposition précise, bien par bien, le niveau de présence, les services inclus, les validations nécessaires et les conditions de rémunération.": {
+    "it": "La proposta specifica, punto per punto, il livello di presenza, i servizi inclusi, le necessarie convalide e le condizioni di remunerazione.",
+    "en": "The proposal specifies, item by item, the level of presence, the services included, the necessary validations and the remuneration conditions.",
+    "es": "La propuesta especifica, punto por punto, el nivel de presencia, los servicios incluidos, las validaciones necesarias y las condiciones de retribución.",
+    "ru": "В предложении по пунктам указывается уровень присутствия, включенные услуги, необходимые проверки и условия вознаграждения.",
+    "zh": "该提案逐项指定了存在级别、包含的服务、必要的验证和报酬条件。"
   },
-  "La demande est traitée dans un cadre maîtrisé, sans solliciter directement le propriétaire.": {
-    "it": "La richiesta viene elaborata in un ambito controllato, senza interpellare direttamente il titolare.",
-    "en": "The request is processed within a controlled framework, without directly requesting the owner.",
-    "es": "La solicitud se procesa dentro de un marco controlado, sin solicitarlo directamente al titular.",
-    "ru": "Запрос обрабатывается в контролируемой среде без прямого запроса владельца.",
-    "zh": "该请求在受控框架内处理，而不直接请求所有者。"
+  "La visite permet de confirmer le fonctionnement, les services nécessaires et la proposition de gestion.": {
+    "it": "La visita conferma il funzionamento, i servizi necessari e la proposta gestionale.",
+    "en": "The visit confirms the operation, the necessary services and the management proposal.",
+    "es": "La visita confirma el funcionamiento, los servicios necesarios y la propuesta de gestión.",
+    "ru": "Визит подтверждает операцию, необходимые услуги и предложение руководства.",
+    "zh": "此次访问确认了运营、必要的服务和管理建议。"
   },
-  "La diffusion des annonces": {
-    "it": "La distribuzione degli annunci pubblicitari",
-    "en": "The distribution of advertisements",
-    "es": "La distribución de anuncios",
-    "ru": "Распространение рекламы",
-    "zh": "广告的分发"
+  "Lancer la location": {
+    "it": "Inizia il noleggio",
+    "en": "Start rental",
+    "es": "Iniciar alquiler",
+    "ru": "Начать прокат",
+    "zh": "开始租赁"
   },
-  "La gestion ne s’arrête pas à remplir un calendrier. Nous suivons les tarifs, l’occupation, les durées de séjour et les retours voyageurs afin d’ajuster la stratégie avec méthode et de rendre compte clairement au propriétaire.": {
-    "it": "La direzione non si ferma alla compilazione di un calendario. Monitoriamo tariffe, occupazione, durata del soggiorno e ritorni degli ospiti per adattare metodicamente la strategia e riferire chiaramente al proprietario.",
-    "en": "Management does not stop at filling out a calendar. We monitor rates, occupancy, length of stay and guest returns in order to methodically adjust the strategy and report clearly to the owner.",
-    "es": "La gestión no se limita a rellenar un calendario. Monitoreamos tarifas, ocupación, duración de la estadía y retorno de los huéspedes para ajustar metódicamente la estrategia e informar claramente al propietario.",
-    "ru": "Руководство не ограничивается заполнением календаря. Мы отслеживаем тарифы, заполняемость, продолжительность пребывания и возврат гостей, чтобы методично корректировать стратегию и четко отчитываться перед владельцем.",
-    "zh": "管理不仅仅停留在填写日历上。我们监控房价、入住率、入住时间和客人回报，以便有条不紊地调整策略并向业主清楚地报告。"
+  "Langue et durée au choix": {
+    "it": "Lingua e durata a scelta",
+    "en": "Language and duration of your choice",
+    "es": "Idioma y duración de tu elección",
+    "ru": "Язык и продолжительность по вашему выбору",
+    "zh": "您选择的语言和持续时间"
   },
-  "La main-d’œuvre et les pièces": {
-    "it": "Manodopera e parti",
-    "en": "Labor and parts",
-    "es": "Mano de obra y repuestos",
-    "ru": "Работа и запчасти",
-    "zh": "人工和零件"
+  "Le besoin est qualifié, le devis validé et l’intervention suivie jusqu’à sa résolution.": {
+    "it": "L'esigenza viene qualificata, il preventivo validato e l'intervento seguito fino alla sua risoluzione.",
+    "en": "The need is qualified, the quote validated and the intervention followed until its resolution.",
+    "es": "Se califica la necesidad, se valida la cotización y se sigue la intervención hasta su resolución.",
+    "ru": "Потребность подтверждена, предложение подтверждено, и меры принимаются до момента ее разрешения.",
+    "zh": "需求经过验证，报价经过验证，随后进行干预，直至问题得到解决。"
   },
-  "La préparation conforme du logement": {
-    "it": "Preparazione conforme dell'abitazione",
-    "en": "Compliant preparation of housing",
-    "es": "Preparación conforme de vivienda",
-    "ru": "Соответствующая подготовка жилья",
-    "zh": "合规的住房准备"
+  "Le bien": {
+    "it": "Bene",
+    "en": "Good",
+    "es": "Bueno",
+    "ru": "Хорошо",
+    "zh": "好"
   },
-  "La présentation, les informations voyageurs et le suivi sont enfin réunis dans un seul échange.": {
-    "it": "Presentazione, informazioni sui passeggeri e tracciamento sono finalmente riuniti in un unico scambio.",
-    "en": "Presentation, passenger information and tracking are finally brought together in a single exchange.",
-    "es": "La presentación, la información de los pasajeros y el seguimiento se reúnen por fin en un único intercambio.",
-    "ru": "Презентация, информация о пассажирах и отслеживание наконец-то объединены в едином обмене данными.",
-    "zh": "演示、乘客信息和跟踪最终汇集在一个交换中。"
+  "Le bien devient plus facile à réserver pour les familles sans achat permanent du propriétaire.": {
+    "it": "La proprietà diventa più facile da prenotare per le famiglie senza acquisto permanente da parte del proprietario.",
+    "en": "The property becomes easier to reserve for families without permanent purchase from the owner.",
+    "es": "La propiedad se vuelve más fácil de reservar para familias sin necesidad de una compra permanente por parte del propietario.",
+    "ru": "Недвижимость становится проще зарезервировать для семей без постоянной покупки у владельца.",
+    "zh": "对于无需从业主那里永久购买的家庭来说，该房产的预订变得更加容易。"
   },
-  "La prestation est présentée au bon moment, avec une description simple, un prix connu et une procédure de validation précise.": {
-    "it": "Il servizio si presenta al momento giusto, con una descrizione semplice, un prezzo conosciuto e una precisa procedura di validazione.",
-    "en": "The service is presented at the right time, with a simple description, a known price and a precise validation procedure.",
-    "es": "El servicio se presenta en el momento adecuado, con una descripción sencilla, un precio conocido y un procedimiento de validación preciso.",
-    "ru": "Услуга предоставляется в нужное время, с простым описанием, известной ценой и четкой процедурой проверки.",
-    "zh": "该服务在正确的时间提供，具有简单的描述、已知的价格和精确的验证程序。"
+  "Le bien est contrôlé avant l’arrivée": {
+    "it": "La proprietà viene controllata prima dell'arrivo",
+    "en": "The property is checked before arrival",
+    "es": "La propiedad se revisa antes de la llegada.",
+    "ru": "Объект проверяется перед заездом",
+    "zh": "抵达前检查住宿"
   },
-  "La réalisation de la prestation": {
-    "it": "Esecuzione del servizio",
-    "en": "Carrying out the service",
-    "es": "Realización del servicio",
-    "ru": "Проведение услуги",
-    "zh": "开展服务"
+  "Le bien est prêt à recevoir": {
+    "it": "L'immobile è pronto a ricevere",
+    "en": "The property is ready to receive",
+    "es": "La propiedad está lista para recibir",
+    "ru": "Объект готов к приему",
+    "zh": "该房产已准备好接收"
   },
-  "La remise en conformité signalée": {
-    "it": "Ritorno alla conformità segnalato",
-    "en": "Return to compliance reported",
-    "es": "Se reporta retorno al cumplimiento",
-    "ru": "Сообщено о возвращении к соответствию",
-    "zh": "已报告恢复合规性"
+  "Le bien est réellement prêt, pas seulement déclaré propre.": {
+    "it": "La proprietà è effettivamente pronta, non solo dichiarata pulita.",
+    "en": "The property is actually ready, not just declared clean.",
+    "es": "La propiedad realmente está lista, no solo declarada limpia.",
+    "ru": "Объект фактически готов, а не просто объявлен чистым.",
+    "zh": "该房产实际上已准备就绪，而不仅仅是声明干净。"
   },
-  "La situation est sécurisée dans notre périmètre, les interlocuteurs utiles sont mobilisés et le propriétaire informé.": {
-    "it": "La situazione è sicura nel nostro perimetro, i contatti interessati sono mobilitati e il proprietario informato.",
-    "en": "The situation is secure within our perimeter, the relevant contacts are mobilized and the owner informed.",
-    "es": "La situación es segura dentro de nuestro perímetro, se movilizan los contactos pertinentes y se informa al propietario.",
-    "ru": "В пределах нашего периметра ситуация безопасная, соответствующие контакты мобилизованы и владелец проинформирован.",
-    "zh": "我们周边的情况是安全的，已动员相关联系人并通知业主。"
+  "Le bien repart à zéro": {
+    "it": "La proprietà parte da zero",
+    "en": "The property starts from scratch",
+    "es": "La propiedad comienza desde cero",
+    "ru": "Недвижимость начинается с нуля",
+    "zh": "房产从头开始"
   },
-  "La télésurveillance ou l’assurance si souscrites": {
-    "it": "Monitoraggio remoto o assicurazione se sottoscritta",
-    "en": "Remote monitoring or insurance if subscribed",
-    "es": "Monitorización remota o seguro si estás suscrito",
-    "ru": "Удаленный мониторинг или страхование при подписке",
-    "zh": "远程监控或保险（如果订阅）"
+  "Le budget des achats et les frais de service sont présentés séparément avant validation.": {
+    "it": "Il budget di acquisto e i costi del servizio vengono presentati separatamente prima della convalida.",
+    "en": "The purchasing budget and service costs are presented separately before validation.",
+    "es": "El presupuesto de compras y los costos del servicio se presentan por separado antes de la validación.",
+    "ru": "Перед проверкой бюджет закупок и стоимость услуг представлены отдельно.",
+    "zh": "采购预算和服务成本在验证前单独列出。"
   },
-  "La transmission de leurs justificatifs": {
-    "it": "Trasmissione dei documenti giustificativi",
-    "en": "Transmission of their supporting documents",
-    "es": "Transmisión de sus justificantes",
-    "ru": "Передача подтверждающих документов",
-    "zh": "传输其证明文件"
+  "Le contenu reste modulable et chaque achat est validé avant la mise en place.": {
+    "it": "Il contenuto rimane modulare e ogni acquisto viene convalidato prima dell'implementazione.",
+    "en": "The content remains modular and each purchase is validated before implementation.",
+    "es": "El contenido sigue siendo modular y cada compra se valida antes de su implementación.",
+    "ru": "Контент остается модульным, и каждая покупка проверяется перед реализацией.",
+    "zh": "内容保持模块化，每次购买在实施前都会经过验证。"
   },
-  "Le bien retrouve le niveau convenu et l’incident reste documenté.": {
-    "it": "La proprietà ritorna al livello concordato e l'incidente rimane documentato.",
-    "en": "The property returns to the agreed level and the incident remains documented.",
-    "es": "La propiedad vuelve al nivel acordado y la incidencia queda documentada.",
-    "ru": "Состояние объекта возвращается на согласованный уровень, а инцидент остается задокументированным.",
-    "zh": "财产恢复到商定的水平，并且事件仍然记录在案。"
+  "Le délai dépend de l’état du bien, des accès, des supports à préparer et des services retenus. Il est précisé après la visite initiale.": {
+    "it": "La scadenza dipende dallo stato dell'immobile, dall'accesso, dai supporti da predisporre e dai servizi mantenuti. Viene specificato dopo la prima visita.",
+    "en": "The deadline depends on the condition of the property, access, the supports to be prepared and the services retained. It is specified after the initial visit.",
+    "es": "El plazo depende del estado del inmueble, acceso, soportes a preparar y servicios contratados. Se concreta tras la visita inicial.",
+    "ru": "Срок зависит от состояния объекта, доступа, подготовленных опор и сохраненных услуг. Уточняется после первого визита.",
+    "zh": "截止日期取决于财产状况、通道、要准备的支持和保留的服务。它是在初次访问后指定的。"
   },
-  "Le délai dépend de la préparation du bien et des services retenus. Il est précisé après la visite initiale.": {
-    "it": "Il termine dipende dalla preparazione della merce e dei servizi trattenuti. Viene specificato dopo la prima visita.",
-    "en": "The deadline depends on the preparation of the goods and the services retained. It is specified after the initial visit.",
-    "es": "El plazo depende de la preparación de los bienes y de los servicios contratados. Se concreta tras la visita inicial.",
-    "ru": "Срок зависит от подготовки товара и сохраняемых услуг. Уточняется после первого визита.",
-    "zh": "截止日期取决于货物的准备情况和保留的服务。它是在初次访问后指定的。"
+  "Le lieu, les horaires et le tarif éventuel sont précisés avant confirmation.": {
+    "it": "Il luogo, gli orari e l'eventuale prezzo vengono specificati prima della conferma.",
+    "en": "The location, times and possible price are specified before confirmation.",
+    "es": "La ubicación, horarios y posible precio se especifican antes de la confirmación.",
+    "ru": "Место, время и возможная цена уточняются до подтверждения.",
+    "zh": "地点、时间和可能的价格在确认前指定。"
   },
-  "Le départ": {
-    "it": "Partenza",
-    "en": "Departure",
-    "es": "Salida",
-    "ru": "Отъезд",
-    "zh": "出发"
+  "Le matériel disponible, les conditions et le tarif sont confirmés avec les parents.": {
+    "it": "I materiali disponibili, le condizioni e il prezzo sono confermati con i genitori.",
+    "en": "The materials available, the conditions and the price are confirmed with the parents.",
+    "es": "Los materiales disponibles, las condiciones y el precio se confirman con los padres.",
+    "ru": "Наличие материалов, условия и стоимость согласовываются с родителями.",
+    "zh": "可用材料、条件和价格已与家长确认。"
   },
-  "Le devis et les travaux non urgents": {
-    "it": "Il preventivo e il lavoro non urgente",
-    "en": "The quote and non-urgent work",
-    "es": "El presupuesto y el trabajo no urgente",
-    "ru": "Расценки и несрочные работы",
-    "zh": "报价和非紧急工作"
+  "Le ménage suit une liste de contrôle": {
+    "it": "La famiglia segue una lista di controllo",
+    "en": "Household follows a checklist",
+    "es": "El hogar sigue una lista de verificación",
+    "ru": "Семья следует контрольному списку",
+    "zh": "家庭遵循清单"
   },
-  "Le diagnostic technique": {
-    "it": "Diagnosi tecnica",
-    "en": "Technical diagnosis",
-    "es": "Diagnóstico técnico",
-    "ru": "Техническая диагностика",
-    "zh": "技术诊断"
+  "Le nombre de vélos, la durée, les cautions et le prix sont confirmés avant réservation.": {
+    "it": "Il numero di biciclette, la durata, i depositi e il prezzo vengono confermati prima della prenotazione.",
+    "en": "The number of bikes, duration, deposits and price are confirmed before booking.",
+    "es": "El número de bicicletas, duración, depósitos y precio se confirman antes de reservar.",
+    "ru": "Количество велосипедов, продолжительность, залог и цена подтверждаются перед бронированием.",
+    "zh": "自行车数量、持续时间、押金和价格均在预订前确认。"
   },
-  "Le juste prix évolue avec la saison, la demande et la manière dont votre bien est présenté — jamais au détriment de son positionnement.": {
-    "it": "Il prezzo giusto cambia con la stagione, la domanda e il modo in cui viene presentata la Sua proprietà, mai a scapito del suo posizionamento.",
-    "en": "The right price evolves with the season, demand and the way your property is presented — never to the detriment of its positioning.",
-    "es": "El precio adecuado evoluciona con la temporada, la demanda y la forma de presentar su propiedad, nunca en detrimento de su posicionamiento.",
-    "ru": "Правильная цена меняется в зависимости от сезона, спроса и способа представления вашей недвижимости — никогда не в ущерб ее позиционированию.",
-    "zh": "合适的价格会随着季节、需求和您的房产的展示方式而变化 - 永远不会损害其定位。"
+  "Le parcours, la disponibilité du guide et le prix sont confirmés avant engagement.": {
+    "it": "Il percorso, la disponibilità della guida e il prezzo sono confermati prima dell'impegno.",
+    "en": "The route, the availability of the guide and the price are confirmed before commitment.",
+    "es": "La ruta, la disponibilidad del guía y el precio se confirman antes del compromiso.",
+    "ru": "Маршрут, наличие гида и цена согласовываются перед бронированием.",
+    "zh": "路线、导游的可用性和价格在承诺前已确认。"
   },
-  "Le juste prix, au bon moment.": {
-    "it": "Il prezzo giusto, al momento giusto.",
-    "en": "The right price, at the right time.",
-    "es": "El precio justo, en el momento justo.",
-    "ru": "Правильная цена и в нужное время.",
-    "zh": "在正确的时间提供正确的价格。"
+  "Le prix des nuits et la durée des séjours évoluent selon la saison et les réservations réelles.": {
+    "it": "Il prezzo delle notti e la durata dei soggiorni variano a seconda della stagione e delle effettive prenotazioni.",
+    "en": "The price of nights and the length of stays vary according to the season and actual reservations.",
+    "es": "El precio de las noches y la duración de las estancias varían según la temporada y las reservas reales.",
+    "ru": "Стоимость ночей и продолжительность проживания варьируются в зависимости от сезона и фактического бронирования.",
+    "zh": "住宿价格和住宿时间根据季节和实际预订情况而有所不同。"
   },
-  "Le meilleur de la Ligurie, orchestré avec soin et discrétion.": {
-    "it": "Il meglio della Liguria, orchestrato con cura e discrezione.",
-    "en": "The best of Liguria, orchestrated with care and discretion.",
-    "es": "Lo mejor de Liguria, orquestado con mimo y discreción.",
-    "ru": "Лучшее из Лигурии, организованное с осторожностью и осмотрительностью.",
-    "zh": "精心策划的利古里亚最好的作品。"
+  "Le problème est qualifié avant toute dépense": {
+    "it": "Il problema va qualificato prima di ogni spesa",
+    "en": "The problem is qualified before any expenditure",
+    "es": "El problema se califica antes de cualquier gasto.",
+    "ru": "Проблема решается до каких-либо затрат",
+    "zh": "在任何支出之前问题已被限定"
   },
-  "Le même niveau d’exigence, à chaque séjour.": {
-    "it": "Lo stesso livello di esigenze, ad ogni soggiorno.",
-    "en": "The same level of requirements, every stay.",
-    "es": "El mismo nivel de exigencias en cada estancia.",
-    "ru": "Одинаковый уровень требований при каждом пребывании.",
-    "zh": "每次入住都有相同级别的要求。"
+  "Le programme et chaque coût sont détaillés puis confirmés par le voyageur avant organisation.": {
+    "it": "Il programma ed ogni costo vengono dettagliati e poi confermati dal viaggiatore prima dell'organizzazione.",
+    "en": "The program and each cost are detailed then confirmed by the traveler before organization.",
+    "es": "El programa y cada costo son detallados y luego confirmados por el viajero antes de la organización.",
+    "ru": "Программа и каждая стоимость подробно оговариваются и утверждаются путешественником перед организацией.",
+    "zh": "行程和每项费用均已详细说明，并在组织前由旅行者确认。"
   },
-  "Le même niveau de soin à chaque séjour": {
-    "it": "Lo stesso livello di attenzione per ogni soggiorno",
-    "en": "The same level of care every stay",
-    "es": "El mismo nivel de atención en cada estancia",
-    "ru": "Одинаковый уровень обслуживания при каждом пребывании",
-    "zh": "每次入住均享受相同水平的护理"
+  "Le quartier, la saison, le type de voyageurs et les charges servent à établir un positionnement réaliste et une première projection.": {
+    "it": "Il quartiere, la stagione, la tipologia dei viaggiatori e le tariffe vengono utilizzati per stabilire un posizionamento realistico e una prima proiezione.",
+    "en": "The neighborhood, the season, the type of travelers and the charges are used to establish a realistic positioning and a first projection.",
+    "es": "El barrio, la temporada, el tipo de viajeros y los cargos se utilizan para establecer un posicionamiento realista y una primera proyección.",
+    "ru": "Район, сезон, тип путешественников и стоимость используются для определения реалистичного позиционирования и первого прогноза.",
+    "zh": "使用社区、季节、旅行者类型和费用来建立切合实际的定位和初步预测。"
   },
-  "Le ménage et la blanchisserie": {
-    "it": "Pulizie e lavanderia",
-    "en": "Housekeeping and laundry",
-    "es": "Servicio de limpieza y lavandería",
-    "ru": "Уборка номеров и стирка",
-    "zh": "家政和洗衣"
+  "Le quotidien est pris en charge": {
+    "it": "Ci prendiamo cura della vita quotidiana",
+    "en": "Daily life is taken care of",
+    "es": "La vida diaria está cuidada",
+    "ru": "О повседневной жизни заботятся",
+    "zh": "日常生活有照顾"
   },
-  "Le mode d’accueil retenu": {
-    "it": "La modalità di ricezione scelta",
-    "en": "The reception mode chosen",
-    "es": "El modo de recepción elegido",
-    "ru": "Выбранный режим приема",
-    "zh": "选择的接收模式"
+  "Le rôle de Velyo, les dépenses séparées et les décisions qui restent les vôtres sont posés clairement.": {
+    "it": "Il ruolo di Velyo, le spese separate e le decisioni che restano tue sono chiaramente indicate.",
+    "en": "The role of Velyo, the separate expenses and the decisions that remain yours are clearly stated.",
+    "es": "El papel de Velyo, los gastos separados y las decisiones que siguen siendo tuyas están claramente establecidas.",
+    "ru": "Четко обозначена роль Вельо, отдельные расходы и решения, которые остаются за вами.",
+    "zh": "Velyo 的作用、单独费用以及您的决定权均已明确说明。"
   },
-  "Le partage avec ses conseils professionnels": {
-    "it": "Condivisione con consulenza professionale",
-    "en": "Sharing with professional advice",
-    "es": "Compartiendo con asesoramiento profesional",
-    "ru": "Делюсь профессиональным советом",
-    "zh": "与专业建议分享"
-  },
-  "Le périmètre et les règles de délégation": {
-    "it": "L'ambito e le regole di delega",
-    "en": "The scope and delegation rules",
-    "es": "El alcance y las reglas de delegación",
-    "ru": "Область действия и правила делегирования",
-    "zh": "范围和授权规则"
-  },
-  "Le positionnement et les règles sensibles": {
-    "it": "Posizionamento e regole sensibili",
-    "en": "Positioning and sensitive rules",
-    "es": "Posicionamiento y reglas sensibles",
-    "ru": "Позиционирование и деликатные правила",
-    "zh": "定位和敏感规则"
-  },
-  "Le propriétaire reçoit une lecture condensée de l’activité et des sujets nécessitant son attention.": {
-    "it": "Il proprietario riceve una lettura sintetica dell'attività e degli argomenti che richiedono attenzione.",
-    "en": "The owner receives a condensed reading of the activity and topics requiring attention.",
-    "es": "El propietario recibe una lectura condensada de la actividad y los temas que requieren atención.",
-    "ru": "Владелец получает сжатую информацию о деятельности и темах, требующих внимания.",
-    "zh": "所有者会收到活动和需要注意的主题的简明阅读。"
-  },
-  "Le propriétaire retrouve les décisions, justificatifs et points de suivi sans reconstituer lui-même l’historique.": {
-    "it": "Il proprietario ritrova le decisioni, i documenti giustificativi e i punti successivi senza ricostruire lui stesso la storia.",
-    "en": "The owner finds the decisions, supporting documents and follow-up points without reconstructing the history himself.",
-    "es": "El propietario encuentra las decisiones, los documentos justificativos y los puntos de seguimiento sin reconstruir él mismo la historia.",
-    "ru": "Владелец находит решения, подтверждающие документы и последующие действия, не восстанавливая историю самостоятельно.",
-    "zh": "所有者无需亲自重建历史即可找到决策、支持文档和后续要点。"
-  },
-  "Le propriétaire sait immédiatement ce qui s’est passé et quelles mesures ont été prises.": {
-    "it": "Il proprietario sa immediatamente cosa è successo e quali misure sono state adottate.",
-    "en": "The owner knows immediately what happened and what measures were taken.",
-    "es": "El propietario sabe inmediatamente qué pasó y qué medidas se tomaron.",
-    "ru": "Владелец сразу узнает, что произошло и какие меры были приняты.",
-    "zh": "业主立即知道发生了什么事并采取了哪些措施。"
-  },
-  "Le quotidien avance sans interrompre le vôtre.": {
-    "it": "La vita quotidiana va avanti senza interrompere la Sua.",
-    "en": "Daily life moves forward without interrupting yours.",
-    "es": "La vida diaria avanza sin interrumpir la tuya.",
-    "ru": "Повседневная жизнь движется вперед, не прерывая вашу.",
-    "zh": "日常生活继续前进，不会打扰您的生活。"
-  },
-  "Le relais": {
-    "it": "Il relè",
-    "en": "The relay",
-    "es": "El relevo",
-    "ru": "Реле",
-    "zh": "继电器"
-  },
-  "Le respect des conditions confirmées": {
-    "it": "Rispetto delle condizioni confermate",
-    "en": "Compliance with confirmed conditions",
-    "es": "Cumplimiento de condiciones confirmadas",
-    "ru": "Соответствие подтвержденным условиям",
-    "zh": "遵守已确认的条件"
-  },
-  "Le résultat, les justificatifs et les recommandations utiles rejoignent l’historique de la propriété.": {
-    "it": "Il risultato, documenti giustificativi e consigli utili si uniscono alla storia dell'immobile.",
-    "en": "The result, supporting documents and useful recommendations join the history of the property.",
-    "es": "El resultado, los documentos justificativos y las recomendaciones útiles se unen a la historia del inmueble.",
-    "ru": "Результат, подтверждающие документы и полезные рекомендации присоединяются к истории объекта.",
-    "zh": "结果、支持文件和有用的建议加入了该财产的历史。"
-  },
-  "Le retour": {
-    "it": "Il ritorno",
-    "en": "The return",
-    "es": "El regreso",
-    "ru": "Возвращение",
-    "zh": "回报"
-  },
-  "Le rythme de réservation ralentit sur une période donnée. Les règles de séjour et le tarif sont réexaminés dans la limite du positionnement convenu.": {
-    "it": "Il tasso di prenotazione rallenta in un dato periodo. Le regole del soggiorno e il prezzo vengono riesaminati nei limiti del posizionamento concordato.",
-    "en": "The rate of reservations slows down over a given period. The rules of stay and the price are re-examined within the limits of the agreed positioning.",
-    "es": "El ritmo de reservas se ralentiza durante un periodo determinado. Las reglas de estancia y el precio se reexaminan dentro de los límites del posicionamiento acordado.",
-    "ru": "Скорость бронирования снижается в течение определенного периода. Правила пребывания и цена пересматриваются в пределах согласованного позиционирования.",
-    "zh": "预订率在给定时间段内会减慢。在商定的定位范围内重新审查住宿规则和价格。"
-  },
-  "Le rythme des réservations et les disponibilités restantes guident les ajustements de tarif et de calendrier.": {
-    "it": "Il ritmo delle prenotazioni e la disponibilità rimanente guidano gli aggiustamenti delle tariffe e del calendario.",
-    "en": "The pace of reservations and remaining availability guides rate and calendar adjustments.",
-    "es": "El ritmo de reservas y disponibilidad restante guía ajustes de tarifa y calendario.",
-    "ru": "Скорость бронирования и оставшаяся доступность определяют корректировку тарифов и календаря.",
-    "zh": "预订速度和剩余可用性指导价格和日历调整。"
+  "Le rythme du suivi est défini avec vous. L’objectif est de transmettre l’essentiel et de solliciter votre validation au bon moment.": {
+    "it": "Il ritmo del monitoraggio è definito con te. L’obiettivo è trasmetterti l’essenziale e cercare la tua validazione al momento giusto.",
+    "en": "The pace of monitoring is defined with you. The goal is to convey the essentials and seek your validation at the right time.",
+    "es": "El ritmo de seguimiento se define contigo. El objetivo es transmitir lo esencial y buscar su validación en el momento adecuado.",
+    "ru": "Темп мониторинга определяется вами. Цель состоит в том, чтобы передать суть и получить подтверждение в нужное время.",
+    "zh": "监控的节奏由您决定。目标是传达要点并在适当的时间寻求您的认可。"
   },
   "Le simulateur garantit-il les revenus indiqués ?": {
     "it": "Il simulatore garantisce il reddito indicato?",
     "en": "Does the simulator guarantee the income indicated?",
     "es": "¿El simulador garantiza los ingresos indicados?",
     "ru": "Гарантирует ли симулятор указанный доход?",
-    "zh": "模拟器是否保证所示的收入？"
+    "zh": "模拟器能否保证所示的收入？"
   },
-  "Le soin se remarque immédiatement : un linge impeccable, une pièce parfaitement remise en place, rien qui rompe l’harmonie du lieu.": {
-    "it": "La cura si nota subito: biancheria impeccabile, camera perfettamente rimessa a posto, nulla che sconvolga l'armonia del luogo.",
-    "en": "The care is immediately noticeable: impeccable linen, a room perfectly put back in place, nothing that disrupts the harmony of the place.",
-    "es": "El cuidado se nota inmediatamente: ropa de cama impecable, una habitación perfectamente puesta en su sitio, nada que perturbe la armonía del lugar.",
-    "ru": "Забота заметна сразу: безупречное белье, комната идеально убрана на свое место, ничего, что нарушает гармонию места.",
-    "zh": "护理是显而易见的：无可挑剔的床单，房间完美地恢复原状，没有任何东西破坏这个地方的和谐。"
+  "Le site Velyo ne prévoit aucun profilage publicitaire.": {
+    "it": "Il sito Velyo non prevede alcuna profilazione pubblicitaria.",
+    "en": "The Velyo site does not provide any advertising profiling.",
+    "es": "El sitio Velyo no proporciona ningún perfil publicitario.",
+    "ru": "Сайт Velyo не предоставляет никакого рекламного профилирования.",
+    "zh": "Velyo 网站不提供任何广告分析。"
   },
-  "Le standard de préparation": {
-    "it": "Lo standard di preparazione",
-    "en": "The preparation standard",
-    "es": "El estándar de preparación",
-    "ru": "Стандарт подготовки",
-    "zh": "配制标准"
+  "Le trajet et son prix sont confirmés avant la réservation. Le voyageur règle la prestation séparément.": {
+    "it": "Il viaggio e il suo prezzo vengono confermati prima della prenotazione. Il viaggiatore paga il servizio a parte.",
+    "en": "The journey and its price are confirmed before booking. The traveler pays for the service separately.",
+    "es": "El viaje y su precio se confirman antes de reservar. El viajero paga el servicio por separado.",
+    "ru": "Путешествие и его стоимость подтверждаются перед бронированием. Путешественник оплачивает услугу отдельно.",
+    "zh": "旅程及其价格在预订前确认。旅客单独支付服务费用。"
   },
-  "Le temps de profiter de votre bien": {
-    "it": "È ora di godersi la Sua proprietà",
-    "en": "Time to enjoy your property",
-    "es": "Hora de disfrutar de tu propiedad",
-    "ru": "Время наслаждаться своей собственностью",
-    "zh": "是时候享受您的财产了"
+  "Le voyageur choisit librement. Toute dépense ou condition d’annulation est annoncée avant réservation.": {
+    "it": "Il viaggiatore sceglie liberamente. Qualsiasi spesa o condizione di cancellazione viene comunicata prima della prenotazione.",
+    "en": "The traveler chooses freely. Any expense or cancellation condition is announced before booking.",
+    "es": "El viajero elige libremente. Cualquier gasto o condición de cancelación se anuncia antes de reservar.",
+    "ru": "Путешественник выбирает свободно. Любые расходы или условия отмены объявляются перед бронированием.",
+    "zh": "旅行者自由选择。任何费用或取消条件均会在预订前公布。"
   },
-  "Le voyageur annonce un retard. Les accès sont adaptés, les instructions mises à jour et l’installation suivie à distance selon le protocole convenu.": {
-    "it": "Il viaggiatore annuncia un ritardo. L'accesso viene adattato, le istruzioni aggiornate e l'installazione monitorata da remoto secondo il protocollo concordato.",
-    "en": "The traveler announces a delay. Access is adapted, instructions updated and installation monitored remotely according to the agreed protocol.",
-    "es": "El viajero anuncia un retraso. Se adapta el acceso, se actualizan las instrucciones y se monitoriza la instalación de forma remota según el protocolo acordado.",
-    "ru": "Путешественник объявляет о задержке. Доступ адаптируется, инструкции обновляются, установка контролируется удаленно согласно согласованному протоколу.",
-    "zh": "旅客宣布延误。根据商定的协议对访问进行调整、更新说明并远程监控安装。"
+  "Le voyageur reçoit une proposition lisible avant toute réservation ou dépense.": {
+    "it": "Il viaggiatore riceve una proposta leggibile prima di qualsiasi prenotazione o spesa.",
+    "en": "The traveler receives a readable proposal before any reservation or expense.",
+    "es": "El viajero recibe una propuesta legible antes de cualquier reserva o gasto.",
+    "ru": "Путешественник получает читаемое предложение перед бронированием или расходами.",
+    "zh": "旅行者在预订或支付任何费用之前会收到一份可读的建议。"
   },
-  "Le voyageur est attendu et le propriétaire n’a pas à gérer le changement d’horaire.": {
-    "it": "Il viaggiatore è atteso e il proprietario non deve gestire il cambio di orario.",
-    "en": "The traveler is expected and the owner does not have to manage the change of schedule.",
-    "es": "El viajero está esperado y el propietario no tiene que gestionar el cambio de horario.",
-    "ru": "Ожидается путешественник, и владельцу не придется управлять изменением расписания.",
-    "zh": "预计会有旅客出现，业主无需管理日程变更。"
+  "Les accès sont expliqués avant l’arrivée": {
+    "it": "L'accesso viene spiegato prima dell'arrivo",
+    "en": "Access is explained before arrival",
+    "es": "Se explica el acceso antes de la llegada",
+    "ru": "Доступ объясняется до прибытия",
+    "zh": "到达前解释如何进入"
   },
-  "Lecture du positionnement actuel": {
-    "it": "Lettura del posizionamento attuale",
-    "en": "Reading current positioning",
-    "es": "Lectura del posicionamiento actual",
-    "ru": "Чтение текущего позиционирования",
-    "zh": "读取当前定位"
+  "Les biens apparaissent ici seulement après leur mise en gestion et l’accord du propriétaire.": {
+    "it": "Le proprietà compaiono qui solo dopo che sono state gestite e il proprietario ha acconsentito.",
+    "en": "The properties appear here only after they have been managed and the owner has agreed.",
+    "es": "Las propiedades aparecen aquí sólo después de que han sido administradas y el propietario ha dado su consentimiento.",
+    "ru": "Объекты недвижимости появляются здесь только после того, как ими управляют, и с согласия владельца.",
+    "zh": "属性仅在经过管理且所有者同意后才会显示在此处。"
   },
-  "Lecture précise du potentiel": {
-    "it": "Lettura accurata del potenziale",
-    "en": "Accurate reading of the potential",
-    "es": "Lectura precisa del potencial",
-    "ru": "Точное определение потенциала",
-    "zh": "准确读取电位"
+  "Les biens confiés à Velyo seront présentés ici uniquement avec l’accord de leurs propriétaires.": {
+    "it": "I beni affidati a Velyo verranno qui presentati solo con il consenso dei rispettivi proprietari.",
+    "en": "The goods entrusted to Velyo will be presented here only with the agreement of their owners.",
+    "es": "Los bienes confiados a Velyo se presentarán aquí sólo con el acuerdo de sus propietarios.",
+    "ru": "Товары, доверенные Velyo, будут представлены здесь только с согласия их владельцев.",
+    "zh": "委托给 Velyo 的货物只有在其所有者同意的情况下才会在此展示。"
   },
-  "Les accès et équipements essentiels sont vérifiés avant que le voyageur ne franchisse la porte.": {
-    "it": "L'accesso e le attrezzature essenziali vengono controllati prima che il viaggiatore varchi la porta.",
-    "en": "Access and essential equipment are checked before the traveler walks through the door.",
-    "es": "El acceso y el equipo esencial se verifican antes de que el viajero cruce la puerta.",
-    "ru": "Доступ и необходимое оборудование проверяются перед тем, как путешественник входит в дверь.",
-    "zh": "在旅客走进大门之前，会检查通道和基本设备。"
+  "Les clés et les accès restent suivis": {
+    "it": "Chiavi e accessi rimangono tracciati",
+    "en": "Keys and access remain tracked",
+    "es": "Las claves y el acceso permanecen rastreados",
+    "ru": "Ключи и доступ остаются отслеживаемыми",
+    "zh": "密钥和访问权限保持跟踪"
   },
-  "Les accès et points sensibles convenus sont vérifiés, avec documentation des écarts éventuels.": {
-    "it": "Vengono controllati gli accessi concordati ed i punti sensibili, con documentazione di eventuali scostamenti.",
-    "en": "The agreed accesses and sensitive points are checked, with documentation of any deviations.",
-    "es": "Se comprueban los accesos y puntos sensibles acordados, documentándose las desviaciones.",
-    "ru": "Согласованные доступы и чувствительные точки проверяются с документированием любых отклонений.",
-    "zh": "检查商定的访问权限和敏感点，并记录任何偏差。"
+  "Les décisions importantes nous sont présentées sans bruit inutile.": {
+    "it": "Le decisioni importanti ci vengono presentate senza rumore inutile.",
+    "en": "Important decisions are presented to us without unnecessary noise.",
+    "es": "Las decisiones importantes se nos presentan sin ruidos innecesarios.",
+    "ru": "Важные решения нам преподносятся без лишнего шума.",
+    "zh": "重要决策会在没有不必要噪音的情况下呈现给我们。"
   },
-  "Les accès sont suivis, les écarts remarqués et les actions connues à l’avance. Vous savez que votre bien reste entre de bonnes mains.": {
-    "it": "L'accesso è monitorato, le deviazioni rilevate e le azioni conosciute in anticipo. Sa che la Sua proprietà rimane in buone mani.",
-    "en": "Access is monitored, deviations noted and actions known in advance. You know that your property remains in good hands.",
-    "es": "Se monitoriza el acceso, se anotan las desviaciones y se conocen con antelación las actuaciones. Usted sabe que su propiedad permanece en buenas manos.",
-    "ru": "Доступ контролируется, отклонения отмечаются, а действия известны заранее. Вы знаете, что ваше имущество остается в надежных руках.",
-    "zh": "访问受到监控，偏差被记录并提前知道操作。您知道您的财产仍然掌握在良好的人手中。"
+  "Les dépenses opérationnelles et les prestations externes restent détaillées séparément dans la proposition.": {
+    "it": "Le spese operative e i servizi esterni rimangono dettagliati separatamente nella proposta.",
+    "en": "Operational expenses and external services remain detailed separately in the proposal.",
+    "es": "Los gastos operativos y los servicios externos permanecen detallados por separado en la propuesta.",
+    "ru": "Эксплуатационные расходы и внешние услуги остаются в предложении отдельно.",
+    "zh": "提案中仍单独详细说明运营费用和外部服务。"
   },
-  "Les actions à venir sont identifiées sans empiéter sur le rôle de vos conseils comptables, fiscaux ou juridiques.": {
-    "it": "Le azioni future vengono identificate senza invadere il ruolo dei Suoi consulenti contabili, fiscali o legali.",
-    "en": "Future actions are identified without encroaching on the role of your accounting, tax or legal advisors.",
-    "es": "Se identifican acciones futuras sin invadir el papel de sus asesores contables, fiscales o jurídicos.",
-    "ru": "Будущие действия определяются без посягательства на роль вашего бухгалтерского, налогового или юридического консультанта.",
-    "zh": "在不影响您的会计、税务或法律顾问角色的情况下确定未来的行动。"
+  "Les données réelles remplacent progressivement les hypothèses afin d’identifier ce qui améliore le revenu, l’occupation et la qualité des séjours.": {
+    "it": "I dati reali sostituiscono gradualmente le ipotesi per identificare cosa migliora il reddito, l'occupazione e la qualità dei soggiorni.",
+    "en": "Real data gradually replaces assumptions in order to identify what improves income, occupancy and the quality of stays.",
+    "es": "Los datos reales sustituyen progresivamente a las suposiciones para identificar qué mejora los ingresos, la ocupación y la calidad de las estancias.",
+    "ru": "Реальные данные постепенно заменяют предположения, чтобы определить, что улучшает доход, заполняемость и качество проживания.",
+    "zh": "真实数据逐渐取代假设，以确定哪些因素可以提高收入、入住率和住宿质量。"
   },
-  "Les actions menées, les performances et les points d’attention sont réunis dans une lecture simple. Vous gardez une vision nette de votre propriété sans reconstituer vous-même son activité.": {
-    "it": "Le azioni compiute, le performance ed i punti di attenzione sono raccolti in una lettura semplice. Mantiene una visione chiara della Sua proprietà senza ricostruirne Lei stesso l'attività.",
-    "en": "The actions carried out, the performances and the points of attention are brought together in a simple reading. You keep a clear view of your property without reconstructing its activity yourself.",
-    "es": "Las acciones realizadas, las actuaciones y los puntos de atención se recogen en una lectura sencilla. Mantendrá una visión clara de su propiedad sin reconstruir usted mismo su actividad.",
-    "ru": "Выполненные действия, выступления и моменты внимания собраны воедино в простом чтении. Вы сохраняете четкое представление о своей собственности, не реконструируя ее деятельность самостоятельно.",
-    "zh": "所执行的动作、表演和注意点都集中在一个简单的阅读中。您可以清晰地了解您的财产，而无需自行重建其活动。"
+  "Les engagements de l’accompagnement Velyo": {
+    "it": "Impegni di supporto di Velyo",
+    "en": "Velyo support commitments",
+    "es": "Compromisos de apoyo de Velyo",
+    "ru": "Velyo поддерживает обязательства",
+    "zh": "Velyo 支持承诺"
   },
-  "Les anomalies repérées sans attendre": {
-    "it": "Anomalie identificate senza ritardo",
-    "en": "Anomalies identified without delay",
-    "es": "Anomalías identificadas sin demora",
-    "ru": "Незамедлительное выявление аномалий",
-    "zh": "立即发现异常情况"
+  "Les engagements Velyo": {
+    "it": "Impegni Velyo",
+    "en": "Velyo commitments",
+    "es": "Compromisos de Velyo",
+    "ru": "Великие обязательства",
+    "zh": "Velyo 承诺"
   },
-  "Les bonnes informations pour décider": {
-    "it": "Le informazioni giuste per decidere",
-    "en": "The right information to decide",
-    "es": "La información adecuada para decidir",
-    "ru": "Правильная информация для принятия решения",
-    "zh": "做出决定的正确信息"
+  "Les étapes de l’accompagnement Velyo": {
+    "it": "Le fasi del supporto Velyo",
+    "en": "The stages of Velyo support",
+    "es": "Las etapas del soporte Velyo",
+    "ru": "Этапы поддержки Velyo",
+    "zh": "Velyo 支持的阶段"
   },
-  "Les consommables et prestations spécifiques": {
-    "it": "Materiali di consumo e servizi specifici",
-    "en": "Consumables and specific services",
-    "es": "Consumibles y servicios específicos",
-    "ru": "Расходные материалы и специальные услуги",
-    "zh": "消耗品和特定服务"
+  "Les fiches présentes dans cette version sont des exemples de structure. Elles doivent être remplacées par des biens réels et autorisés avant publication.": {
+    "it": "Le lastre presenti in questa versione sono esempi di struttura. Essi dovranno essere sostituiti con beni reali ed autorizzati prima della pubblicazione.",
+    "en": "The sheets present in this version are examples of structure. They must be replaced by real and authorized goods before publication.",
+    "es": "Las hojas presentes en esta versión son ejemplos de estructura. Deberán ser sustituidos por bienes reales y autorizados antes de su publicación.",
+    "ru": "Листы, представленные в этой версии, являются примерами структуры. Перед публикацией они должны быть заменены реальными и разрешенными товарами.",
+    "zh": "此版本中的表格是结构示例。在发布之前，它们必须被真实且授权的商品替换。"
   },
-  "Les décisions et dépenses présentées": {
-    "it": "Decisioni e spese presentate",
-    "en": "Decisions and expenses presented",
-    "es": "Decisiones y gastos presentados",
-    "ru": "Представленные решения и расходы",
-    "zh": "提出的决定和费用"
+  "Les frais séparés et les éventuels seuils de validation sont présentés dans la proposition de gestion avant le démarrage.": {
+    "it": "I costi separati e le eventuali soglie di validazione sono presentati nella proposta di gestione prima dell'avvio.",
+    "en": "The separate costs and possible validation thresholds are presented in the management proposal before start-up.",
+    "es": "Los costos separados y los posibles umbrales de validación se presentan en la propuesta de gestión antes de la puesta en marcha.",
+    "ru": "Отдельные затраты и возможные пороговые значения проверки представлены в предложении по управлению перед запуском.",
+    "zh": "启动前的管理提案中列出了单独的成本和可能的验证阈值。"
   },
-  "Les dépenses et travaux soumis à accord": {
-    "it": "Spese e lavori soggetti ad accordo",
-    "en": "Expenses and work subject to agreement",
-    "es": "Gastos y trabajos sujetos a convenio",
-    "ru": "Расходы и работы по договоренности",
-    "zh": "费用和工作须经协议"
+  "Les horaires du bien restent maîtrisés tout en apportant une solution pratique aux voyageurs.": {
+    "it": "Gli orari della struttura rimangono controllati fornendo allo stesso tempo una soluzione pratica per i viaggiatori.",
+    "en": "The property's schedules remain controlled while providing a practical solution for travelers.",
+    "es": "Los horarios de la propiedad se mantienen controlados y al mismo tiempo brindan una solución práctica para los viajeros.",
+    "ru": "Расписание объекта остается под контролем, обеспечивая при этом практичное решение для путешественников.",
+    "zh": "酒店的时间表保持可控，同时为旅客提供实用的解决方案。"
   },
-  "Les documents relevant de leur responsabilité": {
-    "it": "Documenti di loro responsabilità",
-    "en": "Documents falling under their responsibility",
-    "es": "Documentos bajo su responsabilidad",
-    "ru": "Документы, подпадающие под их ответственность",
-    "zh": "他们负责的文件"
+  "Les informations transmises sont incomplètes.": {
+    "it": "Le informazioni trasmesse sono incomplete.",
+    "en": "The information transmitted is incomplete.",
+    "es": "La información transmitida está incompleta.",
+    "ru": "Переданная информация неполная.",
+    "zh": "传输的信息不完整。"
   },
-  "Les engagements AUREVIA": {
-    "it": "Impegni AUREVIA",
-    "en": "AUREVIA commitments",
-    "es": "Compromisos de AUREVIA",
-    "ru": "Обязательства AUREVIA",
-    "zh": "AUREVIA 承诺"
+  "Les moments de votre accompagnement": {
+    "it": "I momenti del tuo sostegno",
+    "en": "The moments of your support",
+    "es": "Los momentos de tu apoyo",
+    "ru": "Моменты вашей поддержки",
+    "zh": "您的支持时刻"
   },
-  "Les équipements ou services complémentaires": {
-    "it": "Attrezzature o servizi aggiuntivi",
-    "en": "Additional equipment or services",
-    "es": "Equipos o servicios adicionales",
-    "ru": "Дополнительное оборудование или услуги",
-    "zh": "附加设备或服务"
+  "Les produits demandés sont achetés puis rangés dans le bien avant l’installation des voyageurs.": {
+    "it": "I prodotti richiesti vengono acquistati e poi depositati nella struttura prima che i viaggiatori si stabiliscano.",
+    "en": "The requested products are purchased then stored in the property before the travelers settle in.",
+    "es": "Los productos solicitados se compran y luego se almacenan en la propiedad antes de que los viajeros se instalen.",
+    "ru": "Запрошенные продукты приобретаются, а затем хранятся на объекте до заселения путешественников.",
+    "zh": "在旅客入住之前购买所需的产品并将其存放在酒店中。"
   },
-  "Les équipements spécialisés": {
-    "it": "Attrezzatura specializzata",
-    "en": "Specialized equipment",
-    "es": "Equipo especializado",
-    "ru": "Специализированное оборудование",
-    "zh": "专用设备"
+  "Les propriétés affichées sont-elles disponibles ?": {
+    "it": "Le proprietà visualizzate sono disponibili?",
+    "en": "Are the displayed properties available?",
+    "es": "¿Están disponibles las propiedades mostradas?",
+    "ru": "Доступны ли отображаемые свойства?",
+    "zh": "显示的属性是否可用？"
   },
-  "Les équipes, créneaux et besoins en linge sont coordonnés entre les départs et les prochaines arrivées.": {
-    "it": "Squadre, orari e necessità di biancheria sono coordinati tra le partenze e i successivi arrivi.",
-    "en": "Teams, slots and linen needs are coordinated between departures and next arrivals.",
-    "es": "Se coordinan equipos, slots y necesidades de ropa entre las salidas y las próximas llegadas.",
-    "ru": "Команды, места и потребности в белье согласовываются между отправлением и следующим прибытием.",
-    "zh": "在出发和下次到达之间协调团队、航班时刻和床单需求。"
+  "Les questions courantes ne vous reviennent plus": {
+    "it": "Le domande comuni non ti arrivano più",
+    "en": "Common questions no longer come to you",
+    "es": "Ya no te llegan preguntas comunes",
+    "ru": "Вам больше не задаются общие вопросы",
+    "zh": "不再出现常见问题"
   },
-  "Les estimations restent indicatives : aucun rendement n’est garanti. Ménage, linge, consommables et interventions techniques sont facturés au réel, sans marge.": {
-    "it": "Le stime restano indicative: non è garantito alcun reso. Pulizie, biancheria, materiali di consumo e interventi tecnici vengono fatturati a consuntivo, senza margine.",
-    "en": "Estimates remain indicative: no return is guaranteed. Cleaning, linen, consumables and technical interventions are billed on an actual basis, without margin.",
-    "es": "Las estimaciones siguen siendo orientativas: no se garantiza ninguna devolución. La limpieza, la ropa de cama, los consumibles y las intervenciones técnicas se facturan en efectivo, sin margen.",
-    "ru": "Оценки остаются ориентировочными: возврат не гарантирован. Уборка, белье, расходные материалы и технические работы оплачиваются по факту, без наценки.",
-    "zh": "估计值仍然是指示性的：不保证回报。清洁费、布草费、消耗品和技术干预费按实际收费，无保证金。"
+  "Les repères Velyo": {
+    "it": "Benchmark Velyo",
+    "en": "Velyo benchmarks",
+    "es": "Puntos de referencia de Velyo",
+    "ru": "Тесты Velyo",
+    "zh": "Velyo 基准测试"
   },
-  "Les horaires, profils et besoins utiles sont recueillis afin d’anticiper l’accès et la préparation du logement.": {
-    "it": "Vengono raccolti orari, profili e bisogni utili per anticipare l'accesso e la predisposizione dell'alloggio.",
-    "en": "Schedules, profiles and useful needs are collected in order to anticipate access and preparation of accommodation.",
-    "es": "Se recogen horarios, perfiles y necesidades útiles con el fin de anticipar el acceso y preparación del alojamiento.",
-    "ru": "Расписания, профили и полезные потребности собираются для того, чтобы предвидеть доступ и подготовку жилья.",
-    "zh": "收集时间表、资料和有用需求，以便预测住宿的获取和准备。"
+  "Les réponses aux questions fréquentes sur la gestion locative Velyo à Genova.": {
+    "it": "Risposte alle domande più frequenti sulla gestione degli affitti Velyo a Genova.",
+    "en": "Answers to frequently asked questions about Velyo rental management in Genova.",
+    "es": "Respuestas a preguntas frecuentes sobre la gestión de alquileres Velyo en Génova.",
+    "ru": "Ответы на часто задаваемые вопросы об управлении арендой Velyo в Генуе.",
+    "zh": "有关热那亚 Velyo 租赁管理的常见问题解答。"
   },
-  "Les informations utiles sont regroupées afin d’éviter les documents dispersés et les décisions sans contexte.": {
-    "it": "Le informazioni utili sono raggruppate per evitare documenti sparsi e decisioni senza contesto.",
-    "en": "Useful information is grouped together to avoid scattered documents and decisions without context.",
-    "es": "La información útil se agrupa para evitar documentos dispersos y decisiones sin contexto.",
-    "ru": "Полезная информация сгруппирована вместе, чтобы избежать разрозненных документов и решений без контекста.",
-    "zh": "有用的信息被分组在一起，以避免分散的文档和没有上下文的决策。"
+  "Les résultats, les écarts et les retours servent à améliorer l’organisation et la rentabilité dans la durée.": {
+    "it": "I risultati, le differenze e il feedback vengono utilizzati per migliorare l'organizzazione e la redditività nel tempo.",
+    "en": "The results, differences and feedback are used to improve the organization and profitability over time.",
+    "es": "Los resultados, diferencias y retroalimentación se utilizan para mejorar la organización y la rentabilidad en el tiempo.",
+    "ru": "Результаты, различия и отзывы используются для улучшения организации и повышения прибыльности с течением времени.",
+    "zh": "结果、差异和反馈用于随着时间的推移改进组织和盈利能力。"
   },
-  "Les interventions selon les standards convenus": {
-    "it": "Interventi secondo gli standard concordati",
-    "en": "Interventions according to agreed standards",
-    "es": "Intervenciones según estándares acordados",
-    "ru": "Вмешательства в соответствии с согласованными стандартами",
-    "zh": "根据商定标准进行干预"
+  "Les rôles, les contacts et la marche à suivre sont définis avant le premier séjour.": {
+    "it": "Ruoli, contatti e procedure vengono definiti prima del primo soggiorno.",
+    "en": "Roles, contacts and procedures are defined before the first stay.",
+    "es": "Los roles, contactos y procedimientos se definen antes de la primera estancia.",
+    "ru": "Роли, контакты и процедуры определяются до первого пребывания.",
+    "zh": "角色、联系人和程序在首次入住前定义。"
   },
-  "Les périodes d’usage personnel": {
-    "it": "Periodi di utilizzo personale",
-    "en": "Periods of personal use",
-    "es": "Periodos de uso personal",
-    "ru": "Периоды личного использования",
-    "zh": "个人使用期限"
+  "Les tâches que Velyo devra reprendre et les décisions que vous souhaitez garder.": {
+    "it": "I compiti che Velyo dovrà assumersi e le decisioni che desideri mantenere.",
+    "en": "The tasks that Velyo will have to take over and the decisions that you wish to keep.",
+    "es": "Las tareas que Velyo deberá asumir y las decisiones que deseas conservar.",
+    "ru": "Задачи, которые Вельо придется взять на себя, и решения, которые вы хотите сохранить.",
+    "zh": "Velyo 必须接管的任务以及您希望保留的决定。"
   },
-  "Les personnes autorisées": {
-    "it": "Persone autorizzate",
-    "en": "Authorized persons",
-    "es": "Personas autorizadas",
-    "ru": "Уполномоченные лица",
-    "zh": "授权人"
+  "Les tarifs suivent la saison": {
+    "it": "I prezzi seguono la stagione",
+    "en": "Prices follow the season",
+    "es": "Los precios siguen la temporada.",
+    "ru": "Цены соответствуют сезону.",
+    "zh": "价格随季节变化"
   },
-  "Les points essentiels sont vérifiés et les anomalies ou dégradations sont signalées.": {
-    "it": "Vengono controllati i punti essenziali e segnalate anomalie o degradi.",
-    "en": "The essential points are checked and anomalies or degradations are reported.",
-    "es": "Se comprueban los puntos esenciales y se notifican anomalías o degradaciones.",
-    "ru": "Проверяются основные моменты и сообщается об аномалиях или ухудшениях.",
-    "zh": "检查要点并报告异常或退化情况。"
+  "Les voyageurs déposent leurs bagages avant l’arrivée ou après le départ, sur un créneau convenu.": {
+    "it": "I viaggiatori depositano i bagagli prima dell'arrivo o dopo la partenza, in una fascia oraria concordata.",
+    "en": "Travelers drop off their luggage before arrival or after departure, at an agreed time slot.",
+    "es": "Los viajeros entregan su equipaje antes de la llegada o después de la salida, en un horario acordado.",
+    "ru": "Путешественники сдают свой багаж до прибытия или после отъезда в согласованное время.",
+    "zh": "旅客在抵达前或出发后在约定的时间段寄存行李。"
   },
-  "Les prestations planifiées": {
-    "it": "Servizi pianificati",
-    "en": "Planned services",
-    "es": "Servicios previstos",
-    "ru": "Плановые услуги",
-    "zh": "计划的服务"
+  "Les voyageurs ont un contact local identifiable.": {
+    "it": "I viaggiatori hanno un contatto locale identificabile.",
+    "en": "Travelers have an identifiable local contact.",
+    "es": "Los viajeros tienen un contacto local identificable.",
+    "ru": "У путешественников есть идентифицируемый местный контакт.",
+    "zh": "旅行者有可识别的当地联系人。"
   },
-  "Les questions les plus fréquentes sur la gestion, l’évaluation et la méthode AUREVIA.": {
-    "it": "Le domande più frequenti sulla gestione, la valutazione e il metodo AUREVIA.",
-    "en": "The most frequently asked questions about management, evaluation and the AUREVIA method.",
-    "es": "Las preguntas más frecuentes sobre gestión, evaluación y método AUREVIA.",
-    "ru": "Наиболее часто задаваемые вопросы об управлении, оценке и методе AUREVIA.",
-    "zh": "有关管理、评估和 AUREVIA 方法的最常见问题。"
+  "Les voyageurs ont un contact sur place et je ne suis sollicité que lorsque cela compte vraiment.": {
+    "it": "I viaggiatori hanno un contatto sul posto e io vengo contattato solo quando è davvero importante.",
+    "en": "Travelers have a contact on site and I am only contacted when it really matters.",
+    "es": "Los viajeros tienen un contacto en el sitio y solo me contactan cuando realmente importa.",
+    "ru": "У путешественников есть контакт на месте, и со мной связываются только тогда, когда это действительно важно.",
+    "zh": "旅行者在网站上有联系人，只有在真正重要的时候才会联系我。"
   },
-  "Les recommandations de remplacement": {
-    "it": "Consigli per la sostituzione",
-    "en": "Replacement recommendations",
-    "es": "Recomendaciones de reemplazo",
-    "ru": "Рекомендации по замене",
-    "zh": "更换建议"
+  "Les voyageurs s’installent sans vous appeler": {
+    "it": "I viaggiatori si sistemano senza chiamarti",
+    "en": "Travelers settle in without calling you",
+    "es": "Los viajeros se instalan sin llamarte",
+    "ru": "Путешественники заселяются, не звоня вам.",
+    "zh": "旅客无需致电您即可安顿下来"
   },
-  "Les règles d’entrée, de sortie et de signalement sont adaptées aux caractéristiques du bien.": {
-    "it": "Le regole di ingresso, uscita e segnalazione sono adeguate alle caratteristiche dell'immobile.",
-    "en": "The entry, exit and reporting rules are adapted to the characteristics of the property.",
-    "es": "Las normas de entrada, salida y notificación se adaptan a las características del inmueble.",
-    "ru": "Правила въезда, выезда и отчетности адаптированы к характеристикам объекта недвижимости.",
-    "zh": "进入、退出和报告规则适应酒店的特点。"
+  "Les voyageurs savent qui appeler": {
+    "it": "I viaggiatori sanno chi chiamare",
+    "en": "Travelers know who to call",
+    "es": "Los viajeros saben a quién llamar",
+    "ru": "Путешественники знают, кому звонить",
+    "zh": "旅行者知道该给谁打电话"
   },
-  "Les règles particulières de la propriété": {
-    "it": "Regole particolari di proprietà",
-    "en": "Special rules of property",
-    "es": "Reglas especiales de propiedad",
-    "ru": "Особые правила собственности",
-    "zh": "财产的特殊规则"
+  "Linge et consommables sont vérifiés": {
+    "it": "La biancheria e i materiali di consumo vengono controllati",
+    "en": "Linen and consumables are checked",
+    "es": "Se revisa la ropa de cama y los consumibles.",
+    "ru": "Белье и расходные материалы проверены",
+    "zh": "检查布草和消耗品"
   },
-  "Les responsabilités, validations, délais de réponse et frais séparés sont formalisés dans une proposition lisible.": {
-    "it": "Responsabilità, convalide, tempi di risposta e costi separati sono formalizzati in una proposta leggibile.",
-    "en": "Responsibilities, validations, response times and separate costs are formalized in a readable proposal.",
-    "es": "Responsabilidades, validaciones, tiempos de respuesta y costos separados se formalizan en una propuesta legible.",
-    "ru": "Обязанности, проверки, время ответа и отдельные затраты формализованы в удобочитаемом предложении.",
-    "zh": "责任、验证、响应时间和单独成本在可读的提案中正式确定。"
+  "Linge propre coordonné": {
+    "it": "Coordinato biancheria pulita",
+    "en": "Coordinated clean linen",
+    "es": "Ropa limpia coordinada",
+    "ru": "Согласованное чистое белье",
+    "zh": "协调干净的亚麻布"
   },
-  "Les résultats sont rapprochés de la situation initiale afin d’identifier les actions réellement utiles.": {
-    "it": "I risultati vengono confrontati con la situazione iniziale per individuare azioni realmente utili.",
-    "en": "The results are compared to the initial situation in order to identify truly useful actions.",
-    "es": "Los resultados se comparan con la situación inicial para identificar acciones realmente útiles.",
-    "ru": "Результаты сравниваются с исходной ситуацией, чтобы определить действительно полезные действия.",
-    "zh": "将结果与初始情况进行比较，以确定真正有用的操作。"
+  "Lire les résultats": {
+    "it": "Leggi i risultati",
+    "en": "Read the results",
+    "es": "Leer los resultados",
+    "ru": "Прочитать результаты",
+    "zh": "阅读结果"
   },
-  "Les services complémentaires validés": {
-    "it": "Servizi aggiuntivi convalidati",
-    "en": "Additional services validated",
-    "es": "Servicios adicionales validados",
-    "ru": "Дополнительные услуги проверены",
-    "zh": "已验证附加服务"
+  "Liste de contrôle pièce par pièce": {
+    "it": "Lista di controllo stanza per stanza",
+    "en": "Room by room checklist",
+    "es": "Lista de verificación habitación por habitación",
+    "ru": "Контрольный список по комнатам",
+    "zh": "逐个房间清单"
   },
-  "Les services externes éventuellement retenus": {
-    "it": "Servizi esterni eventualmente mantenuti",
-    "en": "External services possibly retained",
-    "es": "Servicios externos posiblemente retenidos",
-    "ru": "Возможно, внешние службы сохранены",
-    "zh": "可能保留外部服务"
+  "Liste validée à l’avance": {
+    "it": "Elenco convalidato in anticipo",
+    "en": "List validated in advance",
+    "es": "Lista validada previamente",
+    "ru": "Список проверен заранее",
+    "zh": "预先验证的列表"
   },
-  "Les voyageurs, les prestataires et les imprévus passent par AUREVIA. Vous ne recevez plus le bruit de l’exploitation : seulement l’information utile, au moment où elle compte.": {
-    "it": "Viaggiatori, fornitori di servizi e imprevisti passano da AUREVIA. Non riceve più rumore di funzionamento: solo informazioni utili, quando contano.",
-    "en": "Travelers, service providers and unforeseen events go through AUREVIA. You no longer receive operational noise: only useful information, when it counts.",
-    "es": "Por AUREVIA pasan viajeros, proveedores de servicios e imprevistos. Ya no recibe ruido operativo: solo información útil, cuando es necesario.",
-    "ru": "Путешественники, поставщики услуг и непредвиденные события проходят через AUREVIA. Вы больше не получаете операционного шума: только полезная информация, когда она имеет значение.",
-    "zh": "旅行者、服务提供商和不可预见的事件都会通过 AUREVIA。您不再收到操作噪音：只有重要的时候才收到有用的信息。"
+  "Lit parapluie, chaise haute et essentiels d’accueil sont réunis avant l’arrivée d’une famille.": {
+    "it": "Lettino da viaggio, seggiolone e tutto il necessario per il benvenuto vengono riuniti prima dell'arrivo della famiglia.",
+    "en": "Travel cot, high chair and welcome essentials are brought together before a family arrives.",
+    "es": "La cuna de viaje, la trona y los elementos esenciales de bienvenida se reúnen antes de que llegue la familia.",
+    "ru": "Дорожная кроватка, стульчик для кормления и все необходимые принадлежности собираются вместе перед приездом семьи.",
+    "zh": "在家庭抵达之前，将旅行婴儿床、高脚椅和迎宾必需品放在一起。"
   },
-  "Lorsqu’un écart est identifié, une action corrective est organisée avant la remise à disposition du bien.": {
-    "it": "Quando viene identificata una discrepanza, viene organizzata un'azione correttiva prima che il bene venga reso disponibile.",
-    "en": "When a discrepancy is identified, corrective action is organized before the asset is made available.",
-    "es": "Cuando se identifica una discrepancia, se organizan acciones correctivas antes de que el activo esté disponible.",
-    "ru": "При выявлении несоответствия корректирующие действия организуются до того, как актив станет доступным.",
-    "zh": "当发现差异时，会在资产可用之前组织纠正措施。"
+  "Livraison avant l’arrivée": {
+    "it": "Consegna prima dell'arrivo",
+    "en": "Delivery before arrival",
+    "es": "Entrega antes de la llegada",
+    "ru": "Доставка до прибытия",
+    "zh": "抵达前交货"
   },
-  "Lorsqu’une dépense, un incident ou un arbitrage exige votre accord, nous vous présentons la situation, les options et notre recommandation. Vous décidez avec une vision complète.": {
-    "it": "Quando una spesa, un incidente o un arbitrato richiedono il Suo consenso, Le presentiamo la situazione, le opzioni e la nostra raccomandazione. Decide Lei con una visione completa.",
-    "en": "When an expense, an incident or an arbitration requires your agreement, we present the situation, the options and our recommendation to you. You decide with complete vision.",
-    "es": "Cuando un gasto, una incidencia o un arbitraje requiere de tu acuerdo, te presentamos la situación, las opciones y nuestra recomendación. Tú decides con visión completa.",
-    "ru": "Если расходы, инцидент или арбитраж требуют вашего согласия, мы представляем вам ситуацию, варианты и наши рекомендации. Вы решаете, обладая полным видением.",
-    "zh": "当费用、事件或仲裁需要您同意时，我们会向您提供情况、选项和建议。您以完整的愿景做出决定。"
+  "Livret d’accueil numérique personnalisé": {
+    "it": "Libretto di benvenuto digitale personalizzato",
+    "en": "Personalized digital welcome booklet",
+    "es": "Folleto de bienvenida digital personalizado",
+    "ru": "Персонализированный цифровой приветственный буклет",
+    "zh": "个性化数字欢迎手册"
   },
-  "Main-d’œuvre, pièces et matériaux facturés au réel, sans marge": {
-    "it": "Manodopera, ricambi e materiali fatturati su base effettiva, senza margine",
-    "en": "Labor, parts and materials invoiced on an actual basis, without margin",
-    "es": "Mano de obra, repuestos y materiales facturados en forma real, sin margen",
-    "ru": "Счета за работу, детали и материалы выставляются по факту, без наценки.",
-    "zh": "人工、零件和材料按实际情况开具发票，无保证金"
+  "Location de vélos": {
+    "it": "Noleggio biciclette",
+    "en": "Bike rental",
+    "es": "Alquiler de bicicletas",
+    "ru": "Прокат велосипедов",
+    "zh": "自行车租赁"
+  },
+  "Logement indépendant": {
+    "it": "Alloggio indipendente",
+    "en": "Independent accommodation",
+    "es": "Alojamiento independiente",
+    "ru": "Отдельное проживание",
+    "zh": "独立住宿"
+  },
+  "Main-d’œuvre, pièces et matériaux facturés séparément": {
+    "it": "Manodopera, parti e materiali fatturati separatamente",
+    "en": "Labor, parts and materials invoiced separately",
+    "es": "Mano de obra, repuestos y materiales facturados por separado",
+    "ru": "Счета за работу, детали и материалы оплачиваются отдельно.",
+    "zh": "人工、零件和材料单独开具发票"
   },
   "Maintenance coordonnée": {
     "it": "Manutenzione coordinata",
     "en": "Coordinated maintenance",
     "es": "Mantenimiento coordinado",
-    "ru": "Скоординированное техническое обслуживание",
+    "ru": "Скоординированное обслуживание",
     "zh": "协调维护"
   },
-  "Maison indépendante": {
-    "it": "Casa indipendente",
-    "en": "Independent house",
-    "es": "Casa independiente",
-    "ru": "Независимый дом",
-    "zh": "独立屋"
+  "Massage à domicile": {
+    "it": "Massaggio a casa",
+    "en": "Massage at home",
+    "es": "Masaje en casa",
+    "ru": "Массаж дома",
+    "zh": "在家按摩"
   },
-  "Même à distance, vous n’êtes jamais seul face à l’imprévu.": {
-    "it": "Anche a distanza, non è mai solo di fronte all'inaspettato.",
-    "en": "Even from a distance, you are never alone when faced with the unexpected.",
-    "es": "Incluso desde la distancia, nunca estás solo cuando te enfrentas a lo inesperado.",
-    "ru": "Даже на расстоянии вы никогда не останетесь одиноки, столкнувшись с неожиданностью.",
-    "zh": "即使从远处看，面对意外情况时，您也绝不会孤单。"
+  "Même à distance, je reçois les informations importantes sans devoir surveiller chaque détail du séjour.": {
+    "it": "Anche da remoto ricevo informazioni importanti senza dover monitorare ogni dettaglio del soggiorno.",
+    "en": "Even remotely, I receive important information without having to monitor every detail of the stay.",
+    "es": "Incluso de forma remota, recibo información importante sin tener que monitorear cada detalle de la estadía.",
+    "ru": "Даже удаленно я получаю важную информацию без необходимости следить за каждой деталью пребывания.",
+    "zh": "即使在远程，我也能收到重要信息，而无需监控住宿的每个细节。"
   },
-  "Mémoire des incidents": {
-    "it": "Memoria dell'incidente",
-    "en": "Incident memory",
-    "es": "Memoria de incidencias",
-    "ru": "Воспоминание об инциденте",
-    "zh": "事件记忆"
+  "Ménage contrôlé": {
+    "it": "Famiglia controllata",
+    "en": "Controlled household",
+    "es": "Hogar controlado",
+    "ru": "Контролируемое домохозяйство",
+    "zh": "受控家庭"
   },
   "Ménage et linge": {
     "it": "Casa e lavanderia",
     "en": "Household and laundry",
     "es": "Hogar y lavandería",
-    "ru": "Домашнее хозяйство и стирка",
+    "ru": "Хозяйство и стирка",
     "zh": "家庭和洗衣店"
   },
-  "Ménage et linge facturés au réel, sans marge": {
-    "it": "Pulizie e biancheria fatturate a termini reali, senza margine",
-    "en": "Cleaning and linen invoiced in actual terms, without margin",
-    "es": "Limpieza y ropa facturada en términos reales, sin margen",
-    "ru": "Уборка и белье оплачиваются по факту, без наценки.",
-    "zh": "清洁和布草按实际金额开具发票，无保证金"
+  "Ménage et linge coordonnés": {
+    "it": "Pulizia e biancheria coordinata",
+    "en": "Coordinated cleaning and linen",
+    "es": "Limpieza y ropa coordinada",
+    "ru": "Совместная уборка и смена белья",
+    "zh": "协调清洁和布草"
   },
-  "Ménage, linge et consommables facturés au réel, sans marge": {
-    "it": "Casa, biancheria e materiali di consumo fatturati nella realtà, senza margine",
-    "en": "Household, linen and consumables invoiced in reality, without margin",
-    "es": "Hogar, ropa y consumibles facturados en realidad, sin margen",
-    "ru": "Хозяйственные товары, белье и расходные материалы выставляются в реальности, без наценки",
-    "zh": "家居、布草及消耗品实际开具发票，无保证金"
+  "Ménage et linge renouvelés": {
+    "it": "Pulizie e biancheria rinnovate",
+    "en": "Housekeeping and linen renewed",
+    "es": "Servicio de limpieza y ropa de cama renovados.",
+    "ru": "Обновление уборки и белья",
+    "zh": "客房清洁和床单更新"
   },
-  "Ménage, linge, inventaire et consommables suivent un cadre précis. Les prestataires sont coordonnés, les points sensibles sont contrôlés et les anomalies sont signalées avant qu’elles ne deviennent un incident voyageur.": {
-    "it": "Casa, biancheria, scorte e materiali di consumo seguono un quadro preciso. I fornitori dei servizi vengono coordinati, i punti sensibili vengono controllati e le anomalie vengono segnalate prima che diventino un incidente per i passeggeri.",
-    "en": "Household, linen, inventory and consumables follow a precise framework. Service providers are coordinated, sensitive points are checked and anomalies are reported before they become a passenger incident.",
-    "es": "El hogar, la ropa blanca, el inventario y los consumibles siguen un marco preciso. Se coordinan los proveedores de servicios, se controlan los puntos sensibles y se notifican las anomalías antes de que se conviertan en un incidente para los pasajeros.",
-    "ru": "Домашнее хозяйство, белье, инвентарь и расходные материалы следуют четкой схеме. Поставщики услуг координируются, чувствительные точки проверяются, а об аномалиях сообщается до того, как они станут инцидентом с пассажирами.",
-    "zh": "家居用品、亚麻制品、库存和消耗品遵循精确的框架。协调服务提供商、检查敏感点并报告异常情况，以免成为乘客事故。"
+  "Ménage et linge suivis": {
+    "it": "Pulizie e lavanderia monitorate",
+    "en": "Housekeeping and laundry monitored",
+    "es": "Servicio de limpieza y lavandería monitoreados",
+    "ru": "Уборка и стирка под контролем",
+    "zh": "监控家政和洗衣服务"
   },
-  "Menu personnalisé": {
-    "it": "Menù personalizzato",
-    "en": "Custom menu",
-    "es": "Menú personalizado",
-    "ru": "Пользовательское меню",
-    "zh": "自定义菜单"
+  "Ménage initial": {
+    "it": "Pulizia iniziale",
+    "en": "Initial cleaning",
+    "es": "Limpieza inicial",
+    "ru": "Первичная очистка",
+    "zh": "初始清洁"
   },
-  "Mesurer et décider": {
-    "it": "Misuri e decida",
-    "en": "Measure and decide",
-    "es": "Mide y decide",
-    "ru": "Измеряй и решай",
-    "zh": "衡量并决定"
+  "Ménage planifié entre les séjours": {
+    "it": "Pulizia prevista tra un soggiorno e l'altro",
+    "en": "Cleaning planned between stays",
+    "es": "Limpieza prevista entre estancias",
+    "ru": "Между заездами запланирована уборка",
+    "zh": "计划在入住期间进行清洁"
   },
-  "Mettre la propriété en scène": {
-    "it": "Metta in scena la proprietà",
-    "en": "Stage the property",
-    "es": "Preparar la propiedad",
-    "ru": "Подготовьте недвижимость",
-    "zh": "暂存该属性"
+  "Ménage, linge et consommables facturés séparément": {
+    "it": "Casa, biancheria e materiali di consumo fatturati a parte",
+    "en": "Household, linen and consumables invoiced separately",
+    "es": "Hogar, ropa de cama y consumibles facturados por separado",
+    "ru": "Товары для дома, постельное белье и расходные материалы оплачиваются отдельно.",
+    "zh": "家居用品、床单和消耗品单独开具发票"
   },
-  "Mieux valoriser une période encore disponible": {
-    "it": "Meglio valorizzare un periodo ancora disponibile",
-    "en": "Better value a period still available",
-    "es": "Mejor valor un período aún disponible",
-    "ru": "Еще доступен период с более выгодной стоимостью",
-    "zh": "更有价值的一段时间仍然可用"
+  "Ménage, linge, consommables et interventions techniques sont facturés au réel, séparément, sans marge Velyo.": {
+    "it": "Pulizie, biancheria, materiali di consumo e interventi tecnici vengono fatturati in forma reale, separatamente, senza margine Velyo.",
+    "en": "Cleaning, linen, consumables and technical interventions are invoiced in actual form, separately, without Velyo margin.",
+    "es": "La limpieza, la ropa de cama, los consumibles y las intervenciones técnicas se facturan en forma real, por separado, sin margen Velyo.",
+    "ru": "Счета за уборку, белье, расходные материалы и технические работы выставляются по факту, отдельно, без наценки Velyo.",
+    "zh": "清洁、布草、消耗品和技术干预以实际形式单独开具发票，没有 Velyo 保证金。"
   },
-  "Mise en gestion": {
-    "it": "Gestione",
-    "en": "Management",
-    "es": "Gestión",
-    "ru": "Управление",
-    "zh": "管理"
+  "Ménage, rotation du linge, réassort et contrôle final entre deux séjours.": {
+    "it": "Pulizie, rotazione biancheria, riassortimento e controllo finale tra due soggiorni.",
+    "en": "Cleaning, linen rotation, restocking and final check between two stays.",
+    "es": "Limpieza, rotación de lavandería, reposición y control final entre dos estancias.",
+    "ru": "Уборка, смена белья, пополнение запасов и финальная проверка между двумя проживаниями.",
+    "zh": "两次住宿之间的清洁、洗衣轮换、补货和最终检查。"
   },
-  "Mise en place du calendrier et des règles": {
-    "it": "Impostazione del calendario e delle regole",
-    "en": "Setting up the calendar and rules",
-    "es": "Configurando el calendario y las reglas",
-    "ru": "Настройка календаря и правил",
-    "zh": "设置日历和规则"
+  "Ménage, rotation du linge, réassort et contrôle final sont coordonnés entre deux séjours.": {
+    "it": "La pulizia, la rotazione della biancheria, il rifornimento e l'ispezione finale vengono coordinati tra due soggiorni.",
+    "en": "Cleaning, laundry rotation, restocking and final inspection are coordinated between two stays.",
+    "es": "La limpieza, rotación de lavandería, reposición e inspección final se coordinan entre dos estancias.",
+    "ru": "Уборка, смена белья, пополнение запасов и заключительная проверка координируются между двумя пребываниями.",
+    "zh": "两次入住之间协调清洁、洗衣轮换、补货和最终检查。"
   },
-  "Mise en valeur respectueuse de l’identité du lieu": {
-    "it": "Valorizzazione rispettosa dell'identità del luogo",
-    "en": "Respectful enhancement of the identity of the place",
-    "es": "Puesta en valor respetuosa de la identidad del lugar",
-    "ru": "Уважительное усиление индивидуальности места",
-    "zh": "尊重地增强该场所的身份"
+  "Mentions légales": {
+    "it": "Note legali",
+    "en": "Legal notices",
+    "es": "Avisos legales",
+    "ru": "Юридическая информация",
+    "zh": "法律声明"
   },
-  "Modalités de commande": {
-    "it": "Condizioni d'ordine",
-    "en": "Order conditions",
-    "es": "Condiciones del pedido",
-    "ru": "Условия заказа",
-    "zh": "订单条件"
+  "Message avant arrivée": {
+    "it": "Messaggio prima dell'arrivo",
+    "en": "Message before arrival",
+    "es": "Mensaje antes de la llegada",
+    "ru": "Сообщение перед приездом",
+    "zh": "抵达前留言"
   },
-  "Mode d’arrivée défini": {
-    "it": "Modalità di arrivo definita",
-    "en": "Arrival mode defined",
-    "es": "Modo de llegada definido",
-    "ru": "Определен режим прибытия",
-    "zh": "到达模式已定义"
+  "Message envoyé avant l’arrivée": {
+    "it": "Messaggio inviato prima dell'arrivo",
+    "en": "Message sent before arrival",
+    "es": "Mensaje enviado antes de la llegada",
+    "ru": "Сообщение отправлено до прибытия",
+    "zh": "到达前发送的消息"
   },
-  "Moins de sollicitations pour vous": {
-    "it": "Meno richieste per Lei",
-    "en": "Fewer requests for you",
-    "es": "Menos solicitudes para ti",
-    "ru": "Меньше запросов к вам",
-    "zh": "对您的请求减少"
+  "Messages automatisés": {
+    "it": "Messaggi automatizzati",
+    "en": "Automated messages",
+    "es": "Mensajes automatizados",
+    "ru": "Автоматические сообщения",
+    "zh": "自动消息"
   },
-  "Ne plus subir chaque imprévu": {
-    "it": "Non sopporta più ogni evento inaspettato",
-    "en": "No longer endure every unexpected event",
-    "es": "Ya no aguantas cada imprevisto",
-    "ru": "Больше не нужно терпеть каждое неожиданное событие.",
-    "zh": "不再忍受每一个意外事件"
+  "Mettre le bien en marché": {
+    "it": "Mettere l'immobile sul mercato",
+    "en": "Put the property on the market",
+    "es": "Poner la propiedad en el mercado",
+    "ru": "Выставить недвижимость на продажу",
+    "zh": "将房产投放市场"
   },
-  "Nettoyages spécifiques proposés sur devis": {
-    "it": "Pulizie specifiche offerte su preventivo",
-    "en": "Specific cleanings offered on quote",
-    "es": "Limpiezas específicas ofrecidas bajo cotización",
-    "ru": "Специальные виды уборки предлагаются по цене.",
-    "zh": "报价中提供的特定清洁服务"
+  "Mise en marché": {
+    "it": "Marketing",
+    "en": "Marketing",
+    "es": "Comercialización",
+    "ru": "Маркетинг",
+    "zh": "营销"
   },
-  "Niveau de délégation": {
-    "it": "Livello di delega",
-    "en": "Delegation level",
-    "es": "Nivel de delegación",
-    "ru": "Уровень делегирования",
-    "zh": "授权级别"
+  "Mise en place adaptée à chaque bien": {
+    "it": "Implementazione adattata ad ogni immobile",
+    "en": "Implementation adapted to each property",
+    "es": "Implementación adaptada a cada inmueble",
+    "ru": "Реализация адаптирована к каждому свойству",
+    "zh": "适合每个属性的实施"
   },
-  "Niveau de présentation attendu": {
-    "it": "Livello di presentazione previsto",
-    "en": "Expected level of presentation",
-    "es": "Nivel de presentación esperado",
-    "ru": "Ожидаемый уровень презентации",
-    "zh": "预期的演示级别"
+  "Mise en place avant l’arrivée": {
+    "it": "Configurazione prima dell'arrivo",
+    "en": "Set up before arrival",
+    "es": "Configurar antes de la llegada",
+    "ru": "Настройте до приезда",
+    "zh": "抵达前设置"
   },
-  "Niveau de priorité": {
-    "it": "Livello di priorità",
-    "en": "Priority level",
-    "es": "Nivel de prioridad",
-    "ru": "Уровень приоритета",
-    "zh": "优先级"
+  "Modèle et taille vérifiés": {
+    "it": "Modello e taglia controllati",
+    "en": "Model and size checked",
+    "es": "Modelo y talla comprobados",
+    "ru": "Модель и размер проверены",
+    "zh": "已检查型号和尺寸"
   },
-  "Niveau de service attendu": {
-    "it": "Livello di servizio previsto",
-    "en": "Expected level of service",
-    "es": "Nivel de servicio esperado",
-    "ru": "Ожидаемый уровень обслуживания",
-    "zh": "预期服务水平"
+  "Nettoyages spécifiques proposés selon le besoin": {
+    "it": "Pulizie specifiche offerte a seconda delle necessità",
+    "en": "Specific cleanings offered according to need",
+    "es": "Se ofrecen limpiezas específicas según necesidad",
+    "ru": "Специальная уборка, предлагаемая в зависимости от необходимости.",
+    "zh": "根据需要提供特定清洁服务"
   },
-  "Non. Il fournit une estimation indicative fondée sur des coefficients internes. Une évaluation personnalisée reste nécessaire.": {
-    "it": "No. Fornisce una stima indicativa basata su coefficienti interni. Resta necessaria una valutazione personalizzata.",
-    "en": "No. It provides an indicative estimate based on internal coefficients. A personalized assessment remains necessary.",
-    "es": "No. Proporciona una estimación orientativa basada en coeficientes internos. Sigue siendo necesaria una evaluación personalizada.",
-    "ru": "Нет. Он предоставляет ориентировочную оценку на основе внутренних коэффициентов. Персонализированная оценка остается необходимой.",
-    "zh": "否。它提供基于内部系数的指示性估计。个性化评估仍然是必要的。"
+  "Non. Il fournit une estimation indicative. Une visite et une analyse personnalisée restent indispensables.": {
+    "it": "No. Fornisce una stima indicativa. Resta fondamentale la visita e l'analisi personalizzata.",
+    "en": "No. It provides an indicative estimate. A visit and a personalized analysis remain essential.",
+    "es": "No. Proporciona una estimación orientativa. Una visita y un análisis personalizado siguen siendo imprescindibles.",
+    "ru": "Нет. Это ориентировочная оценка. Визит и персонализированный анализ по-прежнему необходимы.",
+    "zh": "否。它提供了指示性估计。访问和个性化分析仍然至关重要。"
   },
-  "Notre propriété est entretenue avec une attention que nous ne pouvions plus assurer seuls.": {
-    "it": "La nostra proprietà è mantenuta con un'attenzione che non potremmo più fornire da soli.",
-    "en": "Our property is maintained with an attention that we could no longer provide alone.",
-    "es": "Nuestra propiedad se mantiene con una atención que ya no podríamos brindar solos.",
-    "ru": "За нашей собственностью ухаживают с таким вниманием, которое мы больше не могли бы обеспечить в одиночку.",
-    "zh": "我们的财产得到了我们无法再单独提供的关注。"
+  "Nous avons enfin un interlocuteur unique pour le logement.": {
+    "it": "Finalmente abbiamo un unico interlocutore per l'edilizia abitativa.",
+    "en": "We finally have a single contact for housing.",
+    "es": "Por fin tenemos un contacto único para la vivienda.",
+    "ru": "Наконец-то у нас появился единый контакт по жилью.",
+    "zh": "我们终于有了一个住房联系人。"
   },
-  "Nous apprenons ce qui compte pour vous : la fragilité d’un meuble, la façon dont la maison doit être préparée, les attentions réservées à vos proches. Cette mémoire du lieu permet une gestion véritablement personnelle.": {
-    "it": "Impariamo ciò che conta per Lei: la fragilità di un mobile, come deve essere allestita la casa, le attenzioni riservate ai Suoi cari. Questa memoria del luogo permette una gestione davvero personale.",
-    "en": "We learn what matters to you: the fragility of a piece of furniture, the way the house should be prepared, the attention given to your loved ones. This memory of the place allows truly personal management.",
-    "es": "Aprendemos lo que te importa: la fragilidad de un mueble, la forma en que debe estar preparada la casa, la atención que se brinda a tus seres queridos. Esta memoria del lugar permite una gestión verdaderamente personal.",
-    "ru": "Мы узнаем, что для вас важно: хрупкость предмета мебели, то, как должен быть подготовлен дом, внимание, уделяемое вашим близким. Эта память о месте позволяет по-настоящему персонализировать управление.",
-    "zh": "我们了解对您来说重要的事情：一件家具的脆弱性、房屋的准备方式、对您所爱之人的关注。这种对地方的记忆可以实现真正的个人管理。"
+  "Nous décidons ensemble de ce que vous nous confiez, des dépenses séparées et du rythme de nos nouvelles.": {
+    "it": "Decidiamo insieme cosa ci affidate, le spese separate e il ritmo delle nostre novità.",
+    "en": "We decide together what you entrust to us, the separate expenses and the rhythm of our news.",
+    "es": "Decidimos juntos lo que nos confías, los gastos separados y el ritmo de nuestras novedades.",
+    "ru": "Мы вместе решаем, что вы нам доверите, отдельные расходы и ритм наших новостей.",
+    "zh": "我们共同决定您委托给我们的内容、单独的费用以及我们新闻的节奏。"
   },
-  "Nous apprenons vos exigences et les particularités du lieu. Vous êtes informé lorsqu’une décision compte, sans être sollicité pour chaque détail.": {
-    "it": "Impariamo le Sue esigenze e le particolarità della location. Sa quando una decisione è importante, senza essere pressato per ogni dettaglio.",
-    "en": "We learn your requirements and the particularities of the location. You know when a decision matters, without being pressed for every detail.",
-    "es": "Conocemos sus requerimientos y las particularidades de la ubicación. Sabes cuándo una decisión es importante, sin que te presionen para cada detalle.",
-    "ru": "Узнаем Ваши требования и особенности локации. Вы знаете, когда решение имеет значение, и вам не нужно вдаваться в подробности.",
-    "zh": "我们了解您的要求和地点的特殊性。您知道什么时候决定很重要，而无需追问每个细节。"
+  "Nous étudions le bien": {
+    "it": "Studiamo la proprietà",
+    "en": "We study the property",
+    "es": "Estudiamos la propiedad",
+    "ru": "Изучаем недвижимость",
+    "zh": "我们研究该房产"
   },
-  "Nous avons enfin un interlocuteur unique pour tout coordonner.": {
-    "it": "Finalmente abbiamo un unico punto di contatto per coordinare tutto.",
-    "en": "We finally have a single point of contact to coordinate everything.",
-    "es": "Por fin tenemos un único punto de contacto para coordinar todo.",
-    "ru": "Наконец-то у нас есть единое контактное лицо для координации всего.",
-    "zh": "我们终于有了一个单一的联系人来协调一切。"
+  "Nous fixons ensemble ce que Velyo gère, ce que vous souhaitez conserver et les dépenses qui demandent votre validation.": {
+    "it": "Determiniamo insieme cosa gestisce Velyo, cosa vuoi mantenere e le spese che richiedono la tua validazione.",
+    "en": "We determine together what Velyo manages, what you want to keep and the expenses that require your validation.",
+    "es": "Determinamos juntos qué gestiona Velyo, qué quieres conservar y los gastos que requieren tu validación.",
+    "ru": "Мы вместе определяем, чем управляет Velyo, что вы хотите сохранить, а также расходы, требующие вашего подтверждения.",
+    "zh": "我们共同确定 Velyo 管理的内容、您想要保留的内容以及需要您验证的费用。"
   },
-  "Nous avons retrouvé de la visibilité sur les réservations, l’entretien et les décisions tarifaires.": {
-    "it": "Abbiamo riacquistato visibilità su prenotazioni, manutenzione e decisioni sui prezzi.",
-    "en": "We have regained visibility on reservations, maintenance and pricing decisions.",
-    "es": "Hemos recuperado visibilidad sobre reservas, mantenimiento y decisiones de precios.",
-    "ru": "Мы восстановили прозрачность решений по бронированию, обслуживанию и ценообразованию.",
-    "zh": "我们重新获得了预订、维护和定价决策的可见性。"
+  "Nous précisons ce que vous louez, ce que vous gérez encore et ce que vous attendez de Velyo.": {
+    "it": "Specifichiamo cosa noleggi, cosa gestisci ancora e cosa ti aspetti da Velyo.",
+    "en": "We specify what you rent, what you still manage and what you expect from Velyo.",
+    "es": "Especificamos qué alquilas, qué gestionas aún y qué esperas de Velyo.",
+    "ru": "Уточняем, что вы арендуете, чем еще управляете и чего ожидаете от Velyo.",
+    "zh": "我们指定您租用的内容、您仍管理的内容以及您对 Velyo 的期望。"
   },
-  "Nous connaissons la place de chaque chose et le niveau de soin attendu. Après chaque séjour, votre bien retrouve son équilibre.": {
-    "it": "Conosciamo il luogo in cui si trova ogni cosa e il livello di assistenza previsto. Dopo ogni soggiorno, la Sua struttura ritrova il suo equilibrio.",
-    "en": "We know the place of everything and the level of care expected. After each stay, your property regains its balance.",
-    "es": "Sabemos el lugar de cada cosa y el nivel de atención esperado. Después de cada estancia, su propiedad recupera su equilibrio.",
-    "ru": "Мы знаем место всего и ожидаемый уровень ухода. После каждого пребывания баланс вашего имущества восстанавливается.",
-    "zh": "我们知道所有物品的位置以及预期的护理级别。每次入住后，您的财产都会恢复平衡。"
+  "Nous précisons le nombre de personnes, le moment souhaité, le lieu, les préférences et les contraintes utiles.": {
+    "it": "Specifichiamo il numero di persone, l'orario desiderato, la località, le preferenze ed i vincoli utili.",
+    "en": "We specify the number of people, the desired time, the location, the preferences and the useful constraints.",
+    "es": "Especificamos el número de personas, el tiempo deseado, la ubicación, las preferencias y las limitaciones útiles.",
+    "ru": "Указываем количество человек, желаемое время, местоположение, предпочтения и полезные ограничения.",
+    "zh": "我们指定人数、所需时间、地点、偏好和有用的限制。"
   },
-  "Nous consultons des partenaires adaptés et vérifions la disponibilité avant de vous présenter une sélection courte.": {
-    "it": "Consultiamo i partner adatti e controlliamo la disponibilità prima di presentarvi una breve selezione.",
-    "en": "We consult suitable partners and check availability before presenting you with a short selection.",
-    "es": "Consultamos a los socios adecuados y comprobamos la disponibilidad antes de presentarle una breve selección.",
-    "ru": "Мы консультируемся с подходящим партнером и проверяем наличие, прежде чем представить вам небольшой выбор.",
-    "zh": "在向您提供简短的选择之前，我们会咨询合适的合作伙伴并检查可用性。"
+  "Nous prenons le relais.": {
+    "it": "Stiamo prendendo il sopravvento.",
+    "en": "We are taking over.",
+    "es": "Nos estamos haciendo cargo.",
+    "ru": "Мы берем верх.",
+    "zh": "我们正在接管。"
   },
-  "Nous coordonnons l’activité, documentons les décisions et vous informons sans multiplier les sollicitations.": {
-    "it": "Coordiniamo l'attività, documentiamo le decisioni e La informiamo senza moltiplicare le richieste.",
-    "en": "We coordinate the activity, document the decisions and inform you without multiplying requests.",
-    "es": "Coordinamos la actividad, documentamos las decisiones y te informamos sin multiplicar solicitudes.",
-    "ru": "Мы координируем деятельность, документируем решения и информируем вас, не умножая запросы.",
-    "zh": "我们协调活动、记录决策并在不增加请求的情况下通知您。"
+  "Nous préparons le prochain séjour": {
+    "it": "Stiamo preparando il prossimo soggiorno",
+    "en": "We are preparing the next stay",
+    "es": "Estamos preparando la próxima estancia",
+    "ru": "Готовим следующий отдых",
+    "zh": "我们正在准备下次住宿"
   },
-  "Nous coordonnons les contrôles et interventions avec des professionnels locaux selon les procédures convenues avec le propriétaire.": {
-    "it": "Coordiniamo controlli ed interventi con professionisti locali secondo le modalità concordate con il proprietario.",
-    "en": "We coordinate checks and interventions with local professionals according to the procedures agreed with the owner.",
-    "es": "Coordinamos controles e intervenciones con profesionales locales según los procedimientos acordados con el propietario.",
-    "ru": "Мы координируем проверки и вмешательства с местными специалистами в соответствии с процедурами, согласованными с владельцем.",
-    "zh": "我们根据与业主商定的程序与当地专业人员协调检查和干预措施。"
+  "Nous répondons aux voyageurs, coordonnons les intervenants et vous laissons respirer.": {
+    "it": "Rispondiamo ai viaggiatori, coordiniamo le parti interessate e ti lasciamo respirare.",
+    "en": "We respond to travelers, coordinate stakeholders and let you breathe.",
+    "es": "Respondemos a los viajeros, coordinamos a las partes interesadas y te dejamos respirar.",
+    "ru": "Мы отвечаем путешественникам, координируем действия заинтересованных сторон и позволяем вам дышать.",
+    "zh": "我们回应旅行者、协调利益相关者并让您呼吸。"
   },
-  "Nous découvrons la propriété dans son ensemble : son caractère, ses usages, vos périodes d’occupation et vos ambitions. Cette lecture attentive pose un cadre fidèle au lieu comme à vos exigences.": {
-    "it": "Scopriamo la proprietà nel suo insieme: il suo carattere, i suoi usi, i Suoi periodi di occupazione e le Sue ambizioni. Questa lettura attenta stabilisce un quadro fedele al luogo e alle Sue esigenze.",
-    "en": "We discover the property as a whole: its character, its uses, your periods of occupation and your ambitions. This attentive reading establishes a framework faithful to the place and to your requirements.",
-    "es": "Descubrimos la propiedad en su conjunto: su carácter, sus usos, sus periodos de ocupación y sus ambiciones. Esta lectura atenta establece un marco fiel al lugar y a sus exigencias.",
-    "ru": "Мы раскрываем недвижимость в целом: ее характер, использование, периоды вашего проживания и ваши амбиции. Такое внимательное чтение создает основу, соответствующую месту и вашим требованиям.",
-    "zh": "我们从整体上发现该财产：其特征、用途、您的职业时期和您的抱负。这种细心的阅读建立了一个忠实于当地和您的要求的框架。"
+  "Nous réunissons les accès, les contacts, les consignes et le calendrier avant de recevoir.": {
+    "it": "Raccogliamo accessi, contatti, istruzioni e calendario prima di ricevere.",
+    "en": "We gather access, contacts, instructions and the calendar before receiving.",
+    "es": "Recopilamos acceso, contactos, instrucciones y el calendario antes de recibir.",
+    "ru": "Перед получением собираем доступ, контакты, инструкции и календарь.",
+    "zh": "我们在接收之前收集访问权限、联系人、说明和日历。"
   },
-  "Nous déterminons ce qui sera proposé aux voyageurs, à quel moment et dans quelles conditions, en cohérence avec votre bien.": {
-    "it": "Determiniamo cosa verrà offerto ai viaggiatori, quando e a quali condizioni, in linea con la Sua struttura.",
-    "en": "We determine what will be offered to travelers, when and under what conditions, consistent with your property.",
-    "es": "Determinamos qué se ofrecerá a los viajeros, cuándo y bajo qué condiciones, de acuerdo con su propiedad.",
-    "ru": "Мы определяем, что будет предложено путешественникам, когда и на каких условиях в соответствии с вашим объектом размещения.",
-    "zh": "我们根据您的酒店决定在何时、在什么条件下向旅客提供哪些服务。"
+  "Nous réunissons les éléments nécessaires pour accueillir, vendre et exploiter le bien dans de bonnes conditions dès l’ouverture.": {
+    "it": "Raccogliamo gli elementi necessari per accogliere, vendere e gestire l'immobile in buone condizioni fin dall'apertura.",
+    "en": "We bring together the necessary elements to welcome, sell and operate the property in good conditions from the opening.",
+    "es": "Reunimos los elementos necesarios para acoger, vender y explotar la propiedad en buenas condiciones desde la apertura.",
+    "ru": "Мы объединяем все необходимое для того, чтобы принять, продать и эксплуатировать недвижимость в хороших условиях с момента ее открытия.",
+    "zh": "我们汇集了必要的要素，以便从开业之初就以良好的条件欢迎、销售和运营该房产。"
   },
-  "Nous distinguons l’urgence, l’inconfort et l’entretien planifiable afin d’engager la réponse adaptée.": {
-    "it": "Distinguiamo tra urgenza, disagio e manutenzione programmabile per avviare la risposta adeguata.",
-    "en": "We distinguish between urgency, discomfort and plannable maintenance in order to initiate the appropriate response.",
-    "es": "Distinguimos entre urgencia, malestar y mantenimiento planificable para iniciar la respuesta adecuada.",
-    "ru": "Мы различаем срочность, дискомфорт и плановое обслуживание, чтобы инициировать соответствующий ответ.",
-    "zh": "我们区分紧急性、不适性和可计划的维护，以便启动适当的响应。"
+  "Nous suivons les réservations, préparons les arrivées et accompagnons les voyageurs du premier message jusqu’au départ.": {
+    "it": "Seguiamo le prenotazioni, prepariamo gli arrivi e accompagniamo i viaggiatori dal primo messaggio fino alla partenza.",
+    "en": "We follow reservations, prepare arrivals and accompany travelers from the first message until departure.",
+    "es": "Seguimos reservas, preparamos llegadas y acompañamos a los viajeros desde el primer mensaje hasta la salida.",
+    "ru": "Мы следим за бронированием, готовим заезды и сопровождаем путешественников от первого сообщения до вылета.",
+    "zh": "我们会跟踪预订、准备抵达并从收到第一条消息直至出发期间陪伴旅客。"
   },
-  "Nous étudions les usages, les accès, les équipements et vos périodes d’occupation avant de définir le moindre processus.": {
-    "it": "Studiamo gli usi, gli accessi, le attrezzature e i periodi di occupazione prima di definire qualsiasi processo.",
-    "en": "We study uses, access, equipment and your occupancy periods before defining any process.",
-    "es": "Estudiamos usos, accesos, equipamientos y sus periodos de ocupación antes de definir cualquier proceso.",
-    "ru": "Прежде чем определить какой-либо процесс, мы изучаем использование, доступ, оборудование и периоды вашего пребывания.",
-    "zh": "在定义任何流程之前，我们会研究用途、访问权限、设备和您的占用时间。"
+  "Nous suivons tout le séjour": {
+    "it": "Seguiamo l'intero soggiorno",
+    "en": "We follow the entire stay",
+    "es": "Seguimos toda la estancia",
+    "ru": "Мы следим за всем пребыванием",
+    "zh": "我们会跟踪整个住宿过程"
   },
-  "Nous faisons évoluer les tarifs et les conditions de séjour avec mesure, pour mieux valoriser votre bien sans banaliser son image.": {
-    "it": "Modifichiamo attentamente le tariffe e le condizioni di soggiorno, per promuovere al meglio il Suo immobile senza banalizzarne l'immagine.",
-    "en": "We change the rates and conditions of stay carefully, to better promote your property without trivializing its image.",
-    "es": "Cambiamos cuidadosamente las tarifas y condiciones de estancia, para promocionar mejor su propiedad sin banalizar su imagen.",
-    "ru": "Мы тщательно изменяем тарифы и условия проживания, чтобы лучше продвигать ваш объект, не унижая его имидж.",
-    "zh": "我们会仔细更改住宿费率和条件，以便更好地宣传您的酒店，同时又不会贬低其形象。"
+  "Nous transmettons les accès, l’adresse, les horaires et les informations dont le prestataire et le voyageur ont besoin.": {
+    "it": "Trasmettiamo l'accesso, l'indirizzo, gli orari e le informazioni di cui il fornitore del servizio e il viaggiatore hanno bisogno.",
+    "en": "We transmit the access, address, times and information that the service provider and the traveler need.",
+    "es": "Transmitimos el acceso, dirección, horarios e información que el prestador del servicio y el viajero necesitan.",
+    "ru": "Мы передаем доступ, адрес, время и информацию, необходимую поставщику услуг и путешественнику.",
+    "zh": "我们传输服务提供商和旅行者所需的访问权限、地址、时间和信息。"
   },
-  "Nous identifions les prestataires capables de tenir le niveau attendu, puis vérifions leurs tarifs, leurs disponibilités et leurs conditions.": {
-    "it": "Identifichiamo i fornitori di servizi in grado di mantenere il livello atteso, quindi controlliamo i loro prezzi, disponibilità e condizioni.",
-    "en": "We identify service providers capable of maintaining the expected level, then check their prices, availability and conditions.",
-    "es": "Identificamos proveedores de servicios capaces de mantener el nivel esperado, luego verificamos sus precios, disponibilidad y condiciones.",
-    "ru": "Мы определяем поставщиков услуг, способных поддерживать ожидаемый уровень, затем проверяем их цены, доступность и условия.",
-    "zh": "我们确定有能力维持预期水平的服务提供商，然后检查其价格、可用性和条件。"
+  "Nous utilisons les réservations, les retours voyageurs et les coûts réels pour améliorer les tarifs, l’organisation et la rentabilité du bien.": {
+    "it": "Utilizziamo le prenotazioni, i ritorni dei passeggeri e i costi effettivi per migliorare i prezzi, l'organizzazione e la redditività della proprietà.",
+    "en": "We use reservations, passenger returns and actual costs to improve the prices, organization and profitability of the property.",
+    "es": "Utilizamos reservas, devoluciones de pasajeros y costos reales para mejorar los precios, organización y rentabilidad de la propiedad.",
+    "ru": "Мы используем данные о бронированиях, возвратах пассажиров и фактических затратах для улучшения цен, организации и прибыльности объекта недвижимости.",
+    "zh": "我们利用预订、乘客回程和实际成本来改善酒店的价格、组织和盈利能力。"
   },
-  "Nous intervenons à Gênes et dans les principales localités de la Riviera ligure, après étude de chaque propriété.": {
-    "it": "Operiamo a Genova e nelle principali località della Riviera Ligure, previo studio di ogni immobile.",
-    "en": "We operate in Genoa and in the main towns of the Ligurian Riviera, after studying each property.",
-    "es": "Operamos en Génova y en las principales ciudades de la Riviera de Liguria, después de estudiar cada propiedad.",
-    "ru": "Мы работаем в Генуе и основных городах Лигурийской Ривьеры после изучения каждого объекта недвижимости.",
-    "zh": "在研究了每处房产后，我们在热那亚和利古里亚里维埃拉的主要城镇开展业务。"
+  "Nous visitons le bien, évaluons son potentiel locatif et relevons tout ce qui compte pour l’exploiter sans en perdre le caractère.": {
+    "it": "Visitiamo la proprietà, valutiamo il suo potenziale locativo e prendiamo nota di tutto ciò che conta per sfruttarla senza perdere il suo carattere.",
+    "en": "We visit the property, assess its rental potential and take note of everything that matters to exploit it without losing its character.",
+    "es": "Visitamos la propiedad, evaluamos su potencial de alquiler y tomamos nota de todo lo importante para explotarla sin perder su carácter.",
+    "ru": "Мы посещаем объект, оцениваем его потенциал сдачи в аренду и отмечаем все, что важно для его эксплуатации, не теряя при этом его характера.",
+    "zh": "我们参观该房产，评估其出租潜力，并记录一切重要事项，以便在不失去其特色的情况下对其进行开发。"
   },
-  "Nous observons le bien, ses disponibilités, son historique et son environnement concurrentiel.": {
-    "it": "Osserviamo l'immobile, la sua disponibilità, la sua storia e il suo contesto competitivo.",
-    "en": "We observe the property, its availability, its history and its competitive environment.",
-    "es": "Observamos la propiedad, su disponibilidad, su historia y su entorno competitivo.",
-    "ru": "Мы наблюдаем за объектом недвижимости, ее доступностью, историей и конкурентной средой.",
-    "zh": "我们观察该房产、其可用性、历史及其竞争环境。"
+  "Nous visitons le bien, relevons ses caractéristiques et comprenons vos contraintes avant de définir le projet locatif.": {
+    "it": "Visitiamo l'immobile, ne notiamo le caratteristiche e comprendiamo i tuoi vincoli prima di definire il progetto di locazione.",
+    "en": "We visit the property, note its characteristics and understand your constraints before defining the rental project.",
+    "es": "Visitamos la propiedad, tomamos nota de sus características y comprendemos sus limitaciones antes de definir el proyecto de alquiler.",
+    "ru": "Мы посещаем объект, отмечаем его характеристики и понимаем ваши ограничения, прежде чем определять проект аренды.",
+    "zh": "在确定租赁项目之前，我们会参观该房产，记录其特征并了解您的限制。"
   },
-  "Nous posons le cadre, les priorités et les règles de décision avant la première réservation. Vous savez ce qui sera pris en charge, ce qui vous sera soumis et comment votre propriété sera suivie.": {
-    "it": "Stabiliamo il quadro, le priorità e le regole decisionali prima della prima prenotazione. Sa di cosa ci occuperemo, cosa Le verrà sottoposto e come verrà monitorata la Sua proprietà.",
-    "en": "We establish the framework, priorities and decision rules before the first reservation. You know what will be taken care of, what will be submitted to you and how your property will be monitored.",
-    "es": "Establecemos el marco, prioridades y reglas de decisión antes de la primera reserva. Usted sabe qué se cuidará, qué se le enviará y cómo se monitoreará su propiedad.",
-    "ru": "Мы устанавливаем структуру, приоритеты и правила принятия решений до первой оговорки. Вы знаете, о чем позаботятся, что будет передано вам и как будет контролироваться ваша собственность.",
-    "zh": "我们在第一次预订之前建立框架、优先级和决策规则。您知道什么将被处理、什么将提交给您以及您的财产将如何受到监控。"
+  "Nous visitons le bien, relevons son fonctionnement réel et identifions ce qui doit être repris.": {
+    "it": "Visitiamo l'immobile, constatiamo il suo effettivo funzionamento e identifichiamo ciò che necessita di essere preso in carico.",
+    "en": "We visit the property, note its actual functioning and identify what needs to be taken over.",
+    "es": "Visitamos la propiedad, observamos su funcionamiento real e identificamos lo que necesita ser asumido.",
+    "ru": "Мы посещаем объект, отмечаем его фактическое функционирование и определяем, что необходимо принять.",
+    "zh": "我们参观该房产，记录其实际功能并确定需要接管的内容。"
   },
-  "Nous précisons le besoin, les préférences, le calendrier et le niveau de service attendu.": {
-    "it": "Specifichiamo la necessità, le preferenze, il programma e il livello di servizio previsto.",
-    "en": "We specify the need, preferences, schedule and expected level of service.",
-    "es": "Especificamos la necesidad, preferencias, horario y nivel de servicio esperado.",
-    "ru": "Уточняем необходимость, предпочтения, график и ожидаемый уровень обслуживания.",
-    "zh": "我们指定需求、偏好、时间表和预期服务水平。"
+  "Nous vous appelons": {
+    "it": "Ti stiamo chiamando",
+    "en": "We are calling you",
+    "es": "Te estamos llamando",
+    "ru": "Мы вам звоним",
+    "zh": "我们正在给您打电话"
   },
-  "Nous préparons chaque détail qui façonne la première impression : présentation, équipements, linge, photographie et parcours d’accueil. La propriété devient immédiatement visible, désirable et prête à recevoir.": {
-    "it": "Prepariamo ogni dettaglio che forma la prima impressione: presentazione, attrezzatura, biancheria, fotografia e percorso di benvenuto. L'immobile diventa subito visibile, desiderabile e pronto a ricevere.",
-    "en": "We prepare every detail that shapes the first impression: presentation, equipment, linen, photography and welcome route. The property immediately becomes visible, desirable and ready to receive.",
-    "es": "Preparamos cada detalle que marca la primera impresión: presentación, equipamiento, lencería, fotografía y ruta de bienvenida. La propiedad inmediatamente se vuelve visible, deseable y lista para recibir.",
-    "ru": "Мы продумываем каждую деталь, формирующую первое впечатление: презентацию, оборудование, белье, фотографии и приветственный маршрут. Объект сразу становится видимым, желанным и готовым к приему.",
-    "zh": "我们准备了塑造第一印象的每一个细节：演示、设备、亚麻布、摄影和欢迎路线。该房产立即变得可见、令人向往并准备好接收。"
+  "Nous vous expliquons la situation et les solutions avant d’engager une dépense.": {
+    "it": "Ti spieghiamo la situazione e le soluzioni prima di sostenere una spesa.",
+    "en": "We explain the situation and the solutions to you before incurring an expense.",
+    "es": "Te explicamos la situación y las soluciones antes de incurrir en un gasto.",
+    "ru": "Мы объясняем вам ситуацию и пути решения, прежде чем нести расходы.",
+    "zh": "我们在产生费用之前向您解释情况和解决方案。"
   },
-  "Nous remarquons ce qui change, trouvons la bonne personne et suivons l’intervention. Vous décidez avec une information claire, jamais dans l’urgence.": {
-    "it": "Notiamo cosa cambia, troviamo la persona giusta e seguiamo l'intervento. Decide con informazioni chiare, mai con fretta.",
-    "en": "We notice what changes, find the right person and follow the intervention. You decide with clear information, never in a hurry.",
-    "es": "Notamos qué cambios, encontramos a la persona adecuada y seguimos la intervención. Tú decides con información clara, nunca con prisas.",
-    "ru": "Замечаем изменения, находим нужного человека и следим за вмешательством. Вы принимаете решения, имея четкую информацию и никогда не торопясь.",
-    "zh": "我们注意到发生的变化，找到合适的人并遵循干预措施。您可以根据清晰的信息做出决定，切勿匆忙。"
+  "Nouvelles régulières au propriétaire": {
+    "it": "Notizie regolari per il proprietario",
+    "en": "Regular news to the owner",
+    "es": "Noticias periódicas para el propietario.",
+    "ru": "Регулярные новости владельцу",
+    "zh": "定期向所有者发送消息"
   },
-  "Nous tenons compte de la localisation, du niveau de finition, des équipements, de la saisonnalité et des périodes disponibles.": {
-    "it": "Teniamo conto dell'ubicazione, del livello di finitura, delle dotazioni, della stagionalità e dei periodi disponibili.",
-    "en": "We take into account the location, the level of finish, the equipment, the seasonality and the periods available.",
-    "es": "Tenemos en cuenta la ubicación, el nivel de acabado, el equipamiento, la estacionalidad y los periodos disponibles.",
-    "ru": "Мы учитываем местоположение, уровень отделки, оснащение, сезонность и наличие периодов.",
-    "zh": "我们会考虑地点、完成程度、设备、季节性和可用时段。"
+  "Objectif de rentabilité": {
+    "it": "Obiettivo di redditività",
+    "en": "Profitability objective",
+    "es": "Objetivo de rentabilidad",
+    "ru": "Цель рентабельности",
+    "zh": "盈利目标"
   },
-  "Objectifs définis et suivis avec clarté": {
-    "it": "Obiettivi chiaramente definiti e monitorati",
-    "en": "Objectives clearly defined and monitored",
-    "es": "Objetivos claramente definidos y monitorizados",
-    "ru": "Цели четко определены и контролируются.",
-    "zh": "明确定义和监控的目标"
+  "Optimiser dans la durée": {
+    "it": "Ottimizza nel tempo",
+    "en": "Optimize over time",
+    "es": "Optimizar con el tiempo",
+    "ru": "Оптимизация с течением времени",
+    "zh": "随着时间的推移进行优化"
   },
-  "Occupation surveillée": {
-    "it": "Occupazione monitorata",
-    "en": "Monitored occupancy",
-    "es": "Ocupación monitoreada",
-    "ru": "Отслеживание занятости",
-    "zh": "监控占用情况"
+  "Optimiser la gestion": {
+    "it": "Ottimizza la gestione",
+    "en": "Optimize management",
+    "es": "Optimizar la gestión",
+    "ru": "Оптимизация управления",
+    "zh": "优化管理"
   },
-  "Optimisation attentive et régulière": {
-    "it": "Ottimizzazione attenta e regolare",
-    "en": "Careful and regular optimization",
-    "es": "Optimización cuidadosa y regular",
-    "ru": "Тщательная и регулярная оптимизация",
-    "zh": "仔细、定期优化"
+  "Organisation à la carte": {
+    "it": "Organizzazione à la carte",
+    "en": "A la carte organization",
+    "es": "Organización a la carta",
+    "ru": "Организация а-ля карт",
+    "zh": "点菜组织"
   },
-  "Optimisation des revenus": {
-    "it": "Ottimizzazione dei ricavi",
-    "en": "Revenue optimization",
-    "es": "Optimización de ingresos",
-    "ru": "Оптимизация доходов",
-    "zh": "收入优化"
+  "Organisation opérationnelle sur mesure": {
+    "it": "Organizzazione operativa su misura",
+    "en": "Tailor-made operational organization",
+    "es": "Organización operativa a medida",
+    "ru": "Индивидуальная оперативная организация",
+    "zh": "量身定制的运营组织"
   },
-  "Organisation après votre accord": {
-    "it": "Organizzazione dopo il Suo accordo",
-    "en": "Organization after your agreement",
-    "es": "Organización después de su acuerdo",
-    "ru": "Организация по вашему согласию",
-    "zh": "经您同意后组织"
+  "Organisation personnalisée": {
+    "it": "Organizzazione personalizzata",
+    "en": "Personalized organization",
+    "es": "Organización personalizada",
+    "ru": "Персонализированная организация",
+    "zh": "个性化组织"
   },
-  "Organisation des accès": {
-    "it": "Organizzazione dell'accesso",
-    "en": "Organization of access",
-    "es": "Organización del acceso",
-    "ru": "Организация доступа",
-    "zh": "访问组织"
+  "Organiser les arrivées": {
+    "it": "Organizza gli arrivi",
+    "en": "Organize arrivals",
+    "es": "Organizar llegadas",
+    "ru": "Организовать заезды",
+    "zh": "组织抵达"
   },
-  "Organisation des arrivées et des départs": {
-    "it": "Organizzazione degli arrivi e delle partenze",
-    "en": "Organization of arrivals and departures",
-    "es": "Organización de llegadas y salidas",
-    "ru": "Организация приездов и отъездов",
-    "zh": "到达和出发的组织"
-  },
-  "Organisation des horaires et des accès": {
-    "it": "Organizzazione degli orari e degli accessi",
-    "en": "Organization of schedules and access",
-    "es": "Organización de horarios y accesos",
-    "ru": "Организация расписаний и доступа",
-    "zh": "时间表和访问的组织"
-  },
-  "Organisation des maintenances nécessaires": {
-    "it": "Organizzazione delle manutenzioni necessarie",
-    "en": "Organization of necessary maintenance",
-    "es": "Organización del mantenimiento necesario",
-    "ru": "Организация необходимого технического обслуживания",
-    "zh": "组织必要的维护"
-  },
-  "Organiser le suivi de ma propriété": {
-    "it": "Organizzare il monitoraggio della mia proprietà",
-    "en": "Organize the monitoring of my property",
-    "es": "Organizar el seguimiento de mi propiedad",
-    "ru": "Организовать мониторинг моего имущества",
-    "zh": "组织对我的财产的监控"
-  },
-  "Oui. Vos périodes d’occupation sont intégrées à la stratégie de gestion.": {
-    "it": "Sì. I Suoi periodi di occupazione sono integrati nella strategia di gestione.",
-    "en": "Yes. Your occupancy periods are integrated into the management strategy.",
-    "es": "Sí. Sus períodos de ocupación están integrados en la estrategia de gestión.",
-    "ru": "Да. Периоды проживания интегрированы в стратегию управления.",
-    "zh": "是的。您的入住期已纳入管理策略中。"
+  "Oui. Vos périodes d’occupation sont intégrées au calendrier et restent prioritaires selon le cadre convenu.": {
+    "it": "Sì. I vostri periodi di occupazione sono integrati nel calendario e rimangono una priorità secondo il quadro concordato.",
+    "en": "Yes. Your occupancy periods are integrated into the calendar and remain a priority according to the agreed framework.",
+    "es": "Sí. Sus períodos de ocupación están integrados en el calendario y siguen siendo una prioridad según el marco acordado.",
+    "ru": "Да. Ваши периоды проживания интегрированы в календарь и остаются приоритетными в соответствии с согласованными рамками.",
+    "zh": "是的。您的入住期将被纳入日历中，并根据商定的框架保持优先顺序。"
   },
   "Ouvrir le menu": {
-    "it": "Apra il menu",
+    "it": "Apri il menu",
     "en": "Open menu",
     "es": "Abrir menú",
     "ru": "Открыть меню",
     "zh": "打开菜单"
   },
+  "Parcours personnalisé": {
+    "it": "Itinerario personalizzato",
+    "en": "Personalized route",
+    "es": "Ruta personalizada",
+    "ru": "Персонализированный маршрут",
+    "zh": "个性化路线"
+  },
   "Parlez-nous du bien, de sa situation actuelle et de votre objectif.": {
-    "it": "Ci racconti della proprietà, della sua situazione attuale e del Suo obiettivo.",
+    "it": "Raccontaci della proprietà, della sua situazione attuale e del tuo obiettivo.",
     "en": "Tell us about the property, its current situation and your objective.",
-    "es": "Cuéntanos sobre el inmueble, su situación actual y tu objetivo.",
-    "ru": "Расскажите нам об объекте недвижимости, его текущем состоянии и вашей цели.",
+    "es": "Cuéntanos sobre la propiedad, su situación actual y tu objetivo.",
+    "ru": "Расскажите нам об объекте, его текущем состоянии и вашей цели.",
     "zh": "请告诉我们该房产、其现状和您的目标。"
   },
-  "Parlons de votre propriété": {
-    "it": "Parliamo della Sua proprietà",
-    "en": "Let's talk about your property",
-    "es": "Hablemos de tu propiedad",
-    "ru": "Давайте поговорим о вашей собственности",
-    "zh": "我们来谈谈您的财产"
+  "Pas de transport privé ni de restauration à domicile": {
+    "it": "Nessun trasporto privato o ristorazione a domicilio",
+    "en": "No private transport or home catering",
+    "es": "No hay transporte privado ni catering a domicilio.",
+    "ru": "Никакого личного транспорта и домашнего питания",
+    "zh": "没有私人交通工具或家庭餐饮"
   },
-  "Partenaires qualifiés": {
-    "it": "Partner qualificati",
-    "en": "Qualified partners",
-    "es": "Socios cualificados",
-    "ru": "Квалифицированные партнеры",
-    "zh": "合格合作伙伴"
+  "Pendant les séjours": {
+    "it": "Durante i soggiorni",
+    "en": "During stays",
+    "es": "Durante las estancias",
+    "ru": "Во время пребывания",
+    "zh": "入住期间"
   },
-  "Périmètre documenté": {
-    "it": "Ambito documentato",
-    "en": "Documented scope",
-    "es": "Alcance documentado",
-    "ru": "Документированная область действия",
-    "zh": "记录范围"
+  "Performances analysées et compte rendu": {
+    "it": "Prestazioni analizzate e report",
+    "en": "Performance analyzed and report",
+    "es": "Rendimiento analizado e informe",
+    "ru": "Анализ производительности и отчет",
+    "zh": "性能分析和报告"
   },
-  "Périmètre respecté": {
-    "it": "Ambito rispettato",
-    "en": "Scope respected",
-    "es": "Alcance respetado",
-    "ru": "Область применения соблюдена",
-    "zh": "尊重范围"
+  "Périmètre écrit": {
+    "it": "Ambito scritto",
+    "en": "Written scope",
+    "es": "Alcance escrito",
+    "ru": "Письменный объём",
+    "zh": "书面范围"
   },
-  "Périodes disponibles": {
-    "it": "Periodi disponibili",
-    "en": "Available periods",
-    "es": "Periodos disponibles",
-    "ru": "Доступные периоды",
-    "zh": "可用时段"
+  "Périodes personnelles réservées": {
+    "it": "Periodi personali riservati",
+    "en": "Reserved personal periods",
+    "es": "Periodos personales reservados",
+    "ru": "Зарезервированные личные месячные",
+    "zh": "保留的个人时期"
   },
-  "Plan de lancement entièrement personnalisé": {
-    "it": "Piano di lancio completamente personalizzato",
-    "en": "Fully personalized launch plan",
-    "es": "Plan de lanzamiento totalmente personalizado",
-    "ru": "Полностью персонализированный план запуска",
-    "zh": "完全个性化的启动计划"
+  "Périodes propriétaires": {
+    "it": "Periodi proprietari",
+    "en": "Proprietary periods",
+    "es": "Períodos propietarios",
+    "ru": "Собственные периоды",
+    "zh": "专有期间"
   },
-  "Planifier la rotation": {
-    "it": "Pianifichi la rotazione",
-    "en": "Plan rotation",
-    "es": "Rotación de planes",
-    "ru": "Ротация плана",
-    "zh": "计划轮换"
+  "Petit logement indépendant": {
+    "it": "Piccolo alloggio indipendente",
+    "en": "Small independent accommodation",
+    "es": "Pequeño alojamiento independiente",
+    "ru": "Небольшое отдельное жилье",
+    "zh": "小型独立住宿"
   },
-  "Planning synchronisé": {
-    "it": "Programmazione sincronizzata",
-    "en": "Synchronized schedule",
-    "es": "Horario sincronizado",
-    "ru": "Синхронизированное расписание",
-    "zh": "同步时间表"
+  "Petit-déjeuner d’arrivée": {
+    "it": "Arrivo colazione",
+    "en": "Arrival breakfast",
+    "es": "Desayuno de llegada",
+    "ru": "Завтрак по прибытии",
+    "zh": "抵达早餐"
   },
-  "Planning verrouillé": {
-    "it": "Programma bloccato",
-    "en": "Schedule locked",
-    "es": "Horario bloqueado",
-    "ru": "Расписание заблокировано",
-    "zh": "日程已锁定"
+  "Petits problèmes sur place": {
+    "it": "Piccoli problemi sul posto",
+    "en": "Small problems on site",
+    "es": "Pequeños problemas en el sitio",
+    "ru": "Небольшие проблемы на сайте",
+    "zh": "现场小问题"
   },
-  "Points à décider": {
-    "it": "Punti da decidere",
-    "en": "Points to decide",
-    "es": "Puntos para decidir",
-    "ru": "Вопросы для принятия решения",
-    "zh": "需要决定的要点"
+  "Pilotage centralisé du portefeuille": {
+    "it": "Gestione centralizzata del portafoglio",
+    "en": "Centralized portfolio management",
+    "es": "Gestión de cartera centralizada",
+    "ru": "Централизованное управление портфелем",
+    "zh": "集中式投资组合管理"
   },
-  "Positionnement, calendrier, règles de séjour et stratégie tarifaire sont dessinés comme un ensemble cohérent. Chaque décision préserve la désirabilité du bien tout en soutenant sa performance.": {
-    "it": "Posizionamento, calendario, regole di soggiorno e strategia di prezzo sono disegnati come un insieme coerente. Ogni decisione preserva l'appetibilità della proprietà sostenendone al tempo stesso le prestazioni.",
-    "en": "Positioning, calendar, stay rules and pricing strategy are drawn as a coherent whole. Each decision preserves the desirability of the property while supporting its performance.",
-    "es": "Posicionamiento, calendario, reglas de estancia y estrategia de precios se dibujan como un todo coherente. Cada decisión preserva la conveniencia de la propiedad y al mismo tiempo respalda su desempeño.",
-    "ru": "Позиционирование, календарь, правила пребывания и ценовая стратегия нарисованы как единое целое. Каждое решение сохраняет желательность объекта, одновременно поддерживая его эффективность.",
-    "zh": "定位、日历、停留规则和定价策略被视为一个连贯的整体。每个决定都保留了房产的吸引力，同时支持其绩效。"
+  "Piloter les locations": {
+    "it": "Gestisci i noleggi",
+    "en": "Manage rentals",
+    "es": "Administrar alquileres",
+    "ru": "Управление прокатом",
+    "zh": "管理租赁"
   },
-  "Poursuivez votre lecture pour découvrir l’étape suivante.": {
-    "it": "Continui a leggere per scoprire il passaggio successivo.",
-    "en": "Continue reading to discover the next step.",
-    "es": "Continúa leyendo para descubrir el siguiente paso.",
-    "ru": "Продолжайте читать, чтобы узнать следующий шаг.",
-    "zh": "继续阅读以了解下一步。"
+  "Piloter les séjours": {
+    "it": "Gestisci i soggiorni",
+    "en": "Manage stays",
+    "es": "Gestionar estancias",
+    "ru": "Управление пребыванием",
+    "zh": "管理住宿"
   },
-  "Praticien sélectionné": {
-    "it": "Professionista selezionato",
-    "en": "Selected practitioner",
-    "es": "Médico seleccionado",
-    "ru": "Избранный практикующий врач",
-    "zh": "选定的从业者"
+  "Point de dépôt identifié": {
+    "it": "Punto di deposito identificato",
+    "en": "Deposit point identified",
+    "es": "Punto de depósito identificado",
+    "ru": "Определена точка депозита",
+    "zh": "已识别存款点"
   },
-  "Premier échange privé · 45 à 60 min": {
-    "it": "Primo scambio privato · da 45 a 60 min",
-    "en": "First private exchange · 45 to 60 min",
-    "es": "Primer intercambio privado · 45 a 60 min",
-    "ru": "Первый частный обмен · 45–60 мин.",
-    "zh": "第一次私人交流 · 45 至 60 分钟"
+  "Point propriétaire": {
+    "it": "Punto proprietario",
+    "en": "Owner point",
+    "es": "Punto propietario",
+    "ru": "Очко владельца",
+    "zh": "所有者积分"
   },
-  "Premières vérifications": {
-    "it": "Primi controlli",
-    "en": "First checks",
-    "es": "Primeras comprobaciones",
-    "ru": "Первые проверки",
-    "zh": "第一次检查"
+  "Politique de confidentialité": {
+    "it": "Informativa sulla privacy",
+    "en": "Privacy policy",
+    "es": "Política de privacidad",
+    "ru": "Политика конфиденциальности",
+    "zh": "隐私政策"
   },
-  "Préparation dédiée · 1 à 3 semaines": {
-    "it": "Preparazione dedicata · Da 1 a 3 settimane",
-    "en": "Dedicated preparation · 1 to 3 weeks",
-    "es": "Preparación dedicada · 1 a 3 semanas",
-    "ru": "Специальная подготовка · От 1 до 3 недель",
-    "zh": "专门准备·1至3周"
+  "Posez une question ou présentez un bien à gérer à Genova.": {
+    "it": "Fai una domanda o presenta un immobile da gestire a Genova.",
+    "en": "Ask a question or present a property to manage in Genova.",
+    "es": "Haga una pregunta o presente una propiedad para administrar en Génova.",
+    "ru": "Задайте вопрос или презентуйте недвижимость в управлении в Генуе.",
+    "zh": "提出问题或展示要在热那亚管理的房产。"
   },
-  "Préparation personnalisée de l’arrivée": {
-    "it": "Preparazione personalizzata per l'arrivo",
-    "en": "Personalized preparation for arrival",
-    "es": "Preparación personalizada para la llegada",
-    "ru": "Индивидуальная подготовка к приезду",
-    "zh": "个性化的抵达准备"
+  "Potentiel locatif étudié": {
+    "it": "Potenziale locativo studiato",
+    "en": "Rental potential studied",
+    "es": "Potencial de alquiler estudiado",
+    "ru": "Изучен потенциал аренды",
+    "zh": "研究租金潜力"
   },
-  "Préparer l’arrivée": {
-    "it": "Si prepari per l'arrivo",
-    "en": "Prepare for arrival",
-    "es": "Prepárate para la llegada",
-    "ru": "Приготовьтесь к приезду",
-    "zh": "准备抵达"
+  "Pour les propriétaires": {
+    "it": "Per i proprietari",
+    "en": "For owners",
+    "es": "Para propietarios",
+    "ru": "Для владельцев",
+    "zh": "对于业主"
   },
-  "Préparer la suite": {
-    "it": "Si prepari per il resto",
-    "en": "Prepare for the rest",
-    "es": "Prepárate para el resto",
-    "ru": "Приготовьтесь к остальному",
-    "zh": "为剩下的做好准备"
+  "Pour plusieurs biens ou un besoin particulier": {
+    "it": "Per più beni o per una esigenza particolare",
+    "en": "For several goods or a particular need",
+    "es": "Para varios bienes o una necesidad particular",
+    "ru": "Для нескольких товаров или конкретной необходимости",
+    "zh": "对于多种商品或特定需求"
   },
-  "Préparer un bien qui inspire immédiatement confiance": {
-    "it": "Prepari un prodotto che ispiri immediatamente fiducia",
-    "en": "Prepare a product that immediately inspires confidence",
-    "es": "Preparar un producto que inspire confianza inmediatamente",
-    "ru": "Подготовьте продукт, который сразу внушает доверие",
-    "zh": "准备一款立即激发信心的产品"
+  "Pour un logement": {
+    "it": "Per l'alloggio",
+    "en": "For accommodation",
+    "es": "Para alojamiento",
+    "ru": "Для проживания",
+    "zh": "住宿"
   },
-  "Présence en cas de changement": {
-    "it": "Presenza in caso di cambiamento",
-    "en": "Presence in case of change",
-    "es": "Presencia en caso de cambio",
-    "ru": "Присутствие в случае изменения",
-    "zh": "发生变化时的存在"
+  "Praticien vérifié": {
+    "it": "Professionista verificato",
+    "en": "Verified Practitioner",
+    "es": "Practicante verificado",
+    "ru": "Проверенный практик",
+    "zh": "经过验证的从业者"
   },
-  "Présence pendant l’intervention": {
-    "it": "Presenza durante l'intervento",
-    "en": "Presence during the intervention",
-    "es": "Presencia durante la intervención",
-    "ru": "Присутствие во время вмешательства",
-    "zh": "干预期间在场"
+  "Préférences recueillies": {
+    "it": "Preferenze raccolte",
+    "en": "Preferences collected",
+    "es": "Preferencias recopiladas",
+    "ru": "Настройки собраны",
+    "zh": "收集的偏好设置"
   },
-  "Présentation claire des possibilités et des tarifs": {
-    "it": "Chiara presentazione delle possibilità e dei prezzi",
-    "en": "Clear presentation of possibilities and prices",
-    "es": "Presentación clara de posibilidades y precios",
-    "ru": "Четкое представление возможностей и цен",
-    "zh": "清晰展示可能性和价格"
+  "Premier séjour préparé": {
+    "it": "Primo soggiorno preparato",
+    "en": "First stay prepared",
+    "es": "Primera estancia preparada",
+    "ru": "Первое пребывание наготове",
+    "zh": "首先做好准备"
   },
-  "Présentation de l’offre": {
-    "it": "Presentazione dell'offerta",
-    "en": "Presentation of the offer",
-    "es": "Presentación de la oferta",
-    "ru": "Презентация предложения",
-    "zh": "报价介绍"
+  "Prendre soin du bien": {
+    "it": "Prendersi cura della proprietà",
+    "en": "Taking care of the property",
+    "es": "Cuidando la propiedad",
+    "ru": "Уход за имуществом",
+    "zh": "照顾财产"
   },
-  "Présentation des essentiels": {
-    "it": "Presentazione degli elementi essenziali",
-    "en": "Presentation of the essentials",
-    "es": "Presentación de lo imprescindible",
-    "ru": "Презентация самого необходимого",
-    "zh": "介绍要点"
+  "Préparation": {
+    "it": "Preparazione",
+    "en": "Preparation",
+    "es": "Preparación",
+    "ru": "Подготовка",
+    "zh": "准备"
   },
-  "Présentation du bien": {
-    "it": "Presentazione dell'immobile",
-    "en": "Presentation of the property",
-    "es": "Presentación del inmueble",
-    "ru": "Презентация объекта недвижимости",
-    "zh": "财产介绍"
+  "Préparation à la carte": {
+    "it": "Preparazione à la carte",
+    "en": "A la carte preparation",
+    "es": "Preparación a la carta",
+    "ru": "Приготовление по меню",
+    "zh": "点菜准备"
   },
-  "Présenter la solution": {
-    "it": "Presenta la soluzione",
-    "en": "Present the solution",
-    "es": "Presentar la solución",
-    "ru": "Представьте решение",
-    "zh": "提出解决方案"
+  "Préparation anniversaire": {
+    "it": "Preparazione del compleanno",
+    "en": "Birthday preparation",
+    "es": "Preparación de cumpleaños",
+    "ru": "Подготовка к дню рождения",
+    "zh": "生日准备"
   },
-  "Présentez-nous votre projet. Vos informations seront traitées en toute confidentialité.": {
-    "it": "Ci presenti il Suo progetto. Le Sue informazioni saranno trattate in modo confidenziale.",
-    "en": "Present your project to us. Your information will be treated confidentially.",
-    "es": "Preséntanos tu proyecto. Su información será tratada de forma confidencial.",
-    "ru": "Представьте нам свой проект. Ваша информация будет обработана конфиденциально.",
-    "zh": "向我们展示您的项目。您的信息将受到保密处理。"
+  "Préparation attentive d’un bien à Genova": {
+    "it": "Accurata preparazione di un immobile a Genova",
+    "en": "Careful preparation of a property in Genova",
+    "es": "Preparación cuidadosa de una propiedad en Génova",
+    "ru": "Тщательная подготовка объекта недвижимости в Генуе",
+    "zh": "精心准备热那亚的房产"
   },
-  "Prestataire sélectionné": {
-    "it": "Fornitore di servizi selezionato",
-    "en": "Selected service provider",
-    "es": "Proveedor de servicios seleccionado",
-    "ru": "Выбранный поставщик услуг",
-    "zh": "选定的服务提供商"
+  "Préparation attentive d’un bien avant l’arrivée": {
+    "it": "Preparazione attenta di un immobile prima dell'arrivo",
+    "en": "Careful preparation of a property before arrival",
+    "es": "Preparación cuidadosa de una propiedad antes de su llegada",
+    "ru": "Тщательная подготовка объекта к заезду",
+    "zh": "抵达前仔细准备财产"
+  },
+  "Préparation attentive du linge dans un bien à Genova": {
+    "it": "Preparazione accurata della biancheria in un immobile a Genova",
+    "en": "Careful preparation of laundry in a property in Genova",
+    "es": "Cuidadosa preparación de la ropa en una propiedad en Génova",
+    "ru": "Тщательная подготовка белья на объекте недвижимости в Генуе",
+    "zh": "在热那亚的一处房产中精心准备洗衣服务"
+  },
+  "Préparation des arrivées": {
+    "it": "Preparazione degli arrivi",
+    "en": "Preparation of arrivals",
+    "es": "Preparación de llegadas",
+    "ru": "Подготовка заездов",
+    "zh": "抵达准备"
+  },
+  "Préparer l’exploitation": {
+    "it": "Prepararsi per l'operazione",
+    "en": "Prepare for operation",
+    "es": "Prepárese para la operación",
+    "ru": "Подготовьтесь к операции",
+    "zh": "准备操作"
+  },
+  "Préparer la réalisation": {
+    "it": "Preparare la produzione",
+    "en": "Prepare the production",
+    "es": "Preparar la producción",
+    "ru": "Подготовьте постановку",
+    "zh": "准备制作"
+  },
+  "Préparer le bien": {
+    "it": "Preparare la proprietà",
+    "en": "Prepare the property",
+    "es": "Preparar la propiedad",
+    "ru": "Подготовьте недвижимость",
+    "zh": "准备财产"
+  },
+  "Présentation de démonstration à remplacer par des informations vérifiées.": {
+    "it": "Presentazione demo da sostituire con informazioni verificate.",
+    "en": "Demo presentation to be replaced with verified information.",
+    "es": "La presentación de demostración se reemplazará con información verificada.",
+    "ru": "Демо-презентация будет заменена проверенной информацией.",
+    "zh": "演示演示将替换为经过验证的信息。"
+  },
+  "Présentation du bien travaillée": {
+    "it": "Presentazione dell'oggetto ben lavorato",
+    "en": "Presentation of the well-worked item",
+    "es": "Presentación del artículo bien trabajado",
+    "ru": "Презентация хорошо проработанного предмета",
+    "zh": "精心制作的物品的展示"
+  },
+  "Présenter une proposition claire": {
+    "it": "Presentare una proposta chiara",
+    "en": "Present a clear proposal",
+    "es": "Presentar una propuesta clara",
+    "ru": "Представьте четкое предложение",
+    "zh": "提出明确的提案"
+  },
+  "Présenter votre bien à Velyo": {
+    "it": "Presenta la tua proprietà a Velyo",
+    "en": "Present your property to Velyo",
+    "es": "Presente su propiedad a Velyo",
+    "ru": "Подарите свою недвижимость Вельо",
+    "zh": "向 Velyo 展示您的财产"
+  },
+  "Présentez votre bien, votre organisation actuelle et ce que vous souhaitez confier à Velyo.": {
+    "it": "Presenta il tuo immobile, la tua attuale organizzazione e ciò che desideri affidare a Velyo.",
+    "en": "Present your property, your current organization and what you wish to entrust to Velyo.",
+    "es": "Presente su propiedad, su organización actual y lo que desea confiar a Velyo.",
+    "ru": "Представьте свое имущество, свою текущую организацию и то, что вы хотите доверить Velyo.",
+    "zh": "展示您的财产、您当前的组织以及您希望委托给 Velyo 的内容。"
+  },
+  "Prestataire adapté recherché": {
+    "it": "Cercasi fornitore di servizi adatto",
+    "en": "Suitable service provider sought",
+    "es": "Se busca proveedor de servicios adecuado",
+    "ru": "Ищется подходящий поставщик услуг",
+    "zh": "寻求合适的服务提供商"
+  },
+  "Prestataire identifié": {
+    "it": "Fornitore di servizi identificato",
+    "en": "Identified service provider",
+    "es": "Proveedor de servicios identificado",
+    "ru": "Установленный поставщик услуг",
+    "zh": "已识别的服务提供商"
+  },
+  "Prestataire reconfirmé": {
+    "it": "Fornitore di servizi riconfermato",
+    "en": "Reconfirmed service provider",
+    "es": "Proveedor de servicios reconfirmado",
+    "ru": "Подтвержденный поставщик услуг",
+    "zh": "重新确认的服务提供商"
+  },
+  "Prestataire reconfirmé avant le service": {
+    "it": "Fornitore di servizi riconfermato prima del servizio",
+    "en": "Service provider reconfirmed before service",
+    "es": "Proveedor de servicios reconfirmado antes del servicio",
+    "ru": "Поставщик услуг подтвержден перед обслуживанием",
+    "zh": "服务提供商在服务前再次确认"
   },
   "Prestataires coordonnés": {
     "it": "Fornitori di servizi coordinati",
     "en": "Coordinated service providers",
     "es": "Proveedores de servicios coordinados",
-    "ru": "Скоординированные поставщики услуг",
+    "ru": "Согласованные поставщики услуг",
     "zh": "协调服务提供商"
   },
-  "Prestataires vérifiés": {
-    "it": "Fornitori verificati",
-    "en": "Verified providers",
-    "es": "Proveedores verificados",
-    "ru": "Проверенные поставщики",
-    "zh": "已验证的提供商"
+  "Prestataires organisés": {
+    "it": "Fornitori di servizi organizzati",
+    "en": "Organized service providers",
+    "es": "Proveedores de servicios organizados",
+    "ru": "Организованные поставщики услуг",
+    "zh": "有组织的服务提供商"
   },
-  "Prestations des partenaires facturées séparément": {
-    "it": "Servizi partner fatturati separatamente",
-    "en": "Partner services invoiced separately",
-    "es": "Servicios de socios facturados por separado",
-    "ru": "Партнерские услуги оплачиваются отдельно",
-    "zh": "合作伙伴服务单独开具发票"
+  "Prestataires référencés": {
+    "it": "Fornitori di servizi referenziati",
+    "en": "Referenced service providers",
+    "es": "Proveedores de servicios referenciados",
+    "ru": "Указанные поставщики услуг",
+    "zh": "引用的服务提供商"
   },
-  "Prestations rapprochées": {
-    "it": "Servizi riconciliati",
-    "en": "Reconciled services",
-    "es": "Servicios conciliados",
-    "ru": "Согласованные услуги",
-    "zh": "协调服务"
+  "Prestations enregistrées": {
+    "it": "Servizi registrati",
+    "en": "Recorded services",
+    "es": "Servicios grabados",
+    "ru": "Записанные услуги",
+    "zh": "录制的服务"
   },
-  "Prestations suivies et rapprochées": {
-    "it": "Servizi monitorati e riconciliati",
-    "en": "Services monitored and reconciled",
-    "es": "Servicios monitorizados y conciliados",
-    "ru": "Службы отслеживаются и сверяются",
-    "zh": "监控和协调服务"
-  },
-  "Prévention, interventions et suivi assurés par un réseau local sélectionné.": {
-    "it": "Prevenzione, interventi e monitoraggio forniti da una rete locale selezionata.",
-    "en": "Prevention, interventions and monitoring provided by a selected local network.",
-    "es": "Prevención, intervenciones y seguimiento proporcionados por una red local seleccionada.",
-    "ru": "Профилактика, вмешательство и мониторинг, предоставляемые выбранной локальной сетью.",
-    "zh": "由选定的本地网络提供预防、干预和监测。"
-  },
-  "Priorités suivantes": {
-    "it": "Prossime priorità",
-    "en": "Next priorities",
-    "es": "Próximas prioridades",
-    "ru": "Следующие приоритеты",
-    "zh": "接下来的优先事项"
+  "Priorités du propriétaire recueillies": {
+    "it": "Priorità del proprietario raccolte",
+    "en": "Owner priorities collected",
+    "es": "Prioridades del propietario recopiladas",
+    "ru": "Собраны приоритеты владельцев",
+    "zh": "收集所有者优先级"
   },
   "Prise en charge des imprévus": {
     "it": "Supporto per eventi imprevisti",
@@ -2949,110 +3229,103 @@ export const generatedMessages: Record<string, GeneratedLocalized> = {
     "ru": "Поддержка на случай непредвиденных событий",
     "zh": "对意外事件的支持"
   },
-  "Procédure mise à jour": {
-    "it": "Procedura aggiornata",
-    "en": "Procedure updated",
-    "es": "Procedimiento actualizado",
-    "ru": "Процедура обновлена.",
-    "zh": "程序已更新"
+  "Prix confirmé": {
+    "it": "Prezzo confermato",
+    "en": "Price confirmed",
+    "es": "Precio confirmado",
+    "ru": "Цена подтверждена",
+    "zh": "价格已确认"
   },
-  "Procédures partagées": {
-    "it": "Procedure condivise",
-    "en": "Shared procedures",
-    "es": "Trámites compartidos",
-    "ru": "Общие процедуры",
-    "zh": "共享程序"
+  "Prix et conditions présentés avant accord": {
+    "it": "Prezzi e condizioni presentati prima dell'accordo",
+    "en": "Prices and conditions presented before agreement",
+    "es": "Precios y condiciones presentados antes del acuerdo",
+    "ru": "Цены и условия представлены до заключения договора",
+    "zh": "协议前提出的价格和条件"
   },
-  "Procédures tenues à jour": {
-    "it": "Procedure mantenute aggiornate",
-    "en": "Procedures kept up to date",
-    "es": "Trámites mantenidos al día",
-    "ru": "Процедуры постоянно обновляются.",
-    "zh": "程序保持最新状态"
+  "Problème identifié": {
+    "it": "Problema identificato",
+    "en": "Problem identified",
+    "es": "Problema identificado",
+    "ru": "Обнаружена проблема",
+    "zh": "已发现问题"
   },
-  "Produire la synthèse": {
-    "it": "Produrre il riassunto",
-    "en": "Produce the summary",
-    "es": "Elaborar el resumen",
-    "ru": "Подготовьте резюме",
-    "zh": "生成摘要"
+  "Prochaine arrivée préparée": {
+    "it": "Prossimo arrivo preparato",
+    "en": "Next arrival prepared",
+    "es": "Próxima llegada preparada",
+    "ru": "Подготовлено следующее поступление",
+    "zh": "下次到达已准备就绪"
   },
-  "Programme privé": {
-    "it": "Programma privato",
-    "en": "Private program",
-    "es": "Programa privado",
-    "ru": "Частная программа",
-    "zh": "私人计划"
+  "Proche du port": {
+    "it": "Vicino al porto",
+    "en": "Close to the port",
+    "es": "Cerca del puerto",
+    "ru": "Рядом с портом",
+    "zh": "靠近港口"
   },
-  "Proposition dédiée": {
-    "it": "Proposta dedicata",
-    "en": "Dedicated proposal",
-    "es": "Propuesta dedicada",
-    "ru": "Специальное предложение",
-    "zh": "专用提案"
+  "Produits rangés sur place": {
+    "it": "Prodotti immagazzinati sul sito",
+    "en": "Products stored on site",
+    "es": "Productos almacenados en el sitio",
+    "ru": "Товары, хранящиеся на сайте",
+    "zh": "现场存储的产品"
   },
-  "Propriété": {
-    "it": "Immobile",
-    "en": "Property",
-    "es": "Propiedad",
-    "ru": "Недвижимость",
-    "zh": "财产"
+  "Programme adapté au rythme": {
+    "it": "Programma adattato al ritmo",
+    "en": "Program adapted to the rhythm",
+    "es": "Programa adaptado al ritmo",
+    "ru": "Программа адаптирована под ритм",
+    "zh": "适应节奏的节目"
   },
-  "Protéger un bien, c’est d’abord savoir qui y accède, ce qui a changé et quoi faire lorsqu’un détail sort du cadre.": {
-    "it": "Proteggere un bene significa innanzitutto sapere chi può accedervi, cosa è cambiato e cosa fare quando un dettaglio esce dal campo di applicazione.",
-    "en": "Protecting an asset firstly means knowing who has access to it, what has changed and what to do when a detail goes out of scope.",
-    "es": "Proteger un activo significa en primer lugar saber quién tiene acceso a él, qué ha cambiado y qué hacer cuando un detalle queda fuera de alcance.",
-    "ru": "Защита актива в первую очередь означает знание того, кто имеет к нему доступ, что изменилось и что делать, если какая-либо деталь выходит за рамки.",
-    "zh": "保护资产首先意味着了解谁有权访问该资产、发生了什么变化以及当细节超出范围时该怎么办。"
+  "Property management local à Genova.": {
+    "it": "Gestione immobiliare locale a Genova.",
+    "en": "Local property management in Genova.",
+    "es": "Gestión inmobiliaria local en Génova.",
+    "ru": "Управление местной недвижимостью в Генуе.",
+    "zh": "热那亚当地物业管理。"
   },
-  "Public concerné": {
-    "it": "Pubblico preoccupato",
-    "en": "Public concerned",
-    "es": "Público interesado",
-    "ru": "Заинтересованная общественность",
-    "zh": "公众关注"
+  "Propriétaires": {
+    "it": "Proprietari",
+    "en": "Owners",
+    "es": "Propietarios",
+    "ru": "Владельцы",
+    "zh": "所有者"
+  },
+  "Proximité": {
+    "it": "Prossimità",
+    "en": "Proximity",
+    "es": "Proximidad",
+    "ru": "Близость",
+    "zh": "接近度"
   },
   "Puis-je continuer à utiliser personnellement mon bien ?": {
-    "it": "Posso continuare a utilizzare personalmente il mio immobile?",
+    "it": "Posso continuare a utilizzare la mia proprietà personalmente?",
     "en": "Can I continue to use my property personally?",
-    "es": "¿Puedo seguir utilizando mi propiedad personalmente?",
+    "es": "¿Puedo seguir usando mi propiedad personalmente?",
     "ru": "Могу ли я продолжать использовать свою собственность в личных целях?",
     "zh": "我可以继续个人使用我的财产吗？"
   },
-  "Qualifier l’anomalie": {
-    "it": "Qualificare l'anomalia",
-    "en": "Qualify the anomaly",
-    "es": "Calificar la anomalía",
-    "ru": "Квалифицировать аномалию",
-    "zh": "限定异常"
-  },
-  "Qualifier la demande": {
-    "it": "Qualificare la richiesta",
-    "en": "Qualify the request",
-    "es": "Calificar la solicitud",
-    "ru": "Уточните запрос",
-    "zh": "限定请求"
-  },
   "Quand il faut décider": {
-    "it": "Quando deve decidere",
+    "it": "Quando devi decidere",
     "en": "When you have to decide",
     "es": "Cuando tienes que decidir",
-    "ru": "Когда вам нужно решить",
+    "ru": "Когда нужно принять решение",
     "zh": "当您必须做出决定时"
   },
-  "Quand quelque chose arrive, quelqu’un répond.": {
-    "it": "Quando succede qualcosa, qualcuno risponde.",
-    "en": "When something happens, someone responds.",
-    "es": "Cuando pasa algo, alguien responde.",
-    "ru": "Когда что-то происходит, кто-то реагирует.",
-    "zh": "当事情发生时，有人会做出回应。"
+  "Quartier et saison observés": {
+    "it": "Quartiere e stagione osservati",
+    "en": "Neighborhood and season observed",
+    "es": "Barrio y temporada observados",
+    "ru": "Соблюдение района и сезона",
+    "zh": "观察到的社区和季节"
   },
-  "Quels types de propriétés gérez-vous ?": {
-    "it": "Che tipologie di immobili gestisce?",
-    "en": "What types of properties do you manage?",
-    "es": "¿Qué tipo de inmuebles gestionáis?",
-    "ru": "Какими типами объектов недвижимости вы управляете?",
-    "zh": "您管理哪些类型的财产？"
+  "Quatre-pièces et plus": {
+    "it": "Quadrilocale e oltre",
+    "en": "Four-room apartment and more",
+    "es": "Apartamento de cuatro habitaciones y más",
+    "ru": "Четырехкомнатная квартира и не только",
+    "zh": "四房式公寓及更多"
   },
   "Questions fréquentes": {
     "it": "Domande frequenti",
@@ -3061,1103 +3334,1236 @@ export const generatedMessages: Record<string, GeneratedLocalized> = {
     "ru": "Часто задаваемые вопросы",
     "zh": "常见问题解答"
   },
-  "Quitter votre bien sans l’emporter avec vous": {
-    "it": "Lasciare il Suo immobile senza portarlo con Lei",
-    "en": "Leaving your property without taking it with you",
-    "es": "Salir de tu propiedad sin llevártela",
-    "ru": "Оставить свое имущество, не забрав его с собой",
-    "zh": "离开您的财产但未随身携带"
+  "Questions, demandes et imprévus sont pris en charge pendant toute la durée du séjour.": {
+    "it": "Domande, richieste ed imprevisti vengono presi in carico per tutta la durata del soggiorno.",
+    "en": "Questions, requests and unforeseen events are taken care of for the entire duration of the stay.",
+    "es": "Dudas, solicitudes e imprevistos son atendidos durante toda la estancia.",
+    "ru": "Вопросы, пожелания и непредвиденные события рассматриваются на протяжении всего срока пребывания.",
+    "zh": "在整个住宿期间，我们都会处理问题、请求和意外事件。"
   },
-  "Réagir et documenter": {
-    "it": "Reagire e documentare",
-    "en": "React and document",
-    "es": "Reaccionar y documentar",
-    "ru": "Реагируйте и документируйте",
-    "zh": "反应并记录"
+  "Réactivité": {
+    "it": "Reattività",
+    "en": "Reactivity",
+    "es": "Reactividad",
+    "ru": "Реактивность",
+    "zh": "反应性"
   },
-  "Réassort anticipé": {
-    "it": "Riassortimento anticipato",
-    "en": "Early restocking",
-    "es": "Reposición anticipada",
-    "ru": "Раннее пополнение запасов",
-    "zh": "提前补货"
+  "Recommandations pour les photos": {
+    "it": "Consigli fotografici",
+    "en": "Photo recommendations",
+    "es": "Recomendaciones de fotos",
+    "ru": "Рекомендации по фото",
+    "zh": "照片推荐"
   },
-  "Réassort selon l’inventaire": {
-    "it": "Riassortimento secondo inventario",
-    "en": "Restocking according to inventory",
-    "es": "Reposición según inventario",
-    "ru": "Пополнение запасов по инвентарю",
-    "zh": "根据库存补货"
+  "Références cohérentes": {
+    "it": "Riferimenti coerenti",
+    "en": "Consistent references",
+    "es": "Referencias consistentes",
+    "ru": "Последовательные ссылки",
+    "zh": "一致的参考文献"
   },
-  "Recherche ciblée": {
-    "it": "Ricerca mirata",
-    "en": "Targeted search",
-    "es": "Búsqueda dirigida",
-    "ru": "Целенаправленный поиск",
-    "zh": "定向搜索"
+  "Régime stabilisé": {
+    "it": "Dieta stabilizzata",
+    "en": "Stabilized diet",
+    "es": "Dieta estabilizada",
+    "ru": "Стабилизированный рацион",
+    "zh": "稳定饮食"
   },
-  "Recherche d’appareil": {
-    "it": "Ricerca dispositivo",
-    "en": "Device search",
-    "es": "Búsqueda de dispositivos",
-    "ru": "Поиск устройства",
-    "zh": "设备搜索"
-  },
-  "Recherche d’options réellement adaptées": {
-    "it": "Cerchi le opzioni veramente adatte",
-    "en": "Search for truly suitable options",
-    "es": "Búsqueda de opciones realmente adecuadas",
-    "ru": "Поиск действительно подходящих вариантов",
-    "zh": "搜索真正合适的选项"
-  },
-  "Recherche de l’artisan adapté": {
-    "it": "Cerchi l'artigiano giusto",
-    "en": "Search for the right craftsman",
-    "es": "Búsqueda del artesano adecuado",
-    "ru": "Ищем подходящего мастера",
-    "zh": "寻找合适的工匠"
-  },
-  "Recommandations d’amélioration documentées": {
-    "it": "Raccomandazioni di miglioramento documentate",
-    "en": "Documented improvement recommendations",
-    "es": "Recomendaciones de mejora documentadas",
-    "ru": "Документированные рекомендации по улучшению",
-    "zh": "记录的改进建议"
-  },
-  "Recommandations pour la séance photo": {
-    "it": "Consigli per la sessione fotografica",
-    "en": "Recommendations for the photo session",
-    "es": "Recomendaciones para la sesión de fotos",
-    "ru": "Рекомендации для фотосессии",
-    "zh": "拍照建议"
+  "Règles applicables à la consultation du site Velyo.": {
+    "it": "Regole applicabili alla consultazione del sito Velyo.",
+    "en": "Rules applicable to consultation of the Velyo site.",
+    "es": "Normas aplicables a la consulta del sitio Velyo.",
+    "ru": "Правила, применимые к посещению сайта Velyo.",
+    "zh": "适用于 Velyo 网站咨询的规则。"
   },
   "Règles de séjour": {
-    "it": "Restano regole",
+    "it": "Rispetta le regole",
     "en": "Stay rules",
-    "es": "Normas de estancia",
+    "es": "Reglas de permanencia",
     "ru": "Правила пребывания",
     "zh": "住宿规则"
   },
-  "Règles de validation": {
-    "it": "Regole di convalida",
-    "en": "Validation rules",
-    "es": "Reglas de validación",
-    "ru": "Правила проверки",
-    "zh": "验证规则"
+  "Répondre aux voyageurs": {
+    "it": "Rispondi ai viaggiatori",
+    "en": "Reply to travelers",
+    "es": "Responder a los viajeros",
+    "ru": "Ответ путешественникам",
+    "zh": "回复旅客"
   },
-  "Remise des accès": {
-    "it": "Acceda alla consegna",
-    "en": "Access delivery",
-    "es": "Acceso a entrega",
-    "ru": "Доставка доступа",
-    "zh": "访问交付"
+  "Réponse pendant le séjour": {
+    "it": "Risposta durante il soggiorno",
+    "en": "Response during the stay",
+    "es": "Respuesta durante la estancia",
+    "ru": "Ответ во время пребывания",
+    "zh": "入住期间的回复"
   },
-  "Repérage des dégradations": {
-    "it": "Identificazione del danno",
-    "en": "Identification of damage",
-    "es": "Identificación de daños",
-    "ru": "Идентификация повреждений",
-    "zh": "损坏鉴定"
+  "Réponses sur le fonctionnement du bien": {
+    "it": "Risposte su come funziona la proprietà",
+    "en": "Answers on how the property works",
+    "es": "Respuestas sobre cómo funciona la propiedad",
+    "ru": "Ответы о том, как работает ресурс",
+    "zh": "有关该物业如何运作的解答"
   },
-  "Réponse aux premières questions": {
-    "it": "Risposta alle prime domande",
-    "en": "Answer to the first questions",
-    "es": "Respuesta a las primeras preguntas",
-    "ru": "Ответ на первые вопросы",
-    "zh": "回答第一个问题"
+  "Reporting consolidé": {
+    "it": "Reportistica consolidata",
+    "en": "Consolidated reporting",
+    "es": "Informes consolidados",
+    "ru": "Консолидированная отчетность",
+    "zh": "合并报告"
   },
-  "Réservation après votre accord": {
-    "it": "Prenotazione dopo il Suo accordo",
-    "en": "Reservation after your agreement",
-    "es": "Reserva después de su acuerdo",
-    "ru": "Бронирование после вашего согласия",
-    "zh": "经您同意后预订"
+  "Reprise après le séjour": {
+    "it": "Ripresa dopo il soggiorno",
+    "en": "Resumption after the stay",
+    "es": "Reanudación después de la estancia",
+    "ru": "Возобновление после пребывания",
+    "zh": "入住后恢复"
   },
-  "Réservations coordonnées": {
-    "it": "Prenotazioni coordinate",
-    "en": "Coordinated reservations",
-    "es": "Reservas coordinadas",
-    "ru": "Скоординированное бронирование",
-    "zh": "协调预订"
+  "Réservation confirmée par Velyo": {
+    "it": "Prenotazione confermata da Velyo",
+    "en": "Reservation confirmed by Velyo",
+    "es": "Reserva confirmada por Velyo",
+    "ru": "Бронирование подтверждено Velyo",
+    "zh": "Velyo 确认预订"
   },
-  "Réservations réunies au même endroit": {
-    "it": "Prenotazioni raccolte in un unico posto",
-    "en": "Reservations gathered in one place",
-    "es": "Reservas reunidas en un solo lugar",
-    "ru": "Бронирования собраны в одном месте",
-    "zh": "预订集中在一处"
+  "Réservations centralisées": {
+    "it": "Prenotazioni centralizzate",
+    "en": "Centralized reservations",
+    "es": "Reservas centralizadas",
+    "ru": "Централизованное бронирование",
+    "zh": "集中预订"
+  },
+  "Réservations et calendrier suivis": {
+    "it": "Seguirono prenotazioni e calendario",
+    "en": "Reservations and calendar followed",
+    "es": "Reservas y calendario seguidos",
+    "ru": "Бронирование и календарь подписаны",
+    "zh": "预订和日历已遵循"
+  },
+  "Réservations locales": {
+    "it": "Prenotazioni locali",
+    "en": "Local reservations",
+    "es": "Reservas locales",
+    "ru": "Местные резервирования",
+    "zh": "本地预订"
+  },
+  "Réservations regroupées": {
+    "it": "Prenotazioni raggruppate",
+    "en": "Grouped reservations",
+    "es": "Reservas agrupadas",
+    "ru": "Групповые бронирования",
+    "zh": "分组预订"
   },
   "Réservations suivies": {
     "it": "Prenotazioni monitorate",
     "en": "Reservations monitored",
-    "es": "Reservas monitorizadas",
+    "es": "Reservas monitoreadas",
     "ru": "Бронирования отслеживаются",
     "zh": "监控预订"
   },
-  "Réservations, entretien et intervention technique ont généré plusieurs échanges. AUREVIA les rassemble dans une synthèse structurée.": {
-    "it": "Prenotazioni, manutenzioni e interventi tecnici hanno generato numerosi scambi. AUREVIA li riunisce in una sintesi strutturata.",
-    "en": "Reservations, maintenance and technical intervention generated several exchanges. AUREVIA brings them together in a structured synthesis.",
-    "es": "Reservas, mantenimiento e intervención técnica generaron varios intercambios. AUREVIA los reúne en una síntesis estructurada.",
-    "ru": "Бронирование, техническое обслуживание и техническое вмешательство вызвали несколько обменов мнениями. AUREVIA объединяет их в структурированный синтез.",
-    "zh": "预订、维护和技术干预产生了多次交流。 AUREVIA 将它们整合到一个结构化的综合体中。"
+  "Réservations, dépenses et interventions réunies": {
+    "it": "Prenotazioni, spese e interventi combinati",
+    "en": "Reservations, expenses and interventions combined",
+    "es": "Reservas, gastos e intervenciones combinadas",
+    "ru": "Резервирование, расходы и вмешательства вместе взятые",
+    "zh": "预订、费用和干预措施合计"
   },
-  "Réservations, voyageurs, prestataires, incidents et performances sont pilotés par un interlocuteur unique. Vous conservez une vision claire de votre propriété sans avoir à en porter le quotidien.": {
-    "it": "Prenotazioni, viaggiatori, fornitori di servizi, incidenti e prestazioni sono gestiti da un unico contatto. Mantiene una visione chiara del Suo immobile senza doverlo occupare quotidianamente.",
-    "en": "Reservations, travelers, service providers, incidents and performances are managed by a single contact. You maintain a clear vision of your property without having to deal with it on a daily basis.",
-    "es": "Reservas, viajeros, proveedores de servicios, incidencias y actuaciones se gestionan desde un único contacto. Mantendrá una visión clara de su propiedad sin tener que lidiar con ella a diario.",
-    "ru": "Бронированием, путешественниками, поставщиками услуг, инцидентами и выступлениями управляет один контакт. Вы сохраняете четкое представление о своей собственности без необходимости иметь с ней дело ежедневно.",
-    "zh": "预订、旅客、服务提供商、事件和表演均由单一联系人管理。您可以对您的财产保持清晰的视野，而无需每天处理它。"
+  "Réservations, dépenses, interventions et décisions sont regroupées dans un suivi lisible.": {
+    "it": "Prenotazioni, spese, interventi e decisioni sono raggruppati in un seguito leggibile.",
+    "en": "Reservations, expenses, interventions and decisions are grouped into a readable follow-up.",
+    "es": "Reservas, gastos, intervenciones y decisiones se agrupan en un seguimiento legible.",
+    "ru": "Оговорки, расходы, вмешательства и решения сгруппированы в удобочитаемую последующую информацию.",
+    "zh": "预订、费用、干预措施和决定被分组为可读的后续内容。"
   },
-  "Résidence Nervi": {
-    "it": "Residenza Nervi",
-    "en": "Nervi Residence",
-    "es": "Residencia Nervi",
-    "ru": "Резиденция Нерви",
-    "zh": "奈尔维住宅"
+  "Réservations, interventions et points d’attention restent réunis et faciles à comprendre.": {
+    "it": "Prenotazioni, interventi e punti di attenzione rimangono uniti e di facile comprensione.",
+    "en": "Reservations, interventions and points of attention remain together and easy to understand.",
+    "es": "Las reservas, intervenciones y puntos de atención permanecen juntos y fáciles de entender.",
+    "ru": "Оговорки, вмешательства и моменты внимания остаются вместе и легко понятны.",
+    "zh": "预订、干预措施和注意事项保持在一起且易于理解。"
   },
-  "Restauration sur demande": {
-    "it": "Ristorazione su richiesta",
-    "en": "Catering on request",
-    "es": "Catering bajo petición",
-    "ru": "Питание по запросу",
-    "zh": "应要求提供餐饮服务"
+  "Réservations, voyageurs, préparation du bien et interventions : le périmètre est posé clairement.": {
+    "it": "Prenotazioni, viaggiatori, allestimento dell'immobile e interventi: il perimetro è ben definito.",
+    "en": "Reservations, travelers, preparation of the property and interventions: the perimeter is clearly defined.",
+    "es": "Reservas, viajeros, preparación de la propiedad e intervenciones: el perímetro está claramente definido.",
+    "ru": "Бронирование, путешественники, подготовка объекта и вмешательства: периметр четко определен.",
+    "zh": "预订、旅行者、财产准备和干预措施：边界已明确界定。"
   },
-  "Retour de réalisation": {
-    "it": "Ritorno di successo",
-    "en": "Return of achievement",
-    "es": "Devolución del logro",
-    "ru": "Возвращение достижения",
-    "zh": "成就返回"
+  "Réserver et tout confirmer": {
+    "it": "Prenota e conferma tutto",
+    "en": "Book and confirm everything",
+    "es": "Reserva y confirma todo",
+    "ru": "Забронируйте и все подтвердите",
+    "zh": "预订并确认一切"
   },
-  "Retour des accès": {
-    "it": "Restituzione dell'accesso",
-    "en": "Return of access",
-    "es": "Devolución de acceso",
-    "ru": "Возврат доступа",
-    "zh": "返回访问权限"
+  "Restaurants, activités et bonnes adresses sont proposés puis réservés selon les envies du voyageur.": {
+    "it": "Ristoranti, attività e buoni indirizzi vengono proposti e poi prenotati secondo i desideri del viaggiatore.",
+    "en": "Restaurants, activities and good addresses are proposed and then reserved according to the traveler's wishes.",
+    "es": "Se proponen y luego se reservan restaurantes, actividades y buenas direcciones según los deseos del viajero.",
+    "ru": "Рестораны, мероприятия и хорошие адреса предлагаются, а затем резервируются в соответствии с пожеланиями путешественника.",
+    "zh": "根据旅行者的意愿建议并预订餐厅、活动和好地址。"
   },
-  "Retrouver votre bien, simplement": {
-    "it": "Trovi il Suo immobile, semplicemente",
-    "en": "Find your property, simply",
-    "es": "Encuentra tu propiedad, simplemente",
-    "ru": "Просто найдите свою недвижимость",
-    "zh": "轻松找到您的财产"
+  "Restitution organisée": {
+    "it": "Restituzione organizzata",
+    "en": "Organized restitution",
+    "es": "Restitución organizada",
+    "ru": "Организованная реституция",
+    "zh": "有组织的归还"
   },
-  "Révéler le potentiel du lieu": {
-    "it": "Rivela il potenziale del luogo",
-    "en": "Reveal the potential of the place",
-    "es": "Revelar el potencial del lugar",
-    "ru": "Раскройте потенциал этого места",
-    "zh": "揭示该地点的潜力"
+  "Résultat vérifié après le ménage": {
+    "it": "Risultato controllato dopo la pulizia",
+    "en": "Result checked after cleaning",
+    "es": "Resultado comprobado después de la limpieza",
+    "ru": "Результат проверен после очистки",
+    "zh": "清洁后检查结果"
   },
-  "Rien à surveiller. Rien à deviner.": {
-    "it": "Niente da monitorare. Niente da indovinare.",
-    "en": "Nothing to monitor. Nothing to guess.",
-    "es": "Nada que monitorear. Nada que adivinar.",
-    "ru": "Нечего отслеживать. Нечего гадать.",
-    "zh": "没有什么可监控的。没什么可猜测的。"
+  "Retrait ou livraison organisée": {
+    "it": "Ritiro o consegna organizzata",
+    "en": "Collection or organized delivery",
+    "es": "Recogida o entrega organizada",
+    "ru": "Самовывоз или организованная доставка",
+    "zh": "取件或组织递送"
   },
-  "Rythme des comptes rendus": {
-    "it": "Ritmo dei rapporti",
-    "en": "Rhythm of reports",
-    "es": "Ritmo de informes",
-    "ru": "Ритм отчетов",
-    "zh": "报告节奏"
+  "Retrouvez les réponses essentielles avant de confier votre bien à Velyo.": {
+    "it": "Trova le risposte essenziali prima di affidare il tuo immobile a Velyo.",
+    "en": "Find the essential answers before entrusting your property to Velyo.",
+    "es": "Encuentre las respuestas esenciales antes de confiar su propiedad a Velyo.",
+    "ru": "Найдите важные ответы, прежде чем доверить свою собственность Velyo.",
+    "zh": "在将您的财产委托给 Velyo 之前先找到基本答案。"
   },
-  "Saisons, événements, durées minimales et règles de réservation sont organisés dans un cadre compréhensible.": {
-    "it": "Stagioni, eventi, durate minime e regole di prenotazione sono organizzati in un quadro comprensibile.",
-    "en": "Seasons, events, minimum durations and reservation rules are organized within an understandable framework.",
-    "es": "Las temporadas, eventos, duraciones mínimas y reglas de reserva se organizan dentro de un marco comprensible.",
-    "ru": "Сезоны, мероприятия, минимальная продолжительность и правила бронирования организованы в понятных рамках.",
-    "zh": "季节、活动、最短持续时间和预订规则均在易于理解的框架内组织。"
+  "Revenu généré": {
+    "it": "Reddito generato",
+    "en": "Income generated",
+    "es": "Ingresos generados",
+    "ru": "Полученный доход",
+    "zh": "产生的收入"
   },
-  "Sécuriser le fonctionnement de mon bien": {
-    "it": "Garantisci il funzionamento della mia proprietà",
-    "en": "Secure the operation of my property",
-    "es": "Asegurar el funcionamiento de mi propiedad",
-    "ru": "Обеспечить работу моей собственности",
-    "zh": "确保我的财产的运营"
+  "Revenus et occupation reportés": {
+    "it": "Reddito e occupazione dichiarati",
+    "en": "Reported income and occupation",
+    "es": "Ingresos y ocupación reportados",
+    "ru": "Заявленный доход и род занятий",
+    "zh": "报告的收入和职业"
   },
-  "Sécurité & contrôle": {
-    "it": "Sicurezza e controllo",
-    "en": "Security & control",
-    "es": "Seguridad y control",
-    "ru": "Безопасность и контроль",
-    "zh": "安全与控制"
+  "Revenus, commissions, dépenses, factures et événements importants sont regroupés dans un suivi propriétaire facile à relire.": {
+    "it": "Entrate, commissioni, spese, fatture ed eventi importanti sono raggruppati in un tracker proprietario di facile lettura.",
+    "en": "Income, commissions, expenses, invoices and important events are grouped into an easy-to-read proprietary tracker.",
+    "es": "Ingresos, comisiones, gastos, facturas y eventos importantes se agrupan en un rastreador propietario fácil de leer.",
+    "ru": "Доходы, комиссии, расходы, счета и важные события сгруппированы в удобный для чтения фирменный трекер.",
+    "zh": "收入、佣金、费用、发票和重要事件被分组到易于阅读的专有跟踪器中。"
   },
-  "Séjour pilote": {
-    "it": "Soggiorno pilota",
-    "en": "Pilot stay",
-    "es": "Estancia piloto",
-    "ru": "Пребывание пилота",
-    "zh": "飞行员停留"
+  "Rotation planifiée": {
+    "it": "Rotazione pianificata",
+    "en": "Planned rotation",
+    "es": "Rotación planificada",
+    "ru": "Планируемая ротация",
+    "zh": "计划轮换"
   },
-  "Sélection locale": {
-    "it": "Selezione locale",
-    "en": "Local selection",
-    "es": "Selección local",
-    "ru": "Локальный выбор",
-    "zh": "本地选择"
+  "Rue et numéro": {
+    "it": "Via e numero",
+    "en": "Street and number",
+    "es": "Calle y número",
+    "ru": "Улица и номер",
+    "zh": "街道和门牌号"
   },
-  "Sélectionner les options": {
-    "it": "Selezioni le opzioni",
-    "en": "Select options",
-    "es": "Seleccionar opciones",
-    "ru": "Выберите параметры",
-    "zh": "选择选项"
+  "Rythme des échanges choisi": {
+    "it": "Ritmo degli scambi scelto",
+    "en": "Rhythm of exchanges chosen",
+    "es": "Ritmo de intercambios elegido",
+    "ru": "Выбран ритм обмена",
+    "zh": "选择的交换节奏"
   },
-  "Sélectionner les partenaires": {
-    "it": "Selezioni partner",
-    "en": "Select partners",
-    "es": "Seleccionar socios",
-    "ru": "Выберите партнеров",
-    "zh": "选择合作伙伴"
+  "Rythme des nouvelles choisi": {
+    "it": "Ritmo delle notizie scelto",
+    "en": "Chosen news rhythm",
+    "es": "Ritmo informativo elegido",
+    "ru": "Выбранный ритм новостей",
+    "zh": "选择的新闻节奏"
   },
-  "Selon la fréquence convenue": {
-    "it": "Secondo la frequenza concordata",
-    "en": "According to the agreed frequency",
-    "es": "Según la frecuencia acordada",
-    "ru": "Согласно согласованной частоте",
-    "zh": "按照约定的频率"
+  "Saisissez une adresse e-mail valide.": {
+    "it": "Inserisci un indirizzo email valido.",
+    "en": "Enter a valid email address.",
+    "es": "Ingrese una dirección de correo electrónico válida.",
+    "ru": "Введите действительный адрес электронной почты.",
+    "zh": "输入有效的电子邮件地址。"
   },
-  "Selon le calendrier": {
-    "it": "Secondo il programma",
-    "en": "According to schedule",
-    "es": "Según cronograma",
-    "ru": "По расписанию",
-    "zh": "根据时间表"
+  "Sans personne sur place, chaque question, chaque prestataire et chaque imprévu finit par interrompre votre journée.": {
+    "it": "Senza nessuno sul posto, ogni domanda, ogni fornitore di servizi e ogni imprevisto finisce per interrompere la tua giornata.",
+    "en": "Without anyone on site, each question, each service provider and each unforeseen event ends up interrupting your day.",
+    "es": "Sin nadie en el sitio, cada pregunta, cada proveedor de servicios y cada imprevisto termina interrumpiendo tu día.",
+    "ru": "Без присутствия кого-либо на месте каждый вопрос, каждый поставщик услуг и каждое непредвиденное событие в конечном итоге прерывают ваш день.",
+    "zh": "现场没有任何人，每个问题、每个服务提供商和每个不可预见的事件最终都会打断您的一天。"
   },
-  "Service à domicile": {
-    "it": "Servizio a domicilio",
-    "en": "Home service",
-    "es": "Servicio a domicilio",
-    "ru": "Обслуживание на дому",
-    "zh": "上门服务"
+  "Scelga la lingua": {
+    "it": "Scegli la lingua",
+    "en": "Scelga la lingua",
+    "es": "Scelga la lengua",
+    "ru": "Выбор языка",
+    "zh": "语言"
   },
-  "Services de gestion de propriété": {
-    "it": "Servizi di gestione immobiliare",
-    "en": "Property management services",
-    "es": "Servicios de administración de propiedades",
-    "ru": "Услуги по управлению недвижимостью",
-    "zh": "物业管理服务"
+  "section service-catalog-section": {
+    "it": "sezione-catalogo-servizi",
+    "en": "service-catalog-section",
+    "es": "sección-catálogo-de-servicios",
+    "ru": "раздел-каталога-услуг",
+    "zh": "服务目录部分"
   },
-  "Services proposés selon les disponibilités": {
-    "it": "Servizi offerti secondo disponibilità",
-    "en": "Services offered according to availability",
-    "es": "Servicios ofrecidos según disponibilidad",
-    "ru": "Услуги предоставляются в зависимости от наличия.",
-    "zh": "根据可用性提供的服务"
+  "Sécurité du bien": {
+    "it": "Sicurezza della proprietà",
+    "en": "Security of the property",
+    "es": "Seguridad del inmueble",
+    "ru": "Безопасность имущества",
+    "zh": "财产安全"
   },
-  "Signalement précis des écarts": {
-    "it": "Segnalazione accurata delle deviazioni",
-    "en": "Accurate reporting of deviations",
-    "es": "Notificación precisa de desviaciones",
-    "ru": "Точная отчетность об отклонениях",
-    "zh": "准确报告偏差"
+  "Sélectionnez l’objet de votre demande.": {
+    "it": "Seleziona l'oggetto della tua richiesta.",
+    "en": "Select the subject of your request.",
+    "es": "Seleccione el asunto de su solicitud.",
+    "ru": "Выберите тему вашего запроса.",
+    "zh": "选择您请求的主题。"
   },
-  "Skipper et équipage": {
-    "it": "Skipper ed equipaggio",
-    "en": "Skipper and crew",
-    "es": "Patrón y tripulación",
-    "ru": "Шкипер и команда",
-    "zh": "船长和船员"
+  "Sélectionnez votre profil.": {
+    "it": "Seleziona il tuo profilo.",
+    "en": "Select your profile.",
+    "es": "Selecciona tu perfil.",
+    "ru": "Выберите свой профиль.",
+    "zh": "选择您的个人资料。"
+  },
+  "Selon la situation": {
+    "it": "A seconda della situazione",
+    "en": "Depending on the situation",
+    "es": "Dependiendo de la situación",
+    "ru": "В зависимости от ситуации",
+    "zh": "视情况而定"
+  },
+  "Service à réserver": {
+    "it": "Servizio da prenotare",
+    "en": "Service to reserve",
+    "es": "Servicio para reservar",
+    "ru": "Услуга для резерва",
+    "zh": "预订服务"
+  },
+  "Service détaillé": {
+    "it": "Servizio dettagliato",
+    "en": "Detailed service",
+    "es": "Servicio detallado",
+    "ru": "Подробный сервис",
+    "zh": "详细服务"
+  },
+  "Services additionnels intégrés à la réservation": {
+    "it": "Servizi aggiuntivi integrati nella prenotazione",
+    "en": "Additional services integrated into the reservation",
+    "es": "Servicios adicionales integrados en la reserva",
+    "ru": "Дополнительные услуги, интегрированные в бронирование",
+    "zh": "预订中集成的附加服务"
+  },
+  "Services de conciergerie à Genova": {
+    "it": "Servizi di portineria a Genova",
+    "en": "Concierge services in Genova",
+    "es": "Servicios de conserjería en Génova",
+    "ru": "Консьерж-услуги в Генуе",
+    "zh": "热那亚的礼宾服务"
+  },
+  "Services inclus détaillés": {
+    "it": "Servizi inclusi dettagliati",
+    "en": "Detailed included services",
+    "es": "Servicios incluidos detallados",
+    "ru": "Подробное описание включенных услуг",
+    "zh": "详细包含的服务"
+  },
+  "Services voyageurs à Genova": {
+    "it": "Servizi turistici a Genova",
+    "en": "Travel services in Genova",
+    "es": "Servicios de viajes en Génova",
+    "ru": "Туристические услуги в Генуе",
+    "zh": "热那亚的旅行服务"
+  },
+  "Simplicité": {
+    "it": "Semplicità",
+    "en": "Simplicity",
+    "es": "Simplicidad",
+    "ru": "Простота",
+    "zh": "简单"
   },
   "Soigné": {
-    "it": "Curato",
-    "en": "Cared for",
-    "es": "Cuidado",
-    "ru": "Забота",
-    "zh": "照顾"
+    "it": "Pulito",
+    "en": "Neat",
+    "es": "Limpio",
+    "ru": "Аккуратно",
+    "zh": "整洁"
   },
-  "Solution Privilège multi-biens": {
-    "it": "Soluzione Privilege multiproprietà",
-    "en": "Multi-property Privilege solution",
-    "es": "Solución de privilegios multipropiedad",
-    "ru": "Решение для привилегий нескольких объектов",
-    "zh": "多属性权限解决方案"
+  "Solution adaptée": {
+    "it": "Soluzione adattata",
+    "en": "Adapted solution",
+    "es": "Solución adaptada",
+    "ru": "Адаптированное решение",
+    "zh": "适应的解决方案"
   },
-  "Suivi de l’occupation et des séjours": {
-    "it": "Monitoraggio dell'occupazione e dei soggiorni",
-    "en": "Monitoring of occupancy and stays",
-    "es": "Seguimiento de ocupación y estancias",
-    "ru": "Мониторинг занятости и пребывания",
-    "zh": "监控入住和入住情况"
+  "Son adresse, sa capacité, son état et ses contraintes pratiques.": {
+    "it": "Il suo indirizzo, capacità, condizione e vincoli pratici.",
+    "en": "Its address, capacity, condition and practical constraints.",
+    "es": "Su dirección, capacidad, condición y limitaciones prácticas.",
+    "ru": "Его адрес, вместимость, состояние и практические ограничения.",
+    "zh": "其地址、容量、条件和实际限制。"
   },
-  "Suivi de la qualité après réalisation": {
-    "it": "Monitoraggio della qualità dopo il completamento",
-    "en": "Quality monitoring after completion",
-    "es": "Seguimiento de calidad tras la finalización",
-    "ru": "Мониторинг качества после завершения",
-    "zh": "完成后的质量监控"
+  "Suivi assuré": {
+    "it": "Follow-up assicurato",
+    "en": "Follow-up assured",
+    "es": "Seguimiento asegurado",
+    "ru": "Дальнейшие действия гарантированы",
+    "zh": "后续有保证"
   },
-  "Suivi des clés, badges et accès": {
-    "it": "Tracciabilità di chiavi, badge e accessi",
-    "en": "Tracking keys, badges and access",
-    "es": "Seguimiento de claves, credenciales y accesos",
-    "ru": "Отслеживание ключей, бейджей и доступа",
-    "zh": "跟踪钥匙、徽章和访问权限"
+  "Suivi assuré jusqu’à la réalisation": {
+    "it": "Monitoraggio assicurato fino al completamento",
+    "en": "Monitoring ensured until completion",
+    "es": "Seguimiento asegurado hasta su finalización",
+    "ru": "Мониторинг обеспечен до завершения",
+    "zh": "确保监控直至完成"
   },
-  "Suivi des équipements essentiels": {
-    "it": "Monitoraggio delle attrezzature essenziali",
-    "en": "Monitoring of essential equipment",
-    "es": "Monitoreo de equipos esenciales",
-    "ru": "Мониторинг основного оборудования",
-    "zh": "监控重要设备"
+  "Suivi jusqu’à la résolution": {
+    "it": "Follow-up fino alla risoluzione",
+    "en": "Follow-up until resolution",
+    "es": "Seguimiento hasta resolución",
+    "ru": "Последующие действия до разрешения проблемы",
+    "zh": "跟进直至解决"
   },
-  "Suivi des horaires": {
-    "it": "Pianifichi il monitoraggio",
-    "en": "Schedule tracking",
-    "es": "Seguimiento de horarios",
-    "ru": "Отслеживание расписания",
-    "zh": "日程跟踪"
+  "Suivi propriétaire régulier": {
+    "it": "Monitoraggio regolare del proprietario",
+    "en": "Regular owner monitoring",
+    "es": "Monitoreo regular del propietario",
+    "ru": "Регулярный мониторинг владельцев",
+    "zh": "定期业主监控"
   },
-  "Suivi des réservations": {
-    "it": "Monitoraggio delle prenotazioni",
-    "en": "Reservation tracking",
-    "es": "Seguimiento de reservas",
-    "ru": "Отслеживание резервирования",
-    "zh": "预订跟踪"
+  "Suivre jusqu’au bout": {
+    "it": "Segui fino alla fine",
+    "en": "Follow to the end",
+    "es": "Seguir hasta el final",
+    "ru": "Пройти до конца",
+    "zh": "坚持到底"
   },
-  "Suivi des retours": {
-    "it": "Tracciamento dei resi",
-    "en": "Return tracking",
-    "es": "Seguimiento de devoluciones",
-    "ru": "Отслеживание возврата",
-    "zh": "返回跟踪"
+  "Suivre les comptes": {
+    "it": "Segui gli account",
+    "en": "Follow accounts",
+    "es": "Seguir cuentas",
+    "ru": "Подписаться на аккаунты",
+    "zh": "关注帐户"
   },
-  "Suivi des stocks et de l’inventaire": {
-    "it": "Monitoraggio delle scorte e dell'inventario",
-    "en": "Stock and inventory monitoring",
-    "es": "Seguimiento de existencias e inventarios",
-    "ru": "Мониторинг запасов и запасов",
-    "zh": "库存和库存监控"
+  "Tâches planifiées": {
+    "it": "Attività pianificate",
+    "en": "Scheduled tasks",
+    "es": "Tareas programadas",
+    "ru": "Запланированные задачи",
+    "zh": "计划任务"
   },
-  "Suivi du rythme des réservations": {
-    "it": "Monitoraggio del tasso di prenotazioni",
-    "en": "Monitoring the rate of reservations",
-    "es": "Seguimiento del ritmo de reservas",
-    "ru": "Мониторинг количества бронирований",
-    "zh": "监控预订率"
+  "Tarif de lancement défini": {
+    "it": "Prezzo di lancio definito",
+    "en": "Introductory price defined",
+    "es": "Precio de lanzamiento definido",
+    "ru": "Определена начальная цена",
+    "zh": "已定义介绍价格"
   },
-  "Suivi jusqu’au dernier détail": {
-    "it": "Monitoraggio fino all'ultimo dettaglio",
-    "en": "Monitoring down to the last detail",
-    "es": "Seguimiento hasta el último detalle",
-    "ru": "Мониторинг до мельчайших деталей",
-    "zh": "监控到最后的细节"
+  "Tarif moyen envisagé": {
+    "it": "Prezzo medio previsto",
+    "en": "Average price envisaged",
+    "es": "Precio medio previsto",
+    "ru": "Предполагаемая средняя цена",
+    "zh": "预计平均价格"
   },
-  "Suivi opérationnel": {
-    "it": "Monitoraggio operativo",
-    "en": "Operational monitoring",
-    "es": "Seguimiento operativo",
-    "ru": "Оперативный мониторинг",
-    "zh": "运行监控"
+  "Tarification ajustée": {
+    "it": "Prezzo modificato",
+    "en": "Adjusted pricing",
+    "es": "Precios ajustados",
+    "ru": "Скорректированные цены",
+    "zh": "调整后的定价"
   },
-  "Suivi précis du linge": {
-    "it": "Tracciamento accurato della lavanderia",
-    "en": "Accurate laundry tracking",
-    "es": "Seguimiento preciso de la ropa",
-    "ru": "Точное отслеживание стирки",
-    "zh": "准确的洗衣追踪"
+  "Tarifs adaptés aux périodes": {
+    "it": "Tariffe adeguate ai periodi",
+    "en": "Rates adapted to the periods",
+    "es": "Tarifas adaptadas a los periodos",
+    "ru": "Цены адаптированы к периодам",
+    "zh": "根据时段调整的费率"
   },
-  "Suivi préventif": {
-    "it": "Monitoraggio preventivo",
-    "en": "Preventive monitoring",
-    "es": "Seguimiento preventivo",
-    "ru": "Превентивный мониторинг",
-    "zh": "预防性监控"
+  "Tarifs ajustés": {
+    "it": "Prezzi adeguati",
+    "en": "Adjusted prices",
+    "es": "Precios ajustados",
+    "ru": "Скорректированные цены",
+    "zh": "调整后的价格"
   },
-  "Suivi régulier": {
-    "it": "Monitoraggio regolare",
-    "en": "Regular monitoring",
-    "es": "Seguimiento periódico",
-    "ru": "Регулярный мониторинг",
-    "zh": "定期监控"
+  "Tarifs et durée des séjours ajustés": {
+    "it": "Prezzi e durata dei soggiorni adeguati",
+    "en": "Prices and length of stays adjusted",
+    "es": "Precios y duración de las estancias ajustados",
+    "ru": "Цены и продолжительность проживания скорректированы",
+    "zh": "价格和住宿时间调整"
   },
-  "Suivre l’intervention": {
-    "it": "Segui l'intervento",
-    "en": "Follow the intervention",
-    "es": "Sigue la intervención",
-    "ru": "Следите за вмешательством",
-    "zh": "遵循干预措施"
+  "Tarifs et durées ajustés": {
+    "it": "Prezzi e durate modificati",
+    "en": "Adjusted prices and durations",
+    "es": "Precios y duraciones ajustados",
+    "ru": "Скорректированы цены и продолжительность.",
+    "zh": "调整后的价格和持续时间"
   },
-  "Supervision discrète de chaque intervention": {
-    "it": "Supervisione discreta di ogni intervento",
-    "en": "Discreet supervision of each intervention",
-    "es": "Supervisión discreta de cada intervención",
-    "ru": "Сдержанный контроль за каждым вмешательством",
-    "zh": "对每项干预措施进行谨慎监督"
+  "Tarifs et processus ajustés": {
+    "it": "Tariffe e processi adeguati",
+    "en": "Adjusted rates and processes",
+    "es": "Tarifas y procesos ajustados",
+    "ru": "Скорректированные тарифы и процессы",
+    "zh": "调整后的费率和流程"
   },
-  "Sur la côte ligure, les plus belles propriétés ne demandent pas seulement à être gérées. Elles demandent à être comprises, protégées et racontées.": {
-    "it": "Sulla costa ligure gli immobili più belli non hanno solo bisogno di essere gestiti. Chiedono di essere compresi, protetti e raccontati.",
-    "en": "On the Ligurian coast, the most beautiful properties do not only need to be managed. They demand to be understood, protected and told.",
-    "es": "En la costa de Liguria, las propiedades más bellas no sólo necesitan ser gestionadas. Exigen ser comprendidos, protegidos y contados.",
-    "ru": "Самая красивая недвижимость на Лигурийском побережье нуждается не только в управлении. Они требуют, чтобы их понимали, защищали и рассказывали.",
-    "zh": "在利古里亚海岸，最美丽的房产不仅需要管理。他们要求被理解、被保护、被告知。"
+  "Tarifs, durées de séjour et tâches récurrentes sont ajustés puis automatisés, tout en conservant un contrôle humain sur le bien.": {
+    "it": "Le tariffe, la durata del soggiorno e le attività ricorrenti vengono adeguate e poi automatizzate, mantenendo il controllo umano sulla proprietà.",
+    "en": "Rates, length of stay and recurring tasks are adjusted then automated, while maintaining human control over the property.",
+    "es": "Las tarifas, la duración de la estadía y las tareas recurrentes se ajustan y luego se automatizan, manteniendo el control humano sobre la propiedad.",
+    "ru": "Ставки, продолжительность пребывания и повторяющиеся задачи корректируются, а затем автоматизируются, сохраняя при этом человеческий контроль над имуществом.",
+    "zh": "价格、住宿时长和重复任务经过调整后实现自动化，同时保持对酒店的人工控制。"
   },
-  "Surveillance des équipements sensibles": {
-    "it": "Monitoraggio di apparecchiature sensibili",
-    "en": "Monitoring of sensitive equipment",
-    "es": "Monitorización de equipos sensibles",
-    "ru": "Мониторинг чувствительного оборудования",
-    "zh": "敏感设备监控"
+  "Taux d’occupation": {
+    "it": "Tasso di occupazione",
+    "en": "Occupancy rate",
+    "es": "Tasa de ocupación",
+    "ru": "Заполняемость",
+    "zh": "入住率"
   },
-  "Synthèse claire de l’activité": {
-    "it": "Riepilogo chiaro dell'attività",
-    "en": "Clear summary of the activity",
-    "es": "Resumen claro de la actividad",
-    "ru": "Четкое описание активности",
-    "zh": "活动的清晰摘要"
+  "Taux d’occupation cible": {
+    "it": "Tasso di occupazione target",
+    "en": "Target occupancy rate",
+    "es": "Tasa de ocupación objetivo",
+    "ru": "Целевая заполняемость",
+    "zh": "目标入住率"
   },
-  "Synthèse propriétaire": {
-    "it": "Riepilogo proprietario",
-    "en": "Proprietary summary",
-    "es": "Resumen propietario",
-    "ru": "Собственное описание",
-    "zh": "专有摘要"
+  "Taux d’occupation suivi": {
+    "it": "Tasso di occupazione monitorato",
+    "en": "Occupancy rate monitored",
+    "es": "Tasa de ocupación monitoreada",
+    "ru": "Отслеживается заполняемость",
+    "zh": "监控入住率"
   },
-  "Tarification pensée selon chaque saison": {
-    "it": "Prezzi studiati in base ad ogni stagione",
-    "en": "Pricing designed according to each season",
-    "es": "Precios diseñados según cada temporada",
-    "ru": "Цены разработаны в зависимости от сезона.",
-    "zh": "根据每个季节设计的定价"
+  "Testez vos chiffres actuels et voyez ce qu’une gestion plus régulière pourrait changer.": {
+    "it": "Metti alla prova i tuoi dati attuali e scopri cosa potrebbe cambiare una gestione più regolare.",
+    "en": "Test your current figures and see what more regular management could change.",
+    "es": "Pruebe sus cifras actuales y vea qué podría cambiar una gestión más regular.",
+    "ru": "Проверьте свои текущие показатели и посмотрите, что может измениться при более регулярном управлении.",
+    "zh": "测试您当前的数据，看看更常规的管理可以改变什么。"
   },
-  "Tarifs adaptés aux saisons et aux événements": {
-    "it": "Prezzi adeguati alle stagioni e agli eventi",
-    "en": "Prices adapted to seasons and events",
-    "es": "Precios adaptados a temporadas y eventos",
-    "ru": "Цены адаптированы к сезону и событиям.",
-    "zh": "价格根据季节和活动进行调整"
+  "Tous les services de la gestion complète": {
+    "it": "Tutti i servizi di gestione completi",
+    "en": "All complete management services",
+    "es": "Todos los servicios completos de gestión",
+    "ru": "Все услуги полного управления",
+    "zh": "所有完整的管理服务"
   },
-  "Tarifs annoncés": {
-    "it": "Prezzi annunciati",
-    "en": "Announced prices",
-    "es": "Precios anunciados",
-    "ru": "Объявленные цены",
-    "zh": "公布价格"
+  "Tout ce qui facilite l’arrivée, le départ et les mouvements pendant le séjour.": {
+    "it": "Tutto ciò che facilita l'arrivo, la partenza e gli spostamenti durante il soggiorno.",
+    "en": "Everything that facilitates arrival, departure and movement during the stay.",
+    "es": "Todo lo que facilite la llegada, salida y movimiento durante la estancia.",
+    "ru": "Все, что облегчает приезд, выезд и передвижение во время пребывания.",
+    "zh": "为入住期间抵达、离开和活动提供便利的一切。"
   },
-  "Tarifs et calendrier pilotés pour valoriser durablement vos revenus.": {
-    "it": "Prezzi e calendario sono riusciti ad aumentare in modo sostenibile le Sue entrate.",
-    "en": "Prices and calendar managed to sustainably enhance your income.",
-    "es": "Precios y calendario lograron potenciar de manera sostenible tus ingresos.",
-    "ru": "Цены и календарь позволили устойчиво повысить ваш доход.",
-    "zh": "价格和日历成功地持续增加了您的收入。"
+  "Tout écart important vous est signalé": {
+    "it": "Qualsiasi deviazione significativa ti viene segnalata",
+    "en": "Any significant deviation is reported to you",
+    "es": "Cualquier desviación significativa se le informa",
+    "ru": "Вам сообщается о любых существенных отклонениях",
+    "zh": "任何重大偏差都会报告给您"
   },
-  "Tarifs négociés": {
-    "it": "Tariffe negoziate",
-    "en": "Negotiated rates",
-    "es": "Tarifas negociadas",
-    "ru": "Цены договорные",
-    "zh": "协商费率"
+  "Tout est prêt": {
+    "it": "Tutto è pronto",
+    "en": "Everything is ready",
+    "es": "Todo está listo",
+    "ru": "Всё готово",
+    "zh": "一切准备就绪"
   },
-  "Tarifs par période": {
-    "it": "Prezzi per periodo",
-    "en": "Prices per period",
-    "es": "Precios por periodo",
-    "ru": "Цены за период",
-    "zh": "每个周期的价格"
+  "Tout le suivi au même endroit.": {
+    "it": "Tutto il monitoraggio in un unico posto.",
+    "en": "All tracking in one place.",
+    "es": "Todo el seguimiento en un solo lugar.",
+    "ru": "Все отслеживание в одном месте.",
+    "zh": "所有跟踪都集中在一处。"
   },
-  "Témoignage propriétaire à faire valider avant publication": {
-    "it": "Testimonianza del proprietario da convalidare prima della pubblicazione",
-    "en": "Owner testimony to be validated before publication",
-    "es": "Testimonio del propietario a validar antes de su publicación",
-    "ru": "Показания владельца должны быть проверены перед публикацией",
-    "zh": "所有者证词在发布前经过验证"
+  "Toute projection reste indicative jusqu’à l’analyse du bien": {
+    "it": "Qualsiasi proiezione rimane indicativa fino all'analisi dell'immobile",
+    "en": "Any projection remains indicative until the analysis of the property",
+    "es": "Cualquier proyección sigue siendo orientativa hasta el análisis del inmueble.",
+    "ru": "Любой прогноз остается ориентировочным до момента проведения анализа объекта недвижимости.",
+    "zh": "在对属性进行分析之前，任何投影都具有指示性"
   },
-  "Toutes les projections restent indicatives": {
-    "it": "Tutte le proiezioni rimangono indicative",
-    "en": "All projections remain indicative",
-    "es": "Todas las proyecciones siguen siendo orientativas",
-    "ru": "Все прогнозы остаются ориентировочными.",
-    "zh": "所有预测均具有指示性"
-  },
-  "Transfert porte-à-porte": {
-    "it": "Trasferimento porta a porta",
-    "en": "Door-to-door transfer",
-    "es": "Traslado puerta a puerta",
-    "ru": "Трансфер от двери до двери",
-    "zh": "上门接送"
+  "Toute réparation payante est proposée avant engagement": {
+    "it": "Qualsiasi riparazione a pagamento viene offerta prima dell'impegno",
+    "en": "Any paid repair is offered before commitment",
+    "es": "Cualquier reparación pagada se ofrece antes del compromiso.",
+    "ru": "Любой платный ремонт предлагается до принятия обязательств.",
+    "zh": "任何付费维修均在承诺之前提供"
   },
   "Transfert privé": {
     "it": "Trasferimento privato",
     "en": "Private transfer",
     "es": "Traslado privado",
-    "ru": "Частный трансфер",
-    "zh": "私人转账"
+    "ru": "Индивидуальный трансфер",
+    "zh": "私人接送"
   },
-  "Transferts et bagagerie proposés sur devis": {
-    "it": "Trasferimenti e deposito bagagli offerti su preventivo",
-    "en": "Transfers and luggage storage offered on quote",
-    "es": "Traslados y consigna de equipaje ofrecidos bajo cotización",
-    "ru": "Трансфер и камера хранения багажа предлагаются по цене.",
-    "zh": "按报价提供接送服务和行李寄存服务"
+  "Transferts, bien-être, guides, courses et réservations organisés pour les voyageurs avant et pendant leur séjour à Genova.": {
+    "it": "Trasferimenti, benessere, guide, shopping e prenotazioni organizzate per i viaggiatori prima e durante il soggiorno a Genova.",
+    "en": "Transfers, wellness, guides, shopping and reservations organized for travelers before and during their stay in Genova.",
+    "es": "Traslados, bienestar, guías, compras y reservas organizadas para viajeros antes y durante su estancia en Génova.",
+    "ru": "Трансферы, оздоровительные процедуры, гиды, шопинг и бронирование для путешественников до и во время их пребывания в Генуе.",
+    "zh": "为旅客在热那亚逗留之前和逗留期间安排接送、健康、指南、购物和预订。"
   },
-  "Transparence et protection des données.": {
-    "it": "Trasparenza e protezione dei dati.",
-    "en": "Transparency and data protection.",
-    "es": "Transparencia y protección de datos.",
-    "ru": "Прозрачность и защита данных.",
-    "zh": "透明度和数据保护。"
+  "Transport coordonné": {
+    "it": "Trasporto coordinato",
+    "en": "Coordinated transport",
+    "es": "Transporte coordinado",
+    "ru": "Скоординированный транспорт",
+    "zh": "协调运输"
   },
-  "Travaux et pièces engagés après votre accord": {
-    "it": "Lavori e parti eseguiti dopo il Suo accordo",
-    "en": "Work and parts undertaken after your agreement",
-    "es": "Trabajos y piezas realizadas tras su acuerdo",
-    "ru": "Работы и запчасти выполняются после вашего согласия",
-    "zh": "在您同意后进行的工作和零件"
+  "Transport, bien-être, visites et courses : des services utiles, organisés à la demande.": {
+    "it": "Trasporti, benessere, visite e shopping: servizi utili, organizzati on demand.",
+    "en": "Transport, well-being, visits and shopping: useful services, organized on demand.",
+    "es": "Transporte, bienestar, visitas y compras: servicios útiles, organizados bajo demanda.",
+    "ru": "Транспорт, благополучие, визиты и шопинг: полезные услуги, организованные по запросу.",
+    "zh": "交通、健康、参观和购物：按需组织的有用服务。"
   },
-  "Un accès manquant, traité sans approximation": {
-    "it": "Accesso mancante, gestito senza approssimazione",
-    "en": "Missing access, handled without approximation",
-    "es": "Falta acceso, manejado sin aproximación",
-    "ru": "Отсутствует доступ, обработано без приближения",
-    "zh": "缺少访问权限，未经近似处理"
+  "Transport, parcours et réservations sont réunis dans une journée organisée depuis Genova.": {
+    "it": "Trasporto, percorso e prenotazioni si fondono in una giornata organizzata da Genova.",
+    "en": "Transport, route and reservations come together in a day organized from Genova.",
+    "es": "Transporte, ruta y reservas se unen en una jornada organizada desde Génova.",
+    "ru": "Транспорт, маршрут и бронирование объединяются в один день, организованный из Генуи.",
+    "zh": "交通、路线和预订在热那亚组织的一天中汇集在一起​​。"
   },
-  "Un artisan fiable à Castelletto, un accès délicat dans le centre historique, une urgence à Nervi : notre ancrage local donne à votre propriété les bons relais, sans tâtonnement ni intermédiaire inutile.": {
-    "it": "Un artigiano affidabile a Castelletto, accessi delicati in centro storico, emergenza a Nervi: il nostro ancoraggio locale dà al Suo immobile i contatti giusti, senza tentativi ed errori o intermediari inutili.",
-    "en": "A reliable craftsman in Castelletto, delicate access in the historic center, an emergency in Nervi: our local anchorage gives your property the right contacts, without trial and error or unnecessary intermediaries.",
-    "es": "Un artesano de confianza en Castelletto, un acceso delicado en el centro histórico, una emergencia en Nervi: nuestro anclaje local proporciona a su propiedad los contactos adecuados, sin ensayo y error ni intermediarios innecesarios.",
-    "ru": "Надежный мастер в Кастеллетто, деликатный доступ в исторический центр, чрезвычайная ситуация в Нерви: наша местная стоянка дает вашей собственности правильные контакты без проб и ошибок или ненужных посредников.",
-    "zh": "卡斯特莱托的可靠工匠、历史中心的微妙通道、奈尔维的紧急情况：我们当地的锚地为您的财产提供正确的联系方式，无需反复试验或不必要的中介。"
+  "Travaux engagés uniquement après validation selon le montant convenu": {
+    "it": "Lavoro intrapreso solo dopo la convalida secondo l'importo concordato",
+    "en": "Work undertaken only after validation according to the agreed amount",
+    "es": "Trabajo realizado sólo después de la validación según el monto acordado",
+    "ru": "Работы выполняются только после проверки в соответствии с оговоренной суммой.",
+    "zh": "仅在根据商定的金额验证后才开展工作"
   },
-  "Un bien confié à l’attention AUREVIA.": {
-    "it": "Un bene affidato ad AUREVIA.",
-    "en": "An asset entrusted to AUREVIA.",
-    "es": "Un activo confiado a AUREVIA.",
-    "ru": "Объект, доверенный AUREVIA.",
-    "zh": "委托给 AUREVIA 的资产。"
+  "Très soigné": {
+    "it": "Molto pulito",
+    "en": "Very neat",
+    "es": "Muy limpio",
+    "ru": "Очень аккуратно",
+    "zh": "非常整洁"
   },
-  "Un bien toujours prêt à recevoir": {
-    "it": "Un immobile sempre pronto a ricevere",
-    "en": "A property always ready to receive",
-    "es": "Una propiedad siempre lista para recibir",
-    "ru": "Объект, всегда готовый принять",
-    "zh": "随时准备接收的财产"
+  "Trois-pièces": {
+    "it": "Trilocale",
+    "en": "Three-room",
+    "es": "Tres habitaciones",
+    "ru": "Трехкомнатная",
+    "zh": "三房式"
   },
-  "Un contrôle qui évite une mauvaise première impression": {
-    "it": "Un controllo che evita una brutta prima impressione",
-    "en": "A control that avoids a bad first impression",
-    "es": "Un control que evita una mala primera impresión",
-    "ru": "Элемент управления, позволяющий избежать плохого первого впечатления",
-    "zh": "避免不良第一印象的控件"
+  "Type de bien": {
+    "it": "Tipo di proprietà",
+    "en": "Type of property",
+    "es": "Tipo de propiedad",
+    "ru": "Тип недвижимости",
+    "zh": "财产类型"
   },
-  "Un détail remarqué à temps reste un détail. Ignoré, il finit souvent par troubler un séjour ou abîmer le bien.": {
-    "it": "Un dettaglio notato nel tempo rimane un dettaglio. Se ignorato, spesso finisce per disturbare il soggiorno o danneggiare l'immobile.",
-    "en": "A detail noticed in time remains a detail. Ignored, it often ends up disturbing a stay or damaging the property.",
-    "es": "Un detalle advertido en el tiempo sigue siendo un detalle. Si se ignora, a menudo acaba perturbando una estancia o dañando la propiedad.",
-    "ru": "Вовремя замеченная деталь остаётся деталью. Игнорирование этого часто приводит к нарушению условий проживания или повреждению имущества.",
-    "zh": "及时注意到的细节仍然是细节。如果忽视，它往往最终会扰乱住宿或损坏财产。"
+  "Un accueil plus confortable, commercialisé sans être intégré au prix de la nuit.": {
+    "it": "Un'accoglienza più confortevole, commercializzata senza essere inclusa nel prezzo della notte.",
+    "en": "A more comfortable welcome, marketed without being included in the price of the night.",
+    "es": "Una acogida más cómoda, comercializada sin estar incluida en el precio de la noche.",
+    "ru": "Более комфортный прием, продаваемый без включения в стоимость ночи.",
+    "zh": "更舒适的欢迎，营销时不包含在当晚的价格中。"
   },
-  "Un échange confidentiel pour comprendre vos besoins, vos objectifs et les caractéristiques de votre bien.": {
-    "it": "Uno scambio confidenziale per comprendere le Sue esigenze, i Suoi obiettivi e le caratteristiche del Suo immobile.",
-    "en": "A confidential exchange to understand your needs, your objectives and the characteristics of your property.",
-    "es": "Un intercambio confidencial para entender sus necesidades, sus objetivos y las características de su propiedad.",
-    "ru": "Конфиденциальный обмен информацией для понимания ваших потребностей, целей и характеристик вашей недвижимости.",
-    "zh": "进行保密交流，以了解您的需求、目标和财产特征。"
+  "Un appartement lumineux pensé pour un séjour en famille.": {
+    "it": "Un luminoso appartamento pensato per un soggiorno in famiglia.",
+    "en": "A bright apartment designed for a family stay.",
+    "es": "Un apartamento luminoso diseñado para una estancia familiar.",
+    "ru": "Светлая квартира, предназначенная для семейного отдыха.",
+    "zh": "明亮的公寓，专为家庭住宿而设计。"
   },
-  "Un imprévu, un seul interlocuteur": {
-    "it": "Un imprevisto, un unico contatto",
-    "en": "An unforeseen event, a single contact",
-    "es": "Un imprevisto, un solo contacto",
-    "ru": "Непредвиденное событие, одиночный контакт",
-    "zh": "不可预见的事件，一次接触"
+  "Un bien confortable dans un quartier résidentiel central.": {
+    "it": "Una confortevole proprietà in una zona residenziale centrale.",
+    "en": "A comfortable property in a central residential area.",
+    "es": "Una cómoda propiedad en una zona residencial céntrica.",
+    "ru": "Комфортабельный дом в центральном спальном районе.",
+    "zh": "位于中心住宅区的舒适酒店。"
   },
-  "Un intervenant adapté est recherché et le devis vous est présenté lorsque la situation le permet.": {
-    "it": "Si cerca un fornitore adatto e Le viene presentato il preventivo quando la situazione lo consente.",
-    "en": "A suitable provider is sought and the quote is presented to you when the situation allows it.",
-    "es": "Se busca un proveedor adecuado y se le presenta el presupuesto cuando la situación lo permite.",
-    "ru": "Подходящий поставщик ищется, и предложение предоставляется вам, когда ситуация позволяет это.",
-    "zh": "寻找合适的提供商，并在情况允许时向您提供报价。"
+  "Un bien présenté avec soin par Velyo.": {
+    "it": "Una proprietà presentata con cura da Velyo.",
+    "en": "A property carefully presented by Velyo.",
+    "es": "Una propiedad cuidadosamente presentada por Velyo.",
+    "ru": "Недвижимость, тщательно представленная Velyo.",
+    "zh": "Velyo 精心呈现的房产。"
   },
-  "Un mois d’activité résumé sans zone d’ombre": {
-    "it": "Un mese di attività riassunto senza zone grigie",
-    "en": "A month of activity summarized without gray areas",
-    "es": "Un mes de actividad resumido sin zonas grises",
-    "ru": "Месяц активности подведен без серых зон",
-    "zh": "一个月的活动总结，没有灰色区域"
+  "Un bien présenté par Velyo à Genova.": {
+    "it": "Una proprietà presentata da Velyo a Genova.",
+    "en": "A property presented by Velyo in Genova.",
+    "es": "Una propiedad presentada por Velyo en Génova.",
+    "ru": "Недвижимость, представленная Velyo в Генуе.",
+    "zh": "Velyo 在热那亚推出的房产。"
   },
-  "Un niveau de préparation vérifié avant chaque séjour": {
-    "it": "Un livello di preparazione controllato prima di ogni soggiorno",
-    "en": "A level of preparation checked before each stay",
-    "es": "Un nivel de preparación comprobado antes de cada estancia",
-    "ru": "Уровень подготовки проверяется перед каждым пребыванием",
-    "zh": "每次入住前检查准备程度"
+  "Un bien propre, prêt à recevoir.": {
+    "it": "Una proprietà pulita, pronta a ricevere.",
+    "en": "A clean property, ready to receive.",
+    "es": "Una propiedad limpia, lista para recibir.",
+    "ru": "Чистая недвижимость, готовая к приему.",
+    "zh": "干净的房产，随时可以接收。"
   },
-  "Un parcours d’arrivée fluide, soigné et conforme à vos standards.": {
-    "it": "Un percorso di arrivo fluido e attento che soddisfa i Suoi standard.",
-    "en": "A smooth, careful arrival route that meets your standards.",
-    "es": "Una ruta de llegada suave, cuidada y que cumple con tus estándares.",
-    "ru": "Плавный и осторожный маршрут прибытия, соответствующий вашим стандартам.",
-    "zh": "符合您标准的平稳、谨慎的抵达路线。"
+  "un cadre adapté à votre organisation": {
+    "it": "un framework adatto alla tua organizzazione",
+    "en": "a framework adapted to your organization",
+    "es": "un framework adaptado a tu organización",
+    "ru": "платформа, адаптированная к вашей организации",
+    "zh": "适合您组织的框架"
   },
-  "Un pilotage unique pour préserver le bien et simplifier chaque décision.": {
-    "it": "Una gestione unica per preservare la proprietà e semplificare ogni decisione.",
-    "en": "Unique management to preserve property and simplify each decision.",
-    "es": "Gestión única para preservar la propiedad y simplificar cada decisión.",
-    "ru": "Уникальное управление для сохранения имущества и упрощения каждого решения.",
-    "zh": "独特的管理方式可保护财产并简化每个决策。"
+  "Un chauffeur attend le voyageur à la gare ou à l’aéroport et le conduit directement au bien.": {
+    "it": "Un autista attende il viaggiatore in stazione o in aeroporto e lo accompagna direttamente alla struttura.",
+    "en": "A driver waits for the traveler at the station or airport and takes them directly to the property.",
+    "es": "Un conductor espera al viajero en la estación o aeropuerto y lo lleva directamente a la propiedad.",
+    "ru": "Водитель ждет путешественника на вокзале или в аэропорту и доставляет его прямо к объекту размещения.",
+    "zh": "司机在车站或机场等候旅客，并将他们直接送往酒店。"
   },
-  "Un point régulier, sans bruit inutile": {
-    "it": "Un punto regolare, senza rumori inutili",
-    "en": "A regular point, without unnecessary noise",
-    "es": "Un punto regular, sin ruidos innecesarios",
-    "ru": "Обычная точка, без лишнего шума",
-    "zh": "一个常规点，没有不必要的噪音"
+  "Un détail du lieu": {
+    "it": "Un dettaglio del luogo",
+    "en": "A detail of the place",
+    "es": "Un detalle del lugar",
+    "ru": "Деталь места",
+    "zh": "该地点的详细信息"
   },
-  "Un potentiel suivi dans la durée": {
-    "it": "Potenziale monitorato nel tempo",
-    "en": "Potential monitored over time",
-    "es": "Potencial monitorizado en el tiempo",
-    "ru": "Потенциал отслеживается с течением времени",
-    "zh": "随着时间的推移监控电位"
+  "Un interlocuteur local pour gérer les réservations, les voyageurs, les prestataires et le suivi du bien.": {
+    "it": "Un contatto locale per gestire prenotazioni, viaggiatori, fornitori di servizi e monitoraggio della proprietà.",
+    "en": "A local contact to manage reservations, travelers, service providers and monitoring of the property.",
+    "es": "Un contacto local para gestionar reservas, viajeros, proveedores de servicios y seguimiento de la propiedad.",
+    "ru": "Местный контакт для управления бронированием, путешественниками, поставщиками услуг и мониторинга объекта.",
+    "zh": "负责管理预订、旅客、服务提供商和酒店监控的本地联系人。"
   },
-  "Un service complet, conçu sur mesure": {
-    "it": "Un servizio completo, su misura",
-    "en": "A complete service, tailor-made",
-    "es": "Un servicio completo, a medida",
-    "ru": "Полный комплекс услуг, индивидуальный подход",
-    "zh": "完整的服务，量身定制"
+  "Un interlocuteur pour tout le bien": {
+    "it": "Un contatto per tutti i bene",
+    "en": "A contact for all good",
+    "es": "Un contacto para todo bien",
+    "ru": "Контакт для всего хорошего",
+    "zh": "为大家带来美好的联系"
   },
-  "Un service précis, discret et toujours présent.": {
-    "it": "Un servizio preciso, discreto e sempre presente.",
-    "en": "A precise, discreet and always present service.",
-    "es": "Un servicio preciso, discreto y siempre presente.",
-    "ru": "Точный, сдержанный и всегда доступный сервис.",
-    "zh": "精确、谨慎且始终如一的服务。"
+  "Un pied-à-terre simple proche du port et du centre historique.": {
+    "it": "Un semplice pied-à-terre vicino al porto e al centro storico.",
+    "en": "A simple pied-à-terre close to the port and the historic center.",
+    "es": "Un sencillo pied-à-terre cerca del puerto y del centro histórico.",
+    "ru": "Простой коттедж недалеко от порта и исторического центра.",
+    "zh": "靠近港口和历史中心的简单临时住所。"
   },
-  "Un seul interlocuteur pour tout": {
-    "it": "Un unico interlocutore per tutto",
-    "en": "A single contact for everything",
-    "es": "Un único contacto para todo",
-    "ru": "Один контакт для всего",
-    "zh": "单一联系人解决一切问题"
+  "Un point envoyé au rythme convenu": {
+    "it": "Un punto inviato al ritmo concordato",
+    "en": "A point sent at the agreed pace",
+    "es": "Un punto enviado al ritmo acordado",
+    "ru": "Очко отправлено в согласованном темпе",
+    "zh": "按约定的速度发送一个点"
   },
-  "Un suivi discret permet de vérifier que tout est compris et de traiter rapidement un éventuel besoin.": {
-    "it": "Il monitoraggio discreto permette di verificare che tutto sia compreso e di rispondere tempestivamente ad eventuali necessità.",
-    "en": "Discreet monitoring makes it possible to verify that everything is understood and to quickly address any possible needs.",
-    "es": "Un seguimiento discreto permite comprobar que todo se comprende y abordar rápidamente posibles necesidades.",
-    "ru": "Скрытный мониторинг позволяет убедиться, что все понятно, и быстро удовлетворить любые возможные потребности.",
-    "zh": "谨慎的监控可以验证一切是否已被理解并快速满足任何可能的需求。"
+  "Un praticien sélectionné intervient directement dans le bien, sur un créneau confirmé avec le voyageur.": {
+    "it": "Un professionista selezionato interviene direttamente nell'immobile, in uno slot confermato con il viaggiatore.",
+    "en": "A selected practitioner intervenes directly in the property, on a slot confirmed with the traveler.",
+    "es": "Un practicante seleccionado interviene directamente en la propiedad, en un horario confirmado con el viajero.",
+    "ru": "Выбранный практик вмешивается непосредственно в собственность, в слот, подтвержденный путешественником.",
+    "zh": "选定的从业者在与旅客确认的时段直接介入酒店。"
   },
-  "Un voyageur souhaite un dîner privé avec peu de préavis. Nous qualifions le besoin, présentons une option disponible et coordonnons l’accès au bien après validation.": {
-    "it": "Un viaggiatore desidera una cena privata con poco preavviso. Qualifichiamo la necessità, presentiamo un'opzione disponibile e coordiniamo l'accesso alla proprietà dopo la convalida.",
-    "en": "A traveler wants a private dinner with little notice. We qualify the need, present an available option and coordinate access to the property after validation.",
-    "es": "Un viajero quiere una cena privada sin previo aviso. Calificamos la necesidad, presentamos una opción disponible y coordinamos el acceso a la propiedad luego de la validación.",
-    "ru": "Путешественник хочет устроить приватный ужин без предупреждения. Мы уточняем потребность, представляем доступный вариант и координируем доступ к объекту после проверки.",
-    "zh": "一位旅行者想要在没有事先通知的情况下享受一顿私人晚餐。我们会限定需求，提供可用选项，并在验证后协调对房产的访问。"
+  "Un relais évite que tout devienne urgent": {
+    "it": "Un relè impedisce che tutto diventi urgente",
+    "en": "A relay prevents everything from becoming urgent",
+    "es": "Un relevo evita que todo se vuelva urgente",
+    "ru": "Реле не позволяет всему стать срочным",
+    "zh": "中继可以防止一切变得紧急"
   },
-  "Une anomalie est signalée entre deux séjours. AUREVIA qualifie la situation, organise la réponse, sollicite votre validation si nécessaire et suit sa résolution.": {
-    "it": "Viene segnalata un'anomalia tra due soggiorni. AUREVIA qualifica la situazione, organizza la risposta, richiede la Sua validazione se necessario e ne monitora la risoluzione.",
-    "en": "An anomaly is reported between two stays. AUREVIA qualifies the situation, organizes the response, requests your validation if necessary and monitors its resolution.",
-    "es": "Se reporta una anomalía entre dos estancias. AUREVIA califica la situación, organiza la respuesta, solicita su validación si es necesario y supervisa su resolución.",
-    "ru": "Между двумя пребываниями зарегистрирована аномалия. AUREVIA оценивает ситуацию, организует реагирование, при необходимости запрашивает вашу проверку и контролирует ее разрешение.",
-    "zh": "两次入住之间报告了异常情况。 AUREVIA 确定情况、组织响应、在必要时请求您进行验证并监控其解决情况。"
+  "Un service clair, réactif et vraiment présent sur place.": {
+    "it": "Un servizio chiaro, reattivo e realmente sul posto.",
+    "en": "A clear, responsive and truly on-site service.",
+    "es": "Un servicio claro, responsivo y verdaderamente in situ.",
+    "ru": "Понятный, отзывчивый и действительно удобный сервис.",
+    "zh": "清晰、响应迅速且真正的现场服务。"
   },
-  "Une arrivée qui donne immédiatement le ton.": {
-    "it": "Un arrivo che dà immediatamente il tono.",
-    "en": "An arrival that immediately sets the tone.",
-    "es": "Una llegada que inmediatamente marca la pauta.",
-    "ru": "Прибытие, которое сразу задает тон.",
-    "zh": "立即定下基调的到来。"
+  "Un service utile qui renforce l’accueil sans transformer votre bien en offre tout compris.": {
+    "it": "Un servizio utile che rafforza l'accoglienza senza trasformare la tua struttura in un'offerta all-inclusive.",
+    "en": "A useful service which reinforces the welcome without transforming your property into an all-inclusive offer.",
+    "es": "Un servicio útil que refuerza la acogida sin transformar su propiedad en una oferta todo incluido.",
+    "ru": "Полезная услуга, которая усиливает гостеприимство, не превращая ваш объект размещения в предложение «все включено».",
+    "zh": "一项有用的服务，可强化欢迎体验，而无需将您的酒店转变为全包式服务。"
   },
-  "Une arrivée tardive, sans improvisation": {
-    "it": "Un arrivo tardivo, senza improvvisazione",
-    "en": "A late arrival, without improvisation",
-    "es": "Una llegada tardía, sin improvisación",
-    "ru": "Опоздание, без импровизации",
-    "zh": "迟到，没有即兴发挥"
+  "Un seul interlocuteur pour votre bien.": {
+    "it": "Un unico interlocutore a tuo vantaggio.",
+    "en": "A single contact for your benefit.",
+    "es": "Un único contacto para tu beneficio.",
+    "ru": "Один контакт для вашей пользы.",
+    "zh": "单一联系人，为您带来好处。"
   },
-  "Une attention particulière n’a de valeur que si elle paraît simple, naturelle et parfaitement organisée.": {
-    "it": "Un'attenzione particolare ha valore solo se sembra semplice, naturale e perfettamente organizzata.",
-    "en": "Special attention is only valuable if it seems simple, natural and perfectly organized.",
-    "es": "Una atención especial sólo es valiosa si parece sencilla, natural y perfectamente organizada.",
-    "ru": "Особое внимание ценно только в том случае, если оно кажется простым, естественным и идеально организованным.",
-    "zh": "仅当看起来简单、自然且组织完美时，特别关注才有价值。"
+  "Un seul interlocuteur.": {
+    "it": "Un unico contatto.",
+    "en": "A single contact.",
+    "es": "Un solo contacto.",
+    "ru": "Один контакт.",
+    "zh": "单个联系人。"
   },
-  "Une demande particulière, sans dispersion": {
-    "it": "Una richiesta specifica, senza dispersione",
-    "en": "A specific request, without dispersion",
-    "es": "Una petición concreta, sin dispersión",
-    "ru": "Конкретный запрос, без разброса",
-    "zh": "特定请求，无分散"
+  "Une activité autonome et accessible, proposée sans équipement à stocker dans le bien.": {
+    "it": "Attività autonoma ed accessibile, offerta senza attrezzature da depositare nell'immobile.",
+    "en": "An autonomous and accessible activity, offered without equipment to be stored in the property.",
+    "es": "Una actividad autónoma y accesible, ofrecida sin equipo para ser almacenado en la propiedad.",
+    "ru": "Автономное и доступное занятие, предлагаемое без оборудования для хранения на территории.",
+    "zh": "一项自主且可参与的活动，无需在酒店内存放设备。"
   },
-  "Une demande particulière, simplement orchestrée.": {
-    "it": "Una richiesta speciale, semplicemente orchestrata.",
-    "en": "A special request, simply orchestrated.",
-    "es": "Una petición especial, simplemente orquestada.",
-    "ru": "Особый запрос, просто организованный.",
-    "zh": "一个特殊的请求，经过精心策划。"
+  "Une adresse vivante au cœur des caruggi.": {
+    "it": "Un indirizzo vivace nel cuore dei Caruggi.",
+    "en": "A lively address in the heart of the Caruggi.",
+    "es": "Una dirección animada en el corazón de Caruggi.",
+    "ru": "Оживленный адрес в самом сердце Каруджи.",
+    "zh": "位于 Caruggi 中心的热闹地址。"
   },
-  "Une demande, un interlocuteur": {
-    "it": "Una richiesta, un contatto",
-    "en": "One request, one contact",
-    "es": "Una petición, un contacto",
-    "ru": "Один запрос, один контакт",
-    "zh": "一项请求，一项联系"
+  "Une arrivée plus fluide et un service additionnel clairement valorisé.": {
+    "it": "Arrivo più agevole e servizio aggiuntivo chiaramente valutato.",
+    "en": "Smoother arrival and clearly valued additional service.",
+    "es": "Llegada más fluida y servicio adicional claramente valorado.",
+    "ru": "Более плавное прибытие и явно ценные дополнительные услуги.",
+    "zh": "更顺畅的到达和明显有价值的附加服务。"
   },
-  "Une direction claire avant la première action.": {
-    "it": "Chiara direzione prima della prima azione.",
-    "en": "Clear direction before the first action.",
-    "es": "Dirección clara antes de la primera acción.",
-    "ru": "Определите направление перед первым действием.",
-    "zh": "在第一个行动之前明确方向。"
+  "Une attention mémorable, simple à commercialiser sans modifier durablement le bien.": {
+    "it": "Un tocco memorabile, facile da commercializzare senza modificare in modo duraturo la proprietà.",
+    "en": "A memorable touch, easy to market without lastingly modifying the property.",
+    "es": "Un toque memorable, fácil de comercializar sin modificar permanentemente la propiedad.",
+    "ru": "Незабываемый штрих, который легко продать без каких-либо длительных изменений объекта недвижимости.",
+    "zh": "令人难忘的触感，易于营销，无需持久修改财产。"
   },
-  "Une expérience suivie jusqu’au bout": {
-    "it": "Un'esperienza seguita fino alla fine",
-    "en": "An experience followed to the end",
-    "es": "Una experiencia seguida hasta el final",
-    "ru": "Опыт, пройденный до конца",
-    "zh": "持续到底的体验"
+  "Une base calme près des parcs et de la promenade.": {
+    "it": "Una base tranquilla vicino ai parchi e al lungomare.",
+    "en": "A quiet base near parks and the promenade.",
+    "es": "Una base tranquila cerca de parques y del paseo marítimo.",
+    "ru": "Тихая база рядом с парками и набережной.",
+    "zh": "靠近公园和海滨长廊的安静基地。"
   },
-  "Une fuite détectée avant qu’elle ne s’aggrave": {
-    "it": "Una perdita rilevata prima che peggiori",
-    "en": "A leak detected before it gets worse",
-    "es": "Detectada una fuga antes de que empeore",
-    "ru": "Утечка обнаружена до того, как ситуация усугубится",
-    "zh": "在情况变得更糟之前检测到泄漏"
+  "Une conciergerie locale qui gère les locations et suit chaque bien sur place à Genova.": {
+    "it": "Un concierge locale che gestisce gli affitti e monitora ogni proprietà in loco a Genova.",
+    "en": "A local concierge who manages rentals and monitors each property on site in Genova.",
+    "es": "Un conserje local que gestiona los alquileres y supervisa cada propiedad en Génova.",
+    "ru": "Местный консьерж, который управляет арендой и контролирует каждую недвижимость на территории Генуи.",
+    "zh": "当地礼宾人员负责管理租赁并监控热那亚现场的每处房产。"
   },
-  "Une gestion lisible, sans documents dispersés.": {
-    "it": "Gestione leggibile, senza documenti sparsi.",
-    "en": "Readable management, without scattered documents.",
-    "es": "Gestión legible, sin documentos dispersos.",
-    "ru": "Читабельное управление, без разрозненных документов.",
-    "zh": "可读管理，无分散文档。"
+  "Une conversation entre une propriétaire et son interlocutrice Velyo": {
+    "it": "Una conversazione tra un armatore e il suo interlocutore Velyo",
+    "en": "A conversation between an owner and her Velyo interlocutor",
+    "es": "Una conversación entre una propietaria y su interlocutor Velyo",
+    "ru": "Разговор владелицы и ее собеседника Velyo",
+    "zh": "业主和她的 Velyo 对话者之间的对话"
   },
-  "Une histoire de présence, de confiance et de lumière": {
-    "it": "Una storia di presenza, fiducia e luce",
-    "en": "A story of presence, trust and light",
-    "es": "Una historia de presencia, confianza y luz",
-    "ru": "История присутствия, доверия и света",
-    "zh": "存在、信任和光明的故事"
+  "Une découverte locale mieux préparée et une expérience réellement différenciante.": {
+    "it": "Una scoperta locale meglio preparata e un'esperienza davvero differenziante.",
+    "en": "A better prepared local discovery and a truly differentiating experience.",
+    "es": "Un descubrimiento local mejor preparado y una experiencia realmente diferenciadora.",
+    "ru": "Лучше подготовленное местное открытие и по-настоящему уникальный опыт.",
+    "zh": "准备更充分的本地发现和真正与众不同的体验。"
   },
-  "Une information rapide en cas d’écart": {
-    "it": "Informazioni rapide in caso di deviazione",
-    "en": "Rapid information in the event of a deviation",
-    "es": "Información rápida en caso de desviación",
-    "ru": "Быстрая информация в случае отклонения",
-    "zh": "出现偏差时快速提供信息"
+  "Une même personne connaît le bien, coordonne les intervenants et règle les sujets avant qu’ils ne s’accumulent.": {
+    "it": "La stessa persona conosce la proprietà, coordina le parti interessate e risolve i problemi prima che si accumulino.",
+    "en": "The same person knows the property, coordinates the stakeholders and resolves issues before they pile up.",
+    "es": "Una misma persona conoce la propiedad, coordina a los interesados ​​y resuelve los problemas antes de que se acumulen.",
+    "ru": "Один и тот же человек знает объект, координирует действия заинтересованных сторон и решает проблемы до того, как они накопится.",
+    "zh": "同一个人了解财产、协调利益相关者并在问题堆积之前解决问题。"
   },
-  "Une maison prête, un linge impeccable, une lumière allumée au bon moment : notre exigence se niche dans les détails que vous n’aurez jamais à réclamer. Nous contrôlons avant que vous ayez besoin de demander.": {
-    "it": "La casa pronta, il bucato impeccabile, la luce accesa al momento giusto: i nostri standard sono nei dettagli che non dovrà mai chiedere. Controlliamo prima che Lei abbia bisogno di chiedere.",
-    "en": "A house ready, impeccable laundry, a light on at the right time: our standards are in the details that you will never have to ask for. We check before you need to ask.",
-    "es": "Una casa lista, una colada impecable, una luz encendida en el momento justo: nuestros estándares están en los detalles que nunca tendrás que pedir. Lo comprobamos antes de que tengas que preguntar.",
-    "ru": "Готовый дом, безупречная стирка, свет, включенный в нужный момент: наши стандарты заключаются в деталях, о которых вам никогда не придется просить. Мы проверяем, прежде чем вам нужно будет спросить.",
-    "zh": "准备好的房子、无可挑剔的洗衣房、适时开灯：我们的标准体现在您永远不必要求的细节中。在您需要询问之前我们会进行检查。"
+  "Une offre additionnelle plus complète, gérée par Velyo de la demande au suivi.": {
+    "it": "Un'offerta aggiuntiva più completa, gestita da Velyo dalla richiesta al follow-up.",
+    "en": "A more complete additional offer, managed by Velyo from request to follow-up.",
+    "es": "Una oferta adicional más completa, gestionada por Velyo desde la solicitud hasta el seguimiento.",
+    "ru": "Более полное дополнительное предложение, управляемое Velyo от запроса до последующих действий.",
+    "zh": "更完整的附加优惠，由 Velyo 管理从请求到后续的整个过程。"
   },
-  "Une mémoire claire de chaque intervention": {
-    "it": "Un ricordo nitido di ogni intervento",
-    "en": "A clear memory of each intervention",
-    "es": "Un recuerdo claro de cada intervención",
-    "ru": "Четкая память о каждом вмешательстве",
-    "zh": "每次干预的清晰记忆"
+  "Une option émotionnelle accessible qui valorise l’accueil sans surcharger l’offre.": {
+    "it": "Una soluzione emozionale accessibile che valorizza l'accoglienza senza sovraccaricare l'offerta.",
+    "en": "An accessible emotional option that enhances the welcome without overloading the offer.",
+    "es": "Una opción emocional accesible que potencia la acogida sin sobrecargar la oferta.",
+    "ru": "Доступный эмоциональный вариант, который усиливает приветствие, не перегружая предложение.",
+    "zh": "一种平易近人的情感选项，可增强受欢迎程度，同时又不会让优惠超载。"
   },
-  "Une première projection transparente fondée sur la localisation, la capacité, le standing, les équipements et les périodes disponibles.": {
-    "it": "Una prima proiezione trasparente basata su ubicazione, capienza, posizione, attrezzature e periodi disponibili.",
-    "en": "A first transparent projection based on location, capacity, standing, equipment and available periods.",
-    "es": "Una primera proyección transparente en función de ubicación, aforo, situación, equipamiento y periodos de disponibilidad.",
-    "ru": "Первый прозрачный прогноз на основе местоположения, вместимости, статуса, оборудования и доступных периодов.",
-    "zh": "基于位置、容量、地位、设备和可用时间的第一个透明预测。"
+  "Une organisation construite bien par bien pour centraliser plusieurs locations ou intégrer des services voyageurs.": {
+    "it": "Un'organizzazione costruita immobile per immobile per centralizzare diverse sedi o integrare i servizi ai passeggeri.",
+    "en": "An organization built on a property-by-property basis to centralize several locations or integrate passenger services.",
+    "es": "Una organización construida propiedad por propiedad para centralizar varias ubicaciones o integrar servicios de pasajeros.",
+    "ru": "Организация, построенная по принципу «объект за объектом» для централизации нескольких мест или интеграции пассажирских услуг.",
+    "zh": "建立在逐个酒店基础上的组织，用于集中多个地点或整合乘客服务。"
   },
-  "Une préparation contrôlée avant chaque séjour, jusque dans les moindres détails.": {
-    "it": "Preparazione controllata prima di ogni soggiorno, fin nei minimi dettagli.",
-    "en": "Controlled preparation before each stay, down to the smallest detail.",
-    "es": "Preparación controlada antes de cada estancia, cuidando hasta el más mínimo detalle.",
-    "ru": "Контролируемая подготовка перед каждым пребыванием, вплоть до мельчайших деталей.",
-    "zh": "每次入住前的受控准备工作，细致到最小的细节。"
+  "Une personne reste disponible au démarrage": {
+    "it": "Una persona rimane disponibile all'avvio",
+    "en": "One person remains available at startup",
+    "es": "Una persona permanece disponible al inicio",
+    "ru": "Один человек остается доступным при запуске",
+    "zh": "启动时仍有一人可用"
   },
-  "Une qualité d’accueil fidèle à votre bien": {
-    "it": "Una qualità di accoglienza fedele alla Sua struttura",
-    "en": "A quality of welcome faithful to your property",
-    "es": "Una calidad de acogida fiel a su propiedad",
-    "ru": "Качество приветствия, преданное вашей собственности",
-    "zh": "忠实于您的财产的欢迎品质"
+  "Une personne sur place pour gérer la location, suivre le bien et vous tenir informé.": {
+    "it": "Una persona sul posto per gestire l'affitto, monitorare la proprietà e tenerti informato.",
+    "en": "A person on site to manage the rental, monitor the property and keep you informed.",
+    "es": "Una persona en el sitio para gestionar el alquiler, monitorear la propiedad y mantenerlo informado.",
+    "ru": "Человек на месте, который будет управлять арендой, следить за объектом и держать вас в курсе.",
+    "zh": "现场人员负责管理租赁、监控房产并随时向您通报情况。"
   },
-  "Une réponse connue à l’avance": {
-    "it": "Una risposta conosciuta in anticipo",
-    "en": "A response known in advance",
-    "es": "Una respuesta conocida de antemano",
-    "ru": "Ответ известен заранее",
-    "zh": "事先已知的响应"
+  "Une personne vérifie les informations transmises et prépare les premières questions utiles.": {
+    "it": "Una persona verifica le informazioni trasmesse e prepara le prime domande utili.",
+    "en": "A person checks the information transmitted and prepares the first useful questions.",
+    "es": "Una persona comprueba la información transmitida y prepara las primeras preguntas útiles.",
+    "ru": "Человек проверяет передаваемую информацию и готовит первые полезные вопросы.",
+    "zh": "一个人检查传输的信息并准备第一个有用的问题。"
   },
-  "Une stratégie que vous comprenez": {
-    "it": "Una strategia che capisce",
-    "en": "A strategy you understand",
-    "es": "Una estrategia que entiendes",
-    "ru": "Стратегия, которую вы понимаете",
-    "zh": "您了解的策略"
+  "Une petite adresse pratique pour découvrir le bord de mer.": {
+    "it": "Un indirizzo piccolo e pratico per scoprire il mare.",
+    "en": "A small, practical address for discovering the seaside.",
+    "es": "Un establecimiento pequeño y práctico para descubrir el mar.",
+    "ru": "Небольшой практичный адрес для знакомства с морским побережьем.",
+    "zh": "一个探索海边的小而实用的地址。"
   },
-  "Une table intime inspirée par les saveurs de la Ligurie.": {
-    "it": "Una tavola intima ispirata ai sapori della Liguria.",
-    "en": "An intimate table inspired by the flavors of Liguria.",
-    "es": "Una mesa íntima inspirada en los sabores de Liguria.",
-    "ru": "Уютный стол, вдохновленный вкусами Лигурии.",
-    "zh": "一张温馨的餐桌，灵感来自利古里亚风味。"
+  "Une première matinée plus agréable et une option facile à proposer lors de la réservation.": {
+    "it": "Una prima mattinata più piacevole e un'opzione facile da offrire al momento della prenotazione.",
+    "en": "A more pleasant first morning and an easy option to offer when booking.",
+    "es": "Una primera mañana más agradable y una opción fácil de ofrecer al reservar.",
+    "ru": "Более приятное первое утро и простой вариант предложения при бронировании.",
+    "zh": "第一天早晨更加愉快，预订时也可以轻松选择。"
   },
-  "Une trace d’humidité est repérée pendant un contrôle. AUREVIA documente l’anomalie, contacte un professionnel et soumet la solution proposée.": {
-    "it": "Durante un controllo viene rilevata una traccia di umidità. AUREVIA documenta l'anomalia, contatta un professionista e sottopone la proposta di soluzione.",
-    "en": "A trace of humidity is spotted during a check. AUREVIA documents the anomaly, contacts a professional and submits the proposed solution.",
-    "es": "Durante un control se detecta un rastro de humedad. AUREVIA documenta la anomalía, contacta con un profesional y le presenta la propuesta de solución.",
-    "ru": "Во время проверки обнаружены следы влажности. AUREVIA документирует аномалию, связывается со специалистом и представляет предлагаемое решение.",
-    "zh": "检查过程中发现潮湿痕迹。 AUREVIA 记录异常情况，联系专业人员并提交建议的解决方案。"
+  "Une préparation personnalisée pour célébrer une occasion ou créer une arrivée différente.": {
+    "it": "Una preparazione personalizzata per festeggiare un'occasione o creare un arrivo diverso.",
+    "en": "A personalized preparation to celebrate an occasion or create a different arrival.",
+    "es": "Una preparación personalizada para celebrar una ocasión o crear una llegada diferente.",
+    "ru": "Персонализированная подготовка к празднованию какого-либо события или необычному прибытию.",
+    "zh": "为庆祝某个场合或创造不同的到来而进行的个性化准备。"
   },
-  "Une vision claire, sans surcharge": {
-    "it": "Visione chiara, senza sovraccarico",
-    "en": "Clear vision, without overload",
-    "es": "Visión clara, sin sobrecarga",
-    "ru": "Четкое зрение без перегрузки",
-    "zh": "视野清晰，无过载"
+  "Une prestation de bien-être simple à proposer, sans organisation supplémentaire pour vous.": {
+    "it": "Un servizio benessere semplice da offrire, senza alcuna organizzazione aggiuntiva per te.",
+    "en": "A well-being service that is simple to offer, without any additional organization for you.",
+    "es": "Un servicio de bienestar sencillo de ofrecer, sin ninguna organización adicional para ti.",
+    "ru": "Услуга оздоровления, которую легко предложить, без какой-либо дополнительной организации для вас.",
+    "zh": "提供简单的健康服务，无需任何额外的组织。"
   },
-  "Urgences prises en charge selon la disponibilité des artisans": {
-    "it": "Emergenze gestite secondo la disponibilità degli artigiani",
-    "en": "Emergencies handled according to the availability of craftsmen",
-    "es": "Emergencias atendidas según disponibilidad de artesanos",
-    "ru": "Чрезвычайные ситуации решаются в зависимости от наличия мастеров.",
-    "zh": "根据工匠的可用性处理紧急情况"
+  "Une propriétaire échange simplement avec son interlocutrice Velyo": {
+    "it": "Un proprietario comunica semplicemente con il suo contatto Velyo",
+    "en": "An owner simply communicates with her Velyo contact",
+    "es": "Un propietario simplemente se comunica con su contacto Velyo",
+    "ru": "Владелец просто общается со своим контактом в Velyo.",
+    "zh": "所有者只需与她的 Velyo 联系人进行沟通"
   },
-  "Valider et réserver": {
-    "it": "Convalida e prenota",
-    "en": "Validate and reserve",
-    "es": "Validar y reservar",
-    "ru": "Подтвердить и зарезервировать",
-    "zh": "验证并预订"
+  "Une question ou un bien à confier": {
+    "it": "Una domanda o un bene da affidare",
+    "en": "A question or a good to entrust",
+    "es": "Una pregunta o un bien para confiar",
+    "ru": "Вопрос или товар, который можно доверить",
+    "zh": "一个问题或委托的物品"
+  },
+  "Une sélection simple de produits frais attend les voyageurs pour leur premier matin à Genova.": {
+    "it": "Una semplice selezione di prodotti freschi attende i viaggiatori per la loro prima mattinata a Genova.",
+    "en": "A simple selection of fresh produce awaits travelers for their first morning in Genova.",
+    "es": "Una sencilla selección de productos frescos espera a los viajeros en su primera mañana en Génova.",
+    "ru": "В первое утро в Генуе путешественников ждет простой выбор свежих продуктов.",
+    "zh": "一系列简单的新鲜农产品等待着旅客在热那亚的第一个早晨。"
+  },
+  "Une valeur partagée, simplement": {
+    "it": "Un valore condiviso, semplicemente",
+    "en": "A shared value, simply",
+    "es": "Un valor compartido, simplemente",
+    "ru": "Общая ценность, просто",
+    "zh": "共享价值，简单地说"
+  },
+  "Une vérification, une intervention ou une nouvelle importante ne reste jamais sans suite.": {
+    "it": "Una verifica, un intervento o una notizia importante non restano mai senza risposta.",
+    "en": "An audit, an intervention or important news never goes unanswered.",
+    "es": "Una auditoría, una intervención o una noticia importante nunca queda sin respuesta.",
+    "ru": "Аудит, вмешательство или важные новости никогда не остаются без ответа.",
+    "zh": "审计、干预或重要新闻永远不会得不到答复。"
+  },
+  "Une visite privée ou en petit groupe, construite selon le quartier, la durée et les centres d’intérêt.": {
+    "it": "Una visita privata o per piccoli gruppi, pensata in base al quartiere, alla durata e ai centri di interesse.",
+    "en": "A private or small group visit, designed according to the neighborhood, duration and centers of interest.",
+    "es": "Una visita privada o en grupos reducidos, diseñada según el barrio, duración y centros de interés.",
+    "ru": "Частный визит или посещение небольшой группы, разработанное в зависимости от района, продолжительности и центров интересов.",
+    "zh": "私人或小团体参观，根据社区、持续时间和兴趣中心设计。"
+  },
+  "Velyo intervient à Genova et étudie les demandes dans les zones proches selon l’accès, le type de bien et le niveau de service attendu.": {
+    "it": "Velyo opera a Genova e studia le richieste nelle zone limitrofe in base all'accesso, alla tipologia dell'immobile e al livello di servizio atteso.",
+    "en": "Velyo operates in Genova and studies requests in nearby areas according to access, type of property and expected level of service.",
+    "es": "Velyo opera en Génova y estudia las solicitudes en zonas cercanas según el acceso, el tipo de propiedad y el nivel de servicio esperado.",
+    "ru": "Velyo работает в Генуе и изучает запросы в близлежащих районах в зависимости от доступа, типа недвижимости и ожидаемого уровня обслуживания.",
+    "zh": "Velyo 在热那亚运营，根据通道、财产类型和预期服务水平研究附近地区的请求。"
+  },
+  "Velyo met le bien en location, suit les réservations et coordonne les séjours de bout en bout.": {
+    "it": "Velyo affitta l'immobile, monitora le prenotazioni e coordina i soggiorni dall'inizio alla fine.",
+    "en": "Velyo rents the property, monitors reservations and coordinates stays from start to finish.",
+    "es": "Velyo alquila la propiedad, monitoriza las reservas y coordina las estancias de principio a fin.",
+    "ru": "Velyo арендует недвижимость, контролирует бронирование и координирует проживание от начала до конца.",
+    "zh": "Velyo 出租房产、监控预订并自始至终协调住宿。"
+  },
+  "Velyo ne remplace ni une assurance ni un service d’urgence": {
+    "it": "Velyo non sostituisce l'assicurazione o il servizio di emergenza",
+    "en": "Velyo does not replace insurance or emergency service",
+    "es": "Velyo no sustituye al seguro ni al servicio de urgencias",
+    "ru": "Velyo не заменяет страховку или экстренную помощь.",
+    "zh": "Velyo 不会取代保险或紧急服务"
+  },
+  "Velyo prend soin de votre bien, accueille vos voyageurs et coordonne chaque détail à Genova.": {
+    "it": "Velyo si prende cura della tua struttura, accoglie i tuoi viaggiatori e coordina ogni dettaglio a Genova.",
+    "en": "Velyo takes care of your property, welcomes your travelers and coordinates every detail in Genova.",
+    "es": "Velyo se ocupa de su propiedad, da la bienvenida a sus viajeros y coordina cada detalle en Génova.",
+    "ru": "Velyo заботится о вашей собственности, приветствует ваших путешественников и согласовывает каждую деталь в Генуе.",
+    "zh": "Velyo 负责照顾您的财产、欢迎您的旅客并协调热那亚的每一个细节。"
+  },
+  "Velyo Property Manager | Gestion locative à Genova": {
+    "it": "Gestore proprietà Velyo | Gestione degli affitti a Genova",
+    "en": "Velyo Property Manager | Rental management in Genova",
+    "es": "Administrador de propiedades Velyo | Gestión de alquileres en Génova",
+    "ru": "Управляющий недвижимостью Velyo | Управление арендой в Генуе",
+    "zh": "Velyo 物业经理 |热那亚的租赁管理"
+  },
+  "Velyo Property Manager à Genova": {
+    "it": "Velyo Property Manager a Genova",
+    "en": "Velyo Property Manager in Genova",
+    "es": "Velyo Administrador de propiedades en Génova",
+    "ru": "Управляющий недвижимостью Velyo в Генуе",
+    "zh": "热那亚的 Velyo 物业经理"
+  },
+  "Velyo qualifie la situation, recherche l’intervenant adapté, présente les éléments utiles et suit l’action sur place.": {
+    "it": "Velyo qualifica la situazione, cerca il soccorritore appropriato, presenta gli elementi utili e monitora l'azione sul posto.",
+    "en": "Velyo qualifies the situation, searches for the appropriate responder, presents the useful elements and monitors the action on site.",
+    "es": "Velyo califica la situación, busca al interviniente adecuado, presenta los elementos útiles y monitorea la acción en el sitio.",
+    "ru": "Velyo уточняет ситуацию, ищет подходящего ответчика, представляет полезные элементы и отслеживает действия на месте.",
+    "zh": "Velyo 确定情况、寻找合适的响应者、呈现有用的元素并监控现场操作。"
+  },
+  "Velyo recherche une personne adaptée au service demandé et au niveau d’attention attendu.": {
+    "it": "Velyo ricerca una persona adatta al servizio richiesto e al livello di attenzione previsto.",
+    "en": "Velyo is looking for a person suited to the service requested and the level of attention expected.",
+    "es": "Velyo busca una persona adecuada al servicio solicitado y al nivel de atención esperado.",
+    "ru": "Velyo ищет человека, соответствующего запрашиваемой услуге и ожидаемому уровню внимания.",
+    "zh": "Velyo 正在寻找适合所请求服务和预期关注程度的人员。"
+  },
+  "Velyo reste le point de contact jusqu’à la réalisation et recherche une alternative si un imprévu survient.": {
+    "it": "Velyo rimane il punto di contatto fino al completamento e cerca un'alternativa se si verifica un evento imprevisto.",
+    "en": "Velyo remains the point of contact until completion and seeks an alternative if an unforeseen event arises.",
+    "es": "Velyo sigue siendo el punto de contacto hasta su finalización y busca una alternativa si surge un imprevisto.",
+    "ru": "Вельо остается точкой соприкосновения до завершения и ищет альтернативу в случае возникновения непредвиденного события.",
+    "zh": "Velyo 在完成之前仍然是联络点，并在发生意外事件时寻求替代方案。"
+  },
+  "Velyo suit l’artisan jusqu’à la résolution": {
+    "it": "Velyo segue l'artigiano fino alla delibera",
+    "en": "Velyo follows the craftsman until the resolution",
+    "es": "Velyo sigue al artesano hasta la resolución",
+    "ru": "Вельо следует за мастером до разрешения",
+    "zh": "Velyo 跟随工匠直到决议"
+  },
+  "Velyo suit le calendrier, les réservations, les voyageurs et les intervenants depuis Genova.": {
+    "it": "Velyo tiene traccia del calendario, delle prenotazioni, dei viaggiatori e dei relatori di Genova.",
+    "en": "Velyo tracks the calendar, reservations, travelers and speakers from Genova.",
+    "es": "Velyo realiza un seguimiento del calendario, las reservas, los viajeros y los ponentes de Génova.",
+    "ru": "Velyo отслеживает календарь, бронирование, путешественников и докладчиков из Генуи.",
+    "zh": "Velyo 跟踪来自热那亚的日历、预订、旅行者和演讲者。"
+  },
+  "Velyo suit les réservations, fait avancer les demandes et garde une vue d’ensemble sur le bien.": {
+    "it": "Velyo tiene traccia delle prenotazioni, anticipa le richieste e mantiene una panoramica della proprietà.",
+    "en": "Velyo tracks reservations, advances requests and keeps an overview of the property.",
+    "es": "Velyo rastrea las reservas, adelanta las solicitudes y mantiene una descripción general de la propiedad.",
+    "ru": "Velyo отслеживает бронирования, отправляет запросы и сохраняет обзор объекта.",
+    "zh": "Velyo 跟踪预订、提前请求并掌握酒店概况。"
   },
   "Vérification après chaque séjour": {
-    "it": "Verifichi dopo ogni soggiorno",
+    "it": "Verifica dopo ogni soggiorno",
     "en": "Verification after each stay",
     "es": "Verificación después de cada estancia",
     "ru": "Проверка после каждого пребывания",
     "zh": "每次入住后进行验证"
   },
-  "Vérification des disponibilités et des délais": {
-    "it": "Verifica disponibilità e scadenze",
-    "en": "Checking availability and deadlines",
-    "es": "Consultando disponibilidad y plazos",
-    "ru": "Проверка наличия и сроков",
-    "zh": "检查可用性和截止日期"
+  "Vérifier la faisabilité": {
+    "it": "Verifica la fattibilità",
+    "en": "Check feasibility",
+    "es": "Comprobar viabilidad",
+    "ru": "Проверить осуществимость",
+    "zh": "检查可行性"
   },
-  "Vols privés, coordination des créneaux, transferts aéroport et assistance bagages selon votre itinéraire.": {
-    "it": "Voli privati, coordinamento slot, trasferimenti aeroportuali e assistenza bagagli in base al Suo itinerario.",
-    "en": "Private flights, slot coordination, airport transfers and baggage assistance according to your itinerary.",
-    "es": "Vuelos privados, coordinación de slots, traslados al aeropuerto y asistencia de equipaje según su itinerario.",
-    "ru": "Частные рейсы, координация слотов, трансфер из аэропорта и помощь с багажом в соответствии с вашим маршрутом.",
-    "zh": "根据您的行程提供私人航班、航班时刻协调、机场接送和行李协助。"
+  "Visite complète": {
+    "it": "Visita completa",
+    "en": "Complete visit",
+    "es": "Visita completa",
+    "ru": "Завершить посещение",
+    "zh": "完整访问"
   },
-  "Vos préférences de confidentialité": {
-    "it": "Le Sue preferenze sulla privacy",
-    "en": "Your privacy preferences",
-    "es": "Tus preferencias de privacidad",
-    "ru": "Ваши настройки конфиденциальности",
-    "zh": "您的隐私偏好设置"
+  "Visite et prise en main du bien": {
+    "it": "Visita e gestione dell'immobile",
+    "en": "Visit and handling of the property",
+    "es": "Visita y manejo del inmueble",
+    "ru": "Посещение и обслуживание объекта",
+    "zh": "参观和处理该财产"
   },
-  "Votre accompagnement peut maintenant commencer.": {
-    "it": "Il Suo supporto ora può iniziare.",
-    "en": "Your support can now begin.",
-    "es": "Su soporte ahora puede comenzar.",
-    "ru": "Теперь ваша поддержка может начаться.",
-    "zh": "您的支持现在可以开始了。"
+  "Vos périodes restent prioritaires": {
+    "it": "I tuoi periodi rimangono prioritari",
+    "en": "Your periods remain priority",
+    "es": "Tus períodos siguen siendo prioridad",
+    "ru": "Месячные остаются в приоритете",
+    "zh": "您的经期仍然优先"
   },
-  "Votre bien est entouré comme s’il était le nôtre.": {
-    "it": "La Sua proprietà è circondata come se fosse la nostra.",
-    "en": "Your property is surrounded as if it were ours.",
-    "es": "Su propiedad está rodeada como si fuera nuestra.",
-    "ru": "Ваша собственность окружена так, как будто она наша.",
-    "zh": "您的财产就像我们的财产一样被包围。"
+  "Vos périodes, votre budget et les décisions qui demandent toujours votre accord.": {
+    "it": "I tuoi periodi, il tuo budget e le decisioni che richiedono sempre il tuo consenso.",
+    "en": "Your periods, your budget and the decisions that always require your agreement.",
+    "es": "Tus periodos, tu presupuesto y las decisiones que siempre requieren de tu acuerdo.",
+    "ru": "Ваши месячные, ваш бюджет и решения, которые всегда требуют вашего согласия.",
+    "zh": "您的经期、预算以及始终需要您同意的决定。"
   },
-  "Votre bien ne sera jamais un dossier parmi d’autres.": {
-    "it": "La Sua proprietà non sarà mai solo un file tra gli altri.",
-    "en": "Your property will never be just one file among others.",
-    "es": "Tu propiedad nunca será un archivo más entre otros.",
-    "ru": "Ваша собственность никогда не будет просто одним файлом среди других.",
-    "zh": "您的财产永远不会只是众多文件中的一个。"
+  "Votre accord est nécessaire pour être recontacté.": {
+    "it": "È necessario il tuo consenso per essere ricontattati.",
+    "en": "Your agreement is necessary to be contacted again.",
+    "es": "Es necesario su acuerdo para ser contactado nuevamente.",
+    "ru": "Для повторного обращения необходимо ваше согласие.",
+    "zh": "需要再次联系您同意。"
   },
-  "Votre bien reste suivi, sans devenir une préoccupation.": {
-    "it": "La Sua proprietà resta monitorata, senza diventare una preoccupazione.",
-    "en": "Your property remains monitored, without becoming a concern.",
-    "es": "Su propiedad permanece monitoreada, sin convertirse en una preocupación.",
-    "ru": "Ваша собственность остается под наблюдением и не вызывает беспокойства.",
-    "zh": "您的财产仍受到监控，不会成为问题。"
+  "Votre accord reste la règle": {
+    "it": "Il tuo accordo rimane la regola",
+    "en": "Your agreement remains the rule",
+    "es": "Tu acuerdo sigue siendo la regla",
+    "ru": "Ваше согласие остаётся правилом",
+    "zh": "您的同意仍然是规则"
   },
-  "Votre bien suivi, sans avoir à tout suivre.": {
-    "it": "Il Suo immobile monitorato, senza dover tracciare tutto.",
-    "en": "Your property tracked, without having to track everything.",
-    "es": "Seguimiento de su propiedad, sin tener que realizar un seguimiento de todo.",
-    "ru": "Ваша собственность отслеживается, без необходимости отслеживать все.",
-    "zh": "您的财产已被跟踪，而无需跟踪所有内容。"
+  "Votre accord seulement quand il compte": {
+    "it": "Il tuo accordo solo quando conta",
+    "en": "Your agreement only when it counts",
+    "es": "Tu acuerdo solo cuando cuenta",
+    "ru": "Ваше согласие только тогда, когда оно имеет значение",
+    "zh": "仅在重要时您才同意"
   },
-  "Votre décision reste souveraine. La pression disparaît.": {
-    "it": "La ​​Sua decisione rimane sovrana. La pressione scompare.",
-    "en": "Your decision remains sovereign. The pressure disappears.",
-    "es": "Tu decisión sigue siendo soberana. La presión desaparece.",
-    "ru": "Ваше решение остается независимым. Давление исчезает.",
-    "zh": "您的决定仍然具有主权。压力消失。"
+  "Votre besoin": {
+    "it": "La tua esigenza",
+    "en": "Your need",
+    "es": "Tu necesidad",
+    "ru": "Ваша потребность",
+    "zh": "您的需求"
   },
-  "Votre propriété bénéficie d’une attention exclusive : un interlocuteur dédié orchestre sa valorisation, son exploitation et chaque détail de son quotidien.": {
-    "it": "Il Suo immobile beneficia di attenzioni esclusive: un referente dedicato ne orchestra la valutazione, il funzionamento e ogni dettaglio della sua vita quotidiana.",
-    "en": "Your property benefits from exclusive attention: a dedicated contact orchestrates its valuation, its operation and every detail of its daily life.",
-    "es": "Su propiedad se beneficia de una atención exclusiva: un contacto dedicado organiza su valoración, su funcionamiento y cada detalle de su vida diaria.",
-    "ru": "Ваша собственность пользуется исключительным вниманием: ее оценку, эксплуатацию и каждую деталь повседневной жизни организует специальный контакт.",
-    "zh": "您的房产受益于独家关注：专门的联系人负责协调其估值、运营及其日常生活的每一个细节。"
+  "Votre bien reste suivi.": {
+    "it": "La tua proprietà rimane monitorata.",
+    "en": "Your property remains monitored.",
+    "es": "Su propiedad permanece monitoreada.",
+    "ru": "Ваша собственность остается под наблюдением.",
+    "zh": "您的财产仍受到监控。"
   },
-  "Votre propriété pilotée avec méthode, même à distance": {
-    "it": "Il Suo immobile gestito con metodo, anche da remoto",
-    "en": "Your property managed methodically, even remotely",
-    "es": "Su propiedad gestionada metódicamente, incluso de forma remota",
-    "ru": "Ваша собственность управляется методично, даже удаленно",
-    "zh": "您的财产管理有条不紊，甚至可以远程管理"
+  "Votre bien, bien géré. Vos voyageurs, bien accueillis.": {
+    "it": "La tua proprietà, ben gestita. I vostri viaggiatori, ben accolti.",
+    "en": "Your property, well managed. Your travelers, well received.",
+    "es": "Su propiedad, bien administrada. Sus viajeros, bien recibidos.",
+    "ru": "Ваша собственность в хорошем управлении. Ваши путешественники, хорошо приняты.",
+    "zh": "您的财产，管理良好。您的旅客，深受好评。"
   },
-  "Votre tranquillité, concrètement": {
-    "it": "La Sua tranquillità, concretamente",
-    "en": "Your peace of mind, concretely",
-    "es": "Tu tranquilidad, concretamente",
-    "ru": "Ваше спокойствие, конкретно",
-    "zh": "具体而言，您安心无忧"
+  "Votre interlocuteur connaît Genova, les accès du bien et les personnes utiles au quotidien.": {
+    "it": "Il tuo contatto conosce Genova, l'accesso all'immobile e le persone utili quotidianamente.",
+    "en": "Your contact knows Genova, the access to the property and the people useful on a daily basis.",
+    "es": "Su contacto conoce Génova, el acceso a la propiedad y las personas útiles en el día a día.",
+    "ru": "Ваш контакт знает Геную, доступ к собственности и людей, полезных ежедневно.",
+    "zh": "您的联系人了解热那亚、该物业的出入口以及每天提供帮助的人员。"
   },
-  "Votre vie privée reste exactement là où elle doit être : chez vous.": {
-    "it": "La Sua privacy rimane esattamente al posto a cui appartiene: a casa.",
-    "en": "Your privacy remains exactly where it belongs: at home.",
-    "es": "Tu privacidad permanece exactamente donde pertenece: en casa.",
-    "ru": "Ваша конфиденциальность остается там, где ей и место: дома.",
-    "zh": "您的隐私仍然保留在它所属的地方：家里。"
+  "Votre nom": {
+    "it": "Il tuo nome",
+    "en": "Your name",
+    "es": "Tu nombre",
+    "ru": "Ваше имя",
+    "zh": "你的名字"
   },
-  "Vous arrivez. Tout est à sa place.": {
-    "it": "Stai arrivando. Tutto è al suo posto.",
-    "en": "You are arriving. Everything is in its place.",
-    "es": "Estás llegando. Todo está en su lugar.",
-    "ru": "Вы прибываете. Все на своем месте.",
-    "zh": "您即将到达。一切都各就其位。"
+  "Votre potentiel locatif": {
+    "it": "Il tuo potenziale di noleggio",
+    "en": "Your rental potential",
+    "es": "Su potencial de alquiler",
+    "ru": "Ваш потенциал аренды",
+    "zh": "您的出租潜力"
   },
-  "Vous avez les faits, pas l’urgence.": {
-    "it": "Ha i fatti, non l'urgenza.",
-    "en": "You have the facts, not the urgency.",
-    "es": "Tienes los hechos, no la urgencia.",
-    "ru": "У вас есть факты, а не срочность.",
-    "zh": "你掌握的是事实，而不是紧迫性。"
+  "Votre prénom": {
+    "it": "Il tuo nome",
+    "en": "Your first name",
+    "es": "Tu nombre",
+    "ru": "Ваше имя",
+    "zh": "你的名字"
   },
-  "Vous devez pouvoir comprendre la vie de votre bien sans rechercher une information dans des dizaines de messages.": {
-    "it": "Deve riuscire a capire la vita del Suo immobile senza cercare informazioni in decine di messaggi.",
-    "en": "You must be able to understand the life of your property without searching for information in dozens of messages.",
-    "es": "Debes poder entender la vida de tu propiedad sin buscar información en decenas de mensajes.",
-    "ru": "Вы должны уметь разбираться в жизни вашего объекта, не ища информацию в десятках сообщений.",
-    "zh": "您必须能够了解您的财产的寿命，而无需在数十条消息中搜索信息。"
+  "Votre prix, votre disponibilité et la façon dont elle est gérée aujourd’hui.": {
+    "it": "Il tuo prezzo, la tua disponibilità e come viene gestito oggi.",
+    "en": "Your price, your availability and how it is managed today.",
+    "es": "Tu precio, tu disponibilidad y cómo se gestiona hoy.",
+    "ru": "Ваша цена, ваша доступность и способы управления ею сегодня.",
+    "zh": "您的价格、可用性以及今天的管理方式。"
   },
-  "Vous êtes compris sans devoir tout réexpliquer.": {
-    "it": "È capito senza dover spiegare tutto di nuovo.",
-    "en": "You are understood without having to explain everything again.",
-    "es": "Se te entiende sin tener que volver a explicarlo todo.",
-    "ru": "Вас поймут без необходимости объяснять все заново.",
-    "zh": "您无需再次解释一切即可理解。"
+  "Votre projet": {
+    "it": "Il tuo progetto",
+    "en": "Your project",
+    "es": "Tu proyecto",
+    "ru": "Ваш проект",
+    "zh": "您的项目"
   },
-  "Vous êtes revenu chez vous.": {
-    "it": "È tornato a casa.",
-    "en": "You have returned home.",
-    "es": "Has vuelto a casa.",
-    "ru": "Вы вернулись домой.",
-    "zh": "您已回家。"
+  "Vous décidez sans rechercher ni relancer les prestataires.": {
+    "it": "Decidi tu senza cercare o contattare i fornitori di servizi.",
+    "en": "You decide without searching or contacting service providers.",
+    "es": "Tú decides sin buscar ni contactar proveedores de servicios.",
+    "ru": "Вы решаете, не ища и не обращаясь к поставщикам услуг.",
+    "zh": "您无需搜索或联系服务提供商即可做出决定。"
   },
-  "Vous gardez la main sur les décisions qui comptent. Nous prenons en charge le quotidien, les échanges et les imprévus, avec la même attention que si vous étiez sur place.": {
-    "it": "Mantiene il controllo delle decisioni che contano. Ci prendiamo cura della quotidianità, degli scambi e degli imprevisti, con la stessa attenzione come se fosse sul posto.",
-    "en": "You keep control of the decisions that matter. We take care of everyday life, exchanges and unforeseen events, with the same attention as if you were on site.",
-    "es": "Mantienes el control de las decisiones que importan. Nos ocupamos del día a día, de los intercambios y de los imprevistos, con la misma atención que si estuvieras in situ.",
-    "ru": "Вы сохраняете контроль над важными решениями. Мы позаботимся о повседневной жизни, обменах и непредвиденных событиях с таким же вниманием, как если бы вы были на месте.",
-    "zh": "您可以掌控重要的决策。我们像您在现场一样关注日常生活、交流和不可预见的事件。"
+  "Vous gardez la visibilité sans reprendre l’exploitation.": {
+    "it": "Mantieni la visibilità senza riprendere l'operazione.",
+    "en": "You maintain visibility without resuming operation.",
+    "es": "Mantienes visibilidad sin reanudar operación.",
+    "ru": "Вы сохраняете видимость, не возобновляя работу.",
+    "zh": "您无需恢复操作即可保持可见性。"
   },
-  "Vous gardez la maîtrise, sans porter la gestion.": {
-    "it": "Mantiene il controllo, senza essere al comando.",
-    "en": "You maintain control, without being in charge.",
-    "es": "Mantienes el control, sin estar a cargo.",
-    "ru": "Вы сохраняете контроль, но не берете на себя ответственность.",
-    "zh": "您保持控制，但不负责。"
+  "Vous gardez le dernier mot.": {
+    "it": "Mantieni l'ultima parola.",
+    "en": "You keep the last word.",
+    "es": "Tú guardas la última palabra.",
+    "ru": "Последнее слово остаётся за вами.",
+    "zh": "你保留最后的发言权。"
   },
-  "Vous gardez la maîtrise. Nous portons le quotidien.": {
-    "it": "Mantiene il controllo. Portiamo la vita di tutti i giorni.",
-    "en": "You remain in control. We carry everyday life.",
-    "es": "Tú mantienes el control. Llevamos la vida cotidiana.",
-    "ru": "Вы сохраняете контроль. Мы несем повседневную жизнь.",
-    "zh": "您仍然掌控一切。我们承载日常生活。"
+  "Vous gardez les choix importants, sans devoir porter les messages, les relances et l’organisation de chaque séjour.": {
+    "it": "Mantieni le scelte importanti, senza dover portare con te messaggi, promemoria e l'organizzazione di ogni soggiorno.",
+    "en": "You keep the important choices, without having to carry messages, reminders and the organization of each stay.",
+    "es": "Mantienes las decisiones importantes, sin tener que llevar mensajes, recordatorios y la organización de cada estancia.",
+    "ru": "Вы сохраняете важные решения, без необходимости носить с собой сообщения, напоминания и организацию каждого пребывания.",
+    "zh": "您可以保留重要的选择，而无需携带消息、提醒和每次住宿的组织。"
   },
-  "Vous n’avez pas besoin de tout suivre pour tout savoir.": {
-    "it": "Non è necessario seguire tutto per sapere tutto.",
-    "en": "You don't need to follow everything to know everything.",
-    "es": "No necesitas seguirlo todo para saberlo todo.",
-    "ru": "Не обязательно следить за всем, чтобы все знать.",
-    "zh": "您无需遵循所有内容即可了解所有内容。"
+  "Vous ne portez plus chaque demande ni chaque relance.": {
+    "it": "Non porti più con te ogni richiesta o ogni promemoria.",
+    "en": "You no longer carry each request or each reminder.",
+    "es": "Ya no llevas cada solicitud ni cada recordatorio.",
+    "ru": "Вы больше не несете в себе каждый запрос или каждое напоминание.",
+    "zh": "您不再携带每个请求或每个提醒。"
   },
-  "Vous n’avez plus à rester disponible.": {
-    "it": "Non è più obbligato a rimanere disponibile.",
-    "en": "You no longer have to remain available.",
-    "es": "Ya no tienes que permanecer disponible.",
-    "ru": "Вам больше не обязательно оставаться на связи.",
-    "zh": "您不必再保持空闲状态。"
+  "Vous restez propriétaire, pas gestionnaire": {
+    "it": "Rimani il proprietario, non il gestore",
+    "en": "You remain the owner, not the manager",
+    "es": "Sigues siendo el propietario, no el administrador",
+    "ru": "Вы остаетесь владельцем, а не менеджером",
+    "zh": "您仍然是所有者，而不是经理"
   },
-  "Vous ne devriez pas avoir à vérifier.": {
-    "it": "Non dovrebbe controllare.",
-    "en": "You shouldn't have to check.",
-    "es": "No deberías tener que comprobarlo.",
-    "ru": "Вам не обязательно проверять.",
-    "zh": "您不必检查。"
+  "Vous savez ce qui a changé et quelle action est prévue.": {
+    "it": "Sai cosa è cambiato e quali azioni sono previste.",
+    "en": "You know what has changed and what action is planned.",
+    "es": "Sabes qué ha cambiado y qué acción está prevista.",
+    "ru": "Вы знаете, что изменилось и какое действие планируется.",
+    "zh": "您知道发生了什么变化以及计划采取什么行动。"
   },
-  "Vous nous confiez plus qu’une adresse.": {
-    "it": "Lei ci affida più di un indirizzo.",
-    "en": "You entrust us with more than an address.",
-    "es": "Nos confías más que una dirección.",
-    "ru": "Вы доверяете нам больше, чем просто адрес.",
-    "zh": "您委托给我们的不仅仅是一个地址。"
+  "Vous savez ce qui est pris en charge, ce qui a été fait et quand votre accord est nécessaire.": {
+    "it": "Sai cosa è coperto, cosa è stato fatto e quando è necessario il tuo accordo.",
+    "en": "You know what is covered, what has been done and when your agreement is necessary.",
+    "es": "Sabes qué está cubierto, qué se ha hecho y cuándo es necesario tu acuerdo.",
+    "ru": "Вы знаете, что покрывается, что было сделано и когда необходимо ваше согласие.",
+    "zh": "您知道所涵盖的内容、已完成的操作以及何时需要您的同意。"
   },
-  "Vous nous confiez une envie ou un besoin. Nous trouvons la réponse juste, vous la présentons clairement et veillons à sa réalisation.": {
-    "it": "Lei ci affida un desiderio o un bisogno. Troviamo la risposta giusta, Gliela presentiamo chiaramente e ci assicuriamo che venga raggiunta.",
-    "en": "You entrust us with a desire or a need. We find the right answer, present it clearly to you and ensure it is achieved.",
-    "es": "Nos confías un deseo o una necesidad. Encontramos la respuesta correcta, se la presentamos claramente y nos aseguramos de que se logre.",
-    "ru": "Вы доверяете нам свое желание или потребность. Мы находим правильный ответ, ясно представляем его вам и обеспечиваем его достижение.",
-    "zh": "您将愿望或需求托付给我们。我们找到正确的答案，将其清楚地呈现给您并确保实现。"
+  "Vous savez où en est le bien.": {
+    "it": "Sai dov'è il bello.",
+    "en": "You know where the good is.",
+    "es": "Sabes dónde está lo bueno.",
+    "ru": "Ты знаешь, где хорошее.",
+    "zh": "你知道好处在哪里。"
   },
-  "Vous partez. Votre tranquillité reste intacte.": {
-    "it": "Se ne sta andando. La Sua tranquillità rimane intatta.",
-    "en": "You are leaving. Your peace of mind remains intact.",
-    "es": "Te vas. Tu tranquilidad permanece intacta.",
-    "ru": "Вы уходите. Ваше душевное спокойствие остается неизменным.",
-    "zh": "你要离开。您内心的平静依然完好无损。"
+  "Vous validez le devis si nécessaire": {
+    "it": "Convalida il preventivo se necessario",
+    "en": "You validate the quote if necessary",
+    "es": "Validas la cotización si es necesario",
+    "ru": "При необходимости вы подтверждаете цитату.",
+    "zh": "如有必要，您验证报价"
   },
-  "Vous recevez une information claire et le bien reste prêt, sans avoir à coordonner plusieurs personnes.": {
-    "it": "Riceve informazioni chiare e l'immobile rimane pronto, senza dover coordinare più persone.",
-    "en": "You receive clear information and the property remains ready, without having to coordinate several people.",
-    "es": "Recibes información clara y el inmueble queda listo, sin necesidad de coordinar varias personas.",
-    "ru": "Вы получаете четкую информацию, и объект остается готовым, без необходимости координации нескольких человек.",
-    "zh": "您会收到明确的信息，并且财产保持就绪状态，而无需协调多个人。"
+  "Vous voyez pourquoi les prix changent et ce qu’ils apportent.": {
+    "it": "Capisci perché i prezzi cambiano e cosa comportano.",
+    "en": "You see why prices change and what they bring.",
+    "es": "Ves por qué cambian los precios y qué aportan.",
+    "ru": "Вы видите, почему меняются цены и что они приносят.",
+    "zh": "您会了解价格变化的原因及其带来的影响。"
   },
-  "Vous retrouvez l’essentiel de la vie de votre bien dans une lecture simple : ce qui a été fait, ce qui mérite votre attention et ce qui vient ensuite.": {
-    "it": "Troverà in una semplice lettura gli elementi essenziali della vita del Suo immobile: cosa è stato fatto, cosa merita la Sua attenzione e cosa verrà dopo.",
-    "en": "You find the essentials of the life of your property in a simple reading: what has been done, what deserves your attention and what comes next.",
-    "es": "Encuentras lo esencial de la vida de tu propiedad en una lectura sencilla: qué se ha hecho, qué merece tu atención y qué viene después.",
-    "ru": "В простом чтении вы найдете все самое необходимое для жизни вашего объекта: что было сделано, что заслуживает вашего внимания и что будет дальше.",
-    "zh": "通过简单的阅读，您就可以了解您的房产生命周期的要点：已经完成的操作、值得您关注的操作以及接下来会发生的操作。"
+  "Voyageurs accompagnés": {
+    "it": "Viaggiatori accompagnati",
+    "en": "Accompanied travelers",
+    "es": "Viajeros acompañados",
+    "ru": "Сопровождаемые путешественники",
+    "zh": "陪同旅客"
   },
-  "Vous revenez chez vous. Rien n’est à rattraper.": {
-    "it": "Torni a casa. Non c'è niente da recuperare.",
-    "en": "You return home. There is nothing to catch up on.",
-    "es": "Regresas a casa. No hay nada que ponerse al día.",
-    "ru": "Вы возвращаетесь домой. Нечего догонять.",
-    "zh": "你回家了。没有什么可追赶的。"
-  },
-  "Vous savez où nous allons.": {
-    "it": "Sa dove stiamo andando.",
-    "en": "You know where we are going.",
-    "es": "Ya sabes hacia dónde vamos.",
-    "ru": "Ты знаешь, куда мы идем.",
-    "zh": "你知道我们要去哪里。"
-  },
-  "Vous voyez ce qui a été fait et pourquoi.": {
-    "it": "Vedi cosa è stato fatto e perché.",
-    "en": "You see what was done and why.",
-    "es": "Ves lo que se hizo y por qué.",
-    "ru": "Вы видите, что было сделано и почему.",
-    "zh": "您可以看到做了什么以及为什么。"
-  },
-  "Voyageurs, équipements et prestataires demandent une attention continue. Nous absorbons cette charge avant qu’elle n’interrompe votre quotidien.": {
-    "it": "I viaggiatori, i fornitori di attrezzature e servizi richiedono un'attenzione continua. Assorbiamo questo carico prima che interrompa la Sua vita quotidiana.",
-    "en": "Travelers, equipment and service providers require continued attention. We absorb this load before it interrupts your daily life.",
-    "es": "Los viajeros, los proveedores de equipos y servicios requieren una atención continua. Absorbemos esta carga antes de que interrumpa tu vida diaria.",
-    "ru": "Путешественники, поставщики оборудования и услуг требуют постоянного внимания. Мы поглощаем эту нагрузку до того, как она нарушит вашу повседневную жизнь.",
-    "zh": "旅客、设备和服务提供商需要持续关注。我们会在这种负担干扰您的日常生活之前吸收它。"
+  "Voyageurs, entretien et imprévus sont réunis dans une seule relation, sans échanges dispersés.": {
+    "it": "Viaggiatori, manutenzioni e imprevisti vengono riuniti in un unico rapporto, senza scambi sparsi.",
+    "en": "Travelers, maintenance and unforeseen events are brought together in a single relationship, without scattered exchanges.",
+    "es": "Viajeros, manutención e imprevistos se reúnen en una única relación, sin intercambios dispersos.",
+    "ru": "Путешественники, техническое обслуживание и непредвиденные события собраны в едином отношении, без разрозненных разговоров.",
+    "zh": "旅行者、维护和不可预见的事件以单一关系聚集在一起，没有分散的交流。"
   }
 };
