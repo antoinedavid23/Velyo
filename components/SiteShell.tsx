@@ -199,10 +199,10 @@ export function SiteShell({ children }: { children: React.ReactNode }) {
       {analyticsConsent ? <SpeedInsights /> : null}
 
       {cookies && (
-        <div className="cookie velyo-cookie" role="dialog" aria-label="Information relative aux cookies">
+        <div className="cookie velyo-cookie" role="dialog" aria-modal="false" aria-labelledby="velyo-cookie-title" aria-describedby="velyo-cookie-description">
           <div className="cookie-mark">V</div>
-          <div className="cookie-copy"><strong>Mesure anonyme, sans publicité.</strong><p>Avec votre accord, Velyo utilise Vercel Web Analytics et Speed Insights pour mesurer l’audience agrégée et les performances. Aucun cookie publicitaire ni profilage.</p><Link href="/cookie-policy">Voir le détail des stockages</Link></div>
-          <div className="cookie-actions"><button className="cookie-secondary" onClick={() => chooseAnalytics(false)}>Refuser</button><button className="cookie-primary" onClick={() => chooseAnalytics(true)}>Accepter la mesure anonyme</button></div>
+          <div className="cookie-copy"><strong id="velyo-cookie-title">Votre choix, sans publicité.</strong><p id="velyo-cookie-description">Velyo mesure uniquement l’audience et la rapidité du site, de façon agrégée. Aucun profil publicitaire : la mesure ne démarre qu’après votre accord.</p><Link href="/cookie-policy">Comprendre les données utilisées</Link></div>
+          <div className="cookie-actions"><button className="cookie-secondary" onClick={() => chooseAnalytics(false)}>Continuer sans mesure</button><button className="cookie-primary" onClick={() => chooseAnalytics(true)}>Autoriser la mesure anonyme</button></div>
         </div>
       )}
     </ItalianContent>

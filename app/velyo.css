@@ -20810,3 +20810,87 @@ main .button.ghost {
     transition: none !important;
   }
 }
+
+/* Consentement — un message court, lisible et cohérent avec la palette Velyo. */
+.velyo-cookie.cookie {
+  right: auto;
+  left: 50%;
+  width: min(1120px, calc(100% - 40px));
+  max-width: 1120px;
+  grid-template-columns: 48px minmax(0, 1fr) minmax(300px, .46fr);
+  gap: clamp(20px, 2.2vw, 32px);
+  padding: 24px 28px;
+  border-color: rgba(157, 202, 255, .42);
+  border-radius: 4px;
+  background: rgba(10, 43, 78, .985);
+  color: #fff;
+  box-shadow: 0 22px 60px rgba(4, 20, 38, .28);
+  transform: translateX(-50%);
+}
+
+.velyo-cookie .cookie-mark {
+  width: 48px;
+  height: 48px;
+  align-self: center;
+  border: 0;
+  background: #2867c7;
+  color: #fff;
+}
+
+.velyo-cookie .cookie-copy strong {
+  display: block;
+  color: #fff;
+  font-size: clamp(1.12rem, 1.45vw, 1.32rem);
+  line-height: 1.15;
+}
+
+.velyo-cookie .cookie-copy p {
+  max-width: 68ch;
+  margin: 7px 0 8px !important;
+  color: rgba(255, 255, 255, .78);
+  font-size: .8rem;
+  line-height: 1.55;
+}
+
+.velyo-cookie .cookie-copy a {
+  color: #9dcaff;
+  font-size: .7rem;
+  text-underline-offset: 4px;
+}
+
+.velyo-cookie .cookie-actions {
+  min-width: 0;
+  align-self: center;
+}
+
+.velyo-cookie .cookie-actions button {
+  width: 100%;
+  min-height: 46px;
+  border-radius: 2px;
+  font-size: .72rem;
+  font-weight: 700;
+}
+
+.velyo-cookie .cookie-secondary {
+  border-color: rgba(255, 255, 255, .46);
+  color: #fff;
+}
+
+@media (max-width: 820px) {
+  .velyo-cookie.cookie {
+    right: 12px;
+    bottom: calc(72px + env(safe-area-inset-bottom));
+    left: 12px;
+    width: auto;
+    max-height: calc(100dvh - 104px);
+    grid-template-columns: minmax(0, 1fr);
+    gap: 16px;
+    padding: 22px 18px;
+    overflow-y: auto;
+    transform: none;
+  }
+
+  .velyo-cookie .cookie-mark {
+    display: none;
+  }
+}
