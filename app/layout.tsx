@@ -54,9 +54,12 @@ export const metadata: Metadata = {
     images: ["/og.png"],
   },
   icons: {
-    icon: [{ url: "/images/brand/velyo-mark.svg", type: "image/svg+xml" }],
-    shortcut: "/images/brand/velyo-mark.svg",
-    apple: "/images/brand/velyo-mark.svg",
+    icon: [
+      { url: "/favicon.ico", sizes: "any" },
+      { url: "/icon.svg?v=2", type: "image/svg+xml" },
+    ],
+    shortcut: "/favicon.ico",
+    apple: [{ url: "/apple-icon.png", sizes: "180x180", type: "image/png" }],
   },
 };
 
