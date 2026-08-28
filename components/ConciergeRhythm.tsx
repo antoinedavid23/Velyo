@@ -1,4 +1,4 @@
-import Image from "next/image";
+import Image from "@/components/SiteImage";
 import { Check } from "lucide-react";
 import { ItalianContent } from "@/components/ItalianContent";
 

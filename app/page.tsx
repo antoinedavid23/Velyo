@@ -1,4 +1,4 @@
-import Image from "next/image";
+import Image from "@/components/SiteImage";
 import Link from "next/link";
 import { ArrowRight, Clock3, Headphones, ShieldCheck, Sparkles } from "lucide-react";
 import { services } from "@/data/content";
@@ -53,7 +53,7 @@ export default function Home() {
             <Image src="/images/concierge/owner-conversation-premium.webp" fill sizes="(max-width: 800px) 100vw, 44vw" alt="Une propriétaire échange simplement avec son interlocutrice Velyo" />
           </Reveal>
           <Reveal className="prose velyo-owner-copy watermark-heading watermark-heading--image-side">
-            <p className="eyebrow dark section-watermark" aria-hidden="true">Votre property manager</p>
+            <p className="eyebrow dark section-watermark" aria-hidden="true">Votre manager local</p>
             <p className="eyebrow dark">Sur place, pour votre bien</p>
             <h2>Vous déléguez l’exploitation.<br /><em>Vous gardez la vision.</em></h2>
             <p>Un interlocuteur dédié connaît le bien, pilote les réservations et coordonne les intervenants. Vous gardez la visibilité, vos périodes personnelles et le dernier mot sur les décisions importantes.</p>

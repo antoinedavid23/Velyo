@@ -1,6 +1,6 @@
 import { notFound } from "next/navigation";
 import { ArrowDown, Check } from "lucide-react";
-import Image from "next/image";
+import Image from "@/components/SiteImage";
 import { PageHero } from "@/components/PageHero";
 import { ServiceJourney, type ServiceJourneyStep } from "@/components/ServiceJourney";
 import { services } from "@/data/content";

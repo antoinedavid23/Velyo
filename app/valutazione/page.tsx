@@ -1,5 +1,5 @@
 import Link from "next/link";
-import Image from "next/image";
+import Image from "@/components/SiteImage";
 import { PageHero } from "@/components/PageHero";
 import { ValuationForm } from "@/components/ValuationForm";
 import type { Metadata } from "next";

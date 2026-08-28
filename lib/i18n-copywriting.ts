@@ -34,6 +34,7 @@ export const copywritingMessages: Record<string, LocalizedCopy> = {
   "Activité, dépenses et prochaines actions restent lisibles.": c("Attività, spese e prossime azioni restano chiare.", "Activity, expenses and next actions remain clear."),
   "Votre property manager": c("Il Suo property manager", "Your property manager"),
   "Votre property manager à Genova": c("Il Suo property manager a Genova", "Your property manager in Genoa"),
+  "Votre manager local": c("Il Suo manager locale", "Your local manager"),
   "Sur place, pour votre bien": c("Sul posto, per il Suo immobile", "On the ground, for your property"),
   "Tout commence avant l’arrivée": c("Tutto inizia prima dell’arrivo", "It all starts before arrival"),
   "Sept étapes, un même cadre": c("Sette fasi, un unico metodo", "Seven stages, one consistent framework"),

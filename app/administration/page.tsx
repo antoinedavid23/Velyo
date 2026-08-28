@@ -1,6 +1,6 @@
 import { redirect } from "next/navigation";
 import Link from "next/link";
-import Image from "next/image";
+import Image from "@/components/SiteImage";
 import { ArrowUpRight, CircleAlert, CircleCheck, Mail, Scale } from "lucide-react";
 import { AdminPropertyManager } from "@/components/AdminPropertyManager";
 import { getAdminUser } from "@/lib/admin";
