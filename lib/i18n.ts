@@ -26,7 +26,7 @@ const italianMessages = new Map(
   Object.entries(runtimeMessages).map(([source, value]) => [normalize(value.it), { fr: source, en: value.en }]),
 );
 
-function translateComposedLabel(source: string, locale: Locale) {
+function translateComposedLabel(source: string, locale: Locale): string | undefined {
   const titled = source.match(/^(.+?)\s*\|\s*Velyo Property Manager$/i);
   if (titled) return `${translate(titled[1], locale)} | Velyo Property Manager`;
 
@@ -61,7 +61,7 @@ function translateComposedLabel(source: string, locale: Locale) {
   return undefined;
 }
 
-export function translate(source: string, locale: Locale) {
+export function translate(source: string, locale: Locale): string {
   const fromFrench = runtimeMessages[source] ?? normalizedMessages.get(normalize(source));
   const fromItalian = italianMessages.get(normalize(source));
 

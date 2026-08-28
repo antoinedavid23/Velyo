@@ -250,7 +250,6 @@ export const copywritingMessages: Record<string, LocalizedCopy> = {
   "Envoi en cours…": c("Invio in corso…", "Sending…"),
 
   "Environ 3 minutes": c("Circa 3 minuti", "About 3 minutes"),
-  "Étape": c("Fase", "Step"),
   "Comment vous joindre&nbsp;?": c("Come possiamo contattarLa?", "How can we contact you?"),
   "Indiquez simplement les coordonnées auxquelles nous pouvons vous répondre.": c("Indichi semplicemente i recapiti ai quali possiamo risponderLe.", "Simply provide the details we can use to reply."),
   "Les champs marqués * sont nécessaires.": c("I campi contrassegnati con * sono obbligatori.", "Fields marked * are required."),
