@@ -7,6 +7,8 @@ import { usePathname } from "next/navigation";
 import { ArrowRight, LogIn, Menu, X } from "lucide-react";
 import { CTA } from "@/components/PageHero";
 import { LanguageOptions } from "@/components/LocaleController";
+import { ScrollRevealController } from "@/components/ScrollRevealController";
+import { ItalianContent } from "@/components/ItalianContent";
 
 const nav = [
   ["Accueil", "/"],
@@ -50,6 +52,7 @@ export function SiteShell({ children }: { children: React.ReactNode }) {
   const [open, setOpen] = useState(false);
   const [headerHidden, setHeaderHidden] = useState(false);
   const [cookies, setCookies] = useState(false);
+  const [stickyHidden, setStickyHidden] = useState(false);
 
   useEffect(() => {
     const frame = requestAnimationFrame(() => setCookies(!localStorage.getItem("velyo-cookie")));
@@ -60,6 +63,14 @@ export function SiteShell({ children }: { children: React.ReactNode }) {
     document.body.style.overflow = open ? "hidden" : "";
     return () => { document.body.style.overflow = ""; };
   }, [open]);
+
+  useEffect(() => {
+    const frame = requestAnimationFrame(() => {
+      setOpen(false);
+      setHeaderHidden(false);
+    });
+    return () => cancelAnimationFrame(frame);
+  }, [pathname]);
 
   useEffect(() => {
     let lastY = window.scrollY;
@@ -88,18 +99,36 @@ export function SiteShell({ children }: { children: React.ReactNode }) {
     return () => document.removeEventListener("keydown", closeOnEscape);
   }, []);
 
-  function saveCookieChoice(choice: "accepted" | "refused") {
-    localStorage.setItem("velyo-cookie", choice);
+  useEffect(() => {
+    const targets = Array.from(document.querySelectorAll<HTMLElement>(".site-footer-cta, .velyo-footer"));
+    if (!targets.length || !("IntersectionObserver" in window)) return;
+
+    const visible = new Set<Element>();
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) visible.add(entry.target);
+        else visible.delete(entry.target);
+      });
+      setStickyHidden(visible.size > 0);
+    }, { rootMargin: "0px 0px 48px 0px", threshold: 0 });
+
+    targets.forEach((target) => observer.observe(target));
+    return () => observer.disconnect();
+  }, [pathname, showSiteCTA]);
+
+  function dismissCookieNotice() {
+    localStorage.setItem("velyo-cookie", "acknowledged");
     setCookies(false);
   }
 
   if (isAdministration) return <main>{children}</main>;
 
-  const email = process.env.NEXT_PUBLIC_EMAIL || "contact@velyo.pm";
+  const email = process.env.NEXT_PUBLIC_EMAIL || "contatto@velyo.com";
   const phone = process.env.NEXT_PUBLIC_PHONE?.trim();
 
   return (
-    <>
+    <ItalianContent>
+      <ScrollRevealController />
       <header className={`site-header velyo-header${headerHidden ? " is-hidden" : ""}`}>
         <Logo />
         <nav className="desktop-navigation" aria-label="Navigation principale">
@@ -138,24 +167,32 @@ export function SiteShell({ children }: { children: React.ReactNode }) {
       {showSiteCTA && <CTA />}
 
       <footer className="footer-main velyo-footer">
-        <div className="footer-grid">
-          <div className="footer-brand"><b>VELYO</b><p><span>Votre bien, bien entouré.</span><span>Vos voyageurs, bien accueillis.</span></p><small>Conciergerie locale à Genova.</small></div>
-          <div><b>Explorer</b>{nav.map(([name, href]) => <Link key={href} href={href}>{name}</Link>)}</div>
-          <div><b>Propriétaires</b><Link href="/proprietari">Comment nous gérons</Link><Link href="/simulatore">Estimer mes revenus</Link><Link href="/valutazione">Confier un bien</Link><Link href="/faq">Questions fréquentes</Link></div>
-          <div className="footer-contact"><b>Contact</b><a href={`mailto:${email}`}>{email}</a>{phone && <a href={`tel:${phone.replace(/\s/g, "")}`}>{phone}</a>}<span>Genova, Italie</span><p>Chaque demande reçoit une réponse claire et personnalisée.</p></div>
+        <div className="container footer-shell">
+          <div className="footer-masthead">
+            <div className="footer-identity"><Logo light /><span>Conciergerie locale à Genova.</span></div>
+            <p className="footer-promise"><span>Votre bien, bien entouré.</span><em>Vos voyageurs, bien accueillis.</em></p>
+            <a className="footer-direct-contact" href={`mailto:${email}`}><small>Contact direct</small><strong>{email}</strong><ArrowRight size={17} /></a>
+          </div>
+
+          <div className="footer-directory">
+            <nav className="footer-column" aria-label="Explorer Velyo"><b>Explorer</b><Link href="/servizi">Nos services</Link><Link href="/esperienze">Options voyageurs</Link><Link href="/proprieta">Nos biens</Link><Link href="/chi-siamo">À propos de Velyo</Link></nav>
+            <nav className="footer-column" aria-label="Solutions pour les propriétaires"><b>Propriétaires</b><Link href="/proprietari">Comment nous gérons</Link><Link href="/simulatore">Estimer mon bien</Link><Link href="/valutazione">Confier un bien</Link><Link href="/faq">Questions fréquentes</Link></nav>
+            <div className="footer-column footer-contact"><b>Contact</b><a href={`mailto:${email}`}>{email}</a>{phone && <a href={`tel:${phone.replace(/\s/g, "")}`}>{phone}</a>}<span>Genova, Italie</span><p>Chaque demande reçoit une réponse claire et personnalisée.</p></div>
+          </div>
+
+          <div className="footer-bottom"><span>{`© ${new Date().getFullYear()} Velyo Property Manager`}</span><nav aria-label="Informations légales"><Link href="/mentions-legales">Mentions légales</Link><Link href="/privacy">Confidentialité</Link><Link href="/cookie-policy">Cookies</Link><Link href="/termini">Conditions d’utilisation</Link></nav></div>
         </div>
-        <div className="footer-bottom"><span>© {new Date().getFullYear()} Velyo Property Manager</span><Link href="/mentions-legales">Mentions légales</Link><Link href="/privacy">Confidentialité</Link><Link href="/cookie-policy">Cookies</Link><Link href="/termini">Conditions d’utilisation</Link></div>
       </footer>
 
-      <Link className="sticky-cta" href="/valutazione">Confier mon bien <ArrowRight size={16} /></Link>
+      <Link className={`sticky-cta${stickyHidden ? " is-hidden" : ""}`} href="/valutazione">Confier mon bien <ArrowRight size={16} /></Link>
 
       {cookies && (
         <div className="cookie velyo-cookie" role="dialog" aria-label="Information relative aux cookies">
           <div className="cookie-mark">V</div>
-          <div className="cookie-copy"><strong>Uniquement les cookies nécessaires.</strong><p>Ils permettent au site de fonctionner correctement. Velyo n’utilise aucun profilage publicitaire.</p><Link href="/cookie-policy">Voir la politique cookies</Link></div>
-          <div className="cookie-actions"><button className="cookie-secondary" onClick={() => saveCookieChoice("refused")}>Refuser</button><button className="cookie-primary" onClick={() => saveCookieChoice("accepted")}>J’ai compris</button></div>
+          <div className="cookie-copy"><strong>Aucun cookie publicitaire.</strong><p>Le site mémorise seulement vos préférences essentielles, comme la langue et la fermeture de ce message. Aucun suivi publicitaire ni mesure d’audience.</p><Link href="/cookie-policy">Voir le détail des stockages</Link></div>
+          <div className="cookie-actions"><button className="cookie-primary" onClick={dismissCookieNotice}>Fermer</button></div>
         </div>
       )}
-    </>
+    </ItalianContent>
   );
 }

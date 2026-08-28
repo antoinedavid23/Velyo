@@ -2,6 +2,8 @@ import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight, ArrowUpRight } from "lucide-react";
 import type { Experience, Property, Service } from "@/data/content";
+import type { ExperienceCategory } from "@/data/experience-categories";
+import { ItalianContent } from "@/components/ItalianContent";
 
 const homeServiceCopy: Record<string, { title: string; text: string }> = {
   "gestione-proprieta": {
@@ -22,9 +24,9 @@ export function ServiceCard({ service, variant = "catalog" }: { service: Service
   if (variant === "home") {
     const copy = homeServiceCopy[service.slug] ?? { title: service.cardTitle ?? service.title, text: service.short };
 
-    return <Link className="home-service-card" href={`/servizi/${service.slug}`} aria-label={`Découvrir le service : ${service.title}`}>
+    return <ItalianContent><Link className="home-service-card" href={`/servizi/${service.slug}`} aria-label={`Découvrir le service : ${service.title}`}>
       <div className="home-service-card-media">
-        <Image src={service.image || "/images/concierge/home-preparation-premium.png"} fill sizes="(max-width: 760px) 100vw, 33vw" alt={copy.title} />
+        <Image src={service.image || "/images/concierge/home-preparation-premium.webp"} fill sizes="(max-width: 760px) 100vw, 33vw" alt={copy.title} />
         <span>{service.number}</span>
       </div>
       <div className="home-service-card-copy">
@@ -33,30 +35,44 @@ export function ServiceCard({ service, variant = "catalog" }: { service: Service
         <p>{copy.text}</p>
         <span className="home-service-card-link">Découvrir le service <ArrowRight size={14} /></span>
       </div>
-    </Link>;
+    </Link></ItalianContent>;
   }
 
-  return <Link className="catalog-card service-catalog-card" href={`/servizi/${service.slug}`} aria-label={`Découvrir le service : ${service.title}`}>
-    <div className="catalog-card-media"><Image src={service.image || "/images/concierge/home-preparation-premium.png"} fill sizes="(max-width: 760px) 100vw, 50vw" alt={service.title} /><span>{service.number}</span><small>{service.category}</small></div>
+  return <ItalianContent><Link className="catalog-card service-catalog-card" href={`/servizi/${service.slug}`} aria-label={`Découvrir le service : ${service.title}`}>
+    <div className="catalog-card-media"><Image src={service.image || "/images/concierge/home-preparation-premium.webp"} fill sizes="(max-width: 760px) 100vw, 50vw" alt={service.title} /><span>{service.number}</span><small>{service.category}</small></div>
     <div className="catalog-card-content">
       <div className="catalog-card-heading"><h3>{service.title}</h3><ArrowUpRight aria-hidden="true" /></div>
       <p className="service-card-summary">{service.short}</p>
       <small className="catalog-card-link">Voir le détail <ArrowRight size={15} /></small>
     </div>
-  </Link>;
+  </Link></ItalianContent>;
 }
 
 export function ExperienceCard({ experience }: { experience: Experience }) {
-  return <Link className="catalog-card experience-commerce-card" href={`/esperienze/${experience.slug}`} aria-label={`Découvrir : ${experience.title}`}>
+  return <ItalianContent><Link className="catalog-card experience-commerce-card" href={`/esperienze/${experience.slug}`} aria-label={`Découvrir : ${experience.title}`}>
     <div className="catalog-card-media"><Image src={experience.image} fill sizes="(max-width: 760px) 100vw, 50vw" alt={experience.title} /><span>{experience.number}</span><small>{experience.format}</small></div>
     <div className="catalog-card-content">
       <div className="catalog-card-heading"><h3>{experience.cardTitle ?? experience.title}</h3><ArrowUpRight aria-hidden="true" /></div>
       <p className="service-card-summary">{experience.short}</p>
       <small className="catalog-card-link">Voir le détail <ArrowRight size={15} /></small>
     </div>
-  </Link>;
+  </Link></ItalianContent>;
 }
-export function PropertyCard({property}:{property:Property}){return <Link className="property-card property-editorial-card" href={`/proprieta/${property.slug}`} aria-label={`Découvrir ${property.name}`}>
+
+export function ExperienceCategoryCard({ category }: { category: ExperienceCategory }) {
+  return <ItalianContent><Link className="experience-category-card" href={`/esperienze/${category.slug}`} aria-label={category.title}>
+    <div className="experience-category-card-media">
+      <Image src={category.image} fill sizes="(max-width: 760px) 100vw, 50vw" alt={category.title} />
+      <div className="experience-category-card-meta"><span>{category.number}</span><small>{category.format}</small></div>
+    </div>
+    <div className="experience-category-card-copy">
+      <div className="experience-category-card-heading"><h3>{category.title}</h3><ArrowUpRight aria-hidden="true" /></div>
+      <p>{category.short}</p>
+      <span className="experience-category-card-link">Voir le détail <ArrowRight size={15} /></span>
+    </div>
+  </Link></ItalianContent>;
+}
+export function PropertyCard({property}:{property:Property}){return <ItalianContent><Link className="property-card property-editorial-card" href={`/proprieta/${property.slug}`} aria-label={`Découvrir ${property.name}`}>
   <div className={`property-image tone-${property.tone}`} style={{backgroundImage:`linear-gradient(180deg,rgba(7,16,25,.03),rgba(7,16,25,.66)),url(${property.image})`}}>
     <span className="property-card-location">{property.location}</span><span className="property-card-open" aria-hidden="true"><ArrowUpRight /></span>
   </div>
@@ -66,4 +82,4 @@ export function PropertyCard({property}:{property:Property}){return <Link classN
     {property.shortDescription && <p className="property-card-description">{property.shortDescription}</p>}
     <div className="property-card-footer"><div className="facts"><span>{property.bedrooms} {property.bedrooms > 1 ? "chambres" : "chambre"}</span><span>{property.guests} voyageurs</span><span>{property.baths} {property.baths > 1 ? "salles de bain" : "salle de bain"}</span></div><small>Découvrir le bien</small></div>
   </div>
-</Link>}
+</Link></ItalianContent>}

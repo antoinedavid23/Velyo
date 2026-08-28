@@ -1,4 +1,4 @@
-import { runtimeMessages } from "./i18n-runtime";
+import { runtimeMessages } from "./i18n-runtime-v2";
 
 export type Locale = "fr" | "it" | "en";
 export const locales = ["it", "en", "fr"] as const;
@@ -22,8 +22,62 @@ const normalizedMessages = new Map(
   Object.entries(runtimeMessages).map(([source, value]) => [normalize(source), value]),
 );
 
+const italianMessages = new Map(
+  Object.entries(runtimeMessages).map(([source, value]) => [normalize(value.it), { fr: source, en: value.en }]),
+);
+
+function translateComposedLabel(source: string, locale: Locale) {
+  const titled = source.match(/^(.+?)\s*\|\s*Velyo Property Manager$/i);
+  if (titled) return `${translate(titled[1], locale)} | Velyo Property Manager`;
+
+  const describedImage = source.match(/^(.+?)\s+—\s+(.+)$/);
+  if (describedImage) return `${translate(describedImage[1], locale)} — ${translate(describedImage[2], locale)}`;
+
+  const patterns = [
+    {
+      french: /^Découvrir le service\s*:\s*(.+)$/i,
+      italian: /^Scoprire il servizio\s*:\s*(.+)$/i,
+      render: { fr: "Découvrir le service", it: "Scoprire il servizio", en: "Explore the service" },
+    },
+    {
+      french: /^Découvrir\s*:\s*(.+)$/i,
+      italian: /^Scoprire\s*:\s*(.+)$/i,
+      render: { fr: "Découvrir", it: "Scoprire", en: "Discover" },
+    },
+    {
+      french: /^Découvrir\s+(.+)$/i,
+      italian: /^Scoprire\s+(.+)$/i,
+      render: { fr: "Découvrir", it: "Scoprire", en: "Discover" },
+      separator: " ",
+    },
+  ] as const;
+
+  for (const pattern of patterns) {
+    const match = source.match(pattern.french) ?? source.match(pattern.italian);
+    if (!match) continue;
+    return `${pattern.render[locale]}${"separator" in pattern ? pattern.separator : ": "}${translate(match[1], locale)}`;
+  }
+
+  return undefined;
+}
+
 export function translate(source: string, locale: Locale) {
-  if (locale === "fr") return source;
-  const localized = runtimeMessages[source] ?? normalizedMessages.get(normalize(source));
-  return localized?.[locale] ?? source;
+  const fromFrench = runtimeMessages[source] ?? normalizedMessages.get(normalize(source));
+  const fromItalian = italianMessages.get(normalize(source));
+
+  if (locale === "it") return fromFrench?.it ?? translateComposedLabel(source, locale) ?? source;
+  if (locale === "fr") return fromItalian?.fr ?? translateComposedLabel(source, locale) ?? source;
+  if (locale === "en") return fromFrench?.en ?? fromItalian?.en ?? translateComposedLabel(source, locale) ?? source;
+  return translateComposedLabel(source, locale) ?? source;
+}
+
+export function translateDeep<T>(value: T, locale: Locale): T {
+  if (typeof value === "string") return translate(value, locale) as T;
+  if (Array.isArray(value)) return value.map((item) => translateDeep(item, locale)) as T;
+  if (value && typeof value === "object") {
+    return Object.fromEntries(
+      Object.entries(value as Record<string, unknown>).map(([key, item]) => [key, translateDeep(item, locale)]),
+    ) as T;
+  }
+  return value;
 }

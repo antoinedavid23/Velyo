@@ -9,6 +9,7 @@ export type ServiceJourneyStep = {
   title: string;
   timing: string;
   text: string;
+  result: string;
   points: string[];
 };
 
@@ -34,12 +35,13 @@ export function ServiceJourney({ steps, label = "Étapes du service" }: { steps:
 
   return (
     <div className="detail-journey-scroll" ref={rootRef} aria-label={tr(label)}>
-      <div className="detail-journey-stage">
+      <div className="detail-journey-stage" data-step={String(active + 1).padStart(2, "0")}>
         <div className="detail-journey-copy" key={step.title}>
           <p className="eyebrow">{tr(step.timing)}</p>
           <span className="detail-journey-number">{String(active + 1).padStart(2, "0")}</span>
           <h3>{tr(step.title)}</h3>
           <p>{tr(step.text)}</p>
+          <div className="detail-journey-result"><span>{tr("Résultat concret")}</span><strong>{tr(step.result)}</strong></div>
           <ul>{step.points.map((point) => <li key={point}><Check size={16} />{tr(point)}</li>)}</ul>
         </div>
         <div className="detail-journey-nav" role="tablist" aria-label={tr(label)}>

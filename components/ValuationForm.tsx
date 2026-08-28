@@ -7,12 +7,14 @@ import { useForm } from "react-hook-form";
 import { z } from "zod";
 import { useLocale } from "@/components/LocaleController";
 import { translate } from "@/lib/i18n";
+import { ItalianContent } from "@/components/ItalianContent";
+import { formContactCopy } from "@/lib/form-copy";
 
 const valuationSchema = z.object({
   name: z.string().trim().min(1, "Indiquez votre prénom.").max(80),
   surname: z.string().trim().min(1, "Indiquez votre nom.").max(80),
   email: z.string().trim().email("Saisissez une adresse e-mail valide.").max(160),
-  phone: z.string().trim().min(6, "Indiquez un numéro de téléphone.").max(40),
+  phone: z.string().trim().max(40).optional(),
   profile: z.string().min(1, "Sélectionnez votre profil."),
   address: z.string().trim().min(3, "Indiquez l’adresse du bien."),
   city: z.string().trim().min(2, "Indiquez la ville."),
@@ -31,20 +33,20 @@ const valuationSchema = z.object({
   services: z.array(z.string()).optional(),
   message: z.string().trim().min(10, "Décrivez votre situation en quelques mots.").max(2000),
   website: z.string().max(0).optional(),
-  consent: z.boolean().refine(Boolean, "Votre accord est nécessaire pour être recontacté."),
+  consent: z.boolean().refine(Boolean, "Veuillez prendre connaissance de la politique de confidentialité."),
 });
 
 type ValuationFormValues = z.infer<typeof valuationSchema>;
 
-const stepLabels = ["Vous", "Le bien", "Votre besoin"];
 const stepFields: Array<Array<keyof ValuationFormValues>> = [
-  ["name", "surname", "email", "phone", "profile"],
+  ["name", "surname", "email", "profile"],
   ["address", "city", "type", "area"],
   ["message", "consent"],
 ];
 
 function FieldError({ message }: { message?: string }) {
-  return message ? <p className="field-error" role="alert">{message}</p> : null;
+  const { locale } = useLocale();
+  return message ? <p className="field-error" role="alert">{translate(message, locale)}</p> : null;
 }
 
 export function ValuationForm() {
@@ -54,6 +56,8 @@ export function ValuationForm() {
   const router = useRouter();
   const { locale } = useLocale();
   const tr = (text: string) => translate(text, locale);
+  const contactCopy = formContactCopy[locale];
+  const stepLabels = contactCopy.steps;
   const {
     register,
     trigger,
@@ -92,25 +96,25 @@ export function ValuationForm() {
     setStatus(tr("Demande bien enregistrée."));
     router.push("/grazie");
   }, () => {
-    if (errors.name || errors.surname || errors.email || errors.phone || errors.profile) setStep(0);
+    if (errors.name || errors.surname || errors.email || errors.profile) setStep(0);
     else if (errors.address || errors.city || errors.type || errors.area) setStep(1);
   });
 
   return (
-    <form className="valuation-form" onSubmit={submit} noValidate>
+    <ItalianContent><form className="valuation-form" onSubmit={submit} noValidate>
       <input className="honeypot" tabIndex={-1} autoComplete="off" aria-hidden="true" {...register("website")} />
-      <div className="valuation-form-topline"><span>Environ 3 minutes</span><strong>Étape {step + 1} sur 3</strong></div>
-      <div className="form-progress" aria-label={locale === "it" ? `Fase ${step + 1} di 3` : locale === "en" ? `Step ${step + 1} of 3` : `Étape ${step + 1} sur 3`}>{stepLabels.map((label, index) => <span key={label} className={index <= step ? "active" : ""} aria-current={index === step ? "step" : undefined}><b>0{index + 1}</b><small>{label}</small></span>)}</div>
+      <div className="valuation-form-topline" data-no-translate><span>{contactCopy.duration}</span><strong>{contactCopy.step} {step + 1} {contactCopy.of} 3</strong></div>
+      <div className="form-progress" data-no-translate aria-label={locale === "it" ? `Fase ${step + 1} di 3` : locale === "en" ? `Step ${step + 1} of 3` : `Étape ${step + 1} sur 3`}>{stepLabels.map((label, index) => <span key={label} className={index <= step ? "active" : ""} aria-current={index === step ? "step" : undefined}><b>0{index + 1}</b><small>{label}</small></span>)}</div>
 
       <fieldset data-step="0" hidden={step !== 0}>
-        <legend>Comment vous joindre ?</legend><p className="form-hint">Indiquez simplement les coordonnées auxquelles nous pouvons vous répondre.</p><p className="form-required">Les champs marqués * sont nécessaires.</p>
+        <legend data-no-translate>{contactCopy.contactLegend}</legend><p className="form-hint">Indiquez simplement les coordonnées auxquelles nous pouvons vous répondre.</p><p className="form-required">Les champs marqués * sont nécessaires.</p>
         <div className="field-row">
-          <label>Prénom *<input placeholder="Votre prénom" maxLength={80} autoComplete="given-name" aria-invalid={Boolean(errors.name)} {...register("name")} /><FieldError message={errors.name?.message} /></label>
-          <label>Nom *<input placeholder="Votre nom" maxLength={80} autoComplete="family-name" aria-invalid={Boolean(errors.surname)} {...register("surname")} /><FieldError message={errors.surname?.message} /></label>
+          <label data-no-translate><span>{contactCopy.firstName} *</span><input placeholder={contactCopy.firstNamePlaceholder} maxLength={80} autoComplete="given-name" aria-invalid={Boolean(errors.name)} {...register("name")} /><FieldError message={errors.name?.message} /></label>
+          <label data-no-translate><span>{contactCopy.lastName} *</span><input placeholder={contactCopy.lastNamePlaceholder} maxLength={80} autoComplete="family-name" aria-invalid={Boolean(errors.surname)} {...register("surname")} /><FieldError message={errors.surname?.message} /></label>
         </div>
         <div className="field-row">
-          <label>E-mail *<input type="email" placeholder="vous@exemple.com" maxLength={160} autoComplete="email" aria-invalid={Boolean(errors.email)} {...register("email")} /><FieldError message={errors.email?.message} /></label>
-          <label>Téléphone *<input type="tel" placeholder="+33 6 00 00 00 00" maxLength={40} autoComplete="tel" aria-invalid={Boolean(errors.phone)} {...register("phone")} /><FieldError message={errors.phone?.message} /></label>
+          <label data-no-translate><span>{contactCopy.email} *</span><input type="email" placeholder={contactCopy.emailPlaceholder} maxLength={160} autoComplete="email" aria-invalid={Boolean(errors.email)} {...register("email")} /><FieldError message={errors.email?.message} /></label>
+          <label data-no-translate><span>{contactCopy.phone} <small>({contactCopy.optional})</small></span><input type="tel" placeholder={contactCopy.phonePlaceholder} maxLength={40} autoComplete="tel" aria-invalid={Boolean(errors.phone)} {...register("phone")} /><FieldError message={errors.phone?.message} /></label>
         </div>
         <label>Vous êtes… *<select aria-invalid={Boolean(errors.profile)} {...register("profile")}><option value="">Sélectionnez votre situation</option><option>Propriétaire occupant</option><option>Propriétaire bailleur</option><option>Investisseur</option><option>Mandataire</option></select><FieldError message={errors.profile?.message} /></label>
       </fieldset>
@@ -137,7 +141,7 @@ export function ValuationForm() {
       </fieldset>
 
       <fieldset data-step="2" hidden={step !== 2}>
-        <legend>Que souhaitez-vous nous confier ?</legend><p className="form-hint">Dites-nous comment le bien est utilisé aujourd’hui et ce que vous ne voulez plus gérer seul.</p><p className="form-required">Seule la description finale est nécessaire.</p>
+        <legend data-no-translate>{contactCopy.delegationLegend}</legend><p className="form-hint">Dites-nous comment le bien est utilisé aujourd’hui et ce que vous ne voulez plus gérer seul.</p><p className="form-required">Seule la description finale est nécessaire.</p>
         <div className="field-row">
           <label>Le bien est-il déjà loué ?<select {...register("currentlyRented")}><option>Non, pas encore</option><option>Oui, quelques semaines par an</option><option>Oui, plusieurs mois par an</option><option>Oui, toute l’année</option></select></label>
           <label>À quelle fréquence souhaitez-vous le louer ?<select {...register("availability")}><option>Quelques semaines par an</option><option>Pendant les vacances</option><option>Plusieurs mois par an</option><option>Toute l’année</option><option>Je ne sais pas encore</option></select></label>
@@ -149,15 +153,16 @@ export function ValuationForm() {
         <label>Votre besoin principal<select {...register("objective")}><option>Commencer à louer</option><option>Ne plus gérer les arrivées</option><option>Déléguer le ménage et le linge</option><option>Avoir quelqu’un sur place</option><option>Mieux organiser les réservations</option><option>Gagner du temps au quotidien</option></select></label>
         <div className="amenities-checks"><span>Ce que vous aimeriez nous confier</span>{["Préparer le bien", "Répondre aux voyageurs", "Organiser les arrivées", "Ménage et linge", "Petits problèmes sur place", "Calendrier et réservations"].map((item) => <label key={item}><input type="checkbox" value={item} {...register("services")} />{item}</label>)}</div>
         <label>Expliquez-nous simplement votre situation *<textarea maxLength={2000} placeholder="Ex. Je loue mon appartement pendant mes absences et je cherche quelqu’un pour préparer le logement, accueillir les voyageurs et suivre le ménage." aria-invalid={Boolean(errors.message)} {...register("message")} /><FieldError message={errors.message?.message} /></label>
-        <label className="valuation-consent"><span><input type="checkbox" aria-invalid={Boolean(errors.consent)} {...register("consent")} /> J’accepte que mes données soient utilisées uniquement afin d’être recontacté au sujet de cette demande.</span><FieldError message={errors.consent?.message} /></label>
+        <p className="form-privacy valuation-privacy">Velyo utilise ces informations pour étudier votre demande et préparer les éventuelles mesures précontractuelles. Elles ne servent pas à vous envoyer de la prospection sans base légale distincte.{" "}<a href="/privacy" target="_blank" rel="noreferrer">Lire la politique de confidentialité</a>{"."}</p>
+        <label className="valuation-consent"><span><input type="checkbox" aria-invalid={Boolean(errors.consent)} {...register("consent")} /> Je confirme avoir pris connaissance de la politique de confidentialité. *</span><FieldError message={errors.consent?.message} /></label>
       </fieldset>
 
       <div className="form-navigation">
-        <p className="valuation-next-label">{step < 2 ? <>Ensuite : <strong>{stepLabels[step + 1]}</strong></> : <><strong>Dernière étape</strong> · envoi confidentiel</>}</p>
+        <p className="valuation-next-label">{step < 2 ? <>Ensuite : <strong data-no-translate>{stepLabels[step + 1]}</strong></> : <><strong>Dernière étape</strong> · envoi confidentiel</>}</p>
         {step > 0 && <button type="button" className="button ghost" onClick={() => setStep((value) => value - 1)}>← Retour</button>}
         {step < 2 ? <button type="button" className="button" onClick={next}>Continuer <span aria-hidden="true">→</span></button> : <button className="button" type="submit" disabled={isSubmitting}>{isSubmitting ? tr("Envoi en cours…") : <>Envoyer ma demande <span aria-hidden="true">→</span></>}</button>}
       </div>
       <div role={failed ? "alert" : "status"} aria-live="polite" className="form-status">{status}</div>
-    </form>
+    </form></ItalianContent>
   );
 }

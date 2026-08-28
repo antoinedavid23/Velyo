@@ -3,12 +3,14 @@ import Image from "next/image";
 import { PageHero } from "@/components/PageHero";
 import { ValuationForm } from "@/components/ValuationForm";
 import type { Metadata } from "next";
+import { ItalianContent } from "@/components/ItalianContent";
+import { pageMetadata } from "@/lib/site-metadata";
 
-export const metadata: Metadata = {
-  title: "Confier votre bien",
-  description: "Présentez votre bien, votre organisation actuelle et ce que vous souhaitez confier à Velyo.",
-  alternates: { canonical: "/valutazione" },
-};
+export const metadata: Metadata = pageMetadata({
+  title: "Affidare un immobile a Genova",
+  description: "Présentez votre appartement ou maison à Velyo. Nous étudions le bien, vos objectifs et le niveau de gestion souhaité avant une visite à Genova.",
+  path: "/valutazione",
+});
 
 const points = [
   ["01", "Le bien", "Son adresse, sa capacité, son état et ses contraintes pratiques."],
@@ -23,23 +25,26 @@ const nextSteps = [
 ];
 
 export default function Page() {
+  const contactEmail = process.env.NEXT_PUBLIC_EMAIL || "contatto@velyo.com";
+
   return (
-    <>
+    <ItalianContent>
       <PageHero
-        label="Votre projet"
+        label="Une première évaluation confidentielle"
         title="Confier mon bien"
-        text="Dites-nous ce que vous louez, comment vous le gérez aujourd’hui et ce que vous souhaitez déléguer."
-        image="/images/concierge/owner-conversation-premium.png"
+        text="Présentez le bien, vos objectifs et ce que vous souhaitez déléguer. Nous préparons un premier échange utile avant toute visite."
+        image="/images/concierge/owner-conversation-premium.webp"
       />
 
       <div className="valuation-page">
         <section className="valuation-opening">
-          <div className="container valuation-opening-grid">
+          <div className="container valuation-opening-grid section-heading-art section-heading-art--valuation">
+            <span className="section-heading-watermark" aria-hidden="true">VOTRE PROJET</span>
             <div>
-              <p className="eyebrow">Une première lecture</p>
-              <h2>Parlons du bien et du quotidien.</h2>
+              <p className="eyebrow">Votre situation, sans détour</p>
+              <h2>Parlons du bien, du projet et du relais attendu.</h2>
             </div>
-            <p className="valuation-opening-copy">Quelques informations suffisent pour comprendre le bien, votre situation actuelle et le relais dont vous avez besoin.</p>
+            <p className="valuation-opening-copy">Quelques informations suffisent pour préparer les bonnes questions, vérifier l’adéquation avec Velyo et organiser la suite sans vous faire perdre de temps.</p>
           </div>
         </section>
 
@@ -47,7 +52,7 @@ export default function Page() {
           <div className="container valuation-experience">
             <aside className="valuation-aside" aria-label="Ce que Velyo cherche à comprendre">
               <div className="valuation-aside-image">
-                <Image src="/images/concierge/home-preparation-premium.png" alt="Préparation attentive d’un bien à Genova" fill sizes="(max-width: 960px) 100vw, 38vw" />
+                <Image src="/images/concierge/home-preparation-premium.webp" alt="Préparation attentive d’un bien à Genova" fill sizes="(max-width: 960px) 100vw, 38vw" />
                 <p>Bien connu.<br /><em>Bien suivi.</em></p>
               </div>
               <div className="valuation-aside-content">
@@ -59,22 +64,24 @@ export default function Page() {
 
             <div className="valuation-form-shell">
               <ValuationForm />
+              <p className="valuation-direct-contact">Une question avant de commencer&nbsp;? <a href={`mailto:${contactEmail}`}>{contactEmail}</a></p>
               <p className="form-privacy">Vos informations restent confidentielles. Consultez notre <Link href="/privacy">politique de confidentialité</Link>.</p>
             </div>
           </div>
         </section>
 
-        <section className="valuation-next">
+        <section className="valuation-next" id="apres-envoi">
           <div className="container">
             <div className="valuation-next-heading">
+              <span className="valuation-next-watermark" aria-hidden="true">ÉCHANGE</span>
               <p className="eyebrow">Après votre envoi</p>
-              <h2>Un premier échange<br /><em>prépare la visite du bien.</em></h2>
+              <h2><span>Un premier échange</span>{" "}<em>prépare la visite du bien.</em></h2>
               <p>Nous revenons vers vous avec les bonnes questions, puis nous visitons le bien avant toute proposition.</p>
             </div>
             <ol className="valuation-next-steps">{nextSteps.map(([number, title, text]) => <li key={number}><span>{number}</span><strong>{title}</strong><p>{text}</p></li>)}</ol>
           </div>
         </section>
       </div>
-    </>
+    </ItalianContent>
   );
 }

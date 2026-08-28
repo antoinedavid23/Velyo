@@ -34,6 +34,7 @@ export function Reveal({
   return (
     <div
       ref={elementRef}
+      data-scroll-reveal-ignore
       className={className}
       style={{
         opacity: visible ? 1 : 0,

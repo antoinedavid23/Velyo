@@ -6,9 +6,15 @@ import { translate, type Locale } from "@/lib/i18n";
 
 const PUBLIC_LOCALES = ["it", "en", "fr"] as const;
 const LocaleContext = createContext<{ locale: Locale; setLocale: (locale: Locale) => void }>({ locale: "it", setLocale: () => undefined });
-const originalText = new WeakMap<Text, string>();
-const originalAttributes = new WeakMap<Element, Map<string, string>>();
+type TranslationState = { source: string; rendered: string };
+const originalText = new WeakMap<Text, TranslationState>();
+const originalAttributes = new WeakMap<Element, Map<string, TranslationState>>();
 const translatedAttributes = ["aria-label", "title", "placeholder", "alt"] as const;
+let translatedDocumentTitle: TranslationState | undefined;
+
+function sourceFor(current: string, previous?: TranslationState) {
+  return !previous || current !== previous.rendered ? current : previous.source;
+}
 
 function translateTree(root: ParentNode, locale: Locale) {
   const walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT | NodeFilter.SHOW_ELEMENT);
@@ -18,25 +24,28 @@ function translateTree(root: ParentNode, locale: Locale) {
       const textNode = current as Text;
       const parent = textNode.parentElement;
       if (parent && !parent.closest("script, style, svg, [data-no-translate]")) {
-        const source = originalText.get(textNode) ?? textNode.data;
-        if (!originalText.has(textNode)) originalText.set(textNode, source);
+        const source = sourceFor(textNode.data, originalText.get(textNode));
         const core = source.trim();
         if (core) {
           const leading = source.match(/^\s*/)?.[0] ?? "";
           const trailing = source.match(/\s*$/)?.[0] ?? "";
-          textNode.data = `${leading}${translate(core, locale)}${trailing}`;
+          const rendered = `${leading}${translate(core, locale)}${trailing}`;
+          if (textNode.data !== rendered) textNode.data = rendered;
+          originalText.set(textNode, { source, rendered });
         }
       }
     } else if (current.nodeType === Node.ELEMENT_NODE) {
       const element = current as Element;
       if (!element.closest("[data-no-translate]")) {
-        let sources = originalAttributes.get(element);
-        if (!sources) { sources = new Map(); originalAttributes.set(element, sources); }
+        let states = originalAttributes.get(element);
+        if (!states) { states = new Map(); originalAttributes.set(element, states); }
         for (const attribute of translatedAttributes) {
           const value = element.getAttribute(attribute);
           if (!value) continue;
-          if (!sources.has(attribute)) sources.set(attribute, value);
-          element.setAttribute(attribute, translate(sources.get(attribute) ?? value, locale));
+          const source = sourceFor(value, states.get(attribute));
+          const rendered = translate(source, locale);
+          if (value !== rendered) element.setAttribute(attribute, rendered);
+          states.set(attribute, { source, rendered });
         }
       }
     }
@@ -45,13 +54,18 @@ function translateTree(root: ParentNode, locale: Locale) {
 }
 
 function translateMetadata(locale: Locale) {
-  document.title = translate(document.title, locale);
+  const titleSource = sourceFor(document.title, translatedDocumentTitle);
+  const titleRendered = translate(titleSource, locale);
+  if (document.title !== titleRendered) document.title = titleRendered;
+  translatedDocumentTitle = { source: titleSource, rendered: titleRendered };
   document.querySelectorAll<HTMLMetaElement>('meta[name="description"], meta[property="og:title"], meta[property="og:description"], meta[name="twitter:title"], meta[name="twitter:description"]').forEach((meta) => {
-    const sources = originalAttributes.get(meta) ?? new Map<string, string>();
-    if (!originalAttributes.has(meta)) originalAttributes.set(meta, sources);
+    const states = originalAttributes.get(meta) ?? new Map<string, TranslationState>();
+    if (!originalAttributes.has(meta)) originalAttributes.set(meta, states);
     const current = meta.content;
-    if (!sources.has("content")) sources.set("content", current);
-    meta.content = translate(sources.get("content") ?? current, locale);
+    const source = sourceFor(current, states.get("content"));
+    const rendered = translate(source, locale);
+    if (current !== rendered) meta.content = rendered;
+    states.set("content", { source, rendered });
   });
 }
 
@@ -106,7 +120,7 @@ export function LocaleController({ children }: { children: React.ReactNode }) {
   useEffect(() => {
     if (!isPublic) return;
     const stored = localStorage.getItem("velyo-locale");
-    const initial: Locale = stored === "en" || stored === "fr" ? stored : "it";
+    const initial: Locale = stored === "fr" || stored === "en" ? stored : "it";
     const frame = requestAnimationFrame(() => setLocaleState(initial));
     return () => cancelAnimationFrame(frame);
   }, [isPublic]);
@@ -123,32 +137,28 @@ export function LocaleController({ children }: { children: React.ReactNode }) {
 
   useEffect(() => {
     if (!isPublic) return;
-    const observer = new MutationObserver((mutations) => mutations.forEach((mutation) => {
-      mutation.addedNodes.forEach((node) => {
-        if (node.nodeType === Node.ELEMENT_NODE || node.nodeType === Node.DOCUMENT_FRAGMENT_NODE) translateTree(node as ParentNode, locale);
-        else if (node.nodeType === Node.TEXT_NODE && node.parentNode) translateTree(node.parentNode, locale);
-      });
-      if (mutation.type === "characterData") {
-        const node = mutation.target as Text;
-        const previousSource = originalText.get(node);
-        if (previousSource && node.data.trim() !== translate(previousSource.trim(), locale)) originalText.set(node, node.data);
-        if (node.parentNode) translateTree(node.parentNode, locale);
-      }
-      if (mutation.type === "attributes") {
-        const element = mutation.target as Element;
-        const attribute = mutation.attributeName;
-        if (attribute && translatedAttributes.includes(attribute as (typeof translatedAttributes)[number])) {
-          const sources = originalAttributes.get(element) ?? new Map<string, string>();
-          const value = element.getAttribute(attribute);
-          if (value && sources.get(attribute) && value !== translate(sources.get(attribute) ?? value, locale)) sources.set(attribute, value);
-          originalAttributes.set(element, sources);
-          translateTree(element, locale);
+    let frame = 0;
+    const observer = new MutationObserver((mutations) => {
+      cancelAnimationFrame(frame);
+      frame = requestAnimationFrame(() => {
+        for (const mutation of mutations) {
+          if (mutation.type === "characterData") {
+            if (mutation.target.parentNode) translateTree(mutation.target.parentNode, locale);
+            continue;
+          }
+          mutation.addedNodes.forEach((node) => {
+            if (node.nodeType === Node.ELEMENT_NODE) translateTree(node as Element, locale);
+            else if (node.parentNode) translateTree(node.parentNode, locale);
+          });
         }
-      }
-    }));
-    observer.observe(document.body, { childList: true, characterData: true, attributes: true, attributeFilter: [...translatedAttributes], subtree: true });
-    return () => observer.disconnect();
-  }, [locale, pathname, isPublic]);
+      });
+    });
+    observer.observe(document.body, { childList: true, characterData: true, subtree: true });
+    return () => {
+      cancelAnimationFrame(frame);
+      observer.disconnect();
+    };
+  }, [locale, isPublic]);
 
   return <LocaleContext.Provider value={{ locale, setLocale }}>{children}</LocaleContext.Provider>;
 }

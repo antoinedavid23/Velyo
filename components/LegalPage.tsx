@@ -1,16 +1,33 @@
 import Link from "next/link";
 import { PageHero } from "./PageHero";
-
-const email = process.env.NEXT_PUBLIC_EMAIL || "contact@velyo.pm";
+import { legalIdentity, missingLegalIdentity } from "@/lib/legal";
+import { ItalianContent } from "@/components/ItalianContent";
 
 export function LegalLayout({ title, intro, children }: { title: string; intro: string; children: React.ReactNode }) {
-  return <><PageHero label="Informations légales" title={title} text={intro} /><section className="section ivory"><article className="container legal-content"><p className="legal-updated">Version de travail · à valider avant publication commerciale</p>{children}<div className="legal-contact"><strong>Une question concernant ces informations ?</strong><a href={`mailto:${email}`}>{email}</a></div></article></section></>;
+  return <ItalianContent><div className="legal-page">
+    <PageHero label="Informations légales" title={title} text={intro} />
+    <section className="section ivory">
+      <article className="container legal-content">
+        <p className="legal-updated">Dernière mise à jour : <time dateTime={legalIdentity.lastUpdatedISO}>{legalIdentity.lastUpdated}</time></p>
+        {children}
+        <div className="legal-contact">
+          <strong>Une question ou une demande concernant vos données ?</strong>
+          <a href={`mailto:${legalIdentity.email}`}>{legalIdentity.email}</a>
+        </div>
+      </article>
+    </section>
+  </div></ItalianContent>;
 }
 
 export function LegalIdentityNotice() {
-  return <p className="legal-note"><strong>À compléter avant publication :</strong> dénomination de l’exploitant, forme juridique, siège, immatriculation, Partita IVA et identité du responsable de publication.</p>;
+  if (!missingLegalIdentity.length) return null;
+  return <ItalianContent><aside className="legal-note legal-configuration" role="note">
+    <strong>Informations d’entreprise à renseigner avant la mise en ligne commerciale</strong>
+    <p>Les données suivantes doivent reprendre exactement la visura camerale : {missingLegalIdentity.map(([label]) => label).join(", ")}.</p>
+    <small>Configuration attendue : {missingLegalIdentity.map(([, variable]) => variable).join(", ")}.</small>
+  </aside></ItalianContent>;
 }
 
 export function LegalLinks() {
-  return <p className="legal-inline-links"><Link href="/mentions-legales">Mentions légales</Link><Link href="/privacy">Confidentialité</Link><Link href="/cookie-policy">Cookies</Link><Link href="/termini">Conditions d’utilisation</Link></p>;
+  return <ItalianContent><p className="legal-inline-links"><Link href="/mentions-legales">Mentions légales</Link><Link href="/privacy">Confidentialité</Link><Link href="/cookie-policy">Cookies</Link><Link href="/termini">Conditions d’utilisation</Link></p></ItalianContent>;
 }

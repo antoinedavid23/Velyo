@@ -7,6 +7,8 @@ import { useForm } from "react-hook-form";
 import { z } from "zod";
 import { useLocale } from "@/components/LocaleController";
 import { translate } from "@/lib/i18n";
+import { ItalianContent } from "@/components/ItalianContent";
+import { formContactCopy } from "@/lib/form-copy";
 
 const leadFormSchema = z.object({
   name: z.string().trim().min(1, "Indiquez votre prénom.").max(80),
@@ -25,13 +27,14 @@ const leadFormSchema = z.object({
   objective: z.string().optional(),
   message: z.string().trim().min(10, "Décrivez votre besoin en quelques mots.").max(2000),
   website: z.string().max(0).optional(),
-  consent: z.boolean().refine(Boolean, "Votre accord est nécessaire pour être recontacté."),
+  consent: z.boolean().refine(Boolean, "Veuillez prendre connaissance de la politique de confidentialité."),
 });
 
 type LeadFormValues = z.infer<typeof leadFormSchema>;
 
 function FieldError({ message }: { message?: string }) {
-  return message ? <p className="field-error" role="alert">{message}</p> : null;
+  const { locale } = useLocale();
+  return message ? <p className="field-error" role="alert">{translate(message, locale)}</p> : null;
 }
 
 export function LeadForm() {
@@ -40,6 +43,7 @@ export function LeadForm() {
   const router = useRouter();
   const { locale } = useLocale();
   const tr = (text: string) => translate(text, locale);
+  const contactCopy = formContactCopy[locale];
   const {
     register,
     handleSubmit,
@@ -77,15 +81,15 @@ export function LeadForm() {
   });
 
   return (
-    <form onSubmit={submit} noValidate>
+    <ItalianContent><form onSubmit={submit} noValidate>
       <input className="honeypot" tabIndex={-1} autoComplete="off" aria-hidden="true" {...register("website")} />
       <div className="field-row">
-        <label>Prénom<input autoComplete="given-name" maxLength={80} aria-invalid={Boolean(errors.name)} {...register("name")} /><FieldError message={errors.name?.message} /></label>
-        <label>Nom<input autoComplete="family-name" maxLength={80} aria-invalid={Boolean(errors.surname)} {...register("surname")} /><FieldError message={errors.surname?.message} /></label>
+        <label data-no-translate><span>{contactCopy.firstName}</span><input placeholder={contactCopy.firstNamePlaceholder} autoComplete="given-name" maxLength={80} aria-invalid={Boolean(errors.name)} {...register("name")} /><FieldError message={errors.name?.message} /></label>
+        <label data-no-translate><span>{contactCopy.lastName}</span><input placeholder={contactCopy.lastNamePlaceholder} autoComplete="family-name" maxLength={80} aria-invalid={Boolean(errors.surname)} {...register("surname")} /><FieldError message={errors.surname?.message} /></label>
       </div>
       <div className="field-row">
-        <label>E-mail<input type="email" autoComplete="email" maxLength={160} aria-invalid={Boolean(errors.email)} {...register("email")} /><FieldError message={errors.email?.message} /></label>
-        <label>Téléphone <small>(facultatif)</small><input type="tel" autoComplete="tel" maxLength={40} {...register("phone")} /></label>
+        <label data-no-translate><span>{contactCopy.email}</span><input type="email" placeholder={contactCopy.emailPlaceholder} autoComplete="email" maxLength={160} aria-invalid={Boolean(errors.email)} {...register("email")} /><FieldError message={errors.email?.message} /></label>
+        <label data-no-translate><span>{contactCopy.phone} <small>({contactCopy.optional})</small></span><input type="tel" placeholder={contactCopy.phonePlaceholder} autoComplete="tel" maxLength={40} {...register("phone")} /></label>
       </div>
 
       <>
@@ -104,9 +108,10 @@ export function LeadForm() {
       </>
 
       <label>Décrivez votre besoin<textarea maxLength={2000} placeholder="Parlez-nous du bien, de sa situation actuelle et de votre objectif." aria-invalid={Boolean(errors.message)} {...register("message")} /><FieldError message={errors.message?.message} /></label>
-      <label><span><input type="checkbox" aria-invalid={Boolean(errors.consent)} {...register("consent")} /> J’accepte que mes données soient utilisées afin d’être recontacté au sujet de ma demande.</span><FieldError message={errors.consent?.message} /></label>
+      <p className="form-privacy">Velyo utilise les informations saisies pour répondre à votre demande et préparer les éventuelles mesures précontractuelles. Elles ne sont pas utilisées pour de la prospection sans base légale distincte.{" "}<a href="/privacy" target="_blank" rel="noreferrer">Lire la politique de confidentialité</a>{"."}</p>
+      <label><span><input type="checkbox" aria-invalid={Boolean(errors.consent)} {...register("consent")} /> Je confirme avoir pris connaissance de la politique de confidentialité. *</span><FieldError message={errors.consent?.message} /></label>
       <button className="button" type="submit" disabled={isSubmitting}>{isSubmitting ? tr("Envoi en cours…") : "Envoyer le message"}</button>
       <div role={failed ? "alert" : "status"} aria-live="polite" className="form-status">{status && <span className={!failed && status === tr("Demande bien enregistrée.") ? "form-success" : undefined}>{status}</span>}</div>
-    </form>
+    </form></ItalianContent>
   );
 }

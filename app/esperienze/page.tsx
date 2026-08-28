@@ -1,34 +1,51 @@
 import { PageHero } from "@/components/PageHero";
+import { ExperienceCategoryCard } from "@/components/Cards";
+import { experienceCategories } from "@/data/experience-categories";
 import type { Metadata } from "next";
-import Image from "next/image";
-import Link from "next/link";
-import { ArrowRight } from "lucide-react";
+import { ItalianContent } from "@/components/ItalianContent";
+import { pageMetadata } from "@/lib/site-metadata";
 
-export const metadata: Metadata = {
-  title: "Services voyageurs à Genova",
-  description: "Transferts, bien-être, guides, courses et réservations organisés pour les voyageurs avant et pendant leur séjour à Genova.",
-  alternates: { canonical: "/esperienze" },
-};
+export const metadata: Metadata = pageMetadata({
+  title: "Servizi per ospiti a Genova",
+  description: "Velyo riunisce a Genova servizi utili e accessibili per gli ospiti: spostamenti, benessere, scoperte, pasti, attenzioni e bisogni pratici.",
+  path: "/esperienze",
+});
 
-const experienceFamilies = [
-  { number: "01", title: "Arrivées et déplacements", text: "Tout ce qui facilite l’arrivée, le départ et les mouvements pendant le séjour.", image: "/images/concierge/genova-blue-hour-premium.png" },
-  { number: "02", title: "Confort du séjour", text: "Des attentions pratiques ou de bien-être, préparées selon les besoins réels des voyageurs.", image: "/images/concierge/home-preparation-premium.png" },
-  { number: "03", title: "Moments particuliers", text: "Une préparation personnalisée pour célébrer une occasion ou créer une arrivée différente.", image: "/images/concierge/boccadasse-aperitivo-premium.jpg" },
-  { number: "04", title: "Découvrir Genova", text: "Des idées, des visites et des expériences locales adaptées au rythme du séjour.", image: "/images/concierge/rolli-walk-premium.jpg" },
+const commerceSteps = [
+  { number: "01", title: "Proposer au bon moment", text: "L’option est présentée avant l’arrivée ou pendant le séjour, uniquement lorsqu’elle répond à un besoin réel." },
+  { number: "02", title: "Préciser la demande", text: "Velyo recueille le nombre de personnes, le créneau, les préférences, les contraintes et le budget utile." },
+  { number: "03", title: "Présenter une offre claire", text: "Contenu, disponibilité, prix et conditions sont annoncés séparément avant tout accord du voyageur." },
+  { number: "04", title: "Coordonner jusqu’au bout", text: "Après validation, Velyo réserve, transmet les informations et suit la prestation jusqu’à sa réalisation." },
+];
+
+const ownerAdvantages = [
+  { number: "01", title: "Une option, pas une promesse floue", text: "Le voyageur sait précisément ce qu’il achète, à quel prix et sous quelles conditions.", note: "Présentation transparente" },
+  { number: "02", title: "Aucune organisation à reprendre", text: "Velyo sélectionne le prestataire, confirme la disponibilité et reste le point de contact.", note: "Coordination Velyo" },
+  { number: "03", title: "Une dépense séparée du séjour", text: "La prestation additionnelle reste distincte du prix des nuits et n’alourdit pas l’offre principale.", note: "Facturation lisible" },
+  { number: "04", title: "Une valeur partagée avec vous", text: "Lorsqu’une option coordonnée par Velyo génère un bénéfice net, 25 % vous sont reversés.", note: "Bénéfice net visible" },
 ];
 
 export default function Page() {
-  return <>
-    <PageHero label="À réserver avec Velyo" title="Services voyageurs" text="Transport, bien-être, visites et courses : des services utiles, organisés à la demande." image="/images/concierge/old-town-family-premium.png" />
+  return <ItalianContent>
+    <PageHero label="Des services utiles, pas des codes de luxe" title="Services voyageurs" text="Velyo aide les voyageurs à réserver le bon transport, la bonne activité ou le petit service pratique, sans leur imposer une dépense disproportionnée." image="/images/concierge/old-town-family-premium.webp" />
 
     <section className="section experience-catalog-section"><div className="container">
-      <div className="catalog-intro experience-owner-intro watermark-heading"><p className="eyebrow section-watermark">Expériences</p><div><h2>Une demande.<br/>Une réponse adaptée.</h2></div><p>Velyo organise des services autour du séjour sans enfermer les voyageurs dans un catalogue. Le besoin est précisé, puis une proposition claire est présentée avant toute réservation.</p></div>
-      <div className="experience-family-grid">{experienceFamilies.map((family) => <article className="experience-family-card" key={family.number}>
-        <div className="experience-family-image"><Image src={family.image} alt="" fill sizes="(max-width: 800px) 100vw, 50vw" /></div>
-        <div className="experience-family-copy"><span>{family.number}</span><h3>{family.title}</h3><p>{family.text}</p><Link href="/valutazione">Parler d’un besoin <ArrowRight size={16}/></Link></div>
-      </article>)}</div>
-      <p className="demo-note">Les horaires, prix et disponibilités des partenaires doivent toujours être confirmés avant la réservation.</p>
+      <div className="catalog-intro catalog-intro-editorial watermark-heading watermark-heading--catalog">
+        <p className="eyebrow section-watermark" aria-hidden="true">Options voyageurs</p>
+        <div><p className="eyebrow">Pensé pour un budget de vacances</p><h2>Six besoins courants.<br /><em>Des solutions vraiment utiles.</em></h2></div>
+        <div className="catalog-intro-note"><span>Pour un séjour à 80–120 € la nuit</span><p>Un couple consacre déjà son budget au logement, aux repas et aux visites. Velyo privilégie donc les options ponctuelles, accessibles et suffisamment utiles pour mériter leur prix.</p></div>
+      </div>
+      <div className="experience-category-grid" id="services-voyageurs">{experienceCategories.map((category) => <ExperienceCategoryCard key={category.slug} category={category} />)}</div>
     </div></section>
 
-  </>;
+    <section className="traveler-commerce-section"><div className="container">
+      <div className="traveler-commerce-heading section-heading-art section-heading-art--dark"><span className="section-heading-watermark" aria-hidden="true">PARCOURS</span><div><p className="eyebrow">Comment Velyo les propose</p><h2>Un besoin réel.<br/><em>Une dépense qui se justifie.</em></h2></div><p>Velyo ne pousse pas une prestation parce qu’elle semble haut de gamme. L’option apparaît lorsqu’elle évite une contrainte, fait gagner du temps ou améliore réellement le séjour.</p></div>
+      <ol className="traveler-commerce-steps">{commerceSteps.map((step) => <li key={step.number}><span>{step.number}</span><strong>{step.title}</strong><p>{step.text}</p></li>)}</ol>
+    </div></section>
+
+    <section className="section traveler-extras-section"><div className="container">
+      <div className="traveler-extras-heading section-heading-art section-heading-art--right"><span className="section-heading-watermark" aria-hidden="true">VALEUR AJOUTÉE</span><div><p className="eyebrow">Pour le propriétaire</p><h2>Plus de services,<br/>sans plus de gestion.</h2></div><p>Le service additionnel renforce l’expérience du séjour sans transformer votre bien en offre tout compris.</p></div>
+      <div className="traveler-extras-grid">{ownerAdvantages.map((item) => <article key={item.number}><span>{item.number}</span><h3>{item.title}</h3><p>{item.text}</p><small>{item.note}</small></article>)}</div>
+    </div></section>
+  </ItalianContent>;
 }

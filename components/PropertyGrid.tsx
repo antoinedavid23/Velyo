@@ -5,6 +5,7 @@ import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 import type { Property } from "@/data/content";
 import { PropertyCard } from "@/components/Cards";
+import { ItalianContent } from "@/components/ItalianContent";
 
 export function PropertyGrid() {
   const [location, setLocation] = useState("Toutes");
@@ -22,14 +23,14 @@ export function PropertyGrid() {
   const availableLocations = useMemo(() => ["Toutes", ...Array.from(new Set(managed.map((item) => item.location)))], [managed]);
   const visible = location === "Toutes" ? managed : managed.filter((property) => property.location === location);
 
-  if (!loaded) return <div className="property-empty-loading" role="status">Vérification des biens disponibles…</div>;
+  if (!loaded) return <ItalianContent><div className="property-empty-loading" role="status">Vérification des biens disponibles…</div></ItalianContent>;
 
-  if (managed.length === 0) return <div className="property-empty" role="status">
+  if (managed.length === 0) return <ItalianContent><div className="property-empty" role="status">
     <div className="property-empty-copy"><p className="eyebrow dark">Biens publiés</p><h2>Aucun bien présenté pour le moment.</h2><p>Cette page restera vide tant qu’un propriétaire n’aura pas autorisé la publication de son bien.</p><Link className="text-link" href="/valutazione">Confier votre bien à Velyo <ArrowRight size={16} /></Link></div>
-  </div>;
+  </div></ItalianContent>;
 
-  return <>
+  return <ItalianContent>
     <div className="property-filters" aria-label="Filtrer les propriétés par localisation">{availableLocations.map((item) => <button key={item} type="button" className={location === item ? "active" : ""} aria-pressed={location === item} onClick={() => setLocation(item)}>{item}</button>)}</div>
     <div className="card-grid three" aria-live="polite">{visible.map((property) => <PropertyCard key={property.slug} property={property} />)}</div>
-  </>;
+  </ItalianContent>;
 }

@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { Check } from "lucide-react";
+import { ItalianContent } from "@/components/ItalianContent";
 
 const moments = [
   {
@@ -8,7 +9,7 @@ const moments = [
     title: "Le bien est prêt à recevoir",
     text: "Avant l’arrivée, nous contrôlons le bien, préparons le linge, vérifions les accès et transmettons toutes les informations utiles.",
     points: ["Ménage contrôlé", "Linge et essentiels en place", "Accès et consignes vérifiés"],
-    image: "/images/concierge/home-preparation-premium.png",
+    image: "/images/concierge/home-preparation-premium.webp",
     imageAlt: "Préparation attentive du linge dans un bien à Genova",
   },
   {
@@ -17,7 +18,7 @@ const moments = [
     title: "Nous suivons tout le séjour",
     text: "De l’arrivée au départ, Velyo répond aux voyageurs, coordonne les demandes et fait avancer les éventuels imprévus sur place.",
     points: ["Arrivée accompagnée", "Voyageurs suivis", "Imprévus pris en charge"],
-    image: "/images/concierge/welcome-family-premium.png",
+    image: "/images/concierge/welcome-family-premium.webp",
     imageAlt: "Accueil de voyageurs dans un bien à Genova",
   },
   {
@@ -26,14 +27,14 @@ const moments = [
     title: "Nous préparons le prochain séjour",
     text: "Après le départ, le bien est nettoyé, contrôlé et réapprovisionné. Tout écart est traité avant d’accueillir les voyageurs suivants.",
     points: ["Ménage et linge renouvelés", "État du bien vérifié", "Prochaine arrivée préparée"],
-    image: "/images/concierge/housekeeping-premium.png",
+    image: "/images/concierge/housekeeping-premium.webp",
     imageAlt: "Contrôle d'une chambre préparée après un séjour",
   },
 ];
 
 export function ConciergeRhythm() {
   return (
-    <div className="concierge-rhythm-static">
+    <ItalianContent><div className="concierge-rhythm-static">
       <div className="concierge-rhythm-static-grid">
         {moments.map((moment) => (
           <article className="concierge-rhythm-static-card" key={moment.number}>
@@ -51,6 +52,6 @@ export function ConciergeRhythm() {
         ))}
       </div>
       <p className="concierge-rhythm-static-note">À chaque réservation, le même cycle recommence : préparer, gérer, contrôler, puis remettre le bien en état pour la suite.</p>
-    </div>
+    </div></ItalianContent>
   );
 }

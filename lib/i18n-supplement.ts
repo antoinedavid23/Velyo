@@ -8,6 +8,8 @@ const s = (it: string, en: string, es: string, ru: string, zh: string): Localize
  * Russian, and concise and service-led in Simplified Chinese.
  */
 export const supplementalMessages: Record<string, Localized> = {
+  "univers": s("universi", "worlds", "universos", "направления", "主题"),
+  "idées à découvrir": s("idee da scoprire", "ideas to explore", "ideas por descubrir", "идей для знакомства", "个灵感等待探索"),
   "Le soin jusque dans les détails": s("La cura, fin nei dettagli", "Care, down to the last detail", "El cuidado está en cada detalle", "Забота — в каждой детали", "细节之处，皆是用心"),
   "Simulateur privé": s("Simulatore riservato", "Private revenue estimator", "Simulador privado", "Персональный расчёт", "专属收益测算"),
   "Découvrez le potentiel de votre propriété": s("Scopra il potenziale del Suo immobile", "Discover your property’s potential", "Descubra el potencial de su propiedad", "Раскройте потенциал вашей недвижимости", "探索您物业的潜在价值"),

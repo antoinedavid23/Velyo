@@ -18,7 +18,7 @@ export const propertySchema = z.object({
   shortDescription: z.string().trim().max(240).default(""),
   description: z.string().trim().max(6000).default(""),
   amenities: z.array(z.string().trim().min(1).max(80)).max(40).default([]),
-  image: z.string().trim().max(1000).default("/images/concierge/family-apartment-premium.png"),
+  image: z.string().trim().max(1000).default("/images/concierge/family-apartment-premium.webp"),
   gallery: z.array(z.string().trim().max(1000)).max(20).default([]),
   status: z.enum(["draft", "published", "archived"]).default("draft"),
   featured: z.coerce.boolean().default(false),

@@ -8,7 +8,7 @@ async function source(path) {
   return readFile(new URL(path, root), "utf8");
 }
 
-test("the homepage uses the Velyo concierge structure without a video hero", async () => {
+test("the homepage uses the Velyo owner-conversion structure without a video hero or invented reviews", async () => {
   const home = await source("app/page.tsx");
   assert.match(home, /velyo-trust-strip/);
   assert.match(home, /owner-welcome/);
@@ -17,8 +17,10 @@ test("the homepage uses the Velyo concierge structure without a video hero", asy
   assert.match(home, /experience-mosaic/);
   assert.match(home, /concierge-voices/);
   assert.match(home, /MethodJourney/);
-  assert.match(home, /ReviewCards/);
-  assert.match(home, /images\/concierge\/genova-blue-hour-premium\.png/);
+  assert.match(home, /expertise-evidence/);
+  assert.match(home, /owner-evidence-grid/);
+  assert.match(home, /images\/concierge\/genova-blue-hour-premium\.webp/);
+  assert.doesNotMatch(home, /ReviewCards/);
   assert.doesNotMatch(home, /home-properties|properties\.slice\(0, 3\)/);
   assert.doesNotMatch(home, /estimate-premium/);
   assert.doesNotMatch(home, /HeroVideo|<video|\.mp4|\.webm/);

@@ -30,9 +30,9 @@ function escapeHtml(value: unknown) {
 }
 
 async function sendLeadEmail(kind: LeadKind, payload: LeadPayload) {
-  const apiKey = process.env.RESEND_API_KEY;
-  const recipient = process.env.CONTACT_RECIPIENT || "contact@velyo.pm";
-  const from = process.env.CONTACT_FROM || "Velyo Property Manager <contact@velyo.pm>";
+  const apiKey = process.env.RESEND_API_KEY?.trim();
+  const recipient = process.env.CONTACT_RECIPIENT?.trim();
+  const from = process.env.CONTACT_FROM?.trim();
   if (!apiKey || !recipient || !from) return null;
 
   const ignored = new Set(["website", "consent"]);
@@ -65,11 +65,27 @@ async function sendLeadEmail(kind: LeadKind, payload: LeadPayload) {
 
 export async function deliverLead(kind: LeadKind, payload: LeadPayload) {
   if (payload.website) return { reference: "filtered", channels: ["spam-filter"] };
-  const stored = await storeLead(kind, payload);
-  const emailId = await sendLeadEmail(kind, payload);
+  const necessaryData = Object.fromEntries(
+    Object.entries(payload).filter(([key]) => key !== "website" && key !== "consent"),
+  ) as LeadPayload;
+  const stored = await storeLead(kind, necessaryData as LeadPayload);
+  let emailId: string | null = null;
+  let emailStatus: "sent" | "not-configured" | "failed" = "not-configured";
+  try {
+    emailId = await sendLeadEmail(kind, necessaryData as LeadPayload);
+    if (emailId) emailStatus = "sent";
+  } catch (error) {
+    emailStatus = "failed";
+    console.error("VELYO lead stored but email notification failed", {
+      kind,
+      reference: String(stored.id),
+      error: error instanceof Error ? error.message : "Unknown delivery error",
+    });
+  }
   return {
     reference: String(stored.id),
     channels: emailId ? ["database", "email"] : ["database"],
     emailId,
+    emailStatus,
   };
 }

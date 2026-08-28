@@ -49,6 +49,8 @@ function slugify(value: string) {
 
 export function AdminPropertyManager() {
   const [items, setItems] = useState<Item[]>([]);
+  const [loading, setLoading] = useState(true);
+  const [loadError, setLoadError] = useState("");
   const [draft, setDraft] = useState<Omit<Item, "id"> & { id?: number }>(emptyItem);
   const [editing, setEditing] = useState(false);
   const [message, setMessage] = useState("");
@@ -64,13 +66,18 @@ export function AdminPropertyManager() {
     const response = await fetch("/api/properties", { cache: "no-store" });
     if (!response.ok) throw new Error("Chargement impossible");
     setItems(await response.json());
+    setLoadError("");
   }
 
   useEffect(() => {
     fetch("/api/properties", { cache: "no-store" })
-      .then((response) => response.ok ? response.json() : [])
+      .then((response) => {
+        if (!response.ok) throw new Error("Chargement impossible");
+        return response.json();
+      })
       .then(setItems)
-      .catch(() => setItems([]));
+      .catch(() => setLoadError("Impossible de charger le catalogue pour le moment."))
+      .finally(() => setLoading(false));
   }, []);
 
   function startNew() {
@@ -172,16 +179,35 @@ export function AdminPropertyManager() {
     archived: items.filter((item) => item.status === "archived").length,
   };
 
+  const editorSteps = [
+    { key: "identity" as const, icon: Home, label: "Informations", complete: Boolean(draft.name && draft.slug && draft.location) },
+    { key: "content" as const, icon: Pencil, label: "Présentation", complete: Boolean(draft.shortDescription && draft.description) },
+    { key: "media" as const, icon: FileImage, label: "Photos", complete: Boolean(draft.image) },
+    { key: "settings" as const, icon: Sparkles, label: "Publication", complete: draft.status === "published" },
+  ];
+  const completion = Math.round((editorSteps.filter((step) => step.complete).length / editorSteps.length) * 100);
+
   return (
     <div className="property-manager">
       <div className="property-manager-toolbar">
-        <div className="property-manager-stats">
-          <span><strong>{items.length}</strong> au total</span>
-          <span><strong>{counts.published}</strong> publiés</span>
-          <span><strong>{counts.draft}</strong> brouillons</span>
-          <span><strong>{counts.archived}</strong> archivés</span>
+        <div className="property-manager-stats" role="group" aria-label="Filtrer le catalogue par statut">
+          {[
+            ["all", items.length, "Tous les biens"],
+            ["published", counts.published, "Publiés"],
+            ["draft", counts.draft, "Brouillons"],
+            ["archived", counts.archived, "Archivés"],
+          ].map(([value, count, label]) => <button
+            key={value}
+            type="button"
+            className={visibility === value ? "is-active" : ""}
+            aria-pressed={visibility === value}
+            onClick={() => setVisibility(value as typeof visibility)}
+          ><strong>{count}</strong><span>{label}</span></button>)}
         </div>
-        <button className="button" type="button" onClick={startNew}><Plus size={16} /> Nouveau bien</button>
+        <div className="property-manager-primary-action">
+          <span>Ajouter une nouvelle propriété au catalogue</span>
+          <button className="button" type="button" onClick={startNew}><Plus size={17} /> Créer un bien</button>
+        </div>
       </div>
 
       {editing && (
@@ -192,6 +218,10 @@ export function AdminPropertyManager() {
               <h3>{draft.name || "Nouveau bien"}</h3>
               <span>{draft.status === "published" ? "Visible sur le site" : draft.status === "archived" ? "Archivé" : "Brouillon privé"}</span>
             </div>
+            <div className="property-editor-progress" aria-label={`Fiche complétée à ${completion} %`}>
+              <div><span>Progression de la fiche</span><strong>{completion}%</strong></div>
+              <i><span style={{ width: `${completion}%` }} /></i>
+            </div>
             <div className="property-editor-header-actions">
               {draft.id && <a className="admin-icon-button" href={`/proprieta/${draft.slug}`} target="_blank" rel="noreferrer" aria-label="Prévisualiser"><Eye size={17} /></a>}
               <button className="admin-icon-button" type="button" onClick={() => setEditing(false)} aria-label="Fermer"><X size={18} /></button>
@@ -199,15 +229,13 @@ export function AdminPropertyManager() {
           </header>
 
           <nav className="property-editor-tabs" aria-label="Sections de la fiche">
-            {[
-              ["identity", Home, "Informations"],
-              ["content", Pencil, "Présentation"],
-              ["media", FileImage, "Photos"],
-              ["settings", Sparkles, "Publication"],
-            ].map(([key, Icon, label]) => {
-              const TabIcon = Icon as typeof Home;
-              return <button key={key as string} type="button" className={tab === key ? "active" : ""} onClick={() => setTab(key as typeof tab)}><TabIcon size={15} />{label as string}</button>;
-            })}
+            {editorSteps.map(({ key, icon: TabIcon, label, complete }, index) => <button
+              key={key}
+              type="button"
+              className={`${tab === key ? "active" : ""} ${complete ? "is-complete" : ""}`}
+              aria-current={tab === key ? "step" : undefined}
+              onClick={() => setTab(key)}
+            ><span>{complete ? <Check size={13} /> : String(index + 1).padStart(2, "0")}</span><TabIcon size={16} />{label}</button>)}
           </nav>
 
           <div className="property-editor-body">
@@ -282,15 +310,15 @@ export function AdminPropertyManager() {
 
       <section className="property-catalogue">
         <div className="admin-list-heading">
-          <div><p className="eyebrow">Catalogue</p><h3>Vos biens</h3></div>
+          <div><p className="eyebrow">Catalogue</p><h3>Tous les biens</h3><span className="catalogue-result-count">{visibleItems.length} résultat{visibleItems.length > 1 ? "s" : ""}</span></div>
           <div className="admin-property-filters">
-            <label className="admin-search"><Search size={16} /><input value={query} onChange={(e) => setQuery(e.target.value)} placeholder="Nom, ville, type…" /></label>
-            <select value={visibility} onChange={(e) => setVisibility(e.target.value as typeof visibility)} aria-label="Filtrer par statut">
-              <option value="all">Tous les statuts</option><option value="published">Publiés</option><option value="draft">Brouillons</option><option value="archived">Archivés</option>
-            </select>
+            <label className="admin-search"><Search size={17} /><span className="sr-only">Rechercher un bien</span><input value={query} onChange={(e) => setQuery(e.target.value)} placeholder="Rechercher par nom, ville ou type" />{query && <button type="button" onClick={() => setQuery("")} aria-label="Effacer la recherche"><X size={15} /></button>}</label>
+            <label className="admin-status-filter"><span>Statut</span><select value={visibility} onChange={(e) => setVisibility(e.target.value as typeof visibility)} aria-label="Filtrer par statut">
+              <option value="all">Tous</option><option value="published">Publiés</option><option value="draft">Brouillons</option><option value="archived">Archivés</option>
+            </select></label>
           </div>
         </div>
-        {visibleItems.length === 0 ? <div className="catalogue-empty"><Home size={30} /><h3>{items.length ? "Aucun résultat" : "Votre catalogue est vide"}</h3><p>{items.length ? "Modifiez vos filtres pour retrouver un bien." : "Créez votre première fiche et préparez-la avant sa publication."}</p>{!items.length && <button type="button" className="button" onClick={startNew}><Plus size={15} /> Ajouter un bien</button>}</div> :
+        {loading ? <div className="catalogue-loading" role="status" aria-live="polite"><span /><span /><span /><p>Chargement de votre catalogue…</p></div> : loadError ? <div className="catalogue-error" role="alert"><h3>Le catalogue ne répond pas</h3><p>{loadError}</p><button type="button" className="button secondary" onClick={() => window.location.reload()}>Réessayer</button></div> : visibleItems.length === 0 ? <div className="catalogue-empty"><div className="catalogue-empty-icon"><Home size={30} /></div><h3>{items.length ? "Aucun bien ne correspond" : "Créez votre premier bien"}</h3><p>{items.length ? "Essayez une autre recherche ou affichez tous les statuts." : "Une fiche se prépare simplement, en trois étapes, avant sa publication."}</p>{!items.length && <div className="catalogue-empty-steps"><span><b>01</b>Informations du bien</span><span><b>02</b>Photos et présentation</span><span><b>03</b>Vérification et publication</span></div>}<div className="catalogue-empty-actions">{items.length ? <button type="button" className="button secondary" onClick={() => { setQuery(""); setVisibility("all"); }}>Réinitialiser les filtres</button> : <button type="button" className="button" onClick={startNew}><Plus size={16} /> Commencer la fiche</button>}</div></div> :
           <div className="property-admin-grid">{visibleItems.map((item) => <article key={item.id}>
             <div className="property-admin-image" style={{ backgroundImage: item.image ? `linear-gradient(180deg,transparent,rgba(7,16,25,.72)),url("${item.image}")` : undefined }}>
               {!item.image && <FileImage size={28} />}<span className={`status ${item.status}`}>{item.status === "published" ? "Publié" : item.status === "archived" ? "Archivé" : "Brouillon"}</span>{item.featured && <b><Sparkles size={12} /> À la une</b>}

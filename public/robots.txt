@@ -1,9 +1,0 @@
-User-agent: *
-Allow: /
-Disallow: /administration
-Disallow: /connexion
-Disallow: /api/
-Disallow: /grazie
-
-Sitemap: https://velyo.pm/sitemap.xml
-Host: https://velyo.pm

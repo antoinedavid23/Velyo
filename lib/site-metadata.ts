@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { translate } from "@/lib/i18n";
 
 export const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://velyo.pm";
 
@@ -10,23 +11,25 @@ export function pageMetadata({ title, description, path, image = "/og.png" }: {
 }): Metadata {
   const canonical = new URL(path, siteUrl).toString();
   const socialImage = new URL(image, siteUrl).toString();
+  const italianTitle = translate(title, "it");
+  const italianDescription = translate(description, "it");
   return {
-    title,
-    description,
+    title: italianTitle,
+    description: italianDescription,
     alternates: { canonical: path },
     openGraph: {
-      title,
-      description,
+      title: italianTitle,
+      description: italianDescription,
       url: canonical,
       type: "website",
-      locale: "fr_FR",
+      locale: "it_IT",
       siteName: "Velyo Property Manager",
-      images: [{ url: socialImage, alt: title }],
+      images: [{ url: socialImage, alt: italianTitle }],
     },
     twitter: {
       card: "summary_large_image",
-      title,
-      description,
+      title: italianTitle,
+      description: italianDescription,
       images: [socialImage],
     },
   };

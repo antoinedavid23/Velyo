@@ -1,9 +1,10 @@
 import Link from "next/link";
+import { ItalianContent } from "@/components/ItalianContent";
 
 export const metadata = { title: "Demande reçue", robots: { index: false, follow: false } };
 
 export default function Page(){
-  return <section className="hero grazie-hero">
+  return <ItalianContent><section className="hero grazie-hero">
     <div className="container hero-content">
       <p className="eyebrow">Demande reçue</p>
       <h1>Votre demande est bien arrivée.</h1>
@@ -13,5 +14,5 @@ export default function Page(){
         <Link className="button ghost" href="/servizi">Découvrir les services</Link>
       </div>
     </div>
-  </section>;
+  </section></ItalianContent>;
 }

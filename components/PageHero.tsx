@@ -1,10 +1,11 @@
 import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
+import { ItalianContent } from "@/components/ItalianContent";
 
 export function PageHero({ label, title, text, image }: { label: string; title: string; text: string; image?: string }) {
   return (
-    <section className={`page-hero velyo-page-hero ${image ? "page-hero-image" : "page-hero-no-image"}`}>
+    <ItalianContent><section key={`${label}-${title}-${image ?? "no-image"}`} className={`page-hero velyo-page-hero ${image ? "page-hero-image" : "page-hero-no-image"}`}>
       {image && <Image className={`velyo-page-hero-background${image.includes("genova-blue-hour-premium") ? " velyo-page-hero-background-city" : ""}`} src={image} fill priority sizes="100vw" alt={`${label} — ${title}`} />}
       <div className="velyo-page-hero-overlay" aria-hidden="true" />
       <div className="container velyo-page-hero-layout">
@@ -14,21 +15,21 @@ export function PageHero({ label, title, text, image }: { label: string; title: 
           <p>{text}</p>
         </div>
       </div>
-    </section>
+    </section></ItalianContent>
   );
 }
 
 export function CTA() {
   return (
-    <section className="site-footer-cta" aria-label="Présenter votre bien à Velyo">
+    <ItalianContent><section className="site-footer-cta" id="confier-mon-bien" aria-label="Présenter votre bien à Velyo">
       <div className="container site-footer-cta-inner">
         <div className="site-footer-cta-copy">
-          <p>Votre bien à Genova</p>
-          <h2>Voyons comment le gérer.</h2>
-          <span>Présentez-nous le bien et ce que vous souhaitez déléguer. Nous vous répondons avec une première orientation claire.</span>
+          <p>Une gestion pensée pour votre bien</p>
+          <h2>Votre bien mérite<br /><em>une gestion qui rassure.</em></h2>
+          <span>Parlons de vos objectifs, de vos contraintes et du niveau de délégation souhaité. Vous recevrez une première orientation claire et sans engagement.</span>
         </div>
-        <Link className="site-footer-cta-button" href="/valutazione">Parler de mon bien <ArrowRight size={18} /></Link>
+        <Link className="site-footer-cta-button" href="/valutazione">Confier mon bien <ArrowRight size={18} /></Link>
       </div>
-    </section>
+    </section></ItalianContent>
   );
 }

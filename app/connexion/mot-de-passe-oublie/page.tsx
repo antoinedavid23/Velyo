@@ -2,7 +2,7 @@ import Link from "next/link";
 import { Mail } from "lucide-react";
 
 export default function Page() {
-  const email = process.env.ADMIN_RECOVERY_EMAIL || "contact@velyo.pm";
+  const email = process.env.ADMIN_RECOVERY_EMAIL || "contatto@velyo.com";
   return (
     <main className="admin-login-page">
       <section className="admin-login-form admin-recovery">
