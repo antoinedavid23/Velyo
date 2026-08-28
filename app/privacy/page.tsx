@@ -15,7 +15,7 @@ export default function Page() {
       <li><strong>Contact :</strong> prénom, nom, e-mail, téléphone et contenu de la demande.</li>
       <li><strong>Projet immobilier :</strong> adresse et ville du bien, type, surface, capacité, équipements, utilisation actuelle, objectifs et services recherchés.</li>
       <li><strong>Administration :</strong> statut de suivi de la demande et échanges nécessaires à son traitement.</li>
-      <li><strong>Données techniques minimales :</strong> informations strictement nécessaires à la sécurité, au fonctionnement du site et à la prévention du spam. Aucun profil publicitaire n’est créé.</li>
+      <li><strong>Données techniques minimales :</strong> informations strictement nécessaires à la sécurité, au fonctionnement du site et à la prévention du spam. Après accord, des mesures agrégées de consultation et de performance peuvent également être transmises à Vercel. Aucun profil publicitaire n’est créé.</li>
     </ul>
 
     <h2>3. Finalités et bases légales</h2>
@@ -23,6 +23,7 @@ export default function Page() {
       <div role="row"><b role="columnheader">Finalité</b><b role="columnheader">Base légale</b><b role="columnheader">Données</b></div>
       <div role="row"><span>Répondre à une demande et préparer une visite, une estimation ou une proposition</span><span>Mesures précontractuelles demandées par la personne — art. 6, §1, b du RGPD</span><span>Coordonnées, bien, besoin et message</span></div>
       <div role="row"><span>Sécuriser le site et filtrer les envois automatisés</span><span>Intérêt légitime à protéger le service — art. 6, §1, f</span><span>Données techniques minimales et champ anti-spam</span></div>
+      <div role="row"><span>Mesurer de façon agrégée l’audience et les performances du site</span><span>Votre accord — art. 6, §1, a du RGPD, lorsqu’il est applicable</span><span>Page consultée, provenance, informations techniques générales et Core Web Vitals, sans profil publicitaire</span></div>
       <div role="row"><span>Respecter les obligations comptables, fiscales ou contentieuses</span><span>Obligation légale et défense de droits — art. 6, §1, c et f</span><span>Données strictement nécessaires au dossier concerné</span></div>
     </div>
     <p>Velyo n’utilise pas les demandes pour envoyer de la prospection électronique sans base légale distincte. Aucune décision produisant un effet juridique n’est prise automatiquement et aucun profilage commercial n’est effectué.</p>
@@ -34,6 +35,7 @@ export default function Page() {
     <p>Les données sont accessibles uniquement aux personnes habilitées chez Velyo et, dans la limite nécessaire à leur mission, aux prestataires techniques suivants :</p>
     <ul>
       <li><strong>Cloudflare</strong> : hébergement du site, de la base de données et protection de l’infrastructure ;</li>
+      <li><strong>Vercel</strong> : hébergement de production et, après accord, mesure agrégée de l’audience et des performances ;</li>
       <li><strong>Resend</strong>, lorsqu’il est configuré : transmission sécurisée de la demande vers la boîte de réception de Velyo ;</li>
       <li>conseils professionnels ou autorités, seulement lorsqu’une obligation légale ou la défense d’un droit l’impose.</li>
     </ul>
@@ -48,6 +50,7 @@ export default function Page() {
       <li><strong>Relation contractuelle :</strong> pendant la relation puis selon les durées légales de prescription et de conservation comptable applicables.</li>
       <li><strong>Demandes d’exercice de droits :</strong> le temps de traiter la demande et de conserver la preuve de la réponse lorsque cela est nécessaire.</li>
       <li><strong>Envois identifiés comme spam :</strong> non enregistrés dans la base de demandes.</li>
+      <li><strong>Mesure d’audience :</strong> Vercel indique que l’identifiant de session haché de Web Analytics est automatiquement supprimé après 24 heures ; les statistiques agrégées suivent ensuite les durées du service Vercel configuré.</li>
     </ul>
 
     <h2>8. Vos droits</h2>

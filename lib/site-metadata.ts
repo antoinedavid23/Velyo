@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { translate } from "@/lib/i18n";
 
-export const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://velyo.pm";
+export const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://velyo.it";
 
 export function pageMetadata({ title, description, path, image = "/og.png" }: {
   title: string;

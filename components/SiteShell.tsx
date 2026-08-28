@@ -5,6 +5,8 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 import { usePathname } from "next/navigation";
 import { ArrowRight, LogIn, Menu, X } from "lucide-react";
+import { Analytics } from "@vercel/analytics/next";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import { CTA } from "@/components/PageHero";
 import { LanguageOptions } from "@/components/LocaleController";
 import { ScrollRevealController } from "@/components/ScrollRevealController";
@@ -52,10 +54,15 @@ export function SiteShell({ children }: { children: React.ReactNode }) {
   const [open, setOpen] = useState(false);
   const [headerHidden, setHeaderHidden] = useState(false);
   const [cookies, setCookies] = useState(false);
+  const [analyticsConsent, setAnalyticsConsent] = useState(false);
   const [stickyHidden, setStickyHidden] = useState(false);
 
   useEffect(() => {
-    const frame = requestAnimationFrame(() => setCookies(!localStorage.getItem("velyo-cookie")));
+    const frame = requestAnimationFrame(() => {
+      const consent = localStorage.getItem("velyo-analytics-consent");
+      setAnalyticsConsent(consent === "granted");
+      setCookies(!localStorage.getItem("velyo-cookie-v2") || consent === null);
+    });
     return () => cancelAnimationFrame(frame);
   }, []);
 
@@ -116,8 +123,10 @@ export function SiteShell({ children }: { children: React.ReactNode }) {
     return () => observer.disconnect();
   }, [pathname, showSiteCTA]);
 
-  function dismissCookieNotice() {
-    localStorage.setItem("velyo-cookie", "acknowledged");
+  function chooseAnalytics(allow: boolean) {
+    localStorage.setItem("velyo-analytics-consent", allow ? "granted" : "denied");
+    localStorage.setItem("velyo-cookie-v2", "acknowledged");
+    setAnalyticsConsent(allow);
     setCookies(false);
   }
 
@@ -186,11 +195,14 @@ export function SiteShell({ children }: { children: React.ReactNode }) {
 
       <Link className={`sticky-cta${stickyHidden ? " is-hidden" : ""}`} href="/valutazione">Confier mon bien <ArrowRight size={16} /></Link>
 
+      {analyticsConsent ? <Analytics /> : null}
+      {analyticsConsent ? <SpeedInsights /> : null}
+
       {cookies && (
         <div className="cookie velyo-cookie" role="dialog" aria-label="Information relative aux cookies">
           <div className="cookie-mark">V</div>
-          <div className="cookie-copy"><strong>Aucun cookie publicitaire.</strong><p>Le site mémorise seulement vos préférences essentielles, comme la langue et la fermeture de ce message. Aucun suivi publicitaire ni mesure d’audience.</p><Link href="/cookie-policy">Voir le détail des stockages</Link></div>
-          <div className="cookie-actions"><button className="cookie-primary" onClick={dismissCookieNotice}>Fermer</button></div>
+          <div className="cookie-copy"><strong>Mesure anonyme, sans publicité.</strong><p>Avec votre accord, Velyo utilise Vercel Web Analytics et Speed Insights pour mesurer l’audience agrégée et les performances. Aucun cookie publicitaire ni profilage.</p><Link href="/cookie-policy">Voir le détail des stockages</Link></div>
+          <div className="cookie-actions"><button className="cookie-secondary" onClick={() => chooseAnalytics(false)}>Refuser</button><button className="cookie-primary" onClick={() => chooseAnalytics(true)}>Accepter la mesure anonyme</button></div>
         </div>
       )}
     </ItalianContent>

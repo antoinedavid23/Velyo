@@ -19,8 +19,8 @@ export const legalIdentity = {
   hostAddress: value("LEGAL_HOST_ADDRESS") || "101 Townsend Street, San Francisco, CA 94107, États-Unis",
   hostWebsite: value("LEGAL_HOST_WEBSITE") || "https://www.cloudflare.com/",
   retentionMonths: Math.max(1, Number(process.env.LEAD_RETENTION_MONTHS || 12)),
-  lastUpdated: "21 août 2026",
-  lastUpdatedISO: "2026-08-21",
+  lastUpdated: "28 août 2026",
+  lastUpdatedISO: "2026-08-28",
 };
 
 export const missingLegalIdentity = [
