@@ -53,7 +53,7 @@ export default function Home() {
             <Image src="/images/concierge/owner-conversation-premium.webp" fill sizes="(max-width: 800px) 100vw, 44vw" alt="Une propriétaire échange simplement avec son interlocutrice Velyo" />
           </Reveal>
           <Reveal className="prose velyo-owner-copy watermark-heading watermark-heading--image-side">
-            <p className="eyebrow dark section-watermark" aria-hidden="true">Manager Velyo</p>
+            <p className="eyebrow dark section-watermark" aria-hidden="true">Gestion</p>
             <p className="eyebrow dark">Sur place, pour votre bien</p>
             <h2>Vous déléguez l’exploitation.<br /><em>Vous gardez la vision.</em></h2>
             <p>Un interlocuteur dédié connaît le bien, pilote les réservations et coordonne les intervenants. Vous gardez la visibilité, vos périodes personnelles et le dernier mot sur les décisions importantes.</p>
