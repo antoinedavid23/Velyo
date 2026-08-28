@@ -35,6 +35,7 @@ export const copywritingMessages: Record<string, LocalizedCopy> = {
   "Votre property manager": c("Il Suo property manager", "Your property manager"),
   "Votre property manager à Genova": c("Il Suo property manager a Genova", "Your property manager in Genoa"),
   "Votre manager local": c("Il Suo manager locale", "Your local manager"),
+  "Manager Velyo": c("Manager Velyo", "Velyo manager"),
   "Sur place, pour votre bien": c("Sul posto, per il Suo immobile", "On the ground, for your property"),
   "Tout commence avant l’arrivée": c("Tutto inizia prima dell’arrivo", "It all starts before arrival"),
   "Sept étapes, un même cadre": c("Sette fasi, un unico metodo", "Seven stages, one consistent framework"),

@@ -20534,6 +20534,11 @@ main .button.ghost {
   color: #fff;
 }
 
+/* Accueil — le repère du manager reste complet dans la colonne de texte. */
+.owner-welcome .watermark-heading--image-side > .section-watermark {
+  color: rgba(31, 95, 191, .14) !important;
+}
+
 .velyo-footer .footer-promise > em {
   color: #78b7ff;
   font-family: var(--font-editorial), Georgia, serif;
